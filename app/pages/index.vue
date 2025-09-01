@@ -265,9 +265,6 @@ const dalRef = ref(null)
 const globeRef2 = ref(null)
 const globeRef3 = ref(null)
 
-
-
-
 onMounted(() => {
     const tl = useGSAP().timeline({
     scrollTrigger: {
