@@ -1,0 +1,28 @@
+{
+  "question": {
+    "en": "Can I leave early or request special scheduling accommodations?",
+    "tr": "Erken ayrılabilir miyim veya özel programlama konaklamaları talep edebilir miyim?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Almujam's academic calendar is designed to align with vacation schedules from major educational systems, including those in the US, Canada, and the UK. Despite this, we understand that not all students' needs will be perfectly met.",
+          "Students attending 85% or more of each term may request early or take-home final exams. If you require special scheduling accommodations, please indicate this on your application so that arrangements can be made in advance.",
+          "Early departure and exam scheduling options are available for students who need to leave before the end of the term. This flexibility helps accommodate various academic and personal commitments.",
+          "Please note that all special arrangements must be requested well in advance, and approval is subject to academic performance and attendance requirements. Contact our academic office for specific details about early departure procedures."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam'ın akademik takvimi, ABD, Kanada ve İngiltere'deki büyük eğitim sistemlerinin tatil programlarıyla uyumlu olacak şekilde tasarlanmıştır. Buna rağmen, tüm öğrencilerin ihtiyaçlarının mükemmel şekilde karşılanamayacağını anlıyoruz.",
+          "Her dönemin %85'ini veya daha fazlasını katılan öğrenciler, erken veya evde final sınavları talep edebilir. Özel programlama konaklamalarına ihtiyacınız varsa, lütfen bunu başvurunuzda belirtin ki düzenlemeler önceden yapılabilsin.",
+          "Dönem sonundan önce ayrılması gereken öğrenciler için erken ayrılma ve sınav programlama seçenekleri mevcuttur. Bu esneklik, çeşitli akademik ve kişisel taahhütleri karşılamaya yardımcı olur.",
+          "Lütfen tüm özel düzenlemelerin önceden talep edilmesi gerektiğini ve onayın akademik performans ve katılım gereksinimlerine tabi olduğunu unutmayın. Erken ayrılma prosedürleri hakkında detaylı bilgi için akademik ofisimizle iletişime geçin."
+        ]
+      }
+    ]
+  }
+}

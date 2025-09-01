@@ -1,0 +1,28 @@
+{
+  "question": {
+    "en": "What airport transportation services are available?",
+    "tr": "Hangi havaalanı transfer hizmetleri mevcuttur?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Almujam offers complimentary airport shuttle services to students arriving for the first time. Transportation from the airport to student housing is available 24/7, and return rides to the airport can be arranged for departure flights.",
+          "Students can apply for this service through the Student Life section on our website by selecting the Airport Transportation option and submitting the application form. This free service is available to students residing in Almujam Housing or those with independent housing arrangements.",
+          "To qualify, itinerary confirmation must be submitted at least one week before arrival for winter, spring, and fall terms, and two weeks before arrival for summer term students.",
+          "Please note this service is only offered from one week before Orientation begins until two weeks after the last class of the term. Transportation for additional trips during attendance, such as visa renewal excursions, is the responsibility of the student."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam, ilk kez gelen öğrencilere ücretsiz havaalanı servis hizmeti sunar. Havaalanından öğrenci konutuna 24/7 transfer mevcuttur ve dönüş uçuşları için havaalanına geri dönüş seyahatleri düzenlenebilir.",
+          "Öğrenciler bu hizmet için web sitemizdeki Öğrenci Yaşamı bölümünden Havaalanı Transferi seçeneğini seçerek ve başvuru formunu göndererek başvurabilirler. Bu ücretsiz hizmet, Almujam Konutunda ikamet eden öğrencilere veya bağımsız konut düzenlemeleri olan öğrencilere mevcuttur.",
+          "Uygun olmak için, kış, ilkbahar ve sonbahar dönemleri için gidiş tarihinden en az bir hafta önce, yaz dönemi öğrencileri için iki hafta önce güzergah onayı gönderilmelidir.",
+          "Lütfen bu hizmetin sadece Oryantasyon başlamadan bir hafta öncesinden dönemin son dersinden iki hafta sonrasına kadar sunulduğunu unutmayın. Katılım sırasında vize yenileme gezileri gibi ek seyahatler için transfer, öğrencinin sorumluluğundadır."
+        ]
+      }
+    ]
+  }
+}

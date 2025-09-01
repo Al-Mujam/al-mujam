@@ -1,0 +1,148 @@
+{
+  "title": {
+    "en": "Program Dates",
+    "tr": "Program Tarihleri"
+  },
+  "subtitle": {
+    "en": "Academic Overview",
+    "tr": "Akademik Genel Bakış"
+  },
+  "description": {
+    "en": "Year-Round Arabic Language Programs at Almujam",
+    "tr": "Almujam'da Yıl Boyu Arapça Dil Programları"
+  },
+  "content": {
+    "en": [
+      "At Almujam Arabic Language Center, we offer a comprehensive set of programs throughout the year, tailored to meet the diverse goals of students, professionals, and institutions:",
+      "Core Programs (Modern Standard Arabic & Classical Arabic)",
+      "Private Tutoring",
+      "Diplomat & Corporate Language Packages",
+      "Core Arabic Programs",
+      "Each academic term includes 120–130 instructional hours. The fall, winter, and spring quarters span 10 to 12 weeks (3 instructional hours per day), while the summer term runs for 6 to 8 weeks (4 hours per day). One instructional hour is 50 minutes.",
+      "Courses are offered at all levels across all terms, and advanced or supplementary modules are available based on demand."
+    ],
+    "tr": [
+      "Almujam Arapça Dil Merkezi'nde, öğrencilerin, profesyonellerin ve kurumların çeşitli hedeflerini karşılamak için yıl boyunca kapsamlı program setleri sunuyoruz:",
+      "Temel Programlar (Modern Standart Arapça ve Klasik Arapça)",
+      "Özel Özel Ders",
+      "Diplomat ve Kurumsal Dil Paketleri",
+      "Temel Arapça Programları",
+      "Her akademik dönem 120-130 öğretim saatini içerir. Sonbahar, kış ve ilkbahar çeyrekleri 10-12 hafta (günde 3 öğretim saati) sürerken, yaz dönemi 6-8 hafta (günde 4 saat) sürer. Bir öğretim saati 50 dakikadır.",
+      "Kurslar tüm dönemlerde tüm seviyelerde sunulur ve ileri veya ek modüller talep üzerine mevcuttur."
+    ]
+  },
+  "calendar": {
+    "en": [
+      {
+        "term": "Summer 2025",
+        "orientation": "July 23, 2025",
+        "classes": "July 24– August 30, 2025"
+      },
+      {
+        "term": "Fall 2026",
+        "orientation": "September 3, 2025",
+        "classes": "September 4 – December 3, 2025"
+      },
+      {
+        "term": "Winter 2026",
+        "orientation": "December 27, 2025",
+        "classes": "December 28, 2025 – March 10, 2026"
+      },
+      {
+        "term": "Spring 2026",
+        "orientation": "March 20, 2026",
+        "classes": "March 20 – June 1, 2026"
+      },
+      {
+        "term": "Summer 2026",
+        "orientation": "June 8, 2026",
+        "classes": "June 09 – July 21, 2026"
+      },
+      {
+        "term": "Summer 2026 (Second Session)",
+        "orientation": "July 21, 2026",
+        "classes": "July 21– September 03, 2026"
+      },
+      {
+        "term": "Fall 2026",
+        "orientation": "September 3, 2026",
+        "classes": "September 4 – December 3, 2026"
+      },
+      {
+        "term": "Winter 2027",
+        "orientation": "December 27, 2026",
+        "classes": "December 28, 2026 – March 10, 2027"
+      }
+    ],
+    "tr": [
+      {
+        "term": "Yaz 2025",
+        "orientation": "23 Temmuz 2025",
+        "classes": "24 Temmuz – 30 Ağustos 2025"
+      },
+      {
+        "term": "Sonbahar 2026",
+        "orientation": "3 Eylül 2025",
+        "classes": "4 Eylül – 3 Aralık 2025"
+      },
+      {
+        "term": "Kış 2026",
+        "orientation": "27 Aralık 2025",
+        "classes": "28 Aralık 2025 – 10 Mart 2026"
+      },
+      {
+        "term": "İlkbahar 2026",
+        "orientation": "20 Mart 2026",
+        "classes": "20 Mart – 1 Haziran 2026"
+      },
+      {
+        "term": "Yaz 2026",
+        "orientation": "8 Haziran 2026",
+        "classes": "9 Haziran – 21 Temmuz 2026"
+      },
+      {
+        "term": "Yaz 2026 (İkinci Oturum)",
+        "orientation": "21 Temmuz 2026",
+        "classes": "21 Temmuz – 3 Eylül 2026"
+      },
+      {
+        "term": "Sonbahar 2026",
+        "orientation": "3 Eylül 2026",
+        "classes": "4 Eylül – 3 Aralık 2026"
+      },
+      {
+        "term": "Kış 2027",
+        "orientation": "27 Aralık 2026",
+        "classes": "28 Aralık 2026 – 10 Mart 2027"
+      }
+    ]
+  },
+  "private_tutoring": {
+    "en": [
+      "For students, professionals, or busy travelers whose schedules may not align with our fixed terms, Almujam offers flexible, year-round private tutoring upon request.",
+      "Private Tutoring Highlights:",
+      "Offered during the day or evening, subject to instructor availability",
+      "Lessons can follow our structured curriculum or be fully customized",
+      "Focus areas may include language fluency, text interpretation, or skill development",
+      "Sessions can be one-on-one or two-on-one (student pair)",
+      "Rates: $30 to $50 USD per instructional hour (50 minutes), depending on scheduling and format."
+    ],
+    "tr": [
+      "Programları sabit dönemlerimizle uyuşmayan öğrenciler, profesyoneller veya meşgul gezginler için Almujam, talep üzerine esnek, yıl boyu özel özel ders sunar.",
+      "Özel Özel Ders Özellikleri:",
+      "Gün boyunca veya akşamları, eğitmen müsaitliğine bağlı olarak sunulur",
+      "Dersler yapılandırılmış müfredatımızı takip edebilir veya tamamen özelleştirilebilir",
+      "Odak alanları dil akıcılığı, metin yorumlama veya beceri geliştirmeyi içerebilir",
+      "Oturumlar birebir veya iki kişilik (öğrenci çifti) olabilir",
+      "Ücretler: Programlama ve formata bağlı olarak öğretim saati başına (50 dakika) 30-50 USD."
+    ]
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "https://forms.google.com/almujam-application",
+    "tr": "https://forms.google.com/almujam-application"
+  }
+}

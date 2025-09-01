@@ -1,0 +1,52 @@
+{
+  "title": {
+    "en": "Introduction",
+    "tr": "Giriş"
+  },
+  "subtitle": {
+    "en": "Apply to Almujam's Online Arabic Programs",
+    "tr": "Almujam'ın Çevrimiçi Arapça Programlarına Başvurun"
+  },
+  "description": {
+    "en": "Learn Arabic Remotely with Expert Instructors",
+    "tr": "Uzman Eğitmenlerle Uzaktan Arapça Öğrenin"
+  },
+  "content": {
+    "en": [
+      "At Almujam Arabic Language Center, we offer a seamless online learning experience for non-native speakers who wish to study Arabic from anywhere in the world. Whether you're a beginner or an advanced student, our structured virtual programs provide the tools and support needed to master Arabic with confidence.",
+      "Simple Online Admissions Process",
+      "Applying to Almujam's online courses is quick and straightforward. Our admissions system is fully digital and designed to make your enrollment process smooth and transparent.",
+      "Step 1: Fill Out the Online Registration Form",
+      "New students begin by filling out a Google Form provided by Almujam. This form gathers the necessary personal and academic information to initiate your application process. Once submitted, our admissions team will contact you with the next steps, including assessment details and enrollment confirmation.",
+      "Step 2: Complete a Remote Placement Test",
+      "All applicants take a three-part online assessment to determine their level in Arabic: Speaking evaluation via video call, Reading comprehension test, Writing sample. These tests help us place you in the most suitable program—ranging from A1 to C2 level.",
+      "Flexible Online Arabic Programs Tailored to Your Needs",
+      "Almujam's online programs include: Modern Standard Arabic, Classical Arabic (Fusha), Jordanian/Levantine Colloquial Arabic (Ammiyya), Private one-on-one tutoring, Specialized courses (e.g., Arabic for Diplomats, Tajweed, Arabic Calligraphy, and more).",
+      "Classes are delivered through high-quality live sessions, digital resources, and interactive assignments—all accessible from your personal learning portal.",
+      "Admission Support and Timeline",
+      "Applications are reviewed within 2–3 weeks once all materials are submitted. Our support team is available to assist with any questions about the process or your learning options. Students can request custom study schedules based on time zones and availability."
+    ],
+    "tr": [
+      "Almujam Arapça Dil Merkezi'nde, dünyanın her yerinden Arapça öğrenmek isteyen anadili Arapça olmayan konuşmacılar için sorunsuz bir çevrimiçi öğrenme deneyimi sunuyoruz. İster başlangıç ister ileri seviye öğrenci olun, yapılandırılmış sanal programlarımız Arapçayı güvenle öğrenmek için gereken araçları ve desteği sağlar.",
+      "Basit Çevrimiçi Kabul Süreci",
+      "Almujam'ın çevrimiçi kurslarına başvurmak hızlı ve basittir. Kabul sistemimiz tamamen dijitaldir ve kayıt sürecinizi sorunsuz ve şeffaf hale getirmek için tasarlanmıştır.",
+      "Adım 1: Çevrimiçi Kayıt Formunu Doldurun",
+      "Yeni öğrenciler Almujam tarafından sağlanan bir Google Formu doldurarak başlar. Bu form, başvuru sürecinizi başlatmak için gerekli kişisel ve akademik bilgileri toplar. Gönderildikten sonra, kabul ekibimiz değerlendirme detayları ve kayıt onayı dahil olmak üzere sonraki adımlarla sizinle iletişime geçecektir.",
+      "Adım 2: Uzaktan Seviye Belirleme Testini Tamamlayın",
+      "Tüm başvuranlar Arapça seviyelerini belirlemek için üç bölümlü bir çevrimiçi değerlendirme alır: Video görüşme ile konuşma değerlendirmesi, Okuma anlama testi, Yazma örneği. Bu testler sizi A1'den C2 seviyesine kadar en uygun programa yerleştirmemize yardımcı olur.",
+      "İhtiyaçlarınıza Göre Uyarlanmış Esnek Çevrimiçi Arapça Programları",
+      "Almujam'ın çevrimiçi programları şunları içerir: Modern Standart Arapça, Klasik Arapça (Fusha), Ürdün/Levanten Halk Arapçası (Ammiyya), Özel birebir özel ders, Özel kurslar (örn. Diplomatlar için Arapça, Tecvid, Arapça Hat Sanatı ve daha fazlası).",
+      "Dersler, kişisel öğrenme portalınızdan erişilebilen yüksek kaliteli canlı oturumlar, dijital kaynaklar ve etkileşimli ödevler aracılığıyla sunulur.",
+      "Kabul Desteği ve Zaman Çizelgesi",
+      "Başvurular tüm materyaller gönderildikten sonra 2-3 hafta içinde incelenir. Destek ekibimiz süreç veya öğrenme seçenekleriniz hakkında herhangi bir soruya yardımcı olmak için mevcuttur. Öğrenciler saat dilimlerine ve müsaitliklerine göre özel çalışma programları talep edebilir."
+    ]
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "https://forms.google.com/almujam-application",
+    "tr": "https://forms.google.com/almujam-application"
+  }
+}

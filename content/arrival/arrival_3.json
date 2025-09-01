@@ -1,0 +1,28 @@
+{
+  "question": {
+    "en": "What are the visa requirements and travel arrangements?",
+    "tr": "Vize gereksinimleri ve seyahat düzenlemeleri nelerdir?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Most international students arrive at Queen Alia International Airport (AMM) in Amman, located approximately 35 minutes from the city center. Jordan is served by several major international airlines including Royal Jordanian, Lufthansa, and KLM.",
+          "Holders of passports from the United States, Canada, United Kingdom, European Union, and several other countries are eligible to receive a visa upon arrival at the airport. This costs approximately 40 Jordanian dinars (about 56 USD) and is valid for 30 days.",
+          "If you plan to stay in Jordan for longer than one month, you will need to extend your visa. During your first week in Jordan, our team will help you extend your visa to 90 days. If your stay exceeds three months, you will need to apply for another 90-day extension.",
+          "After six months in Jordan, all visitors are required to exit the country unless they have been granted a residency permit. Most students plan a short trip abroad at this point (e.g., to Turkey, UAE, Lebanon) and then return to Jordan with a new visa."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Çoğu uluslararası öğrenci, şehir merkezinden yaklaşık 35 dakika uzaklıkta bulunan Amman'daki Kraliçe Alia Uluslararası Havaalanı'na (AMM) gelir. Ürdün, Royal Jordanian, Lufthansa ve KLM dahil olmak üzere birçok büyük uluslararası havayolu tarafından hizmet verilmektedir.",
+          "Amerika Birleşik Devletleri, Kanada, Birleşik Krallık, Avrupa Birliği ve diğer birkaç ülkenin pasaport sahipleri, havaalanında varışta vize alabilirler. Bu yaklaşık 40 Ürdün dinarı (yaklaşık 56 USD) tutarında olup 30 gün geçerlidir.",
+          "Ürdün'de bir aydan fazla kalmayı planlıyorsanız, vizenizi uzatmanız gerekecektir. Ürdün'deki ilk haftanızda, ekibimiz vizenizi 90 güne uzatmanıza yardımcı olacaktır. Kalışınız üç aydan fazla sürerse, başka bir 90 günlük uzatma başvurusu yapmanız gerekecektir.",
+          "Ürdün'de altı aydan sonra, ikamet izni verilmemiş olan tüm ziyaretçilerin ülkeyi terk etmesi gerekir. Çoğu öğrenci bu noktada kısa bir yurtdışı seyahati planlar (örneğin Türkiye, BAE, Lübnan) ve ardından yeni bir vize ile Ürdün'e geri döner."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "title": {
+    "en": "Tuition",
+    "tr": "Öğrenim Ücreti"
+  },
+  "subtitle": {
+    "en": "Tuition & Fees for Arabic Programs at Almujam Institute",
+    "tr": "Almujam Enstitüsü'nde Arapça Programları için Öğrenim Ücreti ve Harçlar"
+  },
+  "description": {
+    "en": "A Commitment to Quality and Transparency",
+    "tr": "Kalite ve Şeffaflık Taahhüdü"
+  },
+  "content": {
+    "en": [
+      "At Almujam Institute, we believe that investing in language education is one of the most valuable decisions a student can make. Our pricing reflects our commitment to exceptional instruction, personalized service, and an immersive experience in Amman, Jordan.",
+      "While our tuition may be more affordable than Arabic programs at European or North American universities, we maintain high standards and a transparent, all-inclusive pricing model that delivers lasting value.",
+      "What's Included in Almujam's Tuition?",
+      "Unlike programs that list only the base cost and later add hidden fees, Almujam provides a comprehensive tuition package that includes:",
+      "Full access to Modern Standard Arabic (MSA) and/or Classical Arabic courses",
+      "Instructional materials (included for upper levels; see note below)",
+      "Complimentary airport pick-up and return service",
+      "Student registration and placement services",
+      "Guided orientation tour of Jordanian heritage sites",
+      "Visa support (for eligible passport holders)",
+      "Access to Wi-Fi and on-campus facilities"
+    ],
+    "tr": [
+      "Almujam Enstitüsü'nde, dil eğitimine yatırım yapmanın bir öğrencinin yapabileceği en değerli kararlardan biri olduğuna inanıyoruz. Fiyatlandırmamız, olağanüstü öğretim, kişiselleştirilmiş hizmet ve Amman, Ürdün'de sürükleyici bir deneyim taahhüdümüzü yansıtır.",
+      "Öğrenim ücretimiz Avrupa veya Kuzey Amerika üniversitelerindeki Arapça programlarından daha uygun fiyatlı olsa da, yüksek standartları koruyoruz ve kalıcı değer sağlayan şeffaf, kapsamlı bir fiyatlandırma modeli sunuyoruz.",
+      "Almujam'ın Öğrenim Ücretine Neler Dahil?",
+      "Sadece temel maliyeti listeleyen ve daha sonra gizli ücretler ekleyen programların aksine, Almujam şunları içeren kapsamlı bir öğrenim ücreti paketi sağlar:",
+      "Modern Standart Arapça (MSA) ve/veya Klasik Arapça kurslarına tam erişim",
+      "Öğretim materyalleri (üst seviyeler için dahil; aşağıdaki notu görün)",
+      "Ücretsiz havaalanı karşılama ve dönüş hizmeti",
+      "Öğrenci kayıt ve yerleştirme hizmetleri",
+      "Ürdün miras alanlarının rehberli oryantasyon turu",
+      "Vize desteği (uygun pasaport sahipleri için)",
+      "Wi-Fi ve kampüs tesislerine erişim"
+    ]
+  },
+  "base_rate": {
+    "en": {
+      "title": "Core Program Base Rate",
+      "amount": "$1,845 USD per term",
+      "description": "This base rate applies to all students for one term of instruction in either Modern Standard Arabic or Classical Arabic. Discounts are available for students who continue across multiple terms or register in groups."
+    },
+    "tr": {
+      "title": "Temel Program Temel Ücreti",
+      "amount": "Dönem başına 1.845 USD",
+      "description": "Bu temel ücret, Modern Standart Arapça veya Klasik Arapça'da bir dönemlik öğretim için tüm öğrenciler için geçerlidir. Birden fazla dönem devam eden veya grup halinde kayıt olan öğrenciler için indirimler mevcuttur."
+    }
+  },
+  "individual_discounts": {
+    "en": {
+      "title": "Individual Enrollment Discounts",
+      "subtitle": "For students registering independently.",
+      "terms": [
+        { "term": "1st", "cost": "$1,850", "discount": "–", "savings": "–" },
+        { "term": "2nd", "cost": "$1,813", "discount": "2%", "savings": "$37" },
+        { "term": "3rd", "cost": "$1,795", "discount": "3%", "savings": "$55" },
+        { "term": "4th", "cost": "$1,775", "discount": "4%", "savings": "$75" },
+        { "term": "5th", "cost": "$1,750", "discount": "5%", "savings": "$95" }
+      ]
+    },
+    "tr": {
+      "title": "Bireysel Kayıt İndirimleri",
+      "subtitle": "Bağımsız olarak kayıt olan öğrenciler için.",
+      "terms": [
+        { "term": "1.", "cost": "1.850 USD", "discount": "–", "savings": "–" },
+        { "term": "2.", "cost": "1.813 USD", "discount": "%2", "savings": "37 USD" },
+        { "term": "3.", "cost": "1.795 USD", "discount": "%3", "savings": "55 USD" },
+        { "term": "4.", "cost": "1.775 USD", "discount": "%4", "savings": "75 USD" },
+        { "term": "5.", "cost": "1.750 USD", "discount": "%5", "savings": "95 USD" }
+      ]
+    }
+  },
+  "group_discounts": {
+    "en": {
+      "duos_trios": {
+        "title": "Duos and Trios (2–3 Applicants)",
+        "terms": [
+          { "term": "1st", "cost": "$1,750", "discount": "5%", "savings": "$95" },
+          { "term": "2nd", "cost": "$1,750", "discount": "5%", "savings": "$95" },
+          { "term": "3rd–5th", "cost": "$1,720", "discount": "7%", "savings": "$130" }
+        ]
+      },
+      "ensembles": {
+        "title": "Ensembles (4–8 Applicants)",
+        "terms": [
+          { "term": "1st–2nd", "cost": "$1,700", "discount": "8%", "savings": "$150" },
+          { "term": "3rd–5th", "cost": "$1,685", "discount": "9%", "savings": "$165" }
+        ]
+      },
+      "note": "All group members must list each other as co-applicants on their enrollment forms to be eligible for the group discount."
+    },
+    "tr": {
+      "duos_trios": {
+        "title": "İkili ve Üçlü Gruplar (2-3 Başvuran)",
+        "terms": [
+          { "term": "1.", "cost": "1.750 USD", "discount": "%5", "savings": "95 USD" },
+          { "term": "2.", "cost": "1.750 USD", "discount": "%5", "savings": "95 USD" },
+          { "term": "3.-5.", "cost": "1.720 USD", "discount": "%7", "savings": "130 USD" }
+        ]
+      },
+      "ensembles": {
+        "title": "Topluluklar (4-8 Başvuran)",
+        "terms": [
+          { "term": "1.-2.", "cost": "1.700 USD", "discount": "%8", "savings": "150 USD" },
+          { "term": "3.-5.", "cost": "1.685 USD", "discount": "%9", "savings": "165 USD" }
+        ]
+      },
+      "note": "Grup indiriminden yararlanmak için tüm grup üyeleri kayıt formlarında birbirlerini ortak başvuran olarak listelemiş olmalıdır."
+    }
+  },
+  "private_tutoring": {
+    "en": {
+      "title": "Private Tutoring (Optional Add-on)",
+      "sessions": [
+        { "type": "One-on-one (Daytime)", "rate": "$25 USD" },
+        { "type": "One-on-one (Evening/Summer)", "rate": "$30 USD" },
+        { "type": "Two-on-one (Any time)", "rate": "$40 USD" }
+      ],
+      "notes": [
+        "Minimum booking: 1.5 hours/day for the full term",
+        "Limited availability – early registration is strongly encouraged"
+      ]
+    },
+    "tr": {
+      "title": "Özel Özel Ders (İsteğe Bağlı Ek)",
+      "sessions": [
+        { "type": "Birebir (Gündüz)", "rate": "25 USD" },
+        { "type": "Birebir (Akşam/Yaz)", "rate": "30 USD" },
+        { "type": "İki kişilik (Herhangi bir zaman)", "rate": "40 USD" }
+      ],
+      "notes": [
+        "Minimum rezervasyon: Tam dönem için günde 1.5 saat",
+        "Sınırlı müsaitlik – erken kayıt şiddetle tavsiye edilir"
+      ]
+    }
+  },
+  "payment_info": {
+    "en": {
+      "deposits": [
+        "$350 USD deposit required for core programs (non-refundable)",
+        "25% deposit required for private tutoring",
+        "JD 25 placement test deposit for Ammiya (Colloquial Arabic)"
+      ],
+      "methods": [
+        "Online by credit card (Visa/MasterCard)",
+        "Wire transfers (see bank details below)",
+        "Cash payments in USD or JOD"
+      ]
+    },
+    "tr": {
+      "deposits": [
+        "Temel programlar için 350 USD depozito gerekli (iade edilemez)",
+        "Özel özel ders için %25 depozito gerekli",
+        "Ammiya (Halk Arapçası) için 25 JD seviye belirleme testi depozitosu"
+      ],
+      "methods": [
+        "Kredi kartı ile çevrimiçi (Visa/MasterCard)",
+        "Banka havalesi (aşağıdaki banka detaylarına bakın)",
+        "USD veya JOD olarak nakit ödemeler"
+      ]
+    }
+  },
+  "refund_policy": {
+    "en": [
+      { "timeline": "Before classes start", "eligibility": "Full tuition minus deposit" },
+      { "timeline": "1st–5th class day", "eligibility": "Up to 50% refund (core programs only)" },
+      { "timeline": "After 5th day", "eligibility": "No refund for current term, future terms refunded" },
+      { "timeline": "Private tutoring (before start)", "eligibility": "Full refund minus deposit" },
+      { "timeline": "Private tutoring (after start)", "eligibility": "No refund" }
+    ],
+    "tr": [
+      { "timeline": "Dersler başlamadan önce", "eligibility": "Depozito hariç tam öğrenim ücreti" },
+      { "timeline": "1.-5. ders günü", "eligibility": "En fazla %50 iade (sadece temel programlar)" },
+      { "timeline": "5. günden sonra", "eligibility": "Mevcut dönem için iade yok, gelecek dönemler iade edilir" },
+      { "timeline": "Özel özel ders (başlamadan önce)", "eligibility": "Depozito hariç tam iade" },
+      { "timeline": "Özel özel ders (başladıktan sonra)", "eligibility": "İade yok" }
+    ]
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "https://forms.google.com/almujam-application",
+    "tr": "https://forms.google.com/almujam-application"
+  }
+}

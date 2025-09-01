@@ -1,0 +1,28 @@
+{
+  "question": {
+    "en": "When should I arrive and what happens during orientation?",
+    "tr": "Ne zaman gelmeliyim ve oryantasyon sırasında ne olur?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "We strongly recommend that every student arriving at Almujam Center plan to arrive at least two days before the first day of orientation. This allows time to settle into student housing and overcome jet lag.",
+          "Students with reservations in Almujam Housing should consult the Housing Overview webpage for detailed move-in dates and times. It is essential that all students arrive at least 24 hours before the Orientation session to ensure full focus during this important introduction to the institute.",
+          "The formal Orientation at Almujam includes placement exams, an introduction to studying Arabic abroad, a review of institute policies, visa registration, and a cultural tour of historic sites in Northern Jordan.",
+          "Students arriving late will still take placement exams, and a condensed Orientation session may be offered if time allows. However, late arrivals are a lower priority due to the intensive academic schedule."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam Merkezi'ne gelen her öğrencinin oryantasyonun ilk gününden en az iki gün önce gelmeyi planlamasını şiddetle tavsiye ederiz. Bu, öğrenci konutuna yerleşmek ve jet lag'i atlatmak için zaman sağlar.",
+          "Almujam Konutunda rezervasyonu olan öğrenciler, detaylı taşınma tarihleri ve saatleri için Konut Genel Bakış web sayfasına danışmalıdır. Tüm öğrencilerin, enstitüye bu önemli giriş sırasında tam odaklanmayı sağlamak için Oryantasyon oturumundan en az 24 saat önce gelmesi gereklidir.",
+          "Almujam'daki resmi Oryantasyon, seviye belirleme sınavlarını, yurtdışında Arapça öğrenme konusunda giriş bilgilerini, enstitü politikalarının gözden geçirilmesini, vize kaydını ve Kuzey Ürdün'deki tarihi yerlerin kültürel turunu içerir.",
+          "Geç gelen öğrenciler yine de seviye belirleme sınavlarını alacak ve zaman izin verirse kısaltılmış bir Oryantasyon oturumu sunulabilir. Ancak, yoğun akademik program nedeniyle geç gelenler daha düşük önceliğe sahiptir."
+        ]
+      }
+    ]
+  }
+}

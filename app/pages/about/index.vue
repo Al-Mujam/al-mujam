@@ -64,26 +64,6 @@
 </section>
 
 
-<!-- methodology section -->
-<section class="w-full py-5 relative    lg:h-[calc(100svh-70px)] h-max  gap-10  text-text-color justify-center flex items-center overflow-hidden flex-col  ">
-        <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full ">
-            <div class="text-lg md:text-xl font-bold text-center text-web-primary ">
-                {{ translations.find(t => t.key === 'students_title').value[locale].toUpperCase() }}
-            </div>
-            <div class="text-4xl md:text-5xl font-bold text-center text-text-color ">
-                {{ translations.find(t => t.key === 'students_description').value[locale] }}
-            </div>
-        </div>
-          
-            <div class="w-full px-10 py-5  h-full overflow-x-auto  snap-x snap-mandatory gap-10     flex flex-nowrap scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200  ">
-            
-             
-                
-             
-
-            </div>
-</section>
-
 
 
 

@@ -1,0 +1,11 @@
+{
+    "name": {
+        "en": "Falafel",
+        "tr": "Falafel"
+    },
+    "description": {
+        "en": "Deep-fried chickpea balls served in pita bread with hummus, tahini, and salad. A quick and affordable meal, especially common for breakfast or lunch.",
+        "tr": "Humus, tahin ve salata ile pide ekmeğinde servis edilen derin kızartılmış nohut köfteleri. Özellikle kahvaltı veya öğle yemeği için yaygın olan hızlı ve uygun fiyatlı bir yemek."
+    },
+    "image": "https://picsum.photos/400/300?random=2"
+}
