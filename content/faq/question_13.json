@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "Are home stays an option?",
+    "tr": "Aile yanında konaklama bir seçenek mi?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "No. Almujam does not coordinate homestays. Students interested in living with local families may pursue this option independently through trusted local channels or housing platforms."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Hayır. Almujam, aile yanında konaklama düzenlemeleri yapmamaktadır. Yerel ailelerle yaşamakla ilgilenen öğrenciler, bu seçeneği güvenilir yerel kanallar veya konaklama platformları aracılığıyla bağımsız olarak takip edebilirler."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "blog_id": 9,
+  "title": {
+    "en": "Living in Amman: What to Expect as a Foreigner",
+    "tr": "Amman'da Yaşamak: Bir Yabancı Olarak Neler Beklemelisiniz"
+  },
+  "subtitle": {
+    "en": "A Practical Guide for Arabic Learners and Expats",
+    "tr": "Arapça Öğrenenler ve Yurt Dışında Yaşayanlar İçin Pratik Bir Rehber"
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "Warm Hospitality and Friendly Locals",
+        "tr": "Sıcak Misafirperverlik ve Dost Canlısı Yerliler"
+      },
+      "content": {
+        "en": [
+          "Jordanians are known for their welcoming nature. Hospitality is a key part of the culture, and locals often go out of their way to help foreigners, especially those who are learning Arabic."
+        ],
+        "tr": [
+          "Ürdünlüler, misafirperverlikleri ile tanınır. Misafirperverlik, kültürün önemli bir parçasıdır ve yerliler, özellikle Arapça öğrenenlere yardım etmek için ellerinden geleni yaparlar."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "A Safe and Stable City",
+        "tr": "2. Güvenli ve Stabil Bir Şehir"
+      },
+      "content": {
+        "en": [
+          "Amman is considered one of the safest cities in the Middle East with a low crime rate. Foreigners generally feel secure, even when walking alone at night."
+        ],
+        "tr": [
+          "Amman, Orta Doğu'nun en güvenli şehirlerinden biri olarak kabul edilir ve düşük bir suç oranına sahiptir. Yabancılar, geceleri tek başına yürürken bile genellikle kendilerini güvende hissederler."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Navigating Life Without Fluent Arabic",
+        "tr": "Akıcı Arapça Olmadan Hayatı İdare Etmek"
+      },
+      "content": {
+        "en": [
+          "While many people in Amman speak some English, learning Arabic will greatly improve your experience. Simple tasks like taking a taxi or ordering food become much easier."
+        ],
+        "tr": [
+          "Amman'da birçok kişi İngilizce konuşsa da, Arapça öğrenmek deneyiminizi büyük ölçüde geliştirecektir. Taksiye binmek veya yemek siparişi vermek gibi basit işler çok daha kolay hale gelir."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Cost of Living and Lifestyle",
+        "tr": "Yaşam Maliyeti ve Yaşam Tarzı"
+      },
+      "content": {
+        "en": [
+          "Amman is more affordable than many Western cities. Rent, groceries, and transportation costs vary. Many expats live in neighborhoods like Jabal Al-Weibdeh, Rainbow Street, or Abdoun."
+        ],
+        "tr": [
+          "Amman, birçok Batı şehrine göre daha uygun fiyatlıdır. Kira, market ve ulaşım maliyetleri değişiklik gösterir. Birçok yabancı, Jabal Al-Weibdeh, Rainbow Street veya Abdoun gibi mahallelerde yaşar."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Cultural Respect and Social Norms",
+        "tr": "Kültürel Saygı ve Sosyal Normlar"
+      },
+      "content": {
+        "en": [
+          "Jordan is a moderate society, but respect for local customs is essential. Dress modestly and be aware of social etiquette, especially during Ramadan. Learning a few Arabic phrases shows respect."
+        ],
+        "tr": [
+          "Ürdün ılımlı bir toplumdur, ancak yerel geleneklere saygı esastır. Özellikle Ramazan ayında, mütevazı giyinin ve sosyal görgü kurallarına dikkat edin. Birkaç Arapça ifade öğrenmek saygı gösterir."
+        ]
+      }
+    }
+  ],
+  "image": "https://picsum.photos/800/400?random=9"
+}

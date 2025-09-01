@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "What happens if I cancel my housing after confirming?",
+    "tr": "Konaklamamı onayladıktan sonra iptal edersem ne olur?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "If you cancel within five days of your scheduled move-in, a 35% cancellation fee applies. After this grace period, full housing fees for the term are due unless your cancellation is approved due to documented emergencies."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Planlanan giriş tarihinizden itibaren beş gün içinde iptal ederseniz, %35'lik bir iptal ücreti uygulanır. Bu ek süreden sonra, belgelenmiş acil durumlar nedeniyle iptaliniz onaylanmadığı sürece, dönem için tam konaklama ücretleri tahsil edilir."
+        ]
+      }
+    ]
+  }
+}

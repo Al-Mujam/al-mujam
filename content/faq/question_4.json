@@ -1,0 +1,38 @@
+{
+  "question": {
+    "en": "What are the costs associated with Almujam Center Housing?",
+    "tr": "Almujam Merkezi Konaklama maliyetleri nelerdir?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Housing prices vary based on room type and season. For example:",
+          "Shared Room: 190–200 JD/month",
+          "Standard Room: 225–255 JD/month",
+          "Master Room: 330–365 JD/month"
+        ]
+      },
+      {
+        "text": [
+          "Additional costs include refundable deposits, utilities, cleaning services, and porter fees. Utility expenses are shared and billed based on usage."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Konaklama fiyatları oda tipine ve mevsime göre değişir. Örneğin:",
+          "Paylaşımlı Oda: 190–200 JD/ay",
+          "Standart Oda: 225–255 JD/ay",
+          "Ebeveyn Banyolu Oda: 330–365 JD/ay"
+        ]
+      },
+      {
+        "text": [
+          "Ek maliyetler arasında iade edilebilir depozitolar, faturalar, temizlik hizmetleri ve taşıma ücretleri bulunur. Faturalar ortaklaşa paylaşılır ve kullanıma göre faturalandırılır."
+        ]
+      }
+    ]
+  }
+}

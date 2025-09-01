@@ -1,0 +1,38 @@
+{
+  "question": {
+    "en": "How do I apply for Almujam Center Housing?",
+    "tr": "Almujam Merkezi Konaklamasına nasıl başvurabilirim?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "To apply for student housing at Almujam, you must complete the official Housing Request Form. This form is required for all students—whether choosing Almujam-managed housing or independent arrangements.",
+          "Once the housing application period opens, you will receive access to the form and personalized support from our Housing Care Team."
+        ]
+      },
+      {
+        "text": [
+          "For assistance, contact:",
+          "Email: m.albishawi@almujamedu.com",
+          "Phone/WhatsApp: +962797247288"
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam'da öğrenci konaklamasına başvurmak için resmi Konaklama Talep Formu'nu doldurmanız gerekmektedir. Bu form, Almujam tarafından yönetilen konaklamayı veya bağımsız düzenlemeleri seçen tüm öğrenciler için zorunludur.",
+          "Konaklama başvuru dönemi açıldığında, forma erişim ve Konaklama Bakım Ekibimizden kişiselleştirilmiş destek alacaksınız."
+        ]
+      },
+      {
+        "text": [
+          "Yardım için iletişime geçin:",
+          "E-posta: m.albishawi@almujamedu.com",
+          "Telefon/WhatsApp: +962797247288"
+        ]
+      }
+    ]
+  }
+}

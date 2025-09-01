@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "What is the housing checkout process?",
+    "tr": "Konaklama çıkış süreci nasıldır?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "All tenants must schedule a room inspection before departure. After the inspection, any refundable part of the deposit will be returned—minus applicable cleaning, re-keying, or damage fees. All keys must be returned to avoid charges."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Tüm kiracılar ayrılmadan önce bir oda denetimi ayarlamalıdır. Denetimden sonra, depozitonun iade edilebilir kısmı, geçerli temizlik, anahtar yenileme veya hasar ücretleri düşüldükten sonra iade edilecektir. Ücretlendirmeden kaçınmak için tüm anahtarlar iade edilmelidir."
+        ]
+      }
+    ]
+  }
+}

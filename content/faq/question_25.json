@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "Can I extend my stay or renew housing for the next term?",
+    "tr": "Konaklamamı uzatabilir veya bir sonraki dönem için yenileyebilir miyim?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Yes. Midway through the term, students receive a renewal survey. Those who wish to stay must confirm early to receive priority housing. Extensions depend on availability and student eligibility."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Evet. Dönemin ortasında, öğrencilere bir yenileme anketi gönderilir. Kalmak isteyenlerin öncelikli konaklama almak için erken teyit etmeleri gerekir. Uzatmalar, uygunluk ve öğrenci yeterliliğine bağlıdır."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "blog_id": 6,
+  "title": {
+    "en": "The Best Apps and Tools to Support Your Arabic Learning Journey",
+    "tr": "Arapça Öğrenme Yolculuğunuzu Destekleyecek En İyi Uygulamalar ve Araçlar"
+  },
+  "subtitle": {
+    "en": "Explore Top Resources to Accelerate Your Arabic Language Skills",
+    "tr": "Arapça Dil Becerilerinizi Hızlandıracak En İyi Kaynakları Keşfedin"
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "Duolingo – Fun and Gamified Learning",
+        "tr": "Duolingo – Eğlenceli ve Oyunlaştırılmış Öğrenme"
+      },
+      "content": {
+        "en": [
+          "Duolingo is a popular app for language learners. Its Arabic course focuses on basic vocabulary and sentence structure, ideal for beginners who want to build a foundation in Modern Standard Arabic (MSA)."
+        ],
+        "tr": [
+          "Duolingo, dil öğrenenler için popüler bir uygulamadır. Arapça kursu, başlangıç seviyesindekilerin Modern Standart Arapça (MSA) temeli oluşturması için ideal olan temel kelime bilgisi ve cümle yapısına odaklanır."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Almujam Website – Learn Vocabulary in Real Context",
+        "tr": "Almujam Web Sitesi – Kelime Bilgisini Gerçek Bağlamda Öğrenin"
+      },
+      "content": {
+        "en": [
+          "Almujam is an essential online resource for Arabic learners. It provides accurate meanings, real-world sentence examples, and pronunciation support to strengthen retention and understanding."
+        ],
+        "tr": [
+          "Almujam, Arapça öğrenenler için önemli bir çevrimiçi kaynaktır. Kelimelerin akılda kalmasını ve anlaşılmasını güçlendirmek için doğru anlamlar, gerçek dünya cümle örnekleri ve telaffuz desteği sağlar."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Memrise – Learn with Native Speakers",
+        "tr": "Memrise – Anadili Konuşanlarla Öğrenin"
+      },
+      "content": {
+        "en": [
+          "Memrise uses videos of native speakers to teach everyday language in context. It offers both MSA and dialect options, helping learners absorb pronunciation and cultural nuances."
+        ],
+        "tr": [
+          "Memrise, anadili konuşanların videolarını kullanarak günlük dili bağlam içinde öğretir. Hem MSA hem de lehçe seçenekleri sunarak, öğrenenlerin telaffuzu ve kültürel incelikleri doğal bir şekilde edinmesine yardımcı olur."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "HelloTalk and Tandem – Practice with Native Speakers",
+        "tr": "HelloTalk ve Tandem – Anadili Konuşanlarla Pratik Yapın"
+      },
+      "content": {
+        "en": [
+          "Language exchange apps like HelloTalk and Tandem connect you with native Arabic speakers for real-time conversation practice."
+        ],
+        "tr": [
+          "HelloTalk ve Tandem gibi dil değişim uygulamaları, gerçek zamanlı konuşma pratiği için sizi anadili Arapça olan kişilerle buluşturur."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Al Jazeera Learning Arabic – Learn from News Content",
+        "tr": "Al Jazeera Learning Arabic – Haber İçeriğinden Öğrenin"
+      },
+      "content": {
+        "en": [
+          "This platform provides interactive lessons based on news articles and reports, great for improving reading and listening skills using real media in Modern Standard Arabic."
+        ],
+        "tr": [
+          "Bu platform, haber makaleleri ve raporlarına dayalı etkileşimli dersler sunar. Bu, Modern Standart Arapça'da gerçek medya kullanarak okuma ve dinleme becerilerini geliştirmek için harikadır."
+        ]
+      }
+    }
+  ],
+  "image": "https://picsum.photos/800/400?random=6"
+}

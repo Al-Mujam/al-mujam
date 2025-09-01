@@ -1,0 +1,32 @@
+{
+  "question": {
+    "en": "What are common living expenses in Amman?",
+    "tr": "Amman'da yaygın yaşam giderleri nelerdir?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Here are common student expenses in Jordan:",
+          "Electricity: 30–70 JD/month",
+          "Heating (winter): 100–150 JD/month",
+          "Internet: 25–55 JD/month",
+          "Mobile plan: 10–20 JD",
+          "Taxi rides: 1.50–2.50 JD/trip"
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "İşte Ürdün'de yaygın öğrenci giderleri:",
+          "Elektrik: 30–70 JD/ay",
+          "Isınma (kış): 100–150 JD/ay",
+          "İnternet: 25–55 JD/ay",
+          "Mobil plan: 10–20 JD",
+          "Taksimetre yolculukları: 1.50–2.50 JD/yolculuk"
+        ]
+      }
+    ]
+  }
+}

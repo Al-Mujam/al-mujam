@@ -1,0 +1,70 @@
+{
+  "blog_id": 10,
+  "title": {
+    "en": "Arabic Roots: How Three-Letter Roots Unlock Vocabulary",
+    "tr": "Arapça Kökler: Üç Harfli Kökler Kelime Bilgisini Nasıl Açığa Çıkarır"
+  },
+  "subtitle": {
+    "en": "Discover the System Behind Arabic Words",
+    "tr": "Arapça Kelimelerin Arkasındaki Sistemi Keşfedin"
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "What Are Three-Letter Roots?",
+        "tr": "1. Üç Harfli Kökler Nedir?"
+      },
+      "content": {
+        "en": [
+          "Most Arabic words come from a three-consonant root (jithr) that carries a core meaning. For example, the root ك-ت-ب (K-T-B) relates to writing, from which words like كِتاب (book) and كاتِب (writer) are derived."
+        ],
+        "tr": [
+          "Çoğu Arapça kelime, temel bir anlam taşıyan üç harfli bir kökten (jithr) gelir. Örneğin, ك-ت-ب (K-T-B) kökü, yazmakla ilgilidir ve bu kökten كِتاب (kitap) ve كاتِب (yazar) gibi kelimeler türetilir."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "How Roots Help You Learn Faster",
+        "tr": "Kökler Nasıl Daha Hızlı Öğrenmenize Yardımcı Olur"
+      },
+      "content": {
+        "en": [
+          "Instead of memorizing long lists, focusing on root families helps build vocabulary logically and improves reading comprehension, allowing you to recognize words you haven’t seen before."
+        ],
+        "tr": [
+          "Uzun listeleri ezberlemek yerine, kök ailelerine odaklanmak kelime dağarcığınızı mantıksal olarak oluşturmanıza ve okuduğunuzu anlama becerinizi geliştirmenize yardımcı olur, böylece daha önce görmediğiniz kelimeleri bile tanıyabilirsiniz."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Common Roots You Should Know",
+        "tr": "Bilmeniz Gereken Yaygın Kökler"
+      },
+      "content": {
+        "en": [
+          "Some useful examples include: ع-ل-م (ʿ-L-M) – knowledge; س-ل-م (S-L-M) – peace/safety; and ق-ر-أ (Q-R-ʾ) – reading. Learning just 30–40 core roots can unlock hundreds of words."
+        ],
+        "tr": [
+          "Bazı faydalı örnekler şunlardır: ع-ل-م (ʿ-L-M) – bilgi; س-ل-م (S-L-M) – barış/güvenlik; ve ق-ر-أ (Q-R-ʾ) – okuma. Sadece 30-40 temel kökü öğrenmek, yüzlerce kelimenin kapısını açabilir."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "How Almujam Makes Root Learning Easier",
+        "tr": "Almujam Kök Öğrenmeyi Nasıl Kolaylaştırıyor"
+      },
+      "content": {
+        "en": [
+          "Our platform shows the root of every word you search, along with related forms and real usage in context, helping you make lasting connections."
+        ],
+        "tr": [
+          "Platformumuz, aradığınız her kelimenin kökünü, ilgili formlarını ve bağlam içinde gerçek kullanımını göstererek kalıcı bağlantılar kurmanıza yardımcı olur."
+        ]
+      }
+    }
+  ],
+  "image": "https://picsum.photos/800/400?random=10"
+}

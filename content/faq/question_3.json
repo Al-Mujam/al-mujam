@@ -1,0 +1,42 @@
+{
+  "question": {
+    "en": "What housing options are available at Almujam?",
+    "tr": "Almujam'da hangi konaklama seçenekleri mevcut?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Almujam offers two main housing options:"
+        ]
+      },
+      {
+        "text": [
+          "Almujam Housing: Fully managed, gender-specific apartments near campus, with support services, high-speed internet, cleaning, and roommate matching."
+        ]
+      },
+      {
+        "text": [
+          "Independent Housing: Students may choose to find their own accommodations. Almujam provides guidance on neighborhoods, rental expectations, and cultural norms."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam iki ana konaklama seçeneği sunmaktadır:"
+        ]
+      },
+      {
+        "text": [
+          "Almujam Konaklaması: Kampüse yakın, tamamen yönetilen, cinsiyete özel daireler olup, destek hizmetleri, yüksek hızlı internet, temizlik ve oda arkadaşı eşleştirmesi içerir."
+        ]
+      },
+      {
+        "text": [
+          "Bağımsız Konaklama: Öğrenciler kendi konaklamalarını bulmayı seçebilirler. Almujam mahalleler, kira beklentileri ve kültürel normlar hakkında rehberlik sağlar."
+        ]
+      }
+    ]
+  }
+}

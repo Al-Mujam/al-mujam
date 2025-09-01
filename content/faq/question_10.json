@@ -1,0 +1,24 @@
+{
+  "question": {
+    "en": "Are utilities included in the rent?",
+    "tr": "Faturalar kiraya dahil mi?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Utilities are not included in the base rent. Students share costs for water, gas, electricity, internet, and maintenance.",
+          "Utility fees typically range from 60 to 110 JD per student per month, depending on seasonal usage."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Faturalar temel kiraya dahil değildir. Öğrenciler su, gaz, elektrik, internet ve bakım masraflarını paylaşırlar.",
+          "Fatura ücretleri, mevsimsel kullanıma bağlı olarak öğrenci başına aylık genellikle 60 ila 110 JD arasında değişir."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "question": {
+    "en": "Who do I contact if I experience a housing issue?",
+    "tr": "Konaklama sorunu yaşarsam kiminle iletişime geçmeliyim?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "If you encounter a housing problem or need assistance, contact the Housing Support Team directly.",
+          "Email: m.albishawi@almujamedu.com",
+          "Phone: +962797247288"
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Bir konaklama sorunuyla karşılaşırsanız veya yardıma ihtiyacınız olursa, doğrudan Konaklama Destek Ekibi ile iletişime geçin.",
+          "E-posta: m.albishawi@almujamedu.com",
+          "Telefon: +962797247288"
+        ]
+      }
+    ]
+  }
+}

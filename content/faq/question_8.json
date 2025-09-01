@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "How are roommates assigned?",
+    "tr": "Oda arkadaşları nasıl atanır?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "The Housing Care Team assigns roommates by reviewing each student's preferences and lifestyle details submitted through the housing form. Compatibility and a respectful living environment are prioritized."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Konaklama Bakım Ekibi, her öğrencinin konaklama formu aracılığıyla sunduğu tercihleri ve yaşam tarzı detaylarını inceleyerek oda arkadaşı ataması yapar. Uyumluluk ve saygılı bir yaşam ortamı önceliklendirilir."
+        ]
+      }
+    ]
+  }
+}

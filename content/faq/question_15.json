@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "What are the estimated living expenses in Amman?",
+    "tr": "Amman'da tahmini yaşam giderleri nelerdir?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Monthly living expenses—including housing, utilities, food, and transportation—range from approximately 600 to 1150 JD ($850 to $1600 USD), depending on lifestyle and room choice."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Konaklama, faturalar, yiyecek ve ulaşım dahil olmak üzere aylık yaşam giderleri, yaşam tarzına ve oda seçimine bağlı olarak yaklaşık 600 ila 1150 JD ($850 ila $1600 USD) arasında değişmektedir."
+        ]
+      }
+    ]
+  }
+}

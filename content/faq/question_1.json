@@ -1,0 +1,24 @@
+{
+  "question": {
+    "en": "Where is Almujam Center located?",
+    "tr": "Almujam Merkezi nerede bulunuyor?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Almujam Arabic Language Center is located in Amman, Jordan, directly across from the University of Jordan on University Street.",
+          "Its strategic location offers students access to nearby cafes, bookstores, cultural centers, and essential amenities—ideal for immersive language study and daily convenience."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam Arapça Dil Merkezi, Amman, Ürdün'de, Üniversite Caddesi üzerinde, Ürdün Üniversitesi'nin tam karşısında yer almaktadır.",
+          "Stratejik konumu sayesinde öğrenciler yakındaki kafelere, kitapçılara, kültür merkezlerine ve temel olanaklara kolayca ulaşabilirler; bu da sürükleyici dil eğitimi ve günlük rahatlık için idealdir."
+        ]
+      }
+    ]
+  }
+}

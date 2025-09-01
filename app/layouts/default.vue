@@ -1,0 +1,46 @@
+<template>
+    <Html :lang="locale" :dir="locales.find(l => l.code === locale)?.dir" class="font-[Lato] scrollbar-thin scrollbar-thumb-text-color scrollbar-track-gray-200  bg-background selection:bg-web-primary selection:text-white">
+        <Head>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+           </Head>
+
+           <Transition @leave="leave">
+            <Loading v-if="loading"/>
+           </Transition>
+
+
+        <NavBarComponent/>
+
+        <NuxtPage />
+
+        <FooterComponent/>
+    </Html>
+</template>
+
+<script setup>
+
+
+const { locale, locales, setLocale} = useI18n()
+
+const loading = ref(true)
+
+const leave = (el,done) => {
+    useGSAP().to(el,{
+        opacity: 0,
+        duration: 0.5,
+        onComplete: done
+    })
+}
+
+onMounted(async () => {
+    await nextTick()
+    loading.value = false
+})
+</script>
+
+<style scoped>
+
+</style>

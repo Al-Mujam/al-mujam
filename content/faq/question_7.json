@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "What are the eligibility requirements for Almujam Housing?",
+    "tr": "Almujam Konaklaması için uygunluk şartları nelerdir?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "To qualify for Almujam Housing, students must be enrolled in at least 7.5 hours of Arabic instruction per week. For summer terms, a minimum of 10 hours per week is required. This policy ensures housing is reserved for actively enrolled learners."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam Konaklaması için uygun olmak için öğrencilerin haftada en az 7.5 saat Arapça dersine kayıtlı olmaları gerekmektedir. Yaz dönemleri için haftada en az 10 saat zorunludur. Bu politika, konaklamanın aktif olarak kayıtlı öğrenciler için ayrılmasını sağlar."
+        ]
+      }
+    ]
+  }
+}

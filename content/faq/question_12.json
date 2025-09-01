@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "Do you offer housing?",
+    "tr": "Konaklama sunuyor musunuz?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Yes. Almujam offers managed shared apartments and dormitory-style housing, tailored to support student well-being, focus, and cultural immersion."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Evet. Almujam, öğrenci refahını, odaklanmasını ve kültürel olarak uyum sağlamasını desteklemek için özel olarak tasarlanmış yönetilen paylaşımlı daireler ve yurt tarzı konaklama sunmaktadır."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "question": {
+    "en": "How can I contact Almujam Center Housing?",
+    "tr": "Almujam Merkezi Konaklaması ile nasıl iletişime geçebilirim?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "You can contact the housing office via:",
+          "Email: m.albishawi@almujamedu.com",
+          "Phone: +962797247288"
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Konaklama ofisiyle şu yollarla iletişime geçebilirsiniz:",
+          "E-posta: m.albishawi@almujamedu.com",
+          "Telefon: +962797247288"
+        ]
+      }
+    ]
+  }
+}

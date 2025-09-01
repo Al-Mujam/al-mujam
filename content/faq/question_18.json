@@ -1,0 +1,24 @@
+{
+  "question": {
+    "en": "Will someone pick me up at the airport?",
+    "tr": "Havaalanında beni biri karşılayacak mı?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Yes. Free airport pickup is available for all first-time students who submit their flight details and request the service in advance.",
+          "Transportation is provided between one week before orientation and two weeks after the end of the term."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Evet. Uçuş bilgilerini gönderen ve hizmeti önceden talep eden tüm ilk kez gelen öğrenciler için ücretsiz havaalanı transferi mevcuttur.",
+          "Ulaşım, oryantasyondan bir hafta önce ile dönemin bitiminden iki hafta sonra arasında sağlanır."
+        ]
+      }
+    ]
+  }
+}

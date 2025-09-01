@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "Are scholarships available?",
+    "tr": "Burslar mevcut mu?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Almujam does not currently offer scholarships. Students are encouraged to explore funding opportunities from universities, foundations, or cultural institutions in their home countries."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Almujam şu anda burs imkanı sunmamaktadır. Öğrencilerin kendi ülkelerindeki üniversitelerden, vakıflardan veya kültürel kurumlardan finansman fırsatlarını araştırmaları teşvik edilmektedir."
+        ]
+      }
+    ]
+  }
+}

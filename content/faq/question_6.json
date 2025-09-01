@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "Can I arrange my own housing?",
+    "tr": "Kendi konaklamamı ayarlayabilir miyim?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Yes. Students may arrange their own housing. However, submitting the Housing Request Form is still mandatory to confirm your accommodation status and ensure student support remains available if needed."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Evet. Öğrenciler kendi konaklamalarını ayarlayabilirler. Ancak, konaklama durumunuzu onaylamak ve ihtiyaç duyulduğunda öğrenci desteğinin mevcut olmasını sağlamak için Konaklama Talep Formu'nu göndermek hala zorunludur."
+        ]
+      }
+    ]
+  }
+}

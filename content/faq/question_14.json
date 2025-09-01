@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "How much should I budget for food in Amman?",
+    "tr": "Amman'da yemek için ne kadar bütçe ayırmalıyım?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Students typically spend between 100 to 200 JD per month on food. Cooking at home reduces costs, while dining out or ordering frequently may increase your monthly budget."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Öğrenciler genellikle ayda 100 ila 200 JD arasında yemek harcaması yaparlar. Evde yemek yapmak maliyetleri düşürürken, sık sık dışarıda yemek yemek veya sipariş vermek aylık bütçenizi artırabilir."
+        ]
+      }
+    ]
+  }
+}

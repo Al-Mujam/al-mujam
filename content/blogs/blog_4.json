@@ -1,0 +1,66 @@
+{
+    "blog_id": 4,
+    "title": {
+      "en": "Top 10 Arabic Phrases Every Beginner Should Master",
+      "tr": "Her Başlangıç Seviyesindeki Kişinin Bilmesi Gereken En Önemli 10 Arapça İfade"
+    },
+    "subtitle": {
+      "en": "Start with What Matters Most",
+      "tr": "En Önemli Olanla Başlayın"
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "The Must-Know Phrases",
+          "tr": "Bilinmesi Gereken 10 İfade"
+        },
+        "content": {
+          "en": [
+            "1. As-salāmu ʿalaykum – Peace be upon you",
+            "2. Marḥaban – Hello",
+            "3. Kayfa ḥāluka/ḥāluki? – How are you?",
+            "4. Naʿam / Lā – Yes / No",
+            "5. Min faḍlika/faḍliki – Please",
+            "6. Shukran – Thank you",
+            "7. ʿAfwan – You’re welcome / Excuse me",
+            "8. Ayna…? – Where is…?",
+            "9. Lā afhamu – I don’t understand",
+            "10. Hal tatakallamu al-inglīziyyah? – Do you speak English?"
+          ],
+          "tr": [
+            "1. As-salāmu ʿalaykum – Selamünaleyküm",
+            "2. Marḥaban – Merhaba",
+            "3. Kayfa ḥāluka/ḥāluki? – Nasılsın?",
+            "4. Naʿam / Lā – Evet / Hayır",
+            "5. Min faḍlika/faḍliki – Lütfen",
+            "6. Shukran – Teşekkür ederim",
+            "7. ʿAfwan – Rica ederim / Afedersiniz",
+            "8. Ayna…? – Nerede…?",
+            "9. Lā afhamu – Anlamıyorum",
+            "10. Hal tatakallamu al-inglīziyyah? – İngilizce konuşuyor musunuz?"
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "How to Practice These Phrases Effectively",
+          "tr": "Bu İfadeleri Etkili Bir Şekilde Nasıl Uygularsınız"
+        },
+        "content": {
+          "en": [
+            "Write the phrases out by hand.",
+            "Repeat them daily out loud.",
+            "Practice with teachers or language partners.",
+            "Use them in real-life settings as much as possible."
+          ],
+          "tr": [
+            "İfadeleri elinizle yazın.",
+            "Her gün yüksek sesle tekrarlayın.",
+            "Öğretmenler veya dil arkadaşlarıyla pratik yapın.",
+            "Mümkün olduğunca gerçek hayatta kullanın."
+          ]
+        }
+      }
+    ],
+    "image": "https://picsum.photos/800/400?random=4"
+  }

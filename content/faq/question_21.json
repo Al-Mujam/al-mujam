@@ -1,0 +1,28 @@
+{
+  "question": {
+    "en": "What is Jordanian cultural etiquette like?",
+    "tr": "Ürdün kültürel görgü kuralları nasıldır?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Jordanian society values hospitality, modesty, and respect.",
+          "Dress modestly, especially in residential areas.",
+          "Avoid loud behavior, public confrontations, or discussions around religion and politics.",
+          "Always greet others politely and remove shoes when entering homes."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Ürdün toplumu misafirperverlik, alçakgönüllülük ve saygıya değer verir.",
+          "Özellikle yerleşim alanlarında mütevazı giyinin.",
+          "Yüksek sesli davranışlardan, halka açık tartışmalardan veya din ve siyasetle ilgili tartışmalardan kaçının.",
+          "Her zaman başkalarını kibarca selamlayın ve evlere girerken ayakkabılarınızı çıkarın."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "blog_id": 7,
+  "title": {
+    "en": "Is Arabic Hard? Honest Thoughts From Our Students",
+    "tr": "Arapça Zor mu? Öğrencilerimizden Dürüst Düşünceler"
+  },
+  "subtitle": {
+    "en": "Real Experiences From Arabic Learners at Different Levels",
+    "tr": "Farklı Seviyelerdeki Arapça Öğrenenlerin Gerçek Deneyimleri"
+  },
+  "sections": [
+    {
+      "heading": {
+        "en": "What Makes Arabic Challenging?",
+        "tr": "Arapçayı Zorlaştıran Nedir?"
+      },
+      "content": {
+        "en": [
+          "Students find the Arabic script unfamiliar and the grammar complex, with features like dual forms and verb patterns.",
+          "Another hurdle is diglossia, the difference between Modern Standard Arabic and regional dialects."
+        ],
+        "tr": [
+          "Öğrenciler, Arap alfabesini yabancı, gramerini ise ikil formlar ve fiil kalıpları gibi özelliklerle karmaşık bulur.",
+          "Diğer bir engel ise, Modern Standart Arapça ve bölgesel lehçeler arasındaki farklılık olan diglossiadır."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "What Students Enjoy Most About Learning Arabic",
+        "tr": "Öğrencilerin Arapça Öğrenmekten En Çok Hoşlandıkları Şey"
+      },
+      "content": {
+        "en": [
+          "Students describe learning Arabic as a rewarding and poetic experience. They enjoy discovering root patterns and the richness of Arabic literature and media.",
+          "The beauty of the language and the hospitality of Arabic-speaking cultures keep many learners engaged."
+        ],
+        "tr": [
+          "Öğrenciler, Arapça öğrenmeyi ödüllendirici ve şiirsel bir deneyim olarak tanımlıyor. Kök kalıplarını ve Arap edebiyatı ve medyasının zenginliğini keşfetmekten keyif alıyorlar.",
+          "Dilin güzelliği ve Arapça konuşan kültürlerin misafirperverliği, birçok öğrenciyi motive ediyor."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "How Almujam Supports Learners Through the Journey",
+        "tr": "Almujam Öğrenenleri Yolculuk Boyunca Nasıl Destekliyor"
+      },
+      "content": {
+        "en": [
+          "Almujam provides context-based vocabulary building, real examples, focused comparison between MSA and dialects, and encouraging feedback from experienced instructors.",
+          "This combination helps learners gain confidence and clarity."
+        ],
+        "tr": [
+          "Almujam, bağlam temelli kelime oluşturma, gerçek örnekler, MSA ve lehçeler arasında odaklanmış karşılaştırma ve deneyimli eğitmenlerden teşvik edici geri bildirim sağlar.",
+          "Bu kombinasyon, öğrencilerin özgüven ve netlik kazanmasına yardımcı olur."
+        ]
+      }
+    }
+  ],
+  "image": "https://picsum.photos/800/400?random=7"
+}

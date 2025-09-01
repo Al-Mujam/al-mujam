@@ -1,0 +1,62 @@
+{
+  "blog_id": 2,
+  "title": { 
+    "en": "Modern Standard Arabic vs. Colloquial Jordanian: Which Should You Learn First?", 
+    "tr": "Modern Standart Arapça vs. Ürdün Arapçası: Hangisini Önce Öğrenmelisiniz?" 
+  },
+  "subtitle": { 
+    "en": "Understanding the Difference Between MSA and Jordanian Dialect", 
+    "tr": "MSA ve Ürdün Lehçesi Arasındaki Farkı Anlamak" 
+  },
+  "sections": [
+    {
+      "heading": { 
+        "en": "Why Start with Modern Standard Arabic?", 
+        "tr": "Neden Önce Modern Standart Arapça?" 
+      },
+      "content": {
+        "en": [
+          "Learning MSA first offers a strong foundation for any Arabic learner.",
+          "It allows access to books, newspapers, news channels, and professional communication across the Arab world."
+        ],
+        "tr": [
+          "Önce MSA öğrenmek, her Arapça öğreneni için sağlam bir temel sağlar.",
+          "Bu, Arap dünyası genelinde kitaplara, gazetelere, haber kanallarına ve profesyonel iletişime erişim sağlar."
+        ]
+      }
+    },
+    {
+      "heading": { 
+        "en": "When Is It Better to Start with Colloquial Jordanian?", 
+        "tr": "Ürdün Lehçesi ile Başlamak Ne Zaman Daha İyidir?" 
+      },
+      "content": {
+        "en": [
+          "If your primary goal is daily life in Jordan, start with the spoken dialect.",
+          "It helps you interact naturally with locals and understand cultural expressions."
+        ],
+        "tr": [
+          "Ana hedefiniz Ürdün'de günlük yaşamsa, konuşulan lehçeyle başlayın.",
+          "Bu, yerel halkla doğal bir şekilde etkileşime girmenize ve kültürel ifadeleri anlamanıza yardımcı olur."
+        ]
+      }
+    },
+    {
+      "heading": { 
+        "en": "A Combined Approach", 
+        "tr": "Birleşik Yaklaşım" 
+      },
+      "content": {
+        "en": [
+          "You can learn both MSA and Jordanian dialect over time.",
+          "Start with MSA to build structure and reading skills, then gradually add the dialect for conversational fluency."
+        ],
+        "tr": [
+          "Zamanla hem MSA hem de Ürdün lehçesini öğrenebilirsiniz.",
+          "Yapı ve okuma becerilerini geliştirmek için MSA ile başlayın, ardından konuşma akıcılığı için lehçeyi kademeli olarak ekleyin."
+        ]
+      }
+    }
+  ],
+  "image": "https://picsum.photos/800/400?random=2"
+}

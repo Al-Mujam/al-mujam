@@ -1,0 +1,11 @@
+{
+    "title": {
+        "en": "Wi-Fi",
+        "tr": "Wi-Fi"
+    },
+    "description": {
+        "en": "High-speed internet access",
+        "tr": "Yüksek hızlı internet erişimi"
+    },
+    "icon": "wifi"
+}

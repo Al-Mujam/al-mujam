@@ -1,0 +1,24 @@
+{
+  "question": {
+    "en": "Can I have opposite-gender guests in Almujam Housing?",
+    "tr": "Almujam Konaklamasında karşı cinsten misafir ağırlayabilir miyim?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "No. Visitors of the opposite gender are not permitted in Almujam Housing during curfew hours (11:00 PM to 8:00 AM).",
+          "These guidelines support community standards and local cultural expectations."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Hayır. Karşı cinsten ziyaretçilerin sokağa çıkma yasağı saatleri (23:00 - 08:00) sırasında Almujam Konaklamasında bulunmasına izin verilmez.",
+          "Bu yönergeler, toplum standartlarını ve yerel kültürel beklentileri desteklemektedir."
+        ]
+      }
+    ]
+  }
+}

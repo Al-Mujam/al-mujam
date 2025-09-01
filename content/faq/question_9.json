@@ -1,0 +1,22 @@
+{
+  "question": {
+    "en": "Is airport pickup available?",
+    "tr": "Havaalanı transferi mevcut mu?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Yes. Almujam provides complimentary airport transportation for new students. This service must be requested via the Airport Arrival Form and submitted along with your travel itinerary at least one week before your arrival."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Evet. Almujam, yeni öğrenciler için ücretsiz havaalanı transferi sağlar. Bu hizmet, Havaalanı Varış Formu aracılığıyla talep edilmeli ve seyahat programınızla birlikte varışınızdan en az bir hafta önce gönderilmelidir."
+        ]
+      }
+    ]
+  }
+}

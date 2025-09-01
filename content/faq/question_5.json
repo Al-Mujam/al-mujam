@@ -1,0 +1,24 @@
+{
+  "question": {
+    "en": "What is the move-in and move-out schedule?",
+    "tr": "Giriş ve çıkış programı nedir?"
+  },
+  "answer": {
+    "en": [
+      {
+        "text": [
+          "Move-in and move-out dates align with Almujam's academic calendar. Students are expected to arrive by the official move-in date listed in their housing assignment letter.",
+          "Room inspections and key returns are required during checkout. Early arrival or late departure must be arranged in advance."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "text": [
+          "Giriş ve çıkış tarihleri, Almujam'ın akademik takvimiyle uyumludur. Öğrencilerin, konaklama atama mektuplarında belirtilen resmi giriş tarihine kadar varmaları beklenir.",
+          "Çıkış sırasında oda denetimi ve anahtar teslimi zorunludur. Erken varış veya geç ayrılış önceden ayarlanmalıdır."
+        ]
+      }
+    ]
+  }
+}

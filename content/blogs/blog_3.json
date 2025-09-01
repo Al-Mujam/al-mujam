@@ -1,0 +1,70 @@
+{
+  "blog_id": 3,
+  "title": { 
+    "en": "How Long Does It Take to Learn Arabic?", 
+    "tr": "Arapçayı Öğrenmek Ne Kadar Sürer?" 
+  },
+  "subtitle": { 
+    "en": "A Common Question Among Arabic Learners", 
+    "tr": "Arapça Öğrenenler Arasında Yaygın Bir Soru" 
+  },
+  "sections": [
+    {
+      "heading": { 
+        "en": "Factors Affecting Learning Time", 
+        "tr": "Öğrenme Süresini Etkileyen Faktörler" 
+      },
+      "content": {
+        "en": [
+          "The time to learn Arabic varies based on learning style, native language, and goals.",
+          "Customized plans help learners progress effectively."
+        ],
+        "tr": [
+          "Arapçayı öğrenme süresi, öğrenme tarzına, ana dile ve hedeflere bağlı olarak değişir.",
+          "Özelleştirilmiş planlar, öğrenenlerin etkili bir şekilde ilerlemesine yardımcı olur."
+        ]
+      }
+    },
+    {
+      "heading": { 
+        "en": "General Estimates", 
+        "tr": "Genel Tahminler" 
+      },
+      "content": {
+        "en": [
+          "Basic communication: 3–6 months with part-time study.",
+          "Conversational level: 9–12 months with 6–8 hours per week.",
+          "Advanced fluency: 18–24 months with consistent study.",
+          "Full fluency in both MSA and a dialect: 2–3 years with immersive practice."
+        ],
+        "tr": [
+          "Temel iletişim: yarı zamanlı çalışma ile 3–6 ay.",
+          "Konuşma seviyesi: haftada 6–8 saat çalışma ile 9–12 ay.",
+          "İleri akıcılık: tutarlı çalışma ile 18–24 ay.",
+          "Hem MSA hem lehçede tam akıcılık: yoğun pratikle 2–3 yıl."
+        ]
+      }
+    },
+    {
+      "heading": { 
+        "en": "Tips to Learn Faster", 
+        "tr": "Daha Hızlı Öğrenme İpuçları" 
+      },
+      "content": {
+        "en": [
+          "Set aside daily time, even 30 minutes.",
+          "Practice with native speakers and real-world content.",
+          "Balance theory with practice: read, write, listen, and speak regularly.",
+          "Start with MSA, then add a dialect for real-life interaction."
+        ],
+        "tr": [
+          "Günlük zaman ayırın, hatta 30 dakika.",
+          "Ana dili konuşanlarla ve gerçek içerikle pratik yapın.",
+          "Teoriyi pratikle dengeleyin: düzenli olarak okuyun, yazın, dinleyin ve konuşun.",
+          "Gerçek yaşam etkileşimi için önce MSA ile başlayın, ardından lehçeyi ekleyin."
+        ]
+      }
+    }
+  ],
+  "image": "https://picsum.photos/800/400?random=3"
+}
