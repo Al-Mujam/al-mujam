@@ -39,7 +39,18 @@
                 "Our classrooms offer natural lighting, comfortable seating arranged for interactive dialogue, and an optimal teacher-to-student ratio to maximize engagement.",
                 "Participation is actively encouraged at all levels, from beginners to advanced students.",
                 "Additionally, students may join extracurricular activities to practice Arabic in real-life settings."
-            ]
+            ],
+            "extracurricular": {
+                "title": "Extracurricular Activities for Real-Life Practice",
+                "description": "Beyond classroom learning, we offer structured opportunities for students to practice Arabic in authentic contexts:",
+                "activities": [
+                    "Local community engagement programs with native Arabic speakers",
+                    "Guided visits to traditional markets and local neighborhoods",
+                    "Cultural exchange events with Jordanian students and families",
+                    "Arabic conversation clubs and language exchange meetups",
+                    "Volunteer opportunities in local community organizations"
+                ]
+            }
         },
         "tr": {
             "title": "Maksimum Öğrenme için Tasarlanmış Yoğun ve Etkileşimli Sınıflar",
@@ -52,7 +63,18 @@
                 "Sınıflarımız doğal aydınlatma, etkileşimli diyalog için düzenlenmiş rahat oturma düzeni ve katılımı maksimize etmek için optimal öğretmen-öğrenci oranı sunar.",
                 "Yeni başlayanlardan ileri seviye öğrencilere kadar tüm seviyelerde katılım aktif olarak teşvik edilir.",
                 "Ayrıca, öğrenciler gerçek yaşam ortamlarında Arapça pratik yapmak için ders dışı etkinliklere katılabilirler."
-            ]
+            ],
+            "extracurricular": {
+                "title": "Gerçek Yaşam Pratiği için Ders Dışı Etkinlikler",
+                "description": "Sınıf öğreniminin ötesinde, öğrencilere Arapça'yı gerçek bağlamlarda pratik yapmak için yapılandırılmış fırsatlar sunuyoruz:",
+                "activities": [
+                    "Ana dili Arapça olan kişilerle yerel topluluk katılım programları",
+                    "Geleneksel pazarlara ve yerel mahallelere rehberli ziyaretler",
+                    "Ürdünlü öğrenciler ve ailelerle kültürel değişim etkinlikleri",
+                    "Arapça konuşma kulüpleri ve dil değişim buluşmaları",
+                    "Yerel topluluk organizasyonlarında gönüllülük fırsatları"
+                ]
+            }
         }
     },
     "tracks": {

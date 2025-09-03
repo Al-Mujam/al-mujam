@@ -1,29 +1,81 @@
 {
     "title": {
         "en": "A Global Atmosphere",
-        "tr": "Küresel Bir Atmosfer"
+        "tr": "Küresel Atmosfer"
     },
     "subtitle": {
         "en": "Multicultural Learning Environment Beyond Borders",
-        "tr": "Sınırları Aşan Çok Kültürlü Öğrenme Ortamı"
+        "tr": "Sınırların Ötesinde Çok Kültürlü Öğrenme Ortamı"
     },
     "description": {
         "en": "At Almujam, our Arabic language program goes far beyond Jordan's borders, offering students an international experience that benefits them for life. This global atmosphere is intentional, shaped by the founders' vision—rooted in mutual respect, cultural understanding, and building bridges between East and West.",
-        "tr": "Almujam'da, Arapça dil programımız Ürdün'ün sınırlarını çok aşar ve öğrencilere yaşam boyu fayda sağlayan uluslararası bir deneyim sunar. Bu küresel atmosfer kasıtlıdır ve kurucuların vizyonu tarafından şekillendirilmiştir—karşılıklı saygı, kültürel anlayış ve Doğu ile Batı arasında köprüler kurma temeline dayanır."
+        "tr": "Almujam'da, Arapça dil programımız Ürdün sınırlarının çok ötesine geçer ve öğrencilere yaşam boyu fayda sağlayan uluslararası bir deneyim sunar. Bu küresel atmosfer kasıtlıdır ve kurucuların vizyonu tarafından şekillendirilmiştir—karşılıklı saygı, kültürel anlayış ve Doğu ile Batı arasında köprüler kurmaya dayalıdır."
     },
     "community": {
         "en": {
-            "title": "A Diverse and Engaged Student Community",
+            "title": "Building Bridges Between East and West",
             "content": [
                 "Our diverse student body represents numerous nationalities, professions, and faiths. Almujam admits students based on leadership skills and civic engagement alongside academic achievement, creating a unique community rarely found in Middle Eastern private language centers.",
-                "Students act as cultural ambassadors, enriching their perspectives and sharing their experiences worldwide. We foster social awareness through seminars and workshops discussing contemporary issues, promoting dialogue across diverse viewpoints."
+                "Students act as cultural ambassadors, enriching their perspectives and sharing their experiences worldwide. We foster social awareness through seminars and workshops discussing contemporary issues, promoting dialogue across diverse viewpoints.",
+                "Our mission extends beyond language learning to creating meaningful connections between cultures. Through structured cultural exchange programs, students develop a deeper understanding of both Eastern and Western perspectives, preparing them to be effective global communicators."
             ]
         },
         "tr": {
-            "title": "Çeşitli ve Katılımcı Öğrenci Topluluğu",
+            "title": "Doğu ile Batı Arasında Köprüler Kurmak",
             "content": [
-                "Çeşitli öğrenci topluluğumuz çok sayıda milliyet, meslek ve inancı temsil eder. Almujam, akademik başarının yanı sıra liderlik becerileri ve sivil katılım temelinde öğrencileri kabul eder ve Orta Doğu özel dil merkezlerinde nadiren bulunan benzersiz bir topluluk yaratır.",
-                "Öğrenciler kültürel elçiler olarak hareket eder, perspektiflerini zenginleştirir ve deneyimlerini dünya çapında paylaşırlar. Çağdaş konuları tartışan seminerler ve atölyeler aracılığıyla sosyal farkındalığı teşvik eder, çeşitli bakış açıları arasında diyalogu destekleriz."
+                "Çeşitli öğrenci topluluğumuz çok sayıda milliyeti, mesleği ve inancı temsil eder. Almujam, akademik başarının yanı sıra liderlik becerileri ve sivil katılım temelinde öğrenci kabul eder ve Orta Doğu'daki özel dil merkezlerinde nadiren bulunan benzersiz bir topluluk yaratır.",
+                "Öğrenciler kültürel elçiler olarak hareket eder, bakış açılarını zenginleştirir ve deneyimlerini dünya çapında paylaşır. Güncel konuları tartışan seminerler ve atölye çalışmaları aracılığıyla sosyal farkındalığı teşvik eder, çeşitli bakış açıları arasında diyalogu destekleriz.",
+                "Misyonumuz dil öğreniminin ötesine geçerek kültürler arasında anlamlı bağlantılar yaratmaktır. Yapılandırılmış kültürel değişim programları aracılığıyla öğrenciler hem Doğu hem de Batı perspektiflerine dair daha derin bir anlayış geliştirir ve etkili küresel iletişimciler olmaya hazırlanırlar."
+            ]
+        }
+    },
+    "selection_criteria": {
+        "en": {
+            "title": "Student Selection and Community Building",
+            "content": [
+                "Almujam's unique approach to student selection goes beyond traditional academic criteria. We seek students who demonstrate:",
+                "Leadership potential and experience in community or academic settings",
+                "Active civic engagement and commitment to social responsibility",
+                "Openness to cultural exchange and cross-cultural learning",
+                "Academic readiness and language learning motivation",
+                "This selective approach ensures our community is composed of individuals who will actively contribute to the multicultural learning environment and benefit most from our unique programs."
+            ]
+        },
+        "tr": {
+            "title": "Öğrenci Seçimi ve Topluluk Oluşturma",
+            "content": [
+                "Almujam'ın öğrenci seçimindeki benzersiz yaklaşımı geleneksel akademik kriterlerin ötesine geçer. Şunları gösteren öğrencileri ararız:",
+                "Topluluk veya akademik ortamlarda liderlik potansiyeli ve deneyimi",
+                "Aktif sivil katılım ve sosyal sorumluluk taahhüdü",
+                "Kültürel değişim ve kültürler arası öğrenmeye açıklık",
+                "Akademik hazırlık ve dil öğrenme motivasyonu",
+                "Bu seçici yaklaşım, topluluğumuzun çok kültürlü öğrenme ortamına aktif olarak katkıda bulunacak ve benzersiz programlarımızdan en çok yararlanacak bireylerden oluşmasını sağlar."
+            ]
+        }
+    },
+    "seminars_workshops": {
+        "en": {
+            "title": "Seminars and Workshops on Contemporary Issues",
+            "content": [
+                "Our commitment to fostering global understanding extends to regular seminars and workshops that address pressing contemporary issues:",
+                "Middle East politics and current affairs discussions",
+                "Islamic culture and traditions in modern contexts",
+                "Arab media and communication trends",
+                "Economic development and business opportunities in the region",
+                "Environmental challenges and sustainability in the Middle East",
+                "These sessions provide students with deeper insights into the region's complexities while developing their Arabic language skills in specialized contexts."
+            ]
+        },
+        "tr": {
+            "title": "Güncel Konularda Seminerler ve Atölye Çalışmaları",
+            "content": [
+                "Küresel anlayışı teşvik etme taahhüdümüz, acil güncel konuları ele alan düzenli seminerler ve atölye çalışmalarına kadar uzanır:",
+                "Orta Doğu siyaseti ve güncel olaylar tartışmaları",
+                "Modern bağlamlarda İslam kültürü ve gelenekleri",
+                "Arap medyası ve iletişim trendleri",
+                "Bölgede ekonomik kalkınma ve iş fırsatları",
+                "Orta Doğu'da çevresel zorluklar ve sürdürülebilirlik",
+                "Bu oturumlar, öğrencilere bölgenin karmaşıklıklarına dair daha derin içgörüler sağlarken, özel bağlamlarda Arapça dil becerilerini geliştirir."
             ]
         }
     },

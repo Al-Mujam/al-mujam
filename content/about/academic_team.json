@@ -42,21 +42,65 @@
     "commitment": {
         "en": {
             "title": "Our Commitment to Excellence",
+            "description": "Our comprehensive approach to student success includes:",
             "features": [
-                "Skill-based placement evaluations to ensure each student is matched with the right class level.",
-                "Ongoing student check-ins with faculty and administration to monitor progress and provide academic support.",
-                "A three-phase evaluation process that allows students to give detailed feedback on instructors, curriculum, and the overall learning environment. These reviews are thoroughly analyzed to implement improvements that reflect student needs."
+                "Skill-based placement evaluations to ensure each student is matched with the right class level",
+                "Ongoing student check-ins with faculty and administration to monitor progress and provide academic support",
+                "A three-phase evaluation process that allows students to give detailed feedback on instructors, curriculum, and the overall learning environment",
+                "Regular assessment of learning outcomes and continuous improvement of teaching methodologies",
+                "Personalized academic counseling and support for students facing challenges"
             ],
-            "conclusion": "At Almujam, we uphold a culture of continuous improvement and 360-degree feedback, ensuring that every student's educational experience is refined, responsive, and rewarding."
+            "conclusion": "At Almujam, we uphold a culture of continuous improvement and 360-degree feedback, ensuring that every student's educational experience is refined, responsive, and rewarding.",
+            "evaluation_process": {
+                "title": "Three-Phase Evaluation Process",
+                "description": "Our three-phase evaluation process is designed to gather comprehensive feedback and ensure continuous improvement:",
+                "phases": [
+                    {
+                        "title": "Phase 1",
+                        "description": "Students provide detailed feedback on instructors, curriculum, and learning environment"
+                    },
+                    {
+                        "title": "Phase 2",
+                        "description": "Administration thoroughly analyzes all feedback to identify areas for improvement"
+                    },
+                    {
+                        "title": "Phase 3",
+                        "description": "Implement improvements that reflect student needs and enhance learning outcomes"
+                    }
+                ],
+                "conclusion": "This systematic approach ensures that student feedback directly contributes to enhancing our educational programs and facilities."
+            }
         },
         "tr": {
             "title": "Mükemmellik Taahhüdümüz",
+            "description": "Öğrenci başarısına yönelik kapsamlı yaklaşımımız şunları içerir:",
             "features": [
-                "Her öğrencinin doğru sınıf seviyesi ile eşleştirilmesini sağlamak için beceri temelli yerleştirme değerlendirmeleri.",
-                "İlerlemeyi izlemek ve akademik destek sağlamak için öğretim görevlileri ve idare ile sürekli öğrenci kontrolları.",
-                "Öğrencilerin eğitmenler, müfredat ve genel öğrenme ortamı hakkında ayrıntılı geri bildirim vermesine olanak tanıyan üç aşamalı değerlendirme süreci. Bu incelemeler, öğrenci ihtiyaçlarını yansıtan iyileştirmeleri uygulamak için kapsamlı bir şekilde analiz edilir."
+                "Her öğrencinin doğru sınıf seviyesi ile eşleştirilmesini sağlamak için beceri temelli yerleştirme değerlendirmeleri",
+                "İlerlemeyi izlemek ve akademik destek sağlamak için öğretim görevlileri ve idare ile sürekli öğrenci kontrolları",
+                "Öğrencilerin eğitmenler, müfredat ve genel öğrenme ortamı hakkında ayrıntılı geri bildirim vermesine olanak tanıyan üç aşamalı değerlendirme süreci",
+                "Öğrenme sonuçlarının düzenli değerlendirilmesi ve öğretim metodolojilerinin sürekli iyileştirilmesi",
+                "Zorluklarla karşılaşan öğrenciler için kişiselleştirilmiş akademik danışmanlık ve destek"
             ],
-            "conclusion": "Almujam'da, sürekli iyileştirme ve 360 derece geri bildirim kültürünü destekliyoruz ve her öğrencinin eğitim deneyiminin rafine, duyarlı ve ödüllendirici olmasını sağlıyoruz."
+            "conclusion": "Almujam'da, sürekli iyileştirme ve 360 derece geri bildirim kültürünü destekliyoruz ve her öğrencinin eğitim deneyiminin rafine, duyarlı ve ödüllendirici olmasını sağlıyoruz.",
+            "evaluation_process": {
+                "title": "Üç Aşamalı Değerlendirme Süreci",
+                "description": "Üç aşamalı değerlendirme sürecimiz, kapsamlı geri bildirim toplamak ve sürekli iyileştirmeyi sağlamak üzere tasarlanmıştır:",
+                "phases": [
+                    {
+                        "title": "Aşama 1",
+                        "description": "Öğrenciler eğitmenler, müfredat ve öğrenme ortamı hakkında ayrıntılı geri bildirim sağlar"
+                    },
+                    {
+                        "title": "Aşama 2",
+                        "description": "İdare, iyileştirme alanlarını belirlemek için tüm geri bildirimleri kapsamlı bir şekilde analiz eder"
+                    },
+                    {
+                        "title": "Aşama 3",
+                        "description": "Öğrenci ihtiyaçlarını yansıtan ve öğrenme sonuçlarını artıran iyileştirmeleri uygular"
+                    }
+                ],
+                "conclusion": "Bu sistematik yaklaşım, öğrenci geri bildiriminin eğitim programlarımızı ve tesislerimizi geliştirmeye doğrudan katkıda bulunmasını sağlar."
+            }
         }
     },
     "image": "https://picsum.photos/400/700"

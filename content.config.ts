@@ -126,12 +126,22 @@ export default defineContentConfig({
             description: z.string(),
             sessions: z.array(z.string()),
             features: z.array(z.string()),
+            extracurricular: z.object({
+              title: z.string(),
+              description: z.string(),
+              activities: z.array(z.string()),
+            }),
           }),
           tr: z.object({
             title: z.string(),
             description: z.string(),
             sessions: z.array(z.string()),
             features: z.array(z.string()),
+            extracurricular: z.object({
+              title: z.string(),
+              description: z.string(),
+              activities: z.array(z.string()),
+            }),
           }),
         }).optional(),
         tracks: z.object({
@@ -168,7 +178,43 @@ export default defineContentConfig({
             content: z.array(z.string()),
           }),
         }).optional(),
+        detailed_facilities: z.object({
+          en: z.object({
+            title: z.string(),
+            facilities: z.array(z.object({
+              name: z.string(),
+              description: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            facilities: z.array(z.object({
+              name: z.string(),
+              description: z.string(),
+            })),
+          }),
+        }).optional(),
         community: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        selection_criteria: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        seminars_workshops: z.object({
           en: z.object({
             title: z.string(),
             content: z.array(z.string()),
@@ -199,6 +245,16 @@ export default defineContentConfig({
           }),
         }).optional(),
         culture: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        strategic_location: z.object({
           en: z.object({
             title: z.string(),
             content: z.array(z.string()),
@@ -241,13 +297,33 @@ export default defineContentConfig({
         commitment: z.object({
           en: z.object({
             title: z.string(),
+            description: z.string(),
             features: z.array(z.string()),
             conclusion: z.string(),
+            evaluation_process: z.object({
+              title: z.string(),
+              description: z.string(),
+              phases: z.array(z.object({
+                title: z.string(),
+                description: z.string(),
+              })),
+              conclusion: z.string(),
+            }).optional(),
           }),
           tr: z.object({
             title: z.string(),
+            description: z.string(),
             features: z.array(z.string()),
             conclusion: z.string(),
+            evaluation_process: z.object({
+              title: z.string(),
+              description: z.string(),
+              phases: z.array(z.object({
+                title: z.string(),
+                description: z.string(),
+              })),
+              conclusion: z.string(),
+            }).optional(),
           }),
         }).optional(),
         image: z.string(),

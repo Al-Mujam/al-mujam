@@ -11,11 +11,11 @@
         </div>
 
         <div class="breadcrumbs text-sm text-white">
-  <ul>
-    <li><NuxtLink class="opacity-70 hover:opacity-100 transition-all duration-300" :to="{name: 'home'}">{{ translations.find(t => t.key === 'home').value[locale] }}</NuxtLink></li>
-    <li><NuxtLink class="opacity-70 hover:opacity-100 transition-all duration-300" :to="{name: 'about'}">{{ translations.find(t => t.key === 'why_almuajam').value[locale] }}</NuxtLink></li>
-  </ul>
-</div>
+          <ul class="flex items-center gap-2">
+            <li><NuxtLink class="opacity-70 hover:opacity-100 transition-all duration-300" :to="{name: 'home'}">{{ translations.find(t => t.key === 'home').value[locale] }}</NuxtLink></li>
+            <li><NuxtLink class="opacity-70 hover:opacity-100 transition-all duration-300" :to="{name: 'about'}">{{ translations.find(t => t.key === 'why_almuajam').value[locale] }}</NuxtLink></li>
+          </ul>
+        </div>
              </div>
 
         </div>
@@ -163,6 +163,18 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <!-- Extracurricular Activities -->
+                        <div v-if="about.methodology.classes[locale].extracurricular" class="bg-web-primary/10 rounded-lg p-6">
+                            <h4 class="text-xl font-bold text-web-primary mb-4">{{ about.methodology.classes[locale].extracurricular.title }}</h4>
+                            <p class="text-gray-700 mb-4">{{ about.methodology.classes[locale].extracurricular.description }}</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <div v-for="(activity, index) in about.methodology.classes[locale].extracurricular.activities" :key="index" class="flex items-start">
+                                    <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <span class="text-gray-700">{{ activity }}</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Tracks -->
@@ -175,7 +187,7 @@
                                 <h4 class="font-semibold text-lg text-gray-800">{{ program }}</h4>
                             </div>
                         </div>
-                        
+
                         <p class="text-gray-600 italic">{{ about.methodology.tracks[locale].note }}</p>
                     </div>
                 </div>
@@ -220,6 +232,17 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Detailed Facilities -->
+                <div v-if="about.campus.detailed_facilities" class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.campus.detailed_facilities[locale].title }}</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div v-for="(facility, index) in about.campus.detailed_facilities[locale].facilities" :key="index" class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-lg text-gray-800 mb-2">{{ facility.name }}</h4>
+                            <p class="text-gray-700">{{ facility.description }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -239,11 +262,32 @@
                     <div class="w-20 h-1 bg-web-primary rounded-full"></div>
                 </div>
 
-                <div class="max-w-4xl mx-auto">
+                <div class="max-w-6xl mx-auto space-y-8">
+                    <!-- Community -->
                     <div class="bg-white rounded-2xl shadow-lg p-8">
                         <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.global_atmosphere.community[locale].title }}</h3>
                         <div class="space-y-4 text-gray-700">
                             <p v-for="(paragraph, index) in about.global_atmosphere.community[locale].content" :key="index" class="text-lg">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Selection Criteria -->
+                    <div v-if="about.global_atmosphere.selection_criteria" class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.global_atmosphere.selection_criteria[locale].title }}</h3>
+                        <div class="space-y-4 text-gray-700">
+                            <p v-for="(paragraph, index) in about.global_atmosphere.selection_criteria[locale].content" :key="index" class="text-lg">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Seminars and Workshops -->
+                    <div v-if="about.global_atmosphere.seminars_workshops" class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.global_atmosphere.seminars_workshops[locale].title }}</h3>
+                        <div class="space-y-4 text-gray-700">
+                            <p v-for="(paragraph, index) in about.global_atmosphere.seminars_workshops[locale].content" :key="index" class="text-lg">
                                 {{ paragraph }}
                             </p>
                         </div>
@@ -300,6 +344,16 @@
                     </div>
                 </div>
 
+                <!-- Strategic Location -->
+                <div v-if="about.why_jordan.strategic_location" class="bg-white rounded-2xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.why_jordan.strategic_location[locale].title }}</h3>
+                    <div class="space-y-4 text-gray-700">
+                        <p v-for="(paragraph, index) in about.why_jordan.strategic_location[locale].content" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+                </div>
+
                 <!-- Opportunities -->
                 <div class="bg-white rounded-2xl shadow-lg p-8">
                     <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.why_jordan.opportunities[locale].title }}</h3>
@@ -317,10 +371,10 @@
             <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
                 <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                     <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
-                        {{ about.academic_team.title[locale] }}
+                        Our Team
                     </div>
                     <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
-                        {{ about.academic_team.subtitle[locale] }}
+                        {{ about.academic_team.title[locale] }}
                     </div>
                     <div class="text-xl text-center text-gray-600 max-w-3xl">
                         {{ about.academic_team.description[locale] }}
@@ -338,7 +392,7 @@
                             </p>
                         </div>
                     </div>
-
+        
                     <!-- Administration -->
                     <div class="bg-white rounded-2xl shadow-lg p-8">
                         <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.academic_team.administration[locale].title }}</h3>
@@ -352,13 +406,28 @@
                     <!-- Commitment -->
                     <div class="bg-white rounded-2xl shadow-lg p-8">
                         <h3 class="text-2xl font-bold text-web-primary mb-6">{{ about.academic_team.commitment[locale].title }}</h3>
+                        <p class="text-lg text-gray-600 mb-6">{{ about.academic_team.commitment[locale].description }}</p>
                         <div class="space-y-4 mb-6">
                             <div v-for="(feature, index) in about.academic_team.commitment[locale].features" :key="index" class="flex items-start">
                                 <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
                                 <span class="text-gray-700 text-lg">{{ feature }}</span>
                             </div>
                         </div>
-                        <p class="text-gray-600 italic text-lg">{{ about.academic_team.commitment[locale].conclusion }}</p>
+                        
+                        <!-- Three-Phase Evaluation Process Details -->
+                        <div v-if="about.academic_team.commitment[locale].evaluation_process" class="bg-web-primary/10 rounded-lg p-6 mt-6">
+                            <h4 class="text-xl font-bold text-web-primary mb-4">{{ about.academic_team.commitment[locale].evaluation_process.title }}</h4>
+                            <p class="text-gray-700 mb-4">{{ about.academic_team.commitment[locale].evaluation_process.description }}</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div v-for="(phase, index) in about.academic_team.commitment[locale].evaluation_process.phases" :key="index" class="bg-white rounded-lg p-4">
+                                    <h5 class="font-semibold text-lg text-gray-800 mb-2">{{ phase.title }}</h5>
+                                    <p class="text-gray-700">{{ phase.description }}</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 italic">{{ about.academic_team.commitment[locale].evaluation_process.conclusion }}</p>
+                        </div>
+                        
+                        <p class="text-gray-600 italic text-lg mt-6">{{ about.academic_team.commitment[locale].conclusion }}</p>
                     </div>
                 </div>
             </div>
@@ -373,7 +442,7 @@
 </template>
 
 <script setup>
-import { IconsSchool } from '#components'
+import { IconsSchool, IconsBooks, IconsRepeat, IconsWifi } from '#components'
 
 
 definePageMeta({
@@ -403,6 +472,8 @@ const { data: about_features } = await useAsyncData('about_features', () => {
 const about = computed(() => {
     const data = aboutData.value || []
     
+    // Data processing for about sections
+    
     // Helper function to safely get nested properties
     const safeGet = (obj, path, defaultValue = {}) => {
         try {
@@ -413,63 +484,97 @@ const about = computed(() => {
     }
     
     return {
-        overview: data.find(item => item?.title?.en === 'Learn Arabic at Almujam – The Leading Arabic Language Center') || {
-            title: { en: '', tr: '' },
-            subtitle: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            content: { en: [], tr: [] }
-        },
-        location: data.find(item => item?.title?.en === 'An Ideal Location') || {
-            title: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            content: { en: [], tr: [] },
-            image: ''
-        },
-        facilities: data.find(item => item?.title?.en === 'Almujam Facilities') || {
-            title: { en: '', tr: '' },
-            subtitle: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            content: { en: [], tr: [] }
-        },
-        methodology: data.find(item => item?.title?.en === 'Methodology') || {
-            title: { en: '', tr: '' },
-            subtitle: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            approach: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            classes: { en: { title: '', description: '', sessions: [], features: [] }, tr: { title: '', description: '', sessions: [], features: [] } },
-            tracks: { en: { title: '', description: '', programs: [], note: '' }, tr: { title: '', description: '', programs: [], note: '' } }
-        },
-        campus: data.find(item => item?.title?.en === 'Campus') || {
-            title: { en: '', tr: '' },
-            subtitle: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            location: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            facilities: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            image: ''
-        },
-        global_atmosphere: data.find(item => item?.title?.en === 'A Global Atmosphere') || {
-            title: { en: '', tr: '' },
-            subtitle: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            community: { en: { title: '', content: [] }, tr: { title: '', content: [] } }
-        },
-        why_jordan: data.find(item => item?.title?.en === 'Why Jordan') || {
-            title: { en: '', tr: '' },
-            subtitle: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            immersion: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            dialect: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            culture: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            opportunities: { en: { title: '', content: [] }, tr: { title: '', content: [] } }
-        },
-        academic_team: data.find(item => item?.title?.en === 'Our Academic Team') || {
-            title: { en: '', tr: '' },
-            subtitle: { en: '', tr: '' },
-            description: { en: '', tr: '' },
-            instructors: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            administration: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
-            commitment: { en: { title: '', features: [], conclusion: '' }, tr: { title: '', features: [], conclusion: '' } }
-        }
+        overview: (() => {
+            const found = data.find(item => item?.title?.en === 'Learn Arabic at Almujam – The Leading Arabic Language Center')
+            return found || {
+                title: { en: '', tr: '' },
+                subtitle: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                content: { en: [], tr: [] },
+                image: ''
+            }
+        })(),
+        location: (() => {
+            const found = data.find(item => item?.title?.en === 'An Ideal Location')
+            return found || {
+                title: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                content: { en: [], tr: [] },
+                image: ''
+            }
+        })(),
+        facilities: (() => {
+            const found = data.find(item => item?.title?.en === 'Almujam Facilities')
+            return found || {
+                title: { en: '', tr: '' },
+                subtitle: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                content: { en: [], tr: [] },
+                image: ''
+            }
+        })(),
+        methodology: (() => {
+            const found = data.find(item => item?.title?.en?.includes('Methodology') || item?.title?.en === 'Methodology')
+            return found || {
+                title: { en: '', tr: '' },
+                subtitle: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                approach: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                classes: { en: { title: '', description: '', sessions: [], features: [], extracurricular: { title: '', description: '', activities: [] } }, tr: { title: '', description: '', sessions: [], features: [], extracurricular: { title: '', description: '', activities: [] } } },
+                tracks: { en: { title: '', description: '', programs: [], note: '' }, tr: { title: '', description: '', programs: [], note: '' } },
+                image: ''
+            }
+        })(),
+        campus: (() => {
+            const found = data.find(item => item?.title?.en === 'Campus')
+            return found || {
+                title: { en: '', tr: '' },
+                subtitle: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                location: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                facilities: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                detailed_facilities: { en: { title: '', facilities: [{ name: '', description: '' }] }, tr: { title: '', facilities: [{ name: '', description: '' }] } },
+                image: ''
+            }
+        })(),
+        global_atmosphere: (() => {
+            const found = data.find(item => item?.title?.en?.includes('Global Atmosphere') || item?.title?.en === 'A Global Atmosphere')
+            return found || {
+                title: { en: '', tr: '' },
+                subtitle: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                community: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                selection_criteria: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                seminars_workshops: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                image: ''
+            }
+        })(),
+        why_jordan: (() => {
+            const found = data.find(item => item?.title?.en === 'Why Jordan')
+            return found || {
+                title: { en: '', tr: '' },
+                subtitle: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                immersion: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                dialect: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                culture: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                opportunities: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                strategic_location: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                image: ''
+            }
+        })(),
+        academic_team: (() => {
+            const found = data.find(item => item?.title?.en?.includes('Academic Team') || item?.title?.en === 'Our Academic Team')
+            return found || {
+                title: { en: '', tr: '' },
+                subtitle: { en: '', tr: '' },
+                description: { en: '', tr: '' },
+                instructors: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                administration: { en: { title: '', content: [] }, tr: { title: '', content: [] } },
+                commitment: { en: { title: '', description: '', features: [], conclusion: '', evaluation_process: { title: '', description: '', phases: [], conclusion: '' } }, tr: { title: '', description: '', features: [], conclusion: '', evaluation_process: { title: '', description: '', phases: [], conclusion: '' } } },
+                image: ''
+            }
+        })()
     }
 })
 

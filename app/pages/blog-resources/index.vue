@@ -61,7 +61,7 @@
 <section v-if="activeTab === 'faq'" class="container text-text-color mx-auto px-4 md:px-20 pb-5 lg:px-10 max-w-[1280px]">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div v-for="(q,idx) in faq" :key="idx" class="collapse collapse-arrow bg-base-100 border h-max border-base-300">
-  <input type="radio" name="my-accordion-2" :checked="idx === 0" />
+  <input type="radio" name="my-accordion-2" :checked="faqOpen === idx" @change="updateFaqOpen(idx)" />
   <div class="collapse-title font-semibold">{{ q.question[locale] }}</div>
   <div class="collapse-content text-sm flex flex-col gap-5">
     <div v-for="a in q.answer[locale]" :key="a">
@@ -97,13 +97,36 @@ definePageMeta({
 const route = useRoute()
 const router = useRouter()
 
-
-const activeTab = ref( route.query.tab || 'blogs')
+const activeTab = ref(route.query.tab || 'blogs')
+const faqOpen = ref(parseInt(route.query.faq) || 0)
 
 const changeTab = (tab) => {
     activeTab.value = tab
-    router.replace({query: {tab: tab}})
+    if (tab === 'blogs') {
+        // Remove FAQ state when switching to blogs
+        router.replace({ query: { tab: tab } })
+        faqOpen.value = 0
+    } else {
+        // Keep FAQ state when switching to FAQ tab
+        router.replace({ query: { tab: tab, faq: faqOpen.value } })
+    }
 }
+
+const updateFaqOpen = (idx) => {
+    faqOpen.value = idx
+    if (activeTab.value === 'faq') {
+        router.replace({ query: { tab: 'faq', faq: idx } })
+    }
+}
+
+// Watch for route changes to sync FAQ state
+watch(() => route.query, (newQuery) => {
+    if (newQuery.tab === 'faq' && newQuery.faq !== undefined) {
+        faqOpen.value = parseInt(newQuery.faq) || 0
+    } else if (newQuery.tab === 'blogs') {
+        faqOpen.value = 0
+    }
+}, { immediate: true })
 
 const {locale} = useI18n()
 

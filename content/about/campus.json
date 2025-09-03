@@ -4,24 +4,26 @@
         "tr": "Kampüs"
     },
     "subtitle": {
-        "en": "Prime Location in the Heart of Amman for Cultural and Language Immersion",
-        "tr": "Kültürel ve Dil Daldırma için Amman'ın Kalbinde Birinci Sınıf Konum"
+        "en": "Almujam Arabic Language Center Location and Facilities",
+        "tr": "Almujam Arapça Dil Merkezi Konum ve Tesisleri"
     },
     "description": {
-        "en": "Almujam is conveniently situated in a modern commercial complex directly across from the University of Jordan on University Street, Amman, Jordan. Our prime location places students within walking distance of some of Amman's most popular shopping malls, featuring a wide variety of specialty stores, supermarkets, cafes, and restaurants.",
-        "tr": "Almujam, Amman, Ürdün'de Üniversite Caddesi üzerinde Ürdün Üniversitesi'nin tam karşısında modern bir ticaret kompleksinde uygun bir şekilde konumlanmıştır. Birinci sınıf konumumuz, öğrencileri çok çeşitli özel mağazalar, süpermarketler, kafeler ve restoranlar içeren Amman'ın en popüler alışveriş merkezlerinden bazılarına yürüme mesafesinde yerleştirir."
+        "en": "Prime Location in the Heart of Amman for Cultural and Language Immersion",
+        "tr": "Kültürel ve Dil Daldırması için Amman'ın Kalbinde Birincil Konum"
     },
     "location": {
         "en": {
-            "title": "Almujam Arabic Language Center Location and Facilities",
+            "title": "Strategic Location in Amman",
             "content": [
+                "Almujam is conveniently situated in a modern commercial complex directly across from the University of Jordan on University Street, Amman, Jordan. Our prime location places students within walking distance of some of Amman's most popular shopping malls, featuring a wide variety of specialty stores, supermarkets, cafes, and restaurants.",
                 "Nearby, students can also explore numerous cultural centers, art galleries, sports and gym facilities, and well-stocked bookstores—making Almujam an ideal hub for those seeking to immerse themselves fully in the vibrant urban life of one of the most dynamic capitals in the Arab world."
             ]
         },
         "tr": {
-            "title": "Almujam Arapça Dil Merkezi Konumu ve Tesisleri",
+            "title": "Amman'da Stratejik Konum",
             "content": [
-                "Yakınlarda, öğrenciler ayrıca çok sayıda kültür merkezi, sanat galerisi, spor ve spor salonu tesisleri ve iyi stoklanan kitapçıları keşfedebilirler—bu da Almujam'ı Arap dünyasının en dinamik başkentlerinden birinin canlı kentsel yaşamına tamamen dalmak isteyenler için ideal bir merkez yapar."
+                "Almujam, Ürdün'ün Amman kentinde University Street'te Ürdün Üniversitesi'nin tam karşısında modern bir ticari kompleks içinde uygun bir şekilde konumlanmıştır. Birincil konumumuz, öğrencileri Amman'ın en popüler alışveriş merkezlerinden bazılarına yürüme mesafesinde yerleştirir ve çeşitli özel mağazalar, süpermarketler, kafeler ve restoranlar bulunur.",
+                "Yakınlarda, öğrenciler ayrıca çok sayıda kültür merkezi, sanat galerisi, spor ve spor salonu tesisleri ve iyi stoklanmış kitapçıları keşfedebilir—bu da Almujam'ı Arap dünyasının en dinamik başkentlerinden birinin canlı kentsel yaşamına tamamen dalmak isteyenler için ideal bir merkez haline getirir."
             ]
         }
     },
@@ -30,14 +32,74 @@
             "title": "Modern Facilities Designed to Enhance Arabic Language Learning",
             "content": [
                 "Inside our 300-square-meter center, Almujam offers classrooms arranged with custom U and L-shaped tables optimized for interactive discussions. The campus includes a spacious library and lecture hall, dedicated quiet study areas, a copy and book center, and high-speed complimentary Wi-Fi throughout.",
-                "Administrative and faculty offices are easily accessible to support students' academic needs."
+                "Administrative and faculty offices are easily accessible to support students' academic needs. Our facilities are designed to create an optimal learning environment that combines traditional Arabic language instruction with modern educational technology."
             ]
         },
         "tr": {
-            "title": "Arapça Dil Öğrenimini Geliştirmek İçin Tasarlanmış Modern Tesisler",
+            "title": "Arapça Dil Öğrenimini Geliştirmek için Tasarlanmış Modern Tesisler",
             "content": [
-                "300 metrekarelik merkezimizin içinde, Almujam etkileşimli tartışmalar için optimize edilmiş özel U ve L şeklinde masalarla düzenlenmiş sınıflar sunar. Kampüs geniş bir kütüphane ve konferans salonu, özel sessiz çalışma alanları, fotokopi ve kitap merkezi ve tüm alanda yüksek hızlı ücretsiz Wi-Fi içerir.",
-                "İdari ve öğretim görevlisi ofisleri, öğrencilerin akademik ihtiyaçlarını desteklemek için kolayca erişilebilirdir."
+                "300 metrekarelik merkezimizin içinde, Almujam etkileşimli tartışmalar için optimize edilmiş özel U ve L şeklinde masalarla düzenlenmiş sınıflar sunar. Kampüs, geniş bir kütüphane ve konferans salonu, özel sessiz çalışma alanları, fotokopi ve kitap merkezi ve yüksek hızlı ücretsiz Wi-Fi içerir.",
+                "İdari ve öğretim üyesi ofisleri, öğrencilerin akademik ihtiyaçlarını desteklemek için kolayca erişilebilir. Tesislerimiz, geleneksel Arapça dil öğretimini modern eğitim teknolojisi ile birleştiren optimal bir öğrenme ortamı yaratmak için tasarlanmıştır."
+            ]
+        }
+    },
+    "detailed_facilities": {
+        "en": {
+            "title": "Comprehensive Learning Infrastructure",
+            "facilities": [
+                {
+                    "name": "Classrooms",
+                    "description": "Custom U and L-shaped tables for interactive learning, natural lighting, and optimal teacher-student ratios"
+                },
+                {
+                    "name": "Library",
+                    "description": "Spacious collection of Arabic language resources, reference materials, and cultural texts"
+                },
+                {
+                    "name": "Lecture Hall",
+                    "description": "Large space for presentations, cultural events, and group activities"
+                },
+                {
+                    "name": "Study Areas",
+                    "description": "Dedicated quiet spaces for individual study and group collaboration"
+                },
+                {
+                    "name": "Copy & Book Center",
+                    "description": "Convenient access to printing, copying, and purchasing learning materials"
+                },
+                {
+                    "name": "Wi-Fi",
+                    "description": "High-speed internet access throughout the facility for digital learning resources"
+                }
+            ]
+        },
+        "tr": {
+            "title": "Kapsamlı Öğrenme Altyapısı",
+            "facilities": [
+                {
+                    "name": "Sınıflar",
+                    "description": "Etkileşimli öğrenme için özel U ve L şeklinde masalar, doğal aydınlatma ve optimal öğretmen-öğrenci oranları"
+                },
+                {
+                    "name": "Kütüphane",
+                    "description": "Arapça dil kaynakları, referans materyalleri ve kültürel metinlerin geniş koleksiyonu"
+                },
+                {
+                    "name": "Konferans Salonu",
+                    "description": "Sunumlar, kültürel etkinlikler ve grup aktiviteleri için geniş alan"
+                },
+                {
+                    "name": "Çalışma Alanları",
+                    "description": "Bireysel çalışma ve grup işbirliği için özel sessiz alanlar"
+                },
+                {
+                    "name": "Fotokopi ve Kitap Merkezi",
+                    "description": "Yazdırma, fotokopi çekme ve öğrenme materyali satın alma için uygun erişim"
+                },
+                {
+                    "name": "Wi-Fi",
+                    "description": "Dijital öğrenme kaynakları için tesis genelinde yüksek hızlı internet erişimi"
+                }
             ]
         }
     },

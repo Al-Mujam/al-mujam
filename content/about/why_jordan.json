@@ -15,13 +15,15 @@
         "en": {
             "title": "Jordan Offers the Perfect Environment for Arabic Language Immersion",
             "content": [
-                "At Almujam Arabic Language Center, students are immersed in an environment where Arabic is not only spoken daily, but lives through traditions, expressions, and everyday interactions. This real-world exposure is essential for building fluency and confidence."
+                "At Almujam Arabic Language Center, students are immersed in an environment where Arabic is not only spoken daily, but lives through traditions, expressions, and everyday interactions. This real-world exposure is essential for building fluency and confidence.",
+                "Jordan's unique position as a cultural crossroads provides students with authentic exposure to both traditional Arab customs and modern Middle Eastern life, creating a rich learning environment that goes beyond textbook knowledge."
             ]
         },
         "tr": {
             "title": "Ürdün Arapça Dil Daldırma için Mükemmel Ortamı Sunar",
             "content": [
-                "Almujam Arapça Dil Merkezi'nde, öğrenciler Arapça'nın sadece günlük konuşulduğu değil, aynı zamanda gelenekler, ifadeler ve günlük etkileşimler aracılığıyla yaşadığı bir ortama dalarlar. Bu gerçek dünya maruziyeti akıcılık ve güven oluşturmak için gereklidir."
+                "Almujam Arapça Dil Merkezi'nde, öğrenciler Arapça'nın sadece günlük konuşulduğu değil, aynı zamanda gelenekler, ifadeler ve günlük etkileşimler aracılığıyla yaşadığı bir ortama dalarlar. Bu gerçek dünya maruziyeti akıcılık ve güven oluşturmak için gereklidir.",
+                "Ürdün'ün kültürel kavşak olarak benzersiz konumu, öğrencilere hem geleneksel Arap geleneklerine hem de modern Orta Doğu yaşamına otantik maruziyet sağlar ve ders kitabı bilgisinin ötesine geçen zengin bir öğrenme ortamı yaratır."
             ]
         }
     },
@@ -45,13 +47,33 @@
         "en": {
             "title": "A Bridge Between Past and Present",
             "content": [
-                "Jordan blends ancient history with modern development. You'll find well-preserved archaeological sites next to thriving tech hubs, and deep-rooted traditions alongside cosmopolitan lifestyles. This dynamic cultural landscape allows students to experience Arabic culture authentically—not just in textbooks, but in real conversations, customs, and communities."
+                "Jordan blends ancient history with modern development. You'll find well-preserved archaeological sites next to thriving tech hubs, and deep-rooted traditions alongside cosmopolitan lifestyles. This dynamic cultural landscape allows students to experience Arabic culture authentically—not just in textbooks, but in real conversations, customs, and communities.",
+                "The contrast between ancient ruins and modern cities, traditional markets and contemporary shopping centers, creates a unique learning environment where students can witness the evolution of Arab culture firsthand. This bridge between past and present enriches the language learning experience with cultural depth and historical context."
             ]
         },
         "tr": {
             "title": "Geçmiş ve Günümüz Arasında Bir Köprü",
             "content": [
-                "Ürdün antik tarihi modern gelişimle harmanlıyor. Gelişen teknoloji merkezlerinin yanında iyi korunmuş arkeolojik alanlar ve kozmopolit yaşam tarzlarının yanında köklü gelenekler bulacaksınız. Bu dinamik kültürel manzara, öğrencilerin Arap kültürünü gerçek bir şekilde deneyimlemelerine olanak tanır—sadece ders kitaplarında değil, gerçek konuşmalarda, geleneklerde ve topluluklarda."
+                "Ürdün antik tarihi modern gelişimle harmanlıyor. Gelişen teknoloji merkezlerinin yanında iyi korunmuş arkeolojik alanlar ve kozmopolit yaşam tarzlarının yanında köklü gelenekler bulacaksınız. Bu dinamik kültürel manzara, öğrencilerin Arap kültürünü gerçek bir şekilde deneyimlemelerine olanak tanır—sadece ders kitaplarında değil, gerçek konuşmalarda, geleneklerde ve topluluklarda.",
+                "Antik kalıntılar ile modern şehirler, geleneksel pazarlar ile çağdaş alışveriş merkezleri arasındaki kontrast, öğrencilerin Arap kültürünün evrimini ilk elden gözlemleyebilecekleri benzersiz bir öğrenme ortamı yaratır. Geçmiş ile günümüz arasındaki bu köprü, dil öğrenme deneyimini kültürel derinlik ve tarihsel bağlamla zenginleştirir."
+            ]
+        }
+    },
+    "strategic_location": {
+        "en": {
+            "title": "Strategic Gateway to the Middle East",
+            "content": [
+                "Jordan's central location makes it a strategic gateway to travel, commerce, and cultural exchange throughout the Middle East. From Amman, students can easily access neighboring countries and experience the diversity of Arab cultures.",
+                "This strategic advantage provides students with opportunities to practice Arabic in different regional contexts, understand various dialects, and develop a comprehensive understanding of Middle Eastern culture and society.",
+                "The country's excellent transportation infrastructure and political stability make it an ideal base for exploring the broader region while maintaining a safe and supportive learning environment."
+            ]
+        },
+        "tr": {
+            "title": "Orta Doğu'ya Stratejik Geçit",
+            "content": [
+                "Ürdün'ün merkezi konumu, onu Orta Doğu genelinde seyahat, ticaret ve kültürel değişim için stratejik bir geçit yapar. Amman'dan öğrenciler komşu ülkelere kolayca erişebilir ve Arap kültürlerinin çeşitliliğini deneyimleyebilir.",
+                "Bu stratejik avantaj, öğrencilere farklı bölgesel bağlamlarda Arapça pratik yapma, çeşitli lehçeleri anlama ve Orta Doğu kültürü ve toplumuna kapsamlı bir anlayış geliştirme fırsatları sağlar.",
+                "Ülkenin mükemmel ulaşım altyapısı ve siyasi istikrarı, güvenli ve destekleyici bir öğrenme ortamını korurken daha geniş bölgeyi keşfetmek için ideal bir üs haline getirir."
             ]
         }
     },
