@@ -1,0 +1,82 @@
+{
+  "title": {
+    "en": "Classical Arabic Program",
+    "tr": "Klasik Arapça Programı"
+  },
+  "subtitle": {
+    "en": "Immersing Students in the Language of the Qur'an and Classical Texts",
+    "tr": "Öğrencileri Kur'an ve Klasik Metinlerin Diline Daldırma"
+  },
+  "description": {
+    "en": "At Almujam Arabic Language Center, the Classical Arabic track focuses primarily on the language of the Qur'an, as well as on classical and medieval texts inspired by its style and content.",
+    "tr": "Almujam Arapça Dil Merkezi'nde, Klasik Arapça programı öncelikle Kur'an'ın diline ve onun tarzından ve içeriğinden ilham alan klasik ve ortaçağ metinlerine odaklanır."
+  },
+  "content": {
+    "en": [
+      "Students gain direct exposure to Islamic legal, theological, philosophical, and mystical works from these periods."
+    ],
+    "tr": [
+      "Öğrenciler bu dönemlerden İslami hukuki, teolojik, felsefi ve mistik eserlere doğrudan maruz kalır."
+    ]
+  },
+  "foundational_skills": {
+    "en": {
+      "title": "Foundational Skills in Levels 1 to 3",
+      "description": "The first three levels build a strong linguistic foundation by developing \"linguistic mobility\"—the ability to master Arabic grammar, morphology, and rhetoric (nahw, sarf, and balagha).",
+      "skills": [
+        "Students excel in reading, understanding, analyzing, translating, and interpreting classical texts",
+        "Alongside, they cultivate essential skills in listening, reading, speaking, and writing, necessary for advanced-intermediate fluency"
+      ]
+    },
+    "tr": {
+      "title": "Seviye 1-3'te Temel Beceriler",
+      "description": "İlk üç seviye, \"dilsel hareketlilik\" geliştirerek güçlü bir dilsel temel oluşturur—Arapça dilbilgisi, morfoloji ve retorik (nahw, sarf ve balagha) konularında uzmanlaşma yeteneği.",
+      "skills": [
+        "Öğrenciler klasik metinleri okuma, anlama, analiz etme, çevirme ve yorumlama konusunda mükemmelleşir",
+        "Aynı zamanda, ileri-orta seviye akıcılık için gerekli olan dinleme, okuma, konuşma ve yazma konularında temel beceriler geliştirir"
+      ]
+    }
+  },
+  "advanced_mastery": {
+    "en": {
+      "title": "Advanced Mastery in Levels 4 and 5",
+      "description": "Levels 4 and 5 mark a significant milestone where students transition from learning Arabic as a language to using it as a tool for scholarly access to classical literature.",
+      "modules": [
+        "Scriptural Exegesis",
+        "Classical and Pre-Islamic Poetry",
+        "Psychology",
+        "Literary Criticism",
+        "Islamic History",
+        "Theology",
+        "Prophetic History",
+        "Speech Presentation (Khutba)",
+        "Terminology of Sacred Law and Hadith"
+      ],
+      "note": "The curriculum uses the same classical texts studied in native Arab universities, reflecting the high level of proficiency students achieve at Almujam—often within just 15 months for beginners, and even faster for those with prior Arabic knowledge."
+    },
+    "tr": {
+      "title": "Seviye 4 ve 5'te İleri Ustalık",
+      "description": "Seviye 4 ve 5, öğrencilerin Arapçayı bir dil olarak öğrenmekten klasik edebiyata akademik erişim için bir araç olarak kullanmaya geçtikleri önemli bir dönüm noktasını işaret eder.",
+      "modules": [
+        "Kutsal Metin Yorumu",
+        "Klasik ve İslam Öncesi Şiir",
+        "Psikoloji",
+        "Edebi Eleştiri",
+        "İslam Tarihi",
+        "Teoloji",
+        "Peygamber Tarihi",
+        "Konuşma Sunumu (Hutbe)",
+        "Kutsal Hukuk ve Hadis Terminolojisi"
+      ],
+      "note": "Müfredat, yerli Arap üniversitelerinde çalışılan aynı klasik metinleri kullanır, bu da öğrencilerin Almujam'da elde ettiği yüksek yeterlilik seviyesini yansıtır—genellikle başlangıç seviyesi öğrenciler için sadece 15 ay içinde, önceden Arapça bilgisi olanlar için daha da hızlı."
+    }
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

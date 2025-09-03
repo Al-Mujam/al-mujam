@@ -56,7 +56,7 @@
       "title": "Individual Enrollment Discounts",
       "subtitle": "For students registering independently.",
       "terms": [
-        { "term": "1st", "cost": "$1,850", "discount": "–", "savings": "–" },
+        { "term": "1st", "cost": "$1,845", "discount": "–", "savings": "–" },
         { "term": "2nd", "cost": "$1,813", "discount": "2%", "savings": "$37" },
         { "term": "3rd", "cost": "$1,795", "discount": "3%", "savings": "$55" },
         { "term": "4th", "cost": "$1,775", "discount": "4%", "savings": "$75" },
@@ -148,6 +148,7 @@
       ],
       "methods": [
         "Online by credit card (Visa/MasterCard)",
+        "PayPal payments",
         "Wire transfers (see bank details below)",
         "Cash payments in USD or JOD"
       ]
@@ -160,6 +161,7 @@
       ],
       "methods": [
         "Kredi kartı ile çevrimiçi (Visa/MasterCard)",
+        "PayPal ödemeleri",
         "Banka havalesi (aşağıdaki banka detaylarına bakın)",
         "USD veya JOD olarak nakit ödemeler"
       ]
@@ -180,6 +182,30 @@
       { "timeline": "Özel özel ders (başlamadan önce)", "eligibility": "Depozito hariç tam iade" },
       { "timeline": "Özel özel ders (başladıktan sonra)", "eligibility": "İade yok" }
     ]
+  },
+  "refund_details": {
+    "en": {
+      "title": "Detailed Refund Policy",
+      "description": "Our refund policy applies equally to both on-site and online courses. The refund process is designed to be fair and transparent for all students.",
+      "important_notes": [
+        "Refund requests must be submitted in writing to the Admissions Office",
+        "Processing time for refunds is typically 2-4 weeks",
+        "Bank transfer fees are the responsibility of the student",
+        "Refunds for online courses follow the same timeline as on-site courses",
+        "Special circumstances may be reviewed on a case-by-case basis"
+      ]
+    },
+    "tr": {
+      "title": "Detaylı İade Politikası",
+      "description": "İade politikamız hem yüz yüze hem de çevrimiçi kurslar için eşit şekilde geçerlidir. İade süreci tüm öğrenciler için adil ve şeffaf olacak şekilde tasarlanmıştır.",
+      "important_notes": [
+        "İade talepleri Kabul Ofisi'ne yazılı olarak sunulmalıdır",
+        "İadeler için işlem süresi genellikle 2-4 haftadır",
+        "Banka havalesi ücretleri öğrencinin sorumluluğundadır",
+        "Çevrimiçi kurslar için iadeler yüz yüze kurslarla aynı zaman çizelgesini takip eder",
+        "Özel durumlar durum bazında değerlendirilebilir"
+      ]
+    }
   },
   "button_text": {
     "en": "Click here to start your application",

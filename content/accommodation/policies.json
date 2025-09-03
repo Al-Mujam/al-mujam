@@ -1,0 +1,96 @@
+{
+  "title": {
+    "en": "Housing Policies and Guidelines",
+    "tr": "Konaklama Politikaları ve Kuralları"
+  },
+  "subtitle": {
+    "en": "Important Information for All Residents",
+    "tr": "Tüm Sakinler İçin Önemli Bilgiler"
+  },
+  "description": {
+    "en": "Understanding our housing policies helps ensure a positive living experience for all students.",
+    "tr": "Konaklama politikalarımızı anlamak, tüm öğrenciler için olumlu bir yaşam deneyimi sağlamaya yardımcı olur."
+  },
+  "right_of_entry": {
+    "en": {
+      "title": "Right of Entry",
+      "description": "Almujam Center reserves the right to enter apartments as needed for emergencies, maintenance, investigation, or cleaning, intending to provide advance notice when possible."
+    },
+    "tr": {
+      "title": "Giriş Hakkı",
+      "description": "Almujam Merkezi, acil durumlar, bakım, soruşturma veya temizlik için gerektiğinde dairelere girmek hakkını saklı tutar, mümkün olduğunda önceden haber vermeyi amaçlar."
+    }
+  },
+  "premature_departure": {
+    "en": {
+      "title": "Premature Departure",
+      "description": "Tenants leaving before the official checkout date must notify the Housing contact at least one week prior, attend an apartment walk-through with staff, and return their keys. Refunds for unused rent are at Almujam Center's discretion on a case-by-case basis."
+    },
+    "tr": {
+      "title": "Erken Ayrılış",
+      "description": "Resmi çıkış tarihinden önce ayrılan kiracılar, en az bir hafta önceden Konaklama iletişim kişisini bilgilendirmeli, personel ile daire turuna katılmalı ve anahtarlarını iade etmelidir. Kullanılmayan kira için iadeler, Almujam Merkezi'nin her durumda kendi takdirine bağlıdır."
+    }
+  },
+  "limit_of_liability": {
+    "en": {
+      "title": "Limit of Liability",
+      "description": "Except in cases of proven, intentional negligence by Almujam Center, the institute is not liable for loss or damage to tenants' or visitors' persons or property while on premises. Tenants are responsible for themselves and their visitors."
+    },
+    "tr": {
+      "title": "Sorumluluk Sınırı",
+      "description": "Almujam Merkezi'nin kanıtlanmış, kasıtlı ihmal durumları hariç, enstitü, kiracıların veya ziyaretçilerin kişilerinde veya mülklerinde tesis üzerindeyken meydana gelen kayıp veya hasardan sorumlu değildir. Kiracılar kendilerinden ve ziyaretçilerinden sorumludur."
+    }
+  },
+  "cancellation_policy": {
+    "en": {
+      "title": "Cancellation Policy",
+      "description": "Acceptance of the housing agreement is binding. By reserving your accommodation, we trust you will fulfill your financial responsibilities for all housing costs for the entire term.",
+      "details": [
+        "Cancellations create significant disruptions as we must rapidly reorganize housemate and apartment arrangements",
+        "If you notify us of a cancellation request within 5 days after your scheduled move-in date, a cancellation fee of 35% of the total term rent will apply",
+        "After this 5-day grace period, if you leave early for any reason, you will remain fully responsible for the housing fees for the entire term"
+      ]
+    },
+    "tr": {
+      "title": "İptal Politikası",
+      "description": "Konaklama anlaşmasının kabulü bağlayıcıdır. Konaklamanızı rezerve ederek, tüm dönem boyunca tüm konaklama maliyetleri için mali sorumluluklarınızı yerine getireceğinize güveniyoruz.",
+      "details": [
+        "İptaller, ev arkadaşı ve daire düzenlemelerini hızla yeniden organize etmemiz gerektiğinden önemli aksaklıklar yaratır",
+        "Planlanan taşınma tarihinizden sonraki 5 gün içinde iptal talebinde bulunursanız, toplam dönem kirasının %35'i kadar iptal ücreti uygulanır",
+        "Bu 5 günlük mühlet süresinden sonra, herhangi bir nedenle erken ayrılırsanız, tüm dönem boyunca konaklama ücretlerinden tamamen sorumlu kalırsınız"
+      ]
+    }
+  },
+  "eligibility": {
+    "en": {
+      "title": "Eligibility Requirements",
+      "description": "Tenants must maintain a minimum of 1.5 daily hours (7.5 weekly hours) of Arabic instruction at Almujam Center to live in Almujam Center Housing during the respective term."
+    },
+    "tr": {
+      "title": "Uygunluk Gereksinimleri",
+      "description": "Kiracılar, ilgili dönem boyunca Almujam Merkezi Konaklamasında yaşamak için Almujam Merkezi'nde günlük minimum 1.5 saat (haftalık 7.5 saat) Arapça eğitimi almalıdır."
+    }
+  },
+  "visitor_policy": {
+    "en": {
+      "title": "Visitor Policy",
+      "description": "Visitors who are not assigned tenants of Almujam Center Housing apartments are subject to the curfew period of 11:00 PM to 8:00 AM.",
+      "rules": [
+        "Each tenant may host only one visitor during any curfew period unless otherwise permitted",
+        "Visitors of the opposite gender to the apartment tenants are not allowed during curfew periods",
+        "Visitors of the same gender as the apartment tenants are allowed up to three curfew periods within an academic term",
+        "All communications regarding visitors must be sent via email to m.albishawi@almujamedu.com"
+      ]
+    },
+    "tr": {
+      "title": "Ziyaretçi Politikası",
+      "description": "Almujam Merkezi Konaklaması dairelerinin atanmış kiracıları olmayan ziyaretçiler, 23:00 - 08:00 saatleri arasındaki sokağa çıkma yasağı dönemine tabidir.",
+      "rules": [
+        "Her kiracı, aksi izin verilmediği sürece herhangi bir sokağa çıkma yasağı döneminde sadece bir ziyaretçi ağırlayabilir",
+        "Daire kiracılarından farklı cinsiyetteki ziyaretçiler sokağa çıkma yasağı dönemlerinde izin verilmez",
+        "Daire kiracılarıyla aynı cinsiyetteki ziyaretçiler, akademik dönem içinde üç sokağa çıkma yasağı dönemine kadar izin verilir",
+        "Ziyaretçilerle ilgili tüm iletişimler m.albishawi@almujamedu.com adresine e-posta ile gönderilmelidir"
+      ]
+    }
+  }
+}

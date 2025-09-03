@@ -1,0 +1,82 @@
+{
+  "title": {
+    "en": "Jordanian Ammiyya (Levantine Dialect) Course",
+    "tr": "Ürdün Ammiyya (Levanten Lehçesi) Kursu"
+  },
+  "subtitle": {
+    "en": "Master Everyday Communication with the Levantine Dialect",
+    "tr": "Levanten Lehçesi ile Günlük İletişimde Uzmanlaşın"
+  },
+  "description": {
+    "en": "At Almujam, we believe mastering Arabic goes beyond Classical Arabic. The Jordanian Ammiyya dialect is essential for understanding daily life and naturally interacting with native speakers.",
+    "tr": "Almujam'da, Arapçada uzmanlaşmanın Klasik Arapçanın ötesine geçtiğine inanıyoruz. Ürdün Ammiyya lehçesi, günlük yaşamı anlamak ve yerli konuşmacılarla doğal olarak etkileşim kurmak için gereklidir."
+  },
+  "content": {
+    "en": [
+      "Our course empowers students to use Arabic confidently in real-life situations, making their learning experience practical and holistic."
+    ],
+    "tr": [
+      "Kursumuz öğrencileri gerçek yaşam durumlarında Arapçayı güvenle kullanmaya güçlendirir, öğrenme deneyimlerini pratik ve bütünsel hale getirir."
+    ]
+  },
+  "course_structure": {
+    "en": {
+      "title": "Course Structure: Five Progressive Levels",
+      "levels": [
+        {
+          "level": "Level 1",
+          "title": "Foundations in Speaking and Vocabulary",
+          "description": "Level 1 focuses on developing speaking skills with common vocabulary and expressions in Jordanian Ammiyya. Students learn to communicate personal information, handle daily conversations, navigate the city, shop, dine out, and perform social greetings."
+        },
+        {
+          "level": "Levels 2 and 3",
+          "title": "Expanding Conversation and Vocabulary",
+          "description": "These levels deepen speaking skills and vocabulary through interactive exercises and increasingly complex dialogues. Students practice real-world situations related to work, study, leisure, travel, and expressing opinions naturally and accurately."
+        },
+        {
+          "level": "Levels 4 and 5",
+          "title": "Advanced Fluency and Cultural Engagement",
+          "description": "These advanced levels build student confidence for fluent communication with native speakers and understanding Ammiyya media and advertising. Students also learn to blend Modern Standard Arabic (MSA) with Ammiyya to express opinions, discuss specialized topics, and engage in structured arguments, enhancing overall language competence."
+        }
+      ]
+    },
+    "tr": {
+      "title": "Kurs Yapısı: Beş İlerleyici Seviye",
+      "levels": [
+        {
+          "level": "Seviye 1",
+          "title": "Konuşma ve Kelime Bilgisinde Temeller",
+          "description": "Seviye 1, Ürdün Ammiyya'da yaygın kelime ve ifadelerle konuşma becerilerini geliştirmeye odaklanır. Öğrenciler kişisel bilgileri iletmeyi, günlük konuşmaları yönetmeyi, şehirde gezinmeyi, alışveriş yapmayı, dışarıda yemek yemeyi ve sosyal selamlamalar yapmayı öğrenir."
+        },
+        {
+          "level": "Seviye 2 ve 3",
+          "title": "Konuşma ve Kelime Bilgisini Genişletme",
+          "description": "Bu seviyeler, etkileşimli alıştırmalar ve giderek karmaşıklaşan diyaloglar aracılığıyla konuşma becerilerini ve kelime bilgisini derinleştirir. Öğrenciler iş, çalışma, boş zaman, seyahat ile ilgili gerçek dünya durumlarını ve görüşlerini doğal ve doğru bir şekilde ifade etmeyi pratik eder."
+        },
+        {
+          "level": "Seviye 4 ve 5",
+          "title": "İleri Akıcılık ve Kültürel Katılım",
+          "description": "Bu ileri seviyeler, öğrencilerin yerli konuşmacılarla akıcı iletişim kurma ve Ammiyya medyasını ve reklamlarını anlama konusunda güvenlerini artırır. Öğrenciler ayrıca görüşlerini ifade etmek, uzmanlaşmış konuları tartışmak ve yapılandırılmış argümanlara katılmak için Modern Standart Arapça (MSA) ile Ammiyya'yı harmanlamayı öğrenir, genel dil yeterliliğini artırır."
+        }
+      ]
+    }
+  },
+  "learning_materials": {
+    "en": {
+      "title": "Specialized Learning Materials",
+      "description": "Students receive carefully designed curricula and materials tailored to each level, ensuring an effective and comprehensive learning journey at Almujam."
+    },
+    "tr": {
+      "title": "Uzmanlaşmış Öğrenme Materyalleri",
+      "description": "Öğrenciler her seviyeye özel olarak tasarlanmış, Almujam'da etkili ve kapsamlı bir öğrenme yolculuğu sağlayan dikkatle tasarlanmış müfredat ve materyaller alır."
+    }
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

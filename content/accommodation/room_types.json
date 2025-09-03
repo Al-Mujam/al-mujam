@@ -1,0 +1,118 @@
+{
+  "title": {
+    "en": "Room Types & Descriptions",
+    "tr": "Oda Türleri ve Açıklamaları"
+  },
+  "subtitle": {
+    "en": "Six Distinct Options to Suit Various Budgets and Preferences",
+    "tr": "Çeşitli Bütçeler ve Tercihler İçin Altı Farklı Seçenek"
+  },
+  "description": {
+    "en": "We offer six distinct room types to suit various budgets and preferences, each with its own pricing and features.",
+    "tr": "Çeşitli bütçeler ve tercihler için altı farklı oda türü sunuyoruz, her birinin kendi fiyatlandırması ve özellikleri var."
+  },
+  "room_types": {
+    "en": [
+      {
+        "name": "Shared Room",
+        "size": "13–18.6 m²",
+        "features": "2 single beds, 2 small wardrobes",
+        "description": "Perfect for students who enjoy social living and want to reduce costs"
+      },
+      {
+        "name": "Standard Room",
+        "size": "9–10 m²",
+        "features": "Single bed, small wardrobe",
+        "description": "Compact and comfortable for individual students"
+      },
+      {
+        "name": "Select Room",
+        "size": "11–14 m²",
+        "features": "Single bed, medium wardrobe",
+        "description": "Spacious option with enhanced storage"
+      },
+      {
+        "name": "Select-Double Room",
+        "size": "11–14 m²",
+        "features": "Two single beds or queen, medium/large wardrobe",
+        "description": "Ideal for friends or larger storage needs"
+      },
+      {
+        "name": "Queen/King Room",
+        "size": "12–18 m²",
+        "features": "Larger bed, enhanced furnishings (no private bath)",
+        "description": "Premium comfort with larger sleeping area"
+      },
+      {
+        "name": "Master Room",
+        "size": "Private room with attached bathroom",
+        "features": "Private bathroom, enhanced privacy",
+        "description": "Maximum privacy and convenience"
+      }
+    ],
+    "tr": [
+      {
+        "name": "Paylaşımlı Oda",
+        "size": "13–18.6 m²",
+        "features": "2 tek kişilik yatak, 2 küçük gardırop",
+        "description": "Sosyal yaşamdan hoşlanan ve maliyetleri düşürmek isteyen öğrenciler için mükemmel"
+      },
+      {
+        "name": "Standart Oda",
+        "size": "9–10 m²",
+        "features": "Tek kişilik yatak, küçük gardırop",
+        "description": "Bireysel öğrenciler için kompakt ve rahat"
+      },
+      {
+        "name": "Seçkin Oda",
+        "size": "11–14 m²",
+        "features": "Tek kişilik yatak, orta boy gardırop",
+        "description": "Gelişmiş depolama ile geniş seçenek"
+      },
+      {
+        "name": "Seçkin-Çift Kişilik Oda",
+        "size": "11–14 m²",
+        "features": "İki tek kişilik yatak veya queen, orta/büyük gardırop",
+        "description": "Arkadaşlar veya daha büyük depolama ihtiyaçları için ideal"
+      },
+      {
+        "name": "Queen/King Oda",
+        "size": "12–18 m²",
+        "features": "Daha büyük yatak, gelişmiş mobilyalar (özel banyo yok)",
+        "description": "Daha büyük uyku alanı ile premium konfor"
+      },
+      {
+        "name": "Master Oda",
+        "size": "Özel banyolu özel oda",
+        "features": "Özel banyo, gelişmiş gizlilik",
+        "description": "Maksimum gizlilik ve kolaylık"
+      }
+    ]
+  },
+  "apartment_features": {
+    "en": {
+      "title": "Apartment Features & Furnishings",
+      "features": [
+        "Living room with lounge seating and dining table",
+        "Functional kitchen with gas oven, fridge, microwave, water dispenser",
+        "Washing machine, iron, and ironing board",
+        "Multiple bathrooms (with shower and/or toilet)",
+        "Heating/cooling systems depending on the season",
+        "Study spaces either in bedrooms or common areas"
+      ],
+      "bedroom_features": "Each bedroom may also include a chest of drawers, study desk, chair, mirror, clothes drying rack, and nightstand."
+    },
+    "tr": {
+      "title": "Daire Özellikleri ve Mobilyaları",
+      "features": [
+        "Oturma alanı ve yemek masası ile oturma odası",
+        "Gazlı fırın, buzdolabı, mikrodalga, su dağıtıcısı ile işlevsel mutfak",
+        "Çamaşır makinesi, ütü ve ütü masası",
+        "Çoklu banyolar (duş ve/veya tuvalet ile)",
+        "Mevsime bağlı ısıtma/soğutma sistemleri",
+        "Yatak odalarında veya ortak alanlarda çalışma alanları"
+      ],
+      "bedroom_features": "Her yatak odası ayrıca bir komodin, çalışma masası, sandalye, ayna, kıyafet kurutma askısı ve komodin içerebilir."
+    }
+  }
+}

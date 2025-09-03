@@ -1,0 +1,34 @@
+{
+  "title": {
+    "en": "Student Housing at Almujam",
+    "tr": "Almujam'da Öğrenci Konaklaması"
+  },
+  "subtitle": {
+    "en": "A Comfortable Living Environment That Supports Learning",
+    "tr": "Öğrenmeyi Destekleyen Rahat Bir Yaşam Ortamı"
+  },
+  "description": {
+    "en": "At Almujam, we believe that a student's academic success is closely tied to their overall living experience.",
+    "tr": "Almujam'da, bir öğrencinin akademik başarısının genel yaşam deneyimiyle yakından bağlantılı olduğuna inanıyoruz."
+  },
+  "content": {
+    "en": [
+      "At Almujam, we believe that a student's academic success is closely tied to their overall living experience. A well-organized and comfortable home environment can be just as impactful as quality instruction, effective curriculum, and a supportive classroom atmosphere.",
+      "For this reason, our dedicated housing support team assists students with all aspects of accommodation. This includes helping with housing placement, matching students with compatible housemates, and offering guidance on budgeting, essential items to bring, and day-to-day life in Amman.",
+      "Over the past fifteen years, students have consistently expressed how valuable these services have been to their overall learning experience. While such personalized support is uncommon at most Arabic institutes in the region, we consider it a central part of our responsibility as your hosts throughout your time in Amman."
+    ],
+    "tr": [
+      "Almujam'da, bir öğrencinin akademik başarısının genel yaşam deneyimiyle yakından bağlantılı olduğuna inanıyoruz. İyi organize edilmiş ve rahat bir ev ortamı, kaliteli öğretim, etkili müfredat ve destekleyici sınıf atmosferi kadar etkili olabilir.",
+      "Bu nedenle, özel konaklama destek ekibimiz öğrencilere konaklama konusunda her konuda yardımcı olur. Bu, konaklama yerleştirmesine yardım etmeyi, öğrencileri uyumlu ev arkadaşlarıyla eşleştirmeyi ve bütçe planlaması, getirilecek temel eşyalar ve Amman'da günlük yaşam konusunda rehberlik sunmayı içerir.",
+      "Son on beş yılda, öğrenciler bu hizmetlerin genel öğrenme deneyimleri için ne kadar değerli olduğunu sürekli olarak ifade etmişlerdir. Bu tür kişiselleştirilmiş destek bölgedeki çoğu Arap enstitüsünde nadir olsa da, bunu Amman'daki süreniz boyunca ev sahipleriniz olarak sorumluluğumuzun merkezi bir parçası olarak görüyoruz."
+    ]
+  },
+  "button_text": {
+    "en": "Apply for Housing",
+    "tr": "Konaklama Başvurusu Yap"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

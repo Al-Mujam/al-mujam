@@ -1,0 +1,148 @@
+{
+  "title": {
+    "en": "Housing Costs and Payments",
+    "tr": "Konaklama Maliyetleri ve Ödemeler"
+  },
+  "subtitle": {
+    "en": "Transparent Pricing for All Room Types",
+    "tr": "Tüm Oda Türleri İçin Şeffaf Fiyatlandırma"
+  },
+  "description": {
+    "en": "Our pricing structure is designed to be transparent and affordable, with different options to suit various budgets.",
+    "tr": "Fiyatlandırma yapımız şeffaf ve uygun fiyatlı olacak şekilde tasarlanmıştır, çeşitli bütçelere uygun farklı seçeneklerle."
+  },
+  "pricing_table": {
+    "en": {
+      "title": "Room Type Pricing (JD per person per month)",
+      "headers": ["Room Type", "Summer & Fall", "Winter & Spring"],
+      "rows": [
+        ["Shared (2 per room)", "200 JD", "190 JD"],
+        ["Standard", "255 JD", "225 JD"],
+        ["Select", "285 JD", "255 JD"],
+        ["Select Double", "310 JD", "280 JD"],
+        ["Suite", "335 JD", "300 JD"],
+        ["Master", "365 JD", "330 JD"]
+      ]
+    },
+    "tr": {
+      "title": "Oda Türü Fiyatlandırması (Kişi başı aylık JD)",
+      "headers": ["Oda Türü", "Yaz ve Sonbahar", "Kış ve İlkbahar"],
+      "rows": [
+        ["Paylaşımlı (2 kişi/oda)", "200 JD", "190 JD"],
+        ["Standart", "255 JD", "225 JD"],
+        ["Seçkin", "285 JD", "255 JD"],
+        ["Seçkin Çift", "310 JD", "280 JD"],
+        ["Suit", "335 JD", "300 JD"],
+        ["Master", "365 JD", "330 JD"]
+      ]
+    }
+  },
+  "included_in_rent": {
+    "en": {
+      "title": "What Is Included in the Rent",
+      "items": [
+        {
+          "item": "Wireless Internet Access",
+          "cost": "40.00 JD per apartment per month"
+        },
+        {
+          "item": "Housing Care Maintenance & Emergency Support",
+          "cost": "100.00 JD (Full Term Fee)"
+        },
+        {
+          "item": "Building Haris Porter Fees",
+          "cost": "25.00 - 35.00 JD"
+        },
+        {
+          "item": "Bi-Monthly Cleaning Service",
+          "cost": "25.00 JD (Excluding move-out cleaning)"
+        }
+      ]
+    },
+    "tr": {
+      "title": "Kirada Dahil Olanlar",
+      "items": [
+        {
+          "item": "Kablosuz İnternet Erişimi",
+          "cost": "Aylık daire başına 40.00 JD"
+        },
+        {
+          "item": "Konaklama Bakımı ve Acil Durum Desteği",
+          "cost": "100.00 JD (Tam Dönem Ücreti)"
+        },
+        {
+          "item": "Bina Haris Kapıcı Ücretleri",
+          "cost": "25.00 - 35.00 JD"
+        },
+        {
+          "item": "Ayda İki Kez Temizlik Hizmeti",
+          "cost": "25.00 JD (Çıkış temizliği hariç)"
+        }
+      ]
+    }
+  },
+  "excluded_from_rent": {
+    "en": {
+      "title": "What Is Excluded from the Rent",
+      "items": [
+        "Utilities (Water, Electricity, Gas) and other costs not explicitly included",
+        "Utility costs are shared among apartment residents",
+        "Water & gas typically cost less than 20 JD per month per apartment",
+        "Electricity costs vary seasonally"
+      ]
+    },
+    "tr": {
+      "title": "Kirada Dahil Olmayanlar",
+      "items": [
+        "Faydalar (Su, Elektrik, Gaz) ve açıkça dahil edilmeyen diğer maliyetler",
+        "Fayda maliyetleri daire sakinleri arasında paylaşılır",
+        "Su ve gaz genellikle daire başına aylık 20 JD'den az maliyet",
+        "Elektrik maliyetleri mevsime göre değişir"
+      ]
+    }
+  },
+  "daily_rates": {
+    "en": {
+      "title": "Daily Rates for Short Stays",
+      "description": "Eligible if stay is shorter than full term by more than 20 days. Daily rates apply only upon request before booking.",
+      "rates": [
+        { "room_type": "Standard", "daily_rate": "15 JD" },
+        { "room_type": "Select", "daily_rate": "17 JD" },
+        { "room_type": "Select Double", "daily_rate": "20 JD (per person)" },
+        { "room_type": "Suite", "daily_rate": "22 JD (per person)" },
+        { "room_type": "Master", "daily_rate": "25 JD" }
+      ]
+    },
+    "tr": {
+      "title": "Kısa Konaklamalar İçin Günlük Ücretler",
+      "description": "Konaklama tam dönemden 20 günden fazla kısaysa uygun. Günlük ücretler sadece rezervasyondan önce talep üzerine geçerlidir.",
+      "rates": [
+        { "room_type": "Standart", "daily_rate": "15 JD" },
+        { "room_type": "Seçkin", "daily_rate": "17 JD" },
+        { "room_type": "Seçkin Çift", "daily_rate": "20 JD (kişi başı)" },
+        { "room_type": "Suit", "daily_rate": "22 JD (kişi başı)" },
+        { "room_type": "Master", "daily_rate": "25 JD" }
+      ]
+    }
+  },
+  "checkout_fees": {
+    "en": {
+      "title": "Checkout Fee Deposit",
+      "items": [
+        { "item": "Checkout Fee Deposit (Refundable, Partial)", "fee": "200.00 JD" },
+        { "item": "Dry-Cleaning Fee for Bedding", "fee": "15.00 JD" },
+        { "item": "General Cleaning Fee", "fee": "20.00 JD (shared apt) / 50.00 JD (private apt)" },
+        { "item": "Re-Keying Fee (if keys not returned)", "fee": "Up to 25.00 JD" }
+      ]
+    },
+    "tr": {
+      "title": "Çıkış Ücreti Depozitosu",
+      "items": [
+        { "item": "Çıkış Ücreti Depozitosu (İade Edilebilir, Kısmi)", "fee": "200.00 JD" },
+        { "item": "Yatak Takımları İçin Kuru Temizleme Ücreti", "fee": "15.00 JD" },
+        { "item": "Genel Temizlik Ücreti", "fee": "20.00 JD (paylaşımlı daire) / 50.00 JD (özel daire)" },
+        { "item": "Anahtar Yenileme Ücreti (anahtarlar iade edilmezse)", "fee": "25.00 JD'ye kadar" }
+      ]
+    }
+  }
+}

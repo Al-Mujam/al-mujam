@@ -1,0 +1,34 @@
+{
+  "title": {
+    "en": "The Housing Request Process",
+    "tr": "Konaklama Talebi Süreci"
+  },
+  "subtitle": {
+    "en": "Clear Steps to Secure Your Accommodation",
+    "tr": "Konaklamanızı Güvence Altına Almak İçin Net Adımlar"
+  },
+  "description": {
+    "en": "To ensure that every student has a place to stay, we have developed a clear process for requesting housing.",
+    "tr": "Her öğrencinin kalacak yeri olmasını sağlamak için konaklama talebinde bulunmak üzere net bir süreç geliştirdik."
+  },
+  "content": {
+    "en": [
+      "To ensure that every student has a place to stay, we have developed a clear process for requesting housing. This process applies to all students who are not part of a prearranged housing agreement through a Partner Program.",
+      "All students—whether new or returning—must complete the housing form prior to the beginning of the term. This applies to anyone planning to use Almujam Housing or to arrange their own Independent Housing.",
+      "If you meet these criteria after the launch of the housing campaign, you will receive access to the form once the campaign begins."
+    ],
+    "tr": [
+      "Her öğrencinin kalacak yeri olmasını sağlamak için konaklama talebinde bulunmak üzere net bir süreç geliştirdik. Bu süreç, Ortak Program aracılığıyla önceden düzenlenmiş konaklama anlaşmasının parçası olmayan tüm öğrenciler için geçerlidir.",
+      "Yeni veya geri dönen tüm öğrenciler—dönem başlamadan önce konaklama formunu doldurmalıdır. Bu, Almujam Konaklaması kullanmayı planlayan veya kendi Bağımsız Konaklamalarını düzenlemeyi planlayan herkes için geçerlidir.",
+      "Konaklama kampanyasının başlamasından sonra bu kriterleri karşılıyorsanız, kampanya başladığında forma erişim sağlayacaksınız."
+    ]
+  },
+  "button_text": {
+    "en": "Apply here",
+    "tr": "Buradan başvurun"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

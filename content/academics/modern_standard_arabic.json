@@ -1,0 +1,76 @@
+{
+  "title": {
+    "en": "Modern Standard Arabic Program",
+    "tr": "Modern Standart Arapça Programı"
+  },
+  "subtitle": {
+    "en": "The Official Language of the Arab World and Beyond",
+    "tr": "Arap Dünyası ve Ötesinin Resmi Dili"
+  },
+  "description": {
+    "en": "The Modern Standard Arabic (MSA) track at Almujam Arabic Language Center teaches the standard literary and communicative Arabic used across the Middle East and North Africa.",
+    "tr": "Almujam Arapça Dil Merkezi'ndeki Modern Standart Arapça (MSA) programı, Orta Doğu ve Kuzey Afrika genelinde kullanılan standart edebi ve iletişimsel Arapçayı öğretir."
+  },
+  "content": {
+    "en": [
+      "Recognized as one of the six official languages of the United Nations, MSA serves as the common medium for nearly all formal spoken and written communication throughout the Arab world.",
+      "Whether you aim to live, work, or engage professionally in an Arab country, mastering MSA equips you with the most versatile linguistic tool for effective interaction in diverse social, cultural, and occupational settings."
+    ],
+    "tr": [
+      "Birleşmiş Milletler'in altı resmi dilinden biri olarak tanınan MSA, Arap dünyası genelinde neredeyse tüm resmi sözlü ve yazılı iletişim için ortak araç görevi görür.",
+      "Bir Arap ülkesinde yaşamayı, çalışmayı veya profesyonel olarak etkileşim kurmayı hedefliyorsanız, MSA'da uzmanlaşmak sizi çeşitli sosyal, kültürel ve mesleki ortamlarda etkili etkileşim için en çok yönlü dilsel araçla donatır."
+    ]
+  },
+  "curriculum": {
+    "en": {
+      "title": "Comprehensive Curriculum from Beginner to Advanced",
+      "description": "The first four levels of the program correspond to typical undergraduate university curricula, with each level equivalent to a full academic year of Arabic study.",
+      "features": [
+        "At Almujam, we use our own specially designed curriculum, carefully tailored to ensure smooth progression and balanced development of all four core language skills: listening, reading, speaking, and writing.",
+        "Real-world texts are introduced early, so by the end of Level 4, students can confidently function in Arabic outside the classroom environment."
+      ]
+    },
+    "tr": {
+      "title": "Başlangıçtan İleri Seviyeye Kapsamlı Müfredat",
+      "description": "Programın ilk dört seviyesi tipik lisans üniversitesi müfredatlarına karşılık gelir, her seviye bir tam akademik yıllık Arapça çalışmasına eşdeğerdir.",
+      "features": [
+        "Almujam'da, düzgün ilerleme ve dört temel dil becerisinin dengeli gelişimini sağlamak için özenle uyarlanmış kendi özel tasarım müfredatımızı kullanırız: dinleme, okuma, konuşma ve yazma.",
+        "Gerçek dünya metinleri erken tanıtılır, böylece Seviye 4'ün sonunda öğrenciler sınıf ortamının dışında Arapça olarak güvenle işlev görebilir."
+      ]
+    }
+  },
+  "advanced_proficiency": {
+    "en": {
+      "title": "Advanced Proficiency and Specialized Modules in Level 5",
+      "description": "Level 5 offers advanced students opportunities to deepen their skills through rotating modules, typically two or three per term, covering diverse topics such as:",
+      "modules": [
+        "Media Arabic",
+        "Readings in International Relations",
+        "The Arabic Novel and Short Story",
+        "Poetry and Literary Criticism",
+        "Economics"
+      ],
+      "note": "Students may also tailor their module choices to suit individual goals and interests. Teaching materials consist exclusively of authentic books and audio resources used by native Arab university students. Graduates of this track are thus well-prepared to engage with Arab society, culture, and literature with fluency and confidence."
+    },
+    "tr": {
+      "title": "Seviye 5'te İleri Yeterlilik ve Uzmanlaşmış Modüller",
+      "description": "Seviye 5, ileri seviye öğrencilere genellikle dönem başına iki veya üç olmak üzere dönen modüller aracılığıyla becerilerini derinleştirme fırsatları sunar, şu gibi çeşitli konuları kapsar:",
+      "modules": [
+        "Medya Arapçası",
+        "Uluslararası İlişkilerde Okumalar",
+        "Arap Romanı ve Kısa Hikayesi",
+        "Şiir ve Edebi Eleştiri",
+        "Ekonomi"
+      ],
+      "note": "Öğrenciler ayrıca modül seçimlerini bireysel hedefler ve ilgi alanlarına uygun olarak özelleştirebilir. Öğretim materyalleri sadece yerli Arap üniversite öğrencileri tarafından kullanılan orijinal kitaplar ve ses kaynaklarından oluşur. Bu programın mezunları böylece Arap toplumu, kültürü ve edebiyatı ile akıcılık ve güvenle etkileşim kurmaya iyi hazırlanmıştır."
+    }
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

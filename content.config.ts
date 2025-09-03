@@ -488,10 +488,7 @@ export default defineContentConfig({
             classes: z.string(),
           })),
         }).optional(),
-        private_tutoring: z.object({
-          en: z.array(z.string()),
-          tr: z.array(z.string()),
-        }).optional(),
+
         base_rate: z.object({
           en: z.object({
             title: z.string(),
@@ -570,7 +567,7 @@ export default defineContentConfig({
             note: z.string(),
           }),
         }).optional(),
-        private_tutoring_rates: z.object({
+        private_tutoring: z.object({
           en: z.object({
             title: z.string(),
             sessions: z.array(z.object({
@@ -608,12 +605,456 @@ export default defineContentConfig({
             eligibility: z.string(),
           })),
         }).optional(),
+        refund_details: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            important_notes: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            important_notes: z.array(z.string()),
+          }),
+        }).optional(),
       })
     }),
-    academics_admissions: defineCollection({
-      type: 'page',
-      source: 'academics_admissions/**.md',
-      
+    academics: defineCollection({
+      type: 'data',
+      source: 'academics/**.json',
+      schema: z.object({
+        title: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        subtitle: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        description: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        content: z.object({
+          en: z.array(z.string()),
+          tr: z.array(z.string()),
+        }),
+        button_text: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        button_link: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        // Additional fields for specific programs
+        administration: z.object({
+          en: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+          }),
+        }).optional(),
+        assessment: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            requirements: z.array(z.string()),
+            note: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            requirements: z.array(z.string()),
+            note: z.string(),
+          }),
+        }).optional(),
+        foundational_skills: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            skills: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            skills: z.array(z.string()),
+          }),
+        }).optional(),
+        advanced_mastery: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            modules: z.array(z.string()),
+            note: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            modules: z.array(z.string()),
+            note: z.string(),
+          }),
+        }).optional(),
+        curriculum: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            features: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            features: z.array(z.string()),
+          }),
+        }).optional(),
+        advanced_proficiency: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            modules: z.array(z.string()),
+            note: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            modules: z.array(z.string()),
+            note: z.string(),
+          }),
+        }).optional(),
+        course_structure: z.object({
+          en: z.object({
+            title: z.string(),
+            levels: z.array(z.object({
+              level: z.string(),
+              title: z.string(),
+              description: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            levels: z.array(z.object({
+              level: z.string(),
+              title: z.string(),
+              description: z.string(),
+            })),
+          }),
+        }).optional(),
+        learning_materials: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+        }).optional(),
+        programs: z.object({
+          en: z.array(z.object({
+            title: z.string(),
+            description: z.string(),
+          })),
+          tr: z.array(z.object({
+            title: z.string(),
+            description: z.string(),
+          })),
+        }).optional(),
+        test_arabic: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+        }).optional(),
+      })
+    }),
+    accommodation: defineCollection({
+      type: 'data',
+      source: 'accommodation/**.json',
+      schema: z.object({
+        title: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        subtitle: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        description: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        content: z.object({
+          en: z.array(z.string()),
+          tr: z.array(z.string()),
+        }),
+        button_text: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        button_link: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        // Additional fields for housing options
+        almujam_housing: z.object({
+          en: z.object({
+            title: z.string(),
+            subtitle: z.string(),
+            features: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            subtitle: z.string(),
+            features: z.array(z.string()),
+          }),
+        }).optional(),
+        independent_housing: z.object({
+          en: z.object({
+            title: z.string(),
+            subtitle: z.string(),
+            features: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            subtitle: z.string(),
+            features: z.array(z.string()),
+          }),
+        }).optional(),
+        // Additional fields for housing philosophy
+        common_challenges: z.object({
+          en: z.object({
+            title: z.string(),
+            challenges: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            challenges: z.array(z.string()),
+          }),
+        }).optional(),
+        // Additional fields for room types
+        room_types: z.object({
+          en: z.array(z.object({
+            name: z.string(),
+            size: z.string(),
+            features: z.string(),
+            description: z.string(),
+          })),
+          tr: z.array(z.object({
+            name: z.string(),
+            size: z.string(),
+            features: z.string(),
+            description: z.string(),
+          })),
+        }).optional(),
+        apartment_features: z.object({
+          en: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+            bedroom_features: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+            bedroom_features: z.string(),
+          }),
+        }).optional(),
+        // Additional fields for pricing
+        pricing_table: z.object({
+          en: z.object({
+            title: z.string(),
+            headers: z.array(z.string()),
+            rows: z.array(z.array(z.string())),
+          }),
+          tr: z.object({
+            title: z.string(),
+            headers: z.array(z.string()),
+            rows: z.array(z.array(z.string())),
+          }),
+        }).optional(),
+        included_in_rent: z.object({
+          en: z.object({
+            title: z.string(),
+            items: z.array(z.object({
+              item: z.string(),
+              cost: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            items: z.array(z.object({
+              item: z.string(),
+              cost: z.string(),
+            })),
+          }),
+        }).optional(),
+        excluded_from_rent: z.object({
+          en: z.object({
+            title: z.string(),
+            items: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            items: z.array(z.string()),
+          }),
+        }).optional(),
+        daily_rates: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            rates: z.array(z.object({
+              room_type: z.string(),
+              daily_rate: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            rates: z.array(z.object({
+              room_type: z.string(),
+              daily_rate: z.string(),
+            })),
+          }),
+        }).optional(),
+        checkout_fees: z.object({
+          en: z.object({
+            title: z.string(),
+            items: z.array(z.object({
+              item: z.string(),
+              fee: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            items: z.array(z.object({
+              item: z.string(),
+              fee: z.string(),
+            })),
+          }),
+        }).optional(),
+        // Additional fields for recommendations
+        which_option_right: z.object({
+          en: z.object({
+            title: z.string(),
+            almujam_housing: z.object({
+              title: z.string(),
+              features: z.array(z.string()),
+            }),
+            independent_housing: z.object({
+              title: z.string(),
+              features: z.array(z.string()),
+            }),
+          }),
+          tr: z.object({
+            title: z.string(),
+            almujam_housing: z.object({
+              title: z.string(),
+              features: z.array(z.string()),
+            }),
+            independent_housing: z.object({
+              title: z.string(),
+              features: z.array(z.string()),
+            }),
+          }),
+        }).optional(),
+        first_term_recommendation: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        facilitated_housing: z.object({
+          en: z.object({
+            title: z.string(),
+            subtitle: z.string(),
+            description: z.string(),
+            contact_info: z.string(),
+            features: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            subtitle: z.string(),
+            description: z.string(),
+            contact_info: z.string(),
+            features: z.array(z.string()),
+          }),
+        }).optional(),
+        // Additional fields for policies
+        right_of_entry: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+        }).optional(),
+        premature_departure: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+        }).optional(),
+        limit_of_liability: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+        }).optional(),
+        cancellation_policy: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            details: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            details: z.array(z.string()),
+          }),
+        }).optional(),
+        eligibility: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+          }),
+        }).optional(),
+        visitor_policy: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            rules: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            rules: z.array(z.string()),
+          }),
+        }).optional(),
+      })
     }),
     student_life: defineCollection({
       type: 'data',

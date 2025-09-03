@@ -1,0 +1,50 @@
+{
+  "title": {
+    "en": "ARRIVAL AND DEPARTURE",
+    "tr": "VARIS VE AYRILIS"
+  },
+  "subtitle": {
+    "en": "Arrival and Departure Information at Almujam Center",
+    "tr": "Almujam Merkezi'nde Varış ve Ayrılış Bilgileri"
+  },
+  "description": {
+    "en": "Essential Information for Arabic Language Students",
+    "tr": "Arapça Dil Öğrencileri için Temel Bilgiler"
+  },
+  "content": {
+    "en": [
+      "Arrival Recommendations for Arabic Language Students",
+      "We strongly recommend that every student arriving at Almujam Center plan to arrive at least two days before the first day of orientation. This allows time to settle into student housing and overcome jet lag. Students with reservations in Almujam Housing should consult the Housing Overview webpage for detailed move-in dates and times. It is essential that all students arrive at least 24 hours before the Orientation session to ensure full focus during this important introduction to the institute.",
+      "The formal Orientation at Almujam includes placement exams, an introduction to studying Arabic abroad, a review of institute policies, visa registration, and a cultural tour of historic sites in Northern Jordan.",
+      "Policy for Late Arrivals",
+      "Students arriving late will still take placement exams, and a condensed Orientation session may be offered if time allows. However, late arrivals are a lower priority due to the intensive academic schedule. We kindly ask all students to respect these timelines to maintain an effective learning environment for their peers.",
+      "Early Departure and Exam Scheduling",
+      "Almujam's academic calendar is designed to align with vacation schedules from major educational systems, including those in the US, Canada, and the UK. Despite this, we understand that not all students' needs will be perfectly met. Students attending 85% or more of each term may request early or take-home final exams. If you require special scheduling accommodations, please indicate this on your application so that arrangements can be made in advance.",
+      "Airport Transportation Services for Students",
+      "Almujam offers complimentary airport shuttle services to students arriving for the first time. Transportation from the airport to student housing is available 24/7, and return rides to the airport can be arranged for departure flights. Students can apply for this service through the Student Life section on our website by selecting the Airport Transportation option and submitting the application form.",
+      "This free service is available to students residing in Almujam Housing or those with independent housing arrangements. To qualify, itinerary confirmation must be submitted at least one week before arrival for winter, spring, and fall terms, and two weeks before arrival for summer term students.",
+      "Please note this service is only offered from one week before Orientation begins until two weeks after the last class of the term. Transportation for additional trips during attendance, such as visa renewal excursions, is the responsibility of the student."
+    ],
+    "tr": [
+      "Arapça Dil Öğrencileri için Varış Önerileri",
+      "Almujam Merkezi'ne gelen her öğrencinin oryantasyonun ilk gününden en az iki gün önce gelmeyi planlamasını güçlü bir şekilde öneriyoruz. Bu, öğrenci konutuna yerleşmek ve jet lag'i aşmak için zaman tanır. Almujam Konutunda rezervasyonu olan öğrenciler, detaylı taşınma tarihleri ve saatleri için Konut Genel Bakış web sayfasına danışmalıdır. Tüm öğrencilerin bu önemli enstitü tanıtımı sırasında tam odaklanmayı sağlamak için Oryantasyon oturumundan en az 24 saat önce gelmesi esastır.",
+      "Almujam'daki resmi Oryantasyon, yerleştirme sınavlarını, yurtdışında Arapça çalışmaya girişi, enstitü politikalarının gözden geçirilmesini, vize kaydını ve Kuzey Ürdün'deki tarihi yerlerin kültürel turunu içerir.",
+      "Geç Gelenler için Politika",
+      "Geç gelen öğrenciler yine de yerleştirme sınavlarını alacak ve zaman izin verirse kısaltılmış bir Oryantasyon oturumu sunulabilir. Ancak, yoğun akademik program nedeniyle geç gelenler daha düşük önceliğe sahiptir. Tüm öğrencilerden akranları için etkili bir öğrenme ortamını sürdürmek üzere bu zaman çizelgelerine saygı göstermelerini nazikçe rica ediyoruz.",
+      "Erken Ayrılış ve Sınav Programlama",
+      "Almujam'ın akademik takvimi, ABD, Kanada ve İngiltere'deki ana eğitim sistemlerinin tatil programlarıyla uyumlu olacak şekilde tasarlanmıştır. Buna rağmen, tüm öğrencilerin ihtiyaçlarının mükemmel şekilde karşılanmayacağını anlıyoruz. Her dönemin %85'ine veya daha fazlasına katılan öğrenciler, erken veya ev ödevi final sınavları talep edebilir. Özel programlama konaklamalarına ihtiyacınız varsa, lütfen bunu başvurunuzda belirtin ki düzenlemeler önceden yapılabilsin.",
+      "Öğrenciler için Havaalanı Ulaşım Hizmetleri",
+      "Almujam, ilk kez gelen öğrencilere ücretsiz havaalanı servis hizmeti sunar. Havaalanından öğrenci konutuna ulaşım 7/24 mevcuttur ve ayrılış uçuşları için havaalanına dönüş yolculukları düzenlenebilir. Öğrenciler bu hizmet için web sitemizin Öğrenci Yaşamı bölümünden Havaalanı Ulaşımı seçeneğini seçerek ve başvuru formunu göndererek başvurabilirler.",
+      "Bu ücretsiz hizmet, Almujam Konutunda ikamet eden öğrencilere veya bağımsız konut düzenlemeleri olan öğrencilere mevcuttur. Nitelik kazanmak için, kış, ilkbahar ve sonbahar dönemleri için varıştan en az bir hafta önce, yaz dönemi öğrencileri için varıştan en az iki hafta önce güzergah onayı gönderilmelidir.",
+      "Lütfen bu hizmetin sadece Oryantasyon başlamadan bir hafta öncesinden dönemin son dersinden iki hafta sonrasına kadar sunulduğunu unutmayın. Katılım sırasında vize yenileme gezileri gibi ek yolculuklar için ulaşım öğrencinin sorumluluğundadır."
+    ]
+  },
+  "button_text": {
+    "en": "Learn More About Arrival",
+    "tr": "Varış Hakkında Daha Fazla Bilgi Edinin"
+  },
+  "button_link": {
+    "en": "#arrival-departure",
+    "tr": "#arrival-departure"
+  }
+}

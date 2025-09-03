@@ -1,0 +1,108 @@
+{
+  "title": {
+    "en": "Recommendations and Special Programs",
+    "tr": "Öneriler ve Özel Programlar"
+  },
+  "subtitle": {
+    "en": "Making the Right Choice for Your Stay",
+    "tr": "Konaklamanız İçin Doğru Seçimi Yapmak"
+  },
+  "description": {
+    "en": "Our recommendations are based on years of experience helping students find the right accommodation option.",
+    "tr": "Önerilerimiz, öğrencilere doğru konaklama seçeneğini bulmada yardımcı olma konusundaki yılların deneyimine dayanmaktadır."
+  },
+  "which_option_right": {
+    "en": {
+      "title": "Which Housing Option Is Right for You?",
+      "almujam_housing": {
+        "title": "Almujam Housing is best for students who:",
+        "features": [
+          "Prefer to avoid the stress of finding housing after arrival",
+          "Value proximity to Almujam, supermarkets, and daily conveniences",
+          "Appreciate structured support, maintenance services, and emergency assistance",
+          "Want to settle in quickly and focus on their studies",
+          "Are looking for a safe, social environment with fellow Arabic learners"
+        ]
+      },
+      "independent_housing": {
+        "title": "Independent Housing may suit students who:",
+        "features": [
+          "Are comfortable with uncertainty and decision-making after arrival",
+          "Prefer to select their apartment and housemates in person",
+          "Have experience managing leases, local landlords, and housing logistics",
+          "Are seeking maximum privacy or cultural immersion",
+          "Have advanced Arabic skills and familiarity with Jordanian systems"
+        ]
+      }
+    },
+    "tr": {
+      "title": "Hangi Konaklama Seçeneği Sizin İçin Doğru?",
+      "almujam_housing": {
+        "title": "Almujam Konaklaması şu öğrenciler için en iyisidir:",
+        "features": [
+          "Varıştan sonra konaklama bulma stresinden kaçınmayı tercih edenler",
+          "Almujam'a, süpermarketlere ve günlük kolaylıklara yakınlığı değer verenler",
+          "Yapılandırılmış destek, bakım hizmetleri ve acil durum yardımını takdir edenler",
+          "Hızlıca yerleşmek ve çalışmalarına odaklanmak isteyenler",
+          "Diğer Arapça öğrencileriyle güvenli, sosyal bir ortam arayanlar"
+        ]
+      },
+      "independent_housing": {
+        "title": "Bağımsız Konaklama şu öğrenciler için uygun olabilir:",
+        "features": [
+          "Varıştan sonra belirsizlik ve karar verme konusunda rahat olanlar",
+          "Dairelerini ve ev arkadaşlarını şahsen seçmeyi tercih edenler",
+          "Kira sözleşmelerini, yerel ev sahiplerini ve konaklama lojistiğini yönetme deneyimine sahip olanlar",
+          "Maksimum gizlilik veya kültürel daldırma arayanlar",
+          "Gelişmiş Arapça becerilerine ve Ürdün sistemlerine aşinalığa sahip olanlar"
+        ]
+      }
+    }
+  },
+  "first_term_recommendation": {
+    "en": {
+      "title": "Our Recommendation for First-Term Students",
+      "content": [
+        "For first-term students, our clear and strong recommendation is to choose Almujam Housing. It minimizes stress and logistical challenges, allowing you to focus on your academic goals from day one.",
+        "Once you are more familiar with Amman and local culture, you may consider transitioning to Independent Housing for future terms.",
+        "Past students who started with Almujam Housing often chose to later explore different neighborhoods or live with Arabic-speaking housemates to fully immerse themselves in the language. This progression is natural, and we support it fully for students who feel ready."
+      ]
+    },
+    "tr": {
+      "title": "İlk Dönem Öğrencileri İçin Önerimiz",
+      "content": [
+        "İlk dönem öğrencileri için net ve güçlü önerimiz Almujam Konaklaması seçmektir. Stresi ve lojistik zorlukları minimize eder, ilk günden itibaren akademik hedeflerinize odaklanmanıza olanak tanır.",
+        "Amman ve yerel kültüre daha aşina olduktan sonra, gelecek dönemler için Bağımsız Konaklamaya geçmeyi düşünebilirsiniz.",
+        "Almujam Konaklaması ile başlayan geçmiş öğrenciler, genellikle daha sonra farklı mahalleleri keşfetmeyi veya dili tamamen özümsemek için Arapça konuşan ev arkadaşlarıyla yaşamayı seçtiler. Bu ilerleme doğaldır ve hazır hisseden öğrenciler için tam olarak destekliyoruz."
+      ]
+    }
+  },
+  "facilitated_housing": {
+    "en": {
+      "title": "Facilitated Housing Program",
+      "subtitle": "Special Support for Married Students and Families",
+      "description": "For married students or those attending with family, we offer a personalized housing support service through our Facilitated Housing program.",
+      "contact_info": "Please contact us at m.albishawi@almujamedu.com for individualized guidance.",
+      "features": [
+        "Personalized housing search and placement",
+        "Family-friendly accommodation options",
+        "Special considerations for children and family needs",
+        "Assistance with longer-term lease negotiations",
+        "Support for family-specific requirements"
+      ]
+    },
+    "tr": {
+      "title": "Kolaylaştırılmış Konaklama Programı",
+      "subtitle": "Evli Öğrenciler ve Aileler İçin Özel Destek",
+      "description": "Evli öğrenciler veya aileleriyle birlikte katılanlar için, Kolaylaştırılmış Konaklama programımız aracılığıyla kişiselleştirilmiş konaklama destek hizmeti sunuyoruz.",
+      "contact_info": "Kişiselleştirilmiş rehberlik için lütfen m.albishawi@almujamedu.com adresinden bizimle iletişime geçin.",
+      "features": [
+        "Kişiselleştirilmiş konaklama arama ve yerleştirme",
+        "Aile dostu konaklama seçenekleri",
+        "Çocuklar ve aile ihtiyaçları için özel düşünceler",
+        "Uzun vadeli kira sözleşmesi müzakerelerinde yardım",
+        "Aileye özel gereksinimler için destek"
+      ]
+    }
+  }
+}

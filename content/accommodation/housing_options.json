@@ -1,0 +1,96 @@
+{
+  "title": {
+    "en": "Housing Options at Almujam",
+    "tr": "Almujam'da Konaklama Seçenekleri"
+  },
+  "subtitle": {
+    "en": "Designed for Your Comfort, Stability, and Focus",
+    "tr": "Konforunuz, Kararlılığınız ve Odaklanmanız İçin Tasarlandı"
+  },
+  "description": {
+    "en": "When designing our student housing services at Almujam, we began with one question: What do students truly need in order to feel safe, supported, and focused during their Arabic learning journey?",
+    "tr": "Almujam'da öğrenci konaklama hizmetlerimizi tasarlarken, tek bir soruyla başladık: Öğrenciler Arapça öğrenme yolculukları sırasında kendilerini güvende, desteklenmiş ve odaklanmış hissetmek için gerçekten neye ihtiyaç duyuyor?"
+  },
+  "content": {
+    "en": [
+      "To keep things simple and flexible, Almujam offers two primary housing options:",
+      "Almujam Housing (fully managed by our team)",
+      "Independent Housing (student-arranged, with optional guidance from us)",
+      "Each of these options is designed to suit different personalities, needs, and levels of independence."
+    ],
+    "tr": [
+      "İşleri basit ve esnek tutmak için, Almujam iki ana konaklama seçeneği sunar:",
+      "Almujam Konaklaması (ekibimiz tarafından tamamen yönetilir)",
+      "Bağımsız Konaklama (öğrenci tarafından düzenlenir, bizden isteğe bağlı rehberlik ile)",
+      "Bu seçeneklerin her biri farklı kişilikler, ihtiyaçlar ve bağımsızlık seviyelerine uygun olarak tasarlanmıştır."
+    ]
+  },
+  "almujam_housing": {
+    "en": {
+      "title": "Almujam Housing",
+      "subtitle": "Managed Living for a Focused Study Experience",
+      "features": [
+        "Placement in accommodations managed or recommended by Almujam",
+        "Housemate matching based on preferences and lifestyle",
+        "Support during move-in and throughout the stay",
+        "Advice on living in Amman and local services",
+        "High-Speed Internet Included (up to 200GB monthly)",
+        "Full Maintenance Support",
+        "Flexible Rental Dates",
+        "Clean and Practical Furniture",
+        "Convenient Location",
+        "Seasonal Temperature Control",
+        "Fully Equipped Kitchens",
+        "Bi-Monthly Cleaning",
+        "Thoughtful Housemate Matching",
+        "24/7 Emergency Support"
+      ]
+    },
+    "tr": {
+      "title": "Almujam Konaklaması",
+      "subtitle": "Odaklanmış Çalışma Deneyimi İçin Yönetilen Yaşam",
+      "features": [
+        "Almujam tarafından yönetilen veya önerilen konaklama yerlerinde yerleştirme",
+        "Tercihlere ve yaşam tarzına göre ev arkadaşı eşleştirmesi",
+        "Taşınma sırasında ve konaklama boyunca destek",
+        "Amman'da yaşam ve yerel hizmetler konusunda tavsiye",
+        "Yüksek Hızlı İnternet Dahil (aylık 200GB'a kadar)",
+        "Tam Bakım Desteği",
+        "Esnek Kiralama Tarihleri",
+        "Temiz ve Pratik Mobilya",
+        "Uygun Konum",
+        "Mevsimsel Sıcaklık Kontrolü",
+        "Tam Donanımlı Mutfaklar",
+        "Ayda İki Kez Temizlik",
+        "Düşünceli Ev Arkadaşı Eşleştirmesi",
+        "7/24 Acil Durum Desteği"
+      ]
+    }
+  },
+  "independent_housing": {
+    "en": {
+      "title": "Independent Housing",
+      "subtitle": "Greater Flexibility, With More Responsibility",
+      "features": [
+        "For students who prefer to explore housing opportunities on their own",
+        "Allows for more freedom and the chance to see apartments in person before committing",
+        "Students are responsible for choosing their housemates, finalizing lease terms, and managing their own living arrangements",
+        "Most landlords require full upfront payment for short-term leases",
+        "Contract terms vary and may not include early termination options",
+        "Almujam does not intervene in maintenance or landlord disputes for independently arranged housing"
+      ]
+    },
+    "tr": {
+      "title": "Bağımsız Konaklama",
+      "subtitle": "Daha Fazla Esneklik, Daha Fazla Sorumluluk",
+      "features": [
+        "Konaklama fırsatlarını kendi başlarına keşfetmeyi tercih eden öğrenciler için",
+        "Daha fazla özgürlük ve taahhüt etmeden önce daireleri şahsen görme şansı sağlar",
+        "Öğrenciler ev arkadaşlarını seçmek, kira şartlarını netleştirmek ve kendi yaşam düzenlemelerini yönetmekten sorumludur",
+        "Çoğu ev sahibi kısa vadeli kiralar için tam peşin ödeme talep eder",
+        "Sözleşme şartları değişir ve erken fesih seçenekleri içermeyebilir",
+        "Almujam, bağımsız olarak düzenlenen konaklama için bakım veya ev sahibi anlaşmazlıklarına müdahale etmez"
+      ]
+    }
+  }
+}

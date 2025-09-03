@@ -1,0 +1,70 @@
+{
+  "title": {
+    "en": "Online Arabic Courses at Almujam",
+    "tr": "Almujam'da Çevrimiçi Arapça Kursları"
+  },
+  "subtitle": {
+    "en": "Flexible, Personalized Learning From Anywhere",
+    "tr": "Her Yerden Esnek, Kişiselleştirilmiş Öğrenme"
+  },
+  "description": {
+    "en": "Almujam now offers online Arabic programs that let you study Classical Arabic, Modern Standard Arabic (MSA), and Levantine Dialect from anywhere in the world.",
+    "tr": "Almujam artık dünyanın her yerinden Klasik Arapça, Modern Standart Arapça (MSA) ve Levanten Lehçesi çalışmanıza olanak tanıyan çevrimiçi Arapça programları sunar."
+  },
+  "content": {
+    "en": [
+      "Our online track is crafted to accommodate busy schedules, ideal for working professionals, travelers, and students who require flexible learning."
+    ],
+    "tr": [
+      "Çevrimiçi programımız meşgul programları karşılamak için tasarlanmıştır, çalışan profesyoneller, gezginler ve esnek öğrenme gerektiren öğrenciler için idealdir."
+    ]
+  },
+  "programs": {
+    "en": [
+      {
+        "title": "One-on-One Private Tutoring (OPT)",
+        "description": "Advanced students can connect with our expert instructors via live, individualized sessions that focus on your goals—whether that's refining conversation, translation, Tajweed, or academic Arabic. Classes are scheduled flexibly to suit your availability."
+      },
+      {
+        "title": "Structured Group Courses (MSA, Classical)",
+        "description": "Our online group courses include five sequential levels per track, mirroring the rigor and progression of our on-site curriculum. You'll progress step-by-step through well-designed modules, receiving live instruction and feedback—just like on-campus."
+      },
+      {
+        "title": "Interactive Resources & Digital Community",
+        "description": "Students gain access to a robust digital library, including animated pronunciation lessons, conversational audio drills, and grammar tutorials. Our online platform also features a peer community for cultural exchange and language practice."
+      }
+    ],
+    "tr": [
+      {
+        "title": "Bire Bir Özel Ders (OPT)",
+        "description": "İleri seviye öğrenciler, konuşmayı geliştirme, çeviri, Tecvid veya akademik Arapça olsun, hedeflerinize odaklanan canlı, bireyselleştirilmiş oturumlar aracılığıyla uzman eğitmenlerimizle bağlantı kurabilir. Sınıflar mevcudiyetinize uygun olarak esnek bir şekilde programlanır."
+      },
+      {
+        "title": "Yapılandırılmış Grup Kursları (MSA, Klasik)",
+        "description": "Çevrimiçi grup kurslarımız, kampüsteki müfredatımızın titizliğini ve ilerlemesini yansıtan her program için beş sıralı seviye içerir. İyi tasarlanmış modüller aracılığıyla adım adım ilerleyecek, canlı öğretim ve geri bildirim alacaksınız—tıpkı kampüste olduğu gibi."
+      },
+      {
+        "title": "Etkileşimli Kaynaklar ve Dijital Topluluk",
+        "description": "Öğrenciler, animasyonlu telaffuz dersleri, konuşma sesli alıştırmaları ve dilbilgisi öğreticileri dahil olmak üzere güçlü bir dijital kütüphaneye erişim kazanır. Çevrimiçi platformumuz ayrıca kültürel değişim ve dil pratiği için bir akran topluluğu özelliği sunar."
+      }
+    ]
+  },
+  "test_arabic": {
+    "en": {
+      "title": "Test Your Arabic Level for Free",
+      "description": "Take our free Arabic level test to determine your current proficiency and get personalized recommendations for your learning journey."
+    },
+    "tr": {
+      "title": "Arapça Seviyenizi Ücretsiz Test Edin",
+      "description": "Mevcut yeterlilik seviyenizi belirlemek ve öğrenme yolculuğunuz için kişiselleştirilmiş öneriler almak için ücretsiz Arapça seviye testimizi yapın."
+    }
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

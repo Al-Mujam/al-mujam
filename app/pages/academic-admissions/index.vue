@@ -16,254 +16,977 @@
     <li><NuxtLink class="opacity-70 hover:opacity-100 transition-all duration-300" :to="{name: 'academic-admissions'}">{{ translations.find(t => t.key === 'academics_admissions').value[locale] }}</NuxtLink></li>
   </ul>
 </div>
+
+        <!-- Dynamic Section Navigation -->
+        <div class="flex flex-wrap justify-center gap-3 mt-6">
+          <button 
+            v-for="section in getCurrentTabSections()" 
+            :key="section.id"
+            @click="scrollToSection(section.id)"
+            class="px-4 cursor-pointer py-2 bg-white/20 hover:bg-white/30 text-white rounded-full text-sm font-medium transition-all duration-300 backdrop-blur-sm border border-white/30 hover:border-white/50"
+          >
+            {{ section.title[locale] }}
+          </button>
+        </div>
              </div>
 
         </div>
 
-        <!-- Introduction Section -->
-        <section class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
-            <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
-                <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
-                    {{ admissions.introduction.title[locale] }}
+        <!-- Tabs -->
+        <div class="w-full flex items-center justify-center">
+            <div class="grid grid-cols-3 gap-0 border-b border-gray-200 container max-w-[1000px] mx-4 md:mx-20 lg:mx-10 w-full h-max mb-5">
+                <div @click="changeTab('academics')" :class="activeTab === 'academics' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
+                    {{ translations.find(t => t.key === 'academics').value[locale] }}
                 </div>
-                <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
-                    {{ admissions.introduction.subtitle[locale] }}
+                <div @click="changeTab('admissions')" :class="activeTab === 'admissions' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
+                    {{ translations.find(t => t.key === 'admissions').value[locale] }}
                 </div>
-                <div class="text-xl text-center text-gray-600 max-w-3xl">
-                    {{ admissions.introduction.description[locale] }}
-                </div>
-                <div class="w-20 h-1 bg-web-primary rounded-full"></div>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <div class="space-y-6 text-gray-700 leading-relaxed">
-                    <p v-for="(paragraph, index) in admissions.introduction.content[locale]" :key="index" class="text-lg">
-                        {{ paragraph }}
-                    </p>
-                </div>
-                
-                <div class="mt-8 text-center">
-                    <a :href="admissions.introduction.button_link[locale]" target="_blank" class="web-btn ">
-                        {{ admissions.introduction.button_text[locale] }}
-                    </a>
+                <div @click="changeTab('accommodation')" :class="activeTab === 'accommodation' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
+                    {{ translations.find(t => t.key === 'accommodation').value[locale] }}
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Program Dates Section -->
-        <section class="w-full bg-gray-50 py-12">
-            <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+        <!-- Academics Tab -->
+        <section id="academics" v-if="activeTab === 'academics'" class="container mx-auto px-4 md:px-20 pb-5 lg:px-10 max-w-[1280px]">
+            <!-- Programs Overview -->
+            <div id="programs-overview" class="mb-16">
                 <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                     <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
-                        {{ admissions.program_dates.title[locale] }}
+                        {{ academics.programs_overview.title[locale] }}
                     </div>
                     <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
-                        {{ admissions.program_dates.subtitle[locale] }}
+                        {{ academics.programs_overview.subtitle[locale] }}
                     </div>
                     <div class="text-xl text-center text-gray-600 max-w-3xl">
-                        {{ admissions.program_dates.description[locale] }}
+                        {{ academics.programs_overview.description[locale] }}
                     </div>
                     <div class="w-20 h-1 bg-web-primary rounded-full"></div>
                 </div>
 
-                <div class="max-w-6xl mx-auto">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <!-- Content -->
-                        <div class="space-y-6 text-gray-700 leading-relaxed">
-                            <p v-for="(paragraph, index) in admissions.program_dates.content[locale]" :key="index" class="text-lg">
-                                {{ paragraph }}
-                            </p>
-                        </div>
-
-                        <!-- Calendar -->
-                        <div class="bg-white rounded-2xl shadow-lg p-6">
-                            <h3 class="text-2xl font-bold text-web-primary mb-6">Academic Calendar | 2026 – 2027</h3>
-                            <div class="space-y-4">
-                                <div v-for="(term, index) in admissions.program_dates.calendar[locale]" :key="index" class="border-l-4 border-web-primary pl-4">
-                                    <h4 class="font-semibold text-lg text-gray-800">{{ term.term }}</h4>
-                                    <p class="text-sm text-gray-600">Orientation: {{ term.orientation }}</p>
-                                    <p class="text-sm text-gray-600">Classes & Final Exams: {{ term.classes }}</p>
-                                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in academics.programs_overview.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+                    
+                    <!-- Administration Section -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.programs_overview.administration[locale].title }}</h3>
+                        <div class="space-y-4">
+                            <div v-for="(feature, index) in academics.programs_overview.administration[locale].features" :key="index" class="flex items-start">
+                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-700">{{ feature }}</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Private Tutoring -->
-                    <div class="mt-12 bg-white rounded-2xl shadow-lg p-8">
-                        <h3 class="text-2xl font-bold text-web-primary mb-6">Private Tutoring</h3>
-                        <div class="space-y-4 text-gray-700">
-                            <p v-for="(paragraph, index) in admissions.program_dates.private_tutoring[locale]" :key="index" class="text-lg">
-                                {{ paragraph }}
-                            </p>
+                    <!-- Assessment Section -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.programs_overview.assessment[locale].title }}</h3>
+                        <p class="text-gray-700 mb-4">{{ academics.programs_overview.assessment[locale].description }}</p>
+                        <div class="space-y-4">
+                            <div v-for="(requirement, index) in academics.programs_overview.assessment[locale].requirements" :key="index" class="flex items-start">
+                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-700">{{ requirement }}</span>
+                            </div>
                         </div>
+                        <p class="text-gray-600 mt-4 italic">{{ academics.programs_overview.assessment[locale].note }}</p>
                     </div>
 
                     <div class="mt-8 text-center">
-                        <a :href="admissions.program_dates.button_link[locale]" target="_blank" class="web-btn ">
-                            {{ admissions.program_dates.button_text[locale] }}
+                        <a :href="academics.programs_overview.button_link[locale]" target="_blank" class="web-btn">
+                            {{ academics.programs_overview.button_text[locale] }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classical Arabic -->
+            <div id="classical-arabic" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ academics.classical_arabic.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ academics.classical_arabic.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ academics.classical_arabic.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in academics.classical_arabic.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+
+                    <!-- Foundational Skills -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.classical_arabic.foundational_skills[locale].title }}</h3>
+                        <p class="text-gray-700 mb-4">{{ academics.classical_arabic.foundational_skills[locale].description }}</p>
+                        <div class="space-y-4">
+                            <div v-for="(skill, index) in academics.classical_arabic.foundational_skills[locale].skills" :key="index" class="flex items-start">
+                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-700">{{ skill }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Mastery -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.classical_arabic.advanced_mastery[locale].title }}</h3>
+                        <p class="text-gray-700 mb-4">{{ academics.classical_arabic.advanced_mastery[locale].description }}</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div v-for="(module, index) in academics.classical_arabic.advanced_mastery[locale].modules" :key="index" class="bg-gray-50 p-4 rounded-lg text-center">
+                                <span class="text-gray-700 font-medium">{{ module }}</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">{{ academics.classical_arabic.advanced_mastery[locale].note }}</p>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a :href="academics.classical_arabic.button_link[locale]" target="_blank" class="web-btn">
+                            {{ academics.classical_arabic.button_text[locale] }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modern Standard Arabic -->
+            <div id="modern-standard-arabic" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ academics.modern_standard_arabic.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ academics.modern_standard_arabic.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ academics.modern_standard_arabic.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in academics.modern_standard_arabic.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+
+                    <!-- Curriculum -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.modern_standard_arabic.curriculum[locale].title }}</h3>
+                        <p class="text-gray-700 mb-4">{{ academics.modern_standard_arabic.curriculum[locale].description }}</p>
+                        <div class="space-y-4">
+                            <div v-for="(feature, index) in academics.modern_standard_arabic.curriculum[locale].features" :key="index" class="flex items-start">
+                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-700">{{ feature }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Proficiency -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.modern_standard_arabic.advanced_proficiency[locale].title }}</h3>
+                        <p class="text-gray-700 mb-4">{{ academics.modern_standard_arabic.advanced_proficiency[locale].description }}</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div v-for="(module, index) in academics.modern_standard_arabic.advanced_proficiency[locale].modules" :key="index" class="bg-gray-50 p-4 rounded-lg text-center">
+                                <span class="text-gray-700 font-medium">{{ module }}</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">{{ academics.modern_standard_arabic.advanced_proficiency[locale].note }}</p>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a :href="academics.modern_standard_arabic.button_link[locale]" target="_blank" class="web-btn">
+                            {{ academics.modern_standard_arabic.button_text[locale] }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ammiyya -->
+            <div id="ammiyya" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ academics.ammiyya.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ academics.ammiyya.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ academics.ammiyya.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in academics.ammiyya.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+
+                    <!-- Course Structure -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.ammiyya.course_structure[locale].title }}</h3>
+                        <div class="space-y-6">
+                            <div v-for="(level, index) in academics.ammiyya.course_structure[locale].levels" :key="index" class="border-l-4 border-web-primary pl-6">
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">{{ level.level }}: {{ level.title }}</h4>
+                                <p class="text-gray-700">{{ level.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Materials -->
+                    <div class="mt-8 bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ academics.ammiyya.learning_materials[locale].title }}</h3>
+                        <p class="text-gray-700">{{ academics.ammiyya.learning_materials[locale].description }}</p>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a :href="academics.ammiyya.button_link[locale]" target="_blank" class="web-btn">
+                            {{ academics.ammiyya.button_text[locale] }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Online Programs -->
+            <div id="online-programs" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ academics.online_programs.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ academics.online_programs.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ academics.online_programs.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in academics.online_programs.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+
+                    <!-- Programs -->
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div v-for="(program, index) in academics.online_programs.programs[locale]" :key="index" class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ program.title }}</h3>
+                            <p class="text-gray-700">{{ program.description }}</p>
+                        </div>
+                    </div>
+
+                    <!-- Test Arabic -->
+                    <div class="mt-8 bg-web-primary rounded-2xl p-8 text-white text-center">
+                        <h3 class="text-2xl font-bold mb-4">{{ academics.online_programs.test_arabic[locale].title }}</h3>
+                        <p class="text-lg opacity-90 mb-6">{{ academics.online_programs.test_arabic[locale].description }}</p>
+                        <a href="#" class="bg-white text-web-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300">
+                            {{ translations.find(t => t.key === 'take_free_test').value[locale] }}
+                        </a>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a :href="academics.online_programs.button_link[locale]" target="_blank" class="web-btn">
+                            {{ academics.online_programs.button_text[locale] }}
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Tuition Section -->
-        <section class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
-            <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
-                <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
-                    {{ admissions.tuition.title[locale] }}
+        <!-- Admissions Tab -->
+        <section id="admissions" v-if="activeTab === 'admissions'" class="container mx-auto px-4 md:px-20 pb-5 lg:px-10 max-w-[1280px]">
+            <!-- Introduction Section -->
+            <div id="introduction" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ admissions.introduction.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ admissions.introduction.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ admissions.introduction.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
                 </div>
-                <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
-                    {{ admissions.tuition.subtitle[locale] }}
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in admissions.introduction.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <a :href="admissions.introduction.button_link[locale]" target="_blank" class="web-btn">
+                            {{ admissions.introduction.button_text[locale] }}
+                        </a>
+                    </div>
                 </div>
-                <div class="text-xl text-center text-gray-600 max-w-3xl">
-                    {{ admissions.tuition.description[locale] }}
-                </div>
-                <div class="w-20 h-1 bg-web-primary rounded-full"></div>
             </div>
 
-            <div class="max-w-6xl mx-auto space-y-12">
-                <!-- Content -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Program Dates Section -->
+            <div id="program-dates" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ admissions.program_dates.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            {{ admissions.program_dates.subtitle[locale] }}
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ admissions.program_dates.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Content -->
+                            <div class="space-y-6 text-gray-700 leading-relaxed">
+                                <p v-for="(paragraph, index) in admissions.program_dates.content[locale]" :key="index" class="text-lg">
+                                    {{ paragraph }}
+                                </p>
+                            </div>
+
+                            <!-- Calendar -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6">
+                                <h3 class="text-2xl font-bold text-web-primary mb-6">{{ translations.find(t => t.key === 'academic_calendar').value[locale] }}</h3>
+                                <div class="space-y-4">
+                                    <div v-for="(term, index) in admissions.program_dates.calendar[locale]" :key="index" class="border-l-4 border-web-primary pl-4">
+                                        <h4 class="font-semibold text-lg text-gray-800">{{ term.term }}</h4>
+                                        <p class="text-sm text-gray-600"> {{ translations.find(t => t.key === 'orientation').value[locale] }} {{ term.orientation }}</p>
+                                        <p class="text-sm text-gray-600"> {{ translations.find(t => t.key === 'classes_final_exams').value[locale] }} {{ term.classes }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Private Tutoring -->
+                        <div class="mt-12 bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ translations.find(t => t.key === 'private_tutoring').value[locale] }}</h3>
+                            <div class="space-y-4 text-gray-700">
+                                <p v-for="(paragraph, index) in admissions.program_dates.private_tutoring[locale]" :key="index" class="text-lg">
+                                    {{ paragraph }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 text-center">
+                            <a :href="admissions.program_dates.button_link[locale]" target="_blank" class="web-btn">
+                                {{ admissions.program_dates.button_text[locale] }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tuition Section -->
+            <div id="tuition" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ admissions.tuition.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ admissions.tuition.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ admissions.tuition.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto space-y-12">
+                    <!-- Content -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6 text-gray-700 leading-relaxed">
+                            <p v-for="(paragraph, index) in admissions.tuition.content[locale]" :key="index" class="text-lg">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+
+                        <!-- Base Rate -->
+                        <div class="bg-web-primary rounded-2xl p-8 text-white">
+                            <h3 class="text-2xl font-bold mb-4">{{ admissions.tuition.base_rate[locale].title }}</h3>
+                            <div class="text-4xl font-bold mb-4">{{ admissions.tuition.base_rate[locale].amount }}</div>
+                            <p class="text-lg opacity-90">{{ admissions.tuition.base_rate[locale].description }}</p>
+                        </div>
+                    </div>
+
+                    <!-- Individual Discounts -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.individual_discounts[locale].title }}</h3>
+                        <p class="text-gray-600 mb-6">{{ admissions.tuition.individual_discounts[locale].subtitle }}</p>
+                        <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b-2 border-gray-200">
+                                        <th class="text-left py-3 px-4 font-semibold">{{ translations.find(t => t.key === 'term').value[locale] }}</th>
+                                        <th class="text-left py-3 px-4 font-semibold">{{ translations.find(t => t.key === 'cost_per_term').value[locale] }}</th>
+                                        <th class="text-left py-3 px-4 font-semibold">{{ translations.find(t => t.key === 'discount').value[locale] }}</th>
+                                        <th class="text-left py-3 px-4 font-semibold">{{ translations.find(t => t.key === 'savings').value[locale] }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(term, index) in admissions.tuition.individual_discounts[locale].terms" :key="index" class="border-b border-gray-100">
+                                        <td class="py-3 px-4">{{ term.term }}</td>
+                                        <td class="py-3 px-4 font-semibold">{{ term.cost }}</td>
+                                        <td class="py-3 px-4 text-web-primary">{{ term.discount }}</td>
+                                        <td class="py-3 px-4 text-green-600">{{ term.savings }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Group Discounts -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.group_discounts[locale].duos_trios.title }}</h3>
+                            <div class="space-y-4">
+                                <div v-for="(term, index) in admissions.tuition.group_discounts[locale].duos_trios.terms" :key="index" class="flex justify-between items-center py-2 border-b border-gray-100">
+                                    <span class="font-medium">{{ term.term }}</span>
+                                    <div class="text-right">
+                                        <div class="font-semibold">{{ term.cost }}</div>
+                                        <div class="text-sm text-web-primary">{{ term.discount }}</div>
+                                        <div class="text-sm text-green-600">{{ term.savings }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.group_discounts[locale].ensembles.title }}</h3>
+                            <div class="space-y-4">
+                                <div v-for="(term, index) in admissions.tuition.group_discounts[locale].ensembles.terms" :key="index" class="flex justify-between items-center py-2 border-b border-gray-100">
+                                    <span class="font-medium">{{ term.term }}</span>
+                                    <div class="text-right">
+                                        <div class="font-semibold">{{ term.cost }}</div>
+                                        <div class="text-sm text-web-primary">{{ term.discount }}</div>
+                                        <div class="text-sm text-green-600">{{ term.savings }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center text-gray-600 italic">
+                        {{ admissions.tuition.group_discounts[locale].note }}
+                    </div>
+
+                    <!-- Private Tutoring Rates -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.private_tutoring[locale].title }}</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                            <div v-for="(session, index) in admissions.tuition.private_tutoring[locale].sessions" :key="index" class="text-center p-4 border border-gray-200 rounded-lg">
+                                <div class="font-semibold text-lg mb-2">{{ session.type }}</div>
+                                <div class="text-2xl font-bold text-web-primary">{{ session.rate }}</div>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-gray-600">
+                            <p v-for="(note, index) in admissions.tuition.private_tutoring[locale].notes" :key="index" class="text-sm">
+                                {{ note }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Payment Info -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ translations.find(t => t.key === 'deposits_payment').value[locale] }}</h3>
+                            <div class="space-y-3">
+                                <div v-for="(deposit, index) in admissions.tuition.payment_info[locale].deposits" :key="index" class="flex items-start">
+                                    <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <span class="text-gray-700">{{ deposit }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ translations.find(t => t.key === 'payment_methods').value[locale] }}</h3>
+                            <div class="space-y-3">
+                                <div v-for="(method, index) in admissions.tuition.payment_info[locale].methods" :key="index" class="flex items-start">
+                                    <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <span class="text-gray-700">{{ method }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Refund Policy -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ translations.find(t => t.key === 'refund_policy_overview').value[locale] }}</h3>
+                        <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b-2 border-gray-200">
+                                        <th class="text-left py-3 px-4 font-semibold">{{ translations.find(t => t.key === 'timeline').value[locale] }}</th>
+                                        <th class="text-left py-3 px-4 font-semibold">{{ translations.find(t => t.key === 'refund_eligibility').value[locale] }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(policy, index) in admissions.tuition.refund_policy[locale]" :key="index" class="border-b border-gray-100">
+                                        <td class="py-3 px-4 font-medium">{{ policy.timeline }}</td>
+                                        <td class="py-3 px-4">{{ policy.eligibility }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Refund Policy -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.refund_details[locale].title }}</h3>
+                        <p class="text-gray-700 mb-6">{{ admissions.tuition.refund_details[locale].description }}</p>
+                        <div class="space-y-3">
+                            <div v-for="(note, index) in admissions.tuition.refund_details[locale].important_notes" :key="index" class="flex items-start">
+                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-700">{{ note }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a :href="admissions.tuition.button_link[locale]" target="_blank" class="web-btn">
+                            {{ admissions.tuition.button_text[locale] }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accommodation Tab -->
+        <section id="accommodation" v-if="activeTab === 'accommodation'" class="container mx-auto px-4 md:px-20 pb-5 lg:px-10 max-w-[1280px]">
+            <!-- Overview Section -->
+            <div id="overview" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ accommodation.overview.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ accommodation.overview.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ accommodation.overview.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
                     <div class="space-y-6 text-gray-700 leading-relaxed">
-                        <p v-for="(paragraph, index) in admissions.tuition.content[locale]" :key="index" class="text-lg">
+                        <p v-for="(paragraph, index) in accommodation.overview.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <a :href="accommodation.overview.button_link[locale]" target="_blank" class="web-btn">
+                            {{ accommodation.overview.button_text[locale] }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Housing Request Process Section -->
+            <div id="housing-process" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ accommodation.housing_process.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            {{ accommodation.housing_process.subtitle[locale] }}
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ accommodation.housing_process.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto">
+                        <div class="space-y-6 text-gray-700 leading-relaxed mb-8">
+                            <p v-for="(paragraph, index) in accommodation.housing_process.content[locale]" :key="index" class="text-lg">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a :href="accommodation.housing_process.button_link[locale]" target="_blank" class="web-btn">
+                                {{ accommodation.housing_process.button_text[locale] }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Housing Philosophy Section -->
+            <div id="housing-philosophy" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ accommodation.housing_philosophy.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ accommodation.housing_philosophy.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ accommodation.housing_philosophy.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed mb-8">
+                        <p v-for="(paragraph, index) in accommodation.housing_philosophy.content[locale]" :key="index" class="text-lg">
                             {{ paragraph }}
                         </p>
                     </div>
 
-                    <!-- Base Rate -->
-                    <div class="bg-web-primary rounded-2xl p-8 text-white">
-                        <h3 class="text-2xl font-bold mb-4">{{ admissions.tuition.base_rate[locale].title }}</h3>
-                        <div class="text-4xl font-bold mb-4">{{ admissions.tuition.base_rate[locale].amount }}</div>
-                        <p class="text-lg opacity-90">{{ admissions.tuition.base_rate[locale].description }}</p>
-                    </div>
-                </div>
-
-                <!-- Individual Discounts -->
-                <div class="bg-white rounded-2xl shadow-lg p-8">
-                    <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.individual_discounts[locale].title }}</h3>
-                    <p class="text-gray-600 mb-6">{{ admissions.tuition.individual_discounts[locale].subtitle }}</p>
-                    <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200">
-                        <table class="w-full">
-                            <thead>
-                                <tr class="border-b-2 border-gray-200">
-                                    <th class="text-left py-3 px-4 font-semibold">Term</th>
-                                    <th class="text-left py-3 px-4 font-semibold">Cost per Term</th>
-                                    <th class="text-left py-3 px-4 font-semibold">Discount</th>
-                                    <th class="text-left py-3 px-4 font-semibold">Savings</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(term, index) in admissions.tuition.individual_discounts[locale].terms" :key="index" class="border-b border-gray-100">
-                                    <td class="py-3 px-4">{{ term.term }}</td>
-                                    <td class="py-3 px-4 font-semibold">{{ term.cost }}</td>
-                                    <td class="py-3 px-4 text-web-primary">{{ term.discount }}</td>
-                                    <td class="py-3 px-4 text-green-600">{{ term.savings }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Group Discounts -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Common Challenges -->
                     <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.group_discounts[locale].duos_trios.title }}</h3>
-                        <div class="space-y-4">
-                            <div v-for="(term, index) in admissions.tuition.group_discounts[locale].duos_trios.terms" :key="index" class="flex justify-between items-center py-2 border-b border-gray-100">
-                                <span class="font-medium">{{ term.term }}</span>
-                                <div class="text-right">
-                                    <div class="font-semibold">{{ term.cost }}</div>
-                                    <div class="text-sm text-web-primary">{{ term.discount }}</div>
-                                    <div class="text-sm text-green-600">{{ term.savings }}</div>
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.housing_philosophy.common_challenges[locale].title }}</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div v-for="(challenge, index) in accommodation.housing_philosophy.common_challenges[locale].challenges" :key="index" class="flex items-start">
+                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-700">{{ challenge }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Housing Options Section -->
+            <div id="housing-options" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ accommodation.housing_options.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            {{ accommodation.housing_options.subtitle[locale] }}
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ accommodation.housing_options.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <div class="space-y-6 text-gray-700 leading-relaxed mb-8">
+                            <p v-for="(paragraph, index) in accommodation.housing_options.content[locale]" :key="index" class="text-lg">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Almujam Housing -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.housing_options.almujam_housing[locale].title }}</h3>
+                                <p class="text-gray-600 mb-6">{{ accommodation.housing_options.almujam_housing[locale].subtitle }}</p>
+                                <div class="space-y-3">
+                                    <div v-for="(feature, index) in accommodation.housing_options.almujam_housing[locale].features" :key="index" class="flex items-start">
+                                        <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                        <span class="text-gray-700">{{ feature }}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Independent Housing -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.housing_options.independent_housing[locale].title }}</h3>
+                                <p class="text-gray-600 mb-6">{{ accommodation.housing_options.independent_housing[locale].subtitle }}</p>
+                                <div class="space-y-3">
+                                    <div v-for="(feature, index) in accommodation.housing_options.independent_housing[locale].features" :key="index" class="flex items-start">
+                                        <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                        <span class="text-gray-700">{{ feature }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendations Section -->
+            <div id="recommendations" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ accommodation.recommendations.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ accommodation.recommendations.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ accommodation.recommendations.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <!-- Which Option is Right -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.recommendations.which_option_right[locale].title }}</h3>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-4">{{ accommodation.recommendations.which_option_right[locale].almujam_housing.title }}</h4>
+                                <div class="space-y-3">
+                                    <div v-for="(feature, index) in accommodation.recommendations.which_option_right[locale].almujam_housing.features" :key="index" class="flex items-start">
+                                        <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                        <span class="text-gray-700">{{ feature }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-800 mb-4">{{ accommodation.recommendations.which_option_right[locale].independent_housing.title }}</h4>
+                                <div class="space-y-3">
+                                    <div v-for="(feature, index) in accommodation.recommendations.which_option_right[locale].independent_housing.features" :key="index" class="flex items-start">
+                                        <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                        <span class="text-gray-700">{{ feature }}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.group_discounts[locale].ensembles.title }}</h3>
+                    <!-- First Term Recommendation -->
+                    <div class="bg-gray-50 rounded-2xl p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.recommendations.first_term_recommendation[locale].title }}</h3>
                         <div class="space-y-4">
-                            <div v-for="(term, index) in admissions.tuition.group_discounts[locale].ensembles.terms" :key="index" class="flex justify-between items-center py-2 border-b border-gray-100">
-                                <span class="font-medium">{{ term.term }}</span>
-                                <div class="text-right">
-                                    <div class="font-semibold">{{ term.cost }}</div>
-                                    <div class="text-sm text-web-primary">{{ term.discount }}</div>
-                                    <div class="text-sm text-green-600">{{ term.savings }}</div>
+                            <p v-for="(paragraph, index) in accommodation.recommendations.first_term_recommendation[locale].content" :key="index" class="text-gray-700">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Facilitated Housing -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.recommendations.facilitated_housing[locale].title }}</h3>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">{{ accommodation.recommendations.facilitated_housing[locale].subtitle }}</h4>
+                        <p class="text-gray-700 mb-6">{{ accommodation.recommendations.facilitated_housing[locale].description }}</p>
+                        <div class="space-y-3 mb-6">
+                            <div v-for="(feature, index) in accommodation.recommendations.facilitated_housing[locale].features" :key="index" class="flex items-start">
+                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <span class="text-gray-700">{{ feature }}</span>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+                            <p class="text-blue-800">{{ accommodation.recommendations.facilitated_housing[locale].contact_info }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room Types Section -->
+            <div id="room-types" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ accommodation.room_types.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            {{ accommodation.room_types.subtitle[locale] }}
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ accommodation.room_types.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <!-- Room Types Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                            <div v-for="(room, index) in accommodation.room_types.room_types[locale]" :key="index" class="bg-white rounded-xl shadow-lg p-6">
+                                <h4 class="text-xl font-bold text-web-primary mb-3">{{ room.name }}</h4>
+                                <div class="space-y-2 text-sm text-gray-600 mb-4">
+                                    <div><strong>{{ translations.find(t => t.key === 'size').value[locale] }}</strong> {{ room.size }}</div>
+                                    <div><strong>{{ translations.find(t => t.key === 'features').value[locale] }}</strong> {{ room.features }}</div>
+                                </div>
+                                <p class="text-gray-700">{{ room.description }}</p>
+                            </div>
+                        </div>
+
+                        <!-- Apartment Features -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.room_types.apartment_features[locale].title }}</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div v-for="(feature, index) in accommodation.room_types.apartment_features[locale].features" :key="index" class="flex items-start">
+                                    <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <span class="text-gray-700">{{ feature }}</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic">{{ accommodation.room_types.apartment_features[locale].bedroom_features }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Section -->
+            <div id="pricing" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ accommodation.pricing.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ accommodation.pricing.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ accommodation.pricing.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <!-- Pricing Table -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.pricing.pricing_table[locale].title }}</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b-2 border-gray-200">
+                                        <th v-for="(header, index) in accommodation.pricing.pricing_table[locale].headers" :key="index" class="text-left py-3 px-4 font-semibold">
+                                            {{ header }}
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(row, index) in accommodation.pricing.pricing_table[locale].rows" :key="index" class="border-b border-gray-100">
+                                        <td v-for="(cell, cellIndex) in row" :key="cellIndex" class="py-3 px-4" :class="cellIndex === 0 ? 'font-medium' : ''">
+                                            {{ cell }}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- What's Included/Excluded -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.pricing.included_in_rent[locale].title }}</h3>
+                            <div class="space-y-4">
+                                <div v-for="(item, index) in accommodation.pricing.included_in_rent[locale].items" :key="index" class="flex justify-between items-center">
+                                    <span class="text-gray-700">{{ item.item }}</span>
+                                    <span class="font-semibold text-web-primary">{{ item.cost }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.pricing.excluded_from_rent[locale].title }}</h3>
+                            <div class="space-y-3">
+                                <div v-for="(item, index) in accommodation.pricing.excluded_from_rent[locale].items" :key="index" class="flex items-start">
+                                    <div class="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <span class="text-gray-700">{{ item }}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="text-center text-gray-600 italic">
-                    {{ admissions.tuition.group_discounts[locale].note }}
-                </div>
-
-                <!-- Private Tutoring Rates -->
-                <div class="bg-white rounded-2xl shadow-lg p-8">
-                    <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.private_tutoring[locale].title }}</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                        <div v-for="(session, index) in admissions.tuition.private_tutoring[locale].sessions" :key="index" class="text-center p-4 border border-gray-200 rounded-lg">
-                            <div class="font-semibold text-lg mb-2">{{ session.type }}</div>
-                            <div class="text-2xl font-bold text-web-primary">{{ session.rate }}</div>
-                        </div>
-                    </div>
-                    <div class="space-y-2 text-gray-600">
-                        <p v-for="(note, index) in admissions.tuition.private_tutoring[locale].notes" :key="index" class="text-sm">
-                            {{ note }}
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Payment Info -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h3 class="text-2xl font-bold text-web-primary mb-6">Deposits & Payment</h3>
-                        <div class="space-y-3">
-                            <div v-for="(deposit, index) in admissions.tuition.payment_info[locale].deposits" :key="index" class="flex items-start">
-                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span class="text-gray-700">{{ deposit }}</span>
+                    <!-- Daily Rates -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.pricing.daily_rates[locale].title }}</h3>
+                        <p class="text-gray-600 mb-6">{{ accommodation.pricing.daily_rates[locale].description }}</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div v-for="(rate, index) in accommodation.pricing.daily_rates[locale].rates" :key="index" class="bg-gray-50 rounded-lg p-4 text-center">
+                                <div class="font-semibold text-gray-800 mb-2">{{ rate.room_type }}</div>
+                                <div class="text-2xl font-bold text-web-primary">{{ rate.daily_rate }}</div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Checkout Fees -->
                     <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h3 class="text-2xl font-bold text-web-primary mb-6">Payment Methods</h3>
-                        <div class="space-y-3">
-                            <div v-for="(method, index) in admissions.tuition.payment_info[locale].methods" :key="index" class="flex items-start">
-                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span class="text-gray-700">{{ method }}</span>
+                        <h3 class="text-2xl font-bold text-web-primary mb-6">{{ accommodation.pricing.checkout_fees[locale].title }}</h3>
+                        <div class="space-y-4">
+                            <div v-for="(item, index) in accommodation.pricing.checkout_fees[locale].items" :key="index" class="flex justify-between items-center">
+                                <span class="text-gray-700">{{ item.item }}</span>
+                                <span class="font-semibold text-web-primary">{{ item.fee }}</span>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Refund Policy -->
-                <div class="bg-white rounded-2xl shadow-lg p-8">
-                    <h3 class="text-2xl font-bold text-web-primary mb-6">Refund Policy Overview</h3>
-                    <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200">
-                        <table class="w-full">
-                            <thead>
-                                <tr class="border-b-2 border-gray-200">
-                                    <th class="text-left py-3 px-4 font-semibold">Timeline</th>
-                                    <th class="text-left py-3 px-4 font-semibold">Refund Eligibility</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(policy, index) in admissions.tuition.refund_policy[locale]" :key="index" class="border-b border-gray-100">
-                                    <td class="py-3 px-4 font-medium">{{ policy.timeline }}</td>
-                                    <td class="py-3 px-4">{{ policy.eligibility }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <!-- Policies Section -->
+            <div id="policies" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ accommodation.policies.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            {{ accommodation.policies.subtitle[locale] }}
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ accommodation.policies.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
                     </div>
-                </div>
 
-                <div class="text-center">
-                    <a :href="admissions.tuition.button_link[locale]" target="_blank" class="web-btn ">
-                        {{ admissions.tuition.button_text[locale] }}
-                    </a>
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Right of Entry -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.policies.right_of_entry[locale].title }}</h3>
+                                <p class="text-gray-700">{{ accommodation.policies.right_of_entry[locale].description }}</p>
+                            </div>
+
+                            <!-- Premature Departure -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.policies.premature_departure[locale].title }}</h3>
+                                <p class="text-gray-700">{{ accommodation.policies.premature_departure[locale].description }}</p>
+                            </div>
+
+                            <!-- Limit of Liability -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.policies.limit_of_liability[locale].title }}</h3>
+                                <p class="text-gray-700">{{ accommodation.policies.limit_of_liability[locale].description }}</p>
+                            </div>
+
+                            <!-- Eligibility -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.policies.eligibility[locale].title }}</h3>
+                                <p class="text-gray-700">{{ accommodation.policies.eligibility[locale].description }}</p>
+                            </div>
+                        </div>
+
+                        <!-- Cancellation Policy -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8 mt-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.policies.cancellation_policy[locale].title }}</h3>
+                            <p class="text-gray-700 mb-6">{{ accommodation.policies.cancellation_policy[locale].description }}</p>
+                            <div class="space-y-3">
+                                <div v-for="(detail, index) in accommodation.policies.cancellation_policy[locale].details" :key="index" class="flex items-start">
+                                    <div class="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <span class="text-gray-700">{{ detail }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visitor Policy -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8 mt-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-4">{{ accommodation.policies.visitor_policy[locale].title }}</h3>
+                            <p class="text-gray-700 mb-6">{{ accommodation.policies.visitor_policy[locale].description }}</p>
+                            <div class="space-y-3">
+                                <div v-for="(rule, index) in accommodation.policies.visitor_policy[locale].rules" :key="index" class="flex items-start">
+                                    <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                    <span class="text-gray-700">{{ rule }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -278,6 +1001,109 @@ definePageMeta({
     name: 'academic-admissions'
 })
 
+// Import useRoute for handling query parameters
+// This allows us to handle URLs like: /academic-admissions?tab=admissions&section=admissions
+const route = useRoute()
+const router = useRouter()
+
+const activeTab = ref(route.query.tab || 'academics')
+
+const changeTab = (tab) => {
+    activeTab.value = tab
+    // Preserve section query parameter when changing tabs
+    const currentSection = route.query.section
+    const query = { tab: tab }
+    if (currentSection) {
+        query.section = currentSection
+    }
+    router.replace({ query })
+}
+
+// Function to get sections based on current active tab
+const getCurrentTabSections = () => {
+    switch (activeTab.value) {
+        case 'academics':
+            return [
+                { id: 'programs-overview', title: { en: 'Programs Overview', tr: 'Program Genel Bakış' } },
+                { id: 'classical-arabic', title: { en: 'Classical Arabic', tr: 'Klasik Arapça' } },
+                { id: 'modern-standard-arabic', title: { en: 'Modern Standard Arabic', tr: 'Modern Standart Arapça' } },
+                { id: 'ammiyya', title: { en: 'Jordanian Ammiyya', tr: 'Ürdün Ammiyya' } },
+                { id: 'online-programs', title: { en: 'Online Programs', tr: 'Çevrimiçi Programlar' } }
+            ]
+        case 'admissions':
+            return [
+                { id: 'introduction', title: { en: 'Introduction', tr: 'Giriş' } },
+                { id: 'program-dates', title: { en: 'Program Dates', tr: 'Program Tarihleri' } },
+                { id: 'tuition', title: { en: 'Tuition', tr: 'Öğrenim Ücreti' } }
+            ]
+        case 'accommodation':
+            return [
+                { id: 'overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
+                { id: 'housing-process', title: { en: 'Housing Process', tr: 'Konaklama Süreci' } },
+                { id: 'housing-philosophy', title: { en: 'Housing Philosophy', tr: 'Konaklama Felsefesi' } },
+                { id: 'housing-options', title: { en: 'Housing Options', tr: 'Konaklama Seçenekleri' } },
+                { id: 'recommendations', title: { en: 'Recommendations', tr: 'Öneriler' } },
+                { id: 'room-types', title: { en: 'Room Types', tr: 'Oda Türleri' } },
+                { id: 'pricing', title: { en: 'Pricing', tr: 'Fiyatlandırma' } },
+                { id: 'policies', title: { en: 'Policies', tr: 'Politikalar' } }
+            ]
+        default:
+            return []
+    }
+}
+
+// Function to scroll to a specific section within the current tab
+const scrollToSection = (sectionId) => {
+    // First, ensure we're on the correct tab
+    const sectionTab = getSectionTab(sectionId)
+    if (sectionTab && activeTab.value !== sectionTab) {
+        activeTab.value = sectionTab
+        // Wait for the tab to render before scrolling
+        nextTick(() => {
+            setTimeout(() => {
+                scrollToSectionInternal(sectionId)
+            }, 100)
+        })
+        return
+    }
+    
+    // If we're already on the correct tab, scroll immediately
+    scrollToSectionInternal(sectionId)
+}
+
+// Helper function to determine which tab a section belongs to
+const getSectionTab = (sectionId) => {
+    const academicsSections = ['programs-overview', 'classical-arabic', 'modern-standard-arabic', 'ammiyya', 'online-programs']
+    const admissionsSections = ['introduction', 'program-dates', 'tuition']
+    const accommodationSections = ['overview', 'housing-process', 'housing-philosophy', 'housing-options', 'recommendations', 'room-types', 'pricing', 'policies']
+    
+    if (academicsSections.includes(sectionId)) return 'academics'
+    if (admissionsSections.includes(sectionId)) return 'admissions'
+    if (accommodationSections.includes(sectionId)) return 'accommodation'
+    return null
+}
+
+// Internal scroll function that actually performs the scroll
+const scrollToSectionInternal = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+        
+        // Add a subtle highlight effect to the scrolled section
+        element.classList.add('scroll-highlight')
+        setTimeout(() => {
+            element.classList.remove('scroll-highlight')
+        }, 2000)
+        
+        // Update URL without page reload, preserving the tab
+        const url = new URL(window.location)
+        url.searchParams.set('section', sectionId)
+        window.history.replaceState({}, '', url)
+    } else {
+        console.warn(`Section with id "${sectionId}" not found`)
+    }
+}
+
 const {locale} = useI18n()
 
 const { data: translations } = await useAsyncData('translations', () => {
@@ -288,17 +1114,31 @@ const { data: settings } = await useAsyncData('settings', () => {
     return queryCollection('general').all()
 })
 
-const { data: about } = await useAsyncData('about', () => {
-    return queryCollection('about').all()
-})
-
-const { data: about_features } = await useAsyncData('about_features', () => {
-    return queryCollection('about_features').all()
+// Fetch academics data
+const { data: academicsData } = await useAsyncData('academics', () => {
+    return queryCollection('academics').all()
 })
 
 // Fetch admissions data
 const { data: admissionsData } = await useAsyncData('admissions', () => {
     return queryCollection('admissions').all()
+})
+
+// Fetch accommodation data
+const { data: accommodationData } = await useAsyncData('accommodation', () => {
+    return queryCollection('accommodation').all()
+})
+
+// Organize academics data by type
+const academics = computed(() => {
+    const data = academicsData.value || []
+    return {
+        programs_overview: data.find(item => item.title?.en === 'Program Information') || {},
+        classical_arabic: data.find(item => item.title?.en === 'Classical Arabic Program') || {},
+        modern_standard_arabic: data.find(item => item.title?.en === 'Modern Standard Arabic Program') || {},
+        ammiyya: data.find(item => item.title?.en === 'Jordanian Ammiyya (Levantine Dialect) Course') || {},
+        online_programs: data.find(item => item.title?.en === 'Online Arabic Courses at Almujam') || {}
+    }
 })
 
 // Organize admissions data by type
@@ -308,6 +1148,21 @@ const admissions = computed(() => {
         introduction: data.find(item => item.title?.en === 'Introduction') || {},
         program_dates: data.find(item => item.title?.en === 'Program Dates') || {},
         tuition: data.find(item => item.title?.en === 'Tuition') || {}
+    }
+})
+
+// Organize accommodation data by type
+const accommodation = computed(() => {
+    const data = accommodationData.value || []
+    return {
+        overview: data.find(item => item.title?.en === 'Student Housing at Almujam') || {},
+        housing_process: data.find(item => item.title?.en === 'The Housing Request Process') || {},
+        housing_philosophy: data.find(item => item.title?.en === 'Our Approach to Housing') || {},
+        housing_options: data.find(item => item.title?.en === 'Housing Options at Almujam') || {},
+        recommendations: data.find(item => item.title?.en === 'Recommendations and Special Programs') || {},
+        room_types: data.find(item => item.title?.en === 'Room Types & Descriptions') || {},
+        pricing: data.find(item => item.title?.en === 'Housing Costs and Payments') || {},
+        policies: data.find(item => item.title?.en === 'Housing Policies and Guidelines') || {}
     }
 })
 
@@ -322,7 +1177,6 @@ useSeoMeta({
 
 const ha2Ref = ref(null)
 const dalRef = ref(null)
-const featuresRef = ref(null)
 
 onMounted(async () => {
     await nextTick()
@@ -337,9 +1191,39 @@ onMounted(async () => {
     duration: 0.6
   })
 
+  // Handle section query parameter for automatic scrolling
+  const sectionQuery = route.query.section
+  
+  if (sectionQuery) {
+    // Wait a bit for the page to fully render and tab to be active
+    setTimeout(() => {
+      // Use the new scrollToSection function which handles tab switching automatically
+      scrollToSection(sectionQuery)
+    }, 1000)
+  }
 })
 </script>
 
 <style scoped>
+/* Scroll highlight effect */
+.scroll-highlight {
+    animation: highlightPulse 2s ease-out;
+}
 
+@keyframes highlightPulse {
+    0% {
+        background-color: rgba(59, 130, 246, 0.1);
+    }
+    50% {
+        background-color: rgba(59, 130, 246, 0.2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* Ensure smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
 </style>

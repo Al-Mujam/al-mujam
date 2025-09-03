@@ -16,12 +16,24 @@
             <li><NuxtLink class="opacity-70 hover:opacity-100 transition-all duration-300" :to="{name: 'about'}">{{ translations.find(t => t.key === 'why_almuajam').value[locale] }}</NuxtLink></li>
           </ul>
         </div>
+
+        <!-- Section Navigation -->
+        <div class="flex flex-wrap justify-center gap-3 mt-6">
+          <button 
+            v-for="section in navigationSections" 
+            :key="section.id"
+            @click="scrollToSection(section.id)"
+            class="px-4 cursor-pointer py-2 bg-white/20 hover:bg-white/30 text-white rounded-full text-sm font-medium transition-all duration-300 backdrop-blur-sm border border-white/30 hover:border-white/50"
+          >
+            {{ section.title[locale] }}
+          </button>
+        </div>
              </div>
 
         </div>
 
         <!-- Overview Section -->
-        <section v-if="about.overview.title?.[locale]" class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
+        <section id="overview" v-if="about.overview.title?.[locale]" class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
             <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                 <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
                     {{ about.overview.title[locale] }}
@@ -45,7 +57,7 @@
         </section>
 
         <!-- Location Section -->
-        <section class="w-full bg-gray-50 py-12">
+        <section v-if="about.location.title?.[locale]" id="location" class="w-full bg-gray-50 py-12">
             <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div class="h-[400px] md:h-[500px] w-full">
@@ -90,7 +102,7 @@
         </section>
 
         <!-- Facilities Section -->
-        <section class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
+        <section v-if="about.facilities.title?.[locale]" id="facilities" class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
             <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                 <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
                     {{ about.facilities.title[locale] }}
@@ -114,7 +126,7 @@
         </section>
 
         <!-- Methodology Section -->
-        <section class="w-full bg-gray-50 py-12">
+        <section v-if="about.methodology.title?.[locale]" id="methodology" class="w-full bg-gray-50 py-12">
             <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
                 <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                     <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
@@ -147,7 +159,7 @@
                         
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div class="bg-gray-50 rounded-lg p-4">
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Session Schedule</h4>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">{{ translations.find(t => t.key === 'session_schedule').value[locale] }}</h4>
                                 <ul class="space-y-2">
                                     <li v-for="(session, index) in about.methodology.classes[locale].sessions" :key="index" class="text-gray-700">
                                         {{ session }}
@@ -155,7 +167,7 @@
                                 </ul>
                             </div>
                             <div class="bg-gray-50 rounded-lg p-4">
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Class Features</h4>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">{{ translations.find(t => t.key === 'class_features').value[locale] }}</h4>
                                 <ul class="space-y-2">
                                     <li v-for="(feature, index) in about.methodology.classes[locale].features" :key="index" class="text-gray-700">
                                         {{ feature }}
@@ -195,7 +207,7 @@
         </section>
 
         <!-- Campus Section -->
-        <section class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
+        <section v-if="about.campus.title?.[locale]" id="campus" class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
             <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                 <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
                     {{ about.campus.title[locale] }}
@@ -247,7 +259,7 @@
         </section>
 
         <!-- Global Atmosphere Section -->
-        <section class="w-full bg-gray-50 py-12">
+        <section v-if="about.global_atmosphere.title?.[locale]" id="global-atmosphere" class="w-full bg-gray-50 py-12">
             <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
                 <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                     <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
@@ -297,7 +309,7 @@
         </section>
 
         <!-- Why Jordan Section -->
-        <section class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
+        <section v-if="about.why_jordan.title?.[locale]" id="why-jordan" class="container mx-auto px-4 md:px-20 py-12 lg:px-10 max-w-[1280px]">
             <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                 <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
                     {{ about.why_jordan.title[locale] }}
@@ -367,7 +379,7 @@
         </section>
 
         <!-- Academic Team Section -->
-        <section class="w-full bg-gray-50 py-12">
+        <section v-if="about.academic_team.title?.[locale]" id="academic-team" class="w-full bg-gray-50 py-12">
             <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
                 <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                     <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
@@ -443,6 +455,10 @@
 
 <script setup>
 import { IconsSchool, IconsBooks, IconsRepeat, IconsWifi } from '#components'
+
+// Import useRoute for handling query parameters
+// This allows us to handle URLs like: /about?section=methodology
+const route = useRoute()
 
 
 definePageMeta({
@@ -578,7 +594,38 @@ const about = computed(() => {
     }
 })
 
+// Navigation sections for the page
+const navigationSections = [
+    { id: 'overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
+    { id: 'location', title: { en: 'Location', tr: 'Lokasyon' } },
+    { id: 'facilities', title: { en: 'Facilities', tr: 'Tesisler' } },
+    { id: 'methodology', title: { en: 'Methodology', tr: 'Metodoloji' } },
+    { id: 'campus', title: { en: 'Campus', tr: 'Kampüs' } },
+    { id: 'global-atmosphere', title: { en: 'Global Atmosphere', tr: 'Küresel Hava' } },
+    { id: 'why-jordan', title: { en: 'Why Jordan', tr: 'Neden Jordan' } },
+    { id: 'academic-team', title: { en: 'Academic Team', tr: 'Akademik Takım' } },
+]
 
+// Function to scroll to a specific section
+const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+        
+        // Add a subtle highlight effect to the scrolled section
+        element.classList.add('scroll-highlight')
+        setTimeout(() => {
+            element.classList.remove('scroll-highlight')
+        }, 2000)
+        
+        // Update URL without page reload
+        const url = new URL(window.location)
+        url.searchParams.set('section', sectionId)
+        window.history.replaceState({}, '', url)
+    } else {
+        console.warn(`Section with id "${sectionId}" not found`)
+    }
+}
 
 useSeoMeta({
     title:  () => `${translations.value.find(t => t.key === 'why_almuajam').value[locale.value]} - ${settings.value.find(setting => setting.key === 'app_name').value[locale.value]}`,
@@ -596,7 +643,7 @@ const featuresRef = ref(null)
 
 onMounted(async () => {
     await nextTick()
-    useGSAP().from(ha2Ref   .value, {
+    useGSAP().from(ha2Ref.value, {
     transform: 'translateX(-600px)',
     ease: "power2.inOut",
     duration: 0.6
@@ -607,9 +654,50 @@ onMounted(async () => {
     duration: 0.6
   })
 
+  // Handle section query parameter for automatic scrolling
+  const sectionQuery = route.query.section
+  
+  if (sectionQuery) {
+    // Wait a bit for the page to fully render
+    setTimeout(() => {
+      // Validate that the section exists before scrolling
+      const validSections = navigationSections.map(s => s.id)
+      if (validSections.includes(sectionQuery)) {
+        scrollToSection(sectionQuery)
+      } else {
+        console.warn(`Invalid section ID in query parameter: ${sectionQuery}`)
+        // Remove invalid query parameter from URL
+        const url = new URL(window.location)
+        url.searchParams.delete('section')
+        window.history.replaceState({}, '', url)
+      }
+    }, 1000)
+  }
 })
+
+
 </script>
 
-<style  scoped>
+<style scoped>
+/* Scroll highlight effect */
+.scroll-highlight {
+    animation: highlightPulse 2s ease-out;
+}
 
+@keyframes highlightPulse {
+    0% {
+        background-color: rgba(59, 130, 246, 0.1);
+    }
+    50% {
+        background-color: rgba(59, 130, 246, 0.2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* Ensure smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
 </style>

@@ -1,0 +1,72 @@
+{
+  "title": {
+    "en": "Program Information",
+    "tr": "Program Bilgileri"
+  },
+  "subtitle": {
+    "en": "Class Format and Schedule",
+    "tr": "Sınıf Formatı ve Programı"
+  },
+  "description": {
+    "en": "At Almujam Arabic Language Center, our core program classes are designed to maximize Arabic language acquisition through consistent and immersive study.",
+    "tr": "Almujam Arapça Dil Merkezi'nde, temel program sınıflarımız tutarlı ve yoğun çalışma yoluyla Arapça dil edinimini en üst düzeye çıkarmak için tasarlanmıştır."
+  },
+  "content": {
+    "en": [
+      "Summer Session: Classes meet four teaching hours per day (one teaching hour = 50 minutes), five days per week, over six to nine weeks.",
+      "Winter, Spring, and Fall Sessions: Classes meet three teaching hours per day, five days per week, over ten to twelve weeks.",
+      "Classes take place in a comfortable, well-equipped learning environment, with students seated around custom-designed U-shaped tables that encourage interaction and discussion. Active participation is a cornerstone of our methodology—students at every level (from Level 1 through Level 5) are encouraged and expected to engage fully to develop their conversational skills."
+    ],
+    "tr": [
+      "Yaz Seansı: Sınıflar günde dört öğretim saati (bir öğretim saati = 50 dakika), haftada beş gün, altı ila dokuz hafta boyunca toplanır.",
+      "Kış, İlkbahar ve Sonbahar Seansları: Sınıflar günde üç öğretim saati, haftada beş gün, on ila on iki hafta boyunca toplanır.",
+      "Sınıflar, etkileşimi ve tartışmayı teşvik eden özel tasarım U şeklindeki masalar etrafında oturan öğrencilerle, rahat, iyi donanımlı bir öğrenme ortamında gerçekleşir. Aktif katılım metodolojimizin temel taşıdır—her seviyedeki öğrenciler (Seviye 1'den Seviye 5'e kadar) konuşma becerilerini geliştirmek için tam olarak katılmaya teşvik edilir ve beklenir."
+    ]
+  },
+  "administration": {
+    "en": {
+      "title": "Administration and Student Support",
+      "features": [
+        "Skills Assessment and Placement: Each student undergoes a comprehensive evaluation to ensure appropriate class placement.",
+        "Open-Door Policy: Students have regular opportunities to meet with faculty and administration, especially the Student Services Director, to discuss progress, address concerns, and ensure learning objectives are met.",
+        "360-Degree Evaluation: Almujam maintains a culture of comprehensive feedback. Students complete thorough evaluations of courses, staff, and administration. These insights are carefully reviewed and acted upon promptly to improve the overall student experience."
+      ]
+    },
+    "tr": {
+      "title": "Yönetim ve Öğrenci Desteği",
+      "features": [
+        "Beceri Değerlendirmesi ve Yerleştirme: Her öğrenci uygun sınıf yerleştirmesini sağlamak için kapsamlı bir değerlendirmeden geçer.",
+        "Açık Kapı Politikası: Öğrenciler, ilerlemeyi tartışmak, endişeleri gidermek ve öğrenme hedeflerinin karşılandığından emin olmak için özellikle Öğrenci Hizmetleri Direktörü ile fakülte ve yönetimle düzenli olarak buluşma fırsatına sahiptir.",
+        "360 Derece Değerlendirme: Almujam kapsamlı geri bildirim kültürünü sürdürür. Öğrenciler kurslar, personel ve yönetim hakkında kapsamlı değerlendirmeler tamamlar. Bu içgörüler dikkatle incelenir ve genel öğrenci deneyimini iyileştirmek için hızla harekete geçilir."
+      ]
+    }
+  },
+  "assessment": {
+    "en": {
+      "title": "Skills Assessment and Placement Exam",
+      "description": "Before beginning their course, students must complete:",
+      "requirements": [
+        "A written entrance exam, which is divided into three remote assessments covering speaking, reading, and writing skills. For intermediate and advanced students, the total duration is approximately 2-3 hours, while beginners will spend less time.",
+        "An oral interview conducted by qualified instructors."
+      ],
+      "note": "New students are placed based on combined results from the exam and interview. Returning students' past performance and ongoing Arabic experience are also factored into their placement."
+    },
+    "tr": {
+      "title": "Beceri Değerlendirmesi ve Yerleştirme Sınavı",
+      "description": "Kurslarına başlamadan önce, öğrenciler şunları tamamlamalıdır:",
+      "requirements": [
+        "Konuşma, okuma ve yazma becerilerini kapsayan üç uzaktan değerlendirmeye bölünmüş yazılı giriş sınavı. Orta ve ileri seviye öğrenciler için toplam süre yaklaşık 2-3 saat iken, başlangıç seviyesi öğrenciler daha az zaman harcayacaktır.",
+        "Nitelikli eğitmenler tarafından yapılan sözlü mülakat."
+      ],
+      "note": "Yeni öğrenciler sınav ve mülakat sonuçlarının birleşimine göre yerleştirilir. Dönen öğrencilerin geçmiş performansları ve devam eden Arapça deneyimleri de yerleştirmelerinde dikkate alınır."
+    }
+  },
+  "button_text": {
+    "en": "Click here to start your application",
+    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

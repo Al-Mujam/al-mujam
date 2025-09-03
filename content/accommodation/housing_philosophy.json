@@ -1,0 +1,58 @@
+{
+  "title": {
+    "en": "Our Approach to Housing",
+    "tr": "Konaklama Yaklaşımımız"
+  },
+  "subtitle": {
+    "en": "Because Where You Live Matters",
+    "tr": "Çünkü Nerede Yaşadığınız Önemlidir"
+  },
+  "description": {
+    "en": "At Almujam, we do not consider student housing a secondary concern. In fact, we view it as a critical factor in the overall success of your study abroad experience.",
+    "tr": "Almujam'da, öğrenci konaklamasını ikincil bir endişe olarak görmüyoruz. Aslında, bunu yurtdışı eğitim deneyiminizin genel başarısında kritik bir faktör olarak görüyoruz."
+  },
+  "content": {
+    "en": [
+      "At Almujam, we do not consider student housing a secondary concern. In fact, we view it as a critical factor in the overall success of your study abroad experience. A safe, functional, and thoughtfully arranged living space is essential to helping you focus, feel secure, and thrive during your time in Amman.",
+      "Many students have joined top-tier Arabic programs and studied with inspiring instructors, only to find their experience deeply affected by inadequate housing conditions. From broken showers and unreliable internet to uncomfortable furniture and unhelpful landlords, these challenges can turn an exciting journey into a daily struggle.",
+      "We believe that your housing situation should support your learning—not distract from it. That is why we have taken the time to speak with students over the past decade to understand their housing experiences in Amman, especially those who chose to arrange accommodation independently."
+    ],
+    "tr": [
+      "Almujam'da, öğrenci konaklamasını ikincil bir endişe olarak görmüyoruz. Aslında, bunu yurtdışı eğitim deneyiminizin genel başarısında kritik bir faktör olarak görüyoruz. Güvenli, işlevsel ve düşünceli bir şekilde düzenlenmiş yaşam alanı, Amman'daki süreniz boyunca odaklanmanıza, kendinizi güvende hissetmenize ve gelişmenize yardımcı olmak için gereklidir.",
+      "Birçok öğrenci üst düzey Arapça programlarına katılmış ve ilham verici öğretmenlerle çalışmış, ancak deneyimlerinin yetersiz konaklama koşullarından derinden etkilendiğini görmüştür. Bozuk duşlardan güvenilmez internete, rahatsız mobilyalardan yardımcı olmayan ev sahiplerine kadar, bu zorluklar heyecan verici bir yolculuğu günlük bir mücadeleye dönüştürebilir.",
+      "Konaklama durumunuzun öğrenmenizi desteklemesi gerektiğine—ondan uzaklaştırmaması gerektiğine inanıyoruz. Bu nedenle, son on yılda öğrencilerle konuşarak Amman'daki konaklama deneyimlerini anlamak için zaman ayırdık, özellikle konaklamayı bağımsız olarak düzenlemeyi seçenlerle."
+    ]
+  },
+  "common_challenges": {
+    "en": {
+      "title": "Common Challenges Faced by Students in Independent Housing",
+      "challenges": [
+        "Finding and securing housing can be overwhelming, especially for first-term students",
+        "Reliable internet is essential for study, communication, and daily life",
+        "Water supply in Amman is rationed weekly, and not all landlords invest in adequate water tanks",
+        "Most apartment buildings in Jordan have a porter responsible for safety and maintenance",
+        "While luxury is not expected, functional and safe furniture is essential",
+        "Living far from Almujam or central areas can make commuting expensive and time-consuming",
+        "While spring and fall offer mild weather, summer and winter can be extreme",
+        "Lack of basic appliances or kitchenware forces students to rely on eating out",
+        "When problems arise, having a landlord who is cooperative and responsive makes a big difference",
+        "Few things affect your living experience more than the person you share your space with"
+      ]
+    },
+    "tr": {
+      "title": "Bağımsız Konaklamada Öğrencilerin Karşılaştığı Yaygın Zorluklar",
+      "challenges": [
+        "Konaklama bulmak ve güvence altına almak, özellikle ilk dönem öğrencileri için bunaltıcı olabilir",
+        "Güvenilir internet, çalışma, iletişim ve günlük yaşam için gereklidir",
+        "Amman'daki su tedariki haftalık olarak kısıtlanır ve tüm ev sahipleri yeterli su tanklarına yatırım yapmaz",
+        "Ürdün'deki çoğu apartman binasının güvenlik ve bakımdan sorumlu bir kapıcısı vardır",
+        "Lüks beklenmese de, işlevsel ve güvenli mobilya gereklidir",
+        "Almujam'dan veya merkezi alanlardan uzakta yaşamak, işe gitmeyi pahalı ve zaman alıcı hale getirebilir",
+        "İlkbahar ve sonbahar ılıman hava sunarken, yaz ve kış aşırı olabilir",
+        "Temel cihazların veya mutfak eşyalarının eksikliği öğrencileri dışarıda yemek yemeye zorlar",
+        "Sorunlar ortaya çıktığında, işbirlikçi ve duyarlı bir ev sahibine sahip olmak büyük fark yaratır",
+        "Yaşam deneyiminizi paylaştığınız kişiden daha fazla etkileyen çok az şey vardır"
+      ]
+    }
+  }
+}
