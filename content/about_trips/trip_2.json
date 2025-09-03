@@ -1,11 +1,11 @@
 {
-    "name": {
-        "en": "Aqaba",
-        "tr": "Akabe"
-    },
-    "description": {
-        "en": "Discover Jordan's only coastal city on the Red Sea. Enjoy snorkeling, diving, beautiful beaches, and the vibrant marine life of the coral reefs.",
-        "tr": "Ürdün'ün Kızıldeniz'deki tek sahil şehrini keşfedin. Şnorkelle yüzme, dalış, güzel plajlar ve mercan resiflerinin canlı deniz yaşamının tadını çıkarın."
-    },
-    "image": "https://picsum.photos/600/400?random=11"
+  "name": {
+    "en": "Petra",
+    "tr": "Petra"
+  },
+  "description": {
+    "en": "Discover Jordan's only coastal city on the Red Sea. Enjoy snorkeling, diving, beautiful beaches, and the vibrant marine life of the coral reefs.",
+    "tr": "Ürdün'ün Kızıldeniz'deki tek sahil şehrini keşfedin. Şnorkelle yüzme, dalış, güzel plajlar ve mercan resiflerinin canlı deniz yaşamının tadını çıkarın."
+  },
+  "image": "/trips/petra.jpg"
 }

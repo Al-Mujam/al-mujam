@@ -1,11 +1,11 @@
 {
-    "name": {
-        "en": "Ajloun",
-        "tr": "Aclun"
-    },
-    "description": {
-        "en": "Visit the historic Ajloun Castle and explore the lush green forests of northern Jordan. Experience hiking trails, olive groves, and stunning mountain views.",
-        "tr": "Tarihi Aclun Kalesi'ni ziyaret edin ve kuzey Ürdün'ün yemyeşil ormanlarını keşfedin. Yürüyüş parkurları, zeytin bahçeleri ve muhteşem dağ manzaralarını deneyimleyin."
-    },
-    "image": "https://picsum.photos/600/400?random=12"
+  "name": {
+    "en": "Dead Sea",
+    "tr": "Dead Sea"
+  },
+  "description": {
+    "en": "Visit the historic Ajloun Castle and explore the lush green forests of northern Jordan. Experience hiking trails, olive groves, and stunning mountain views.",
+    "tr": "Tarihi Aclun Kalesi'ni ziyaret edin ve kuzey Ürdün'ün yemyeşil ormanlarını keşfedin. Yürüyüş parkurları, zeytin bahçeleri ve muhteşem dağ manzaralarını deneyimleyin."
+  },
+  "image": "/trips/dead-sea.jpg"
 }
