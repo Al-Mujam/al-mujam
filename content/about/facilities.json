@@ -1,0 +1,25 @@
+{
+    "title": {
+        "en": "Almujam Facilities",
+        "tr": "Almujam Tesisleri"
+    },
+    "subtitle": {
+        "en": "State-of-the-Art Classrooms and Learning Spaces",
+        "tr": "Son Teknoloji Sınıflar ve Öğrenme Alanları"
+    },
+    "description": {
+        "en": "Almujam is housed in a modern 300-square-meter facility conveniently located directly across from the University of Jordan. Our campus features well-equipped classrooms designed to create the ideal environment for Arabic language learning.",
+        "tr": "Almujam, Ürdün Üniversitesi'nin tam karşısında uygun bir konumda yer alan modern 300 metrekarelik bir tesiste bulunmaktadır. Kampüsümüz, Arapça dil öğrenimi için ideal ortamı oluşturmak üzere tasarlanmış, iyi donanımlı sınıflara sahiptir."
+    },
+    "content": {
+        "en": [
+            "Each classroom is thoughtfully arranged to promote student interaction, group discussion, and active participation. The classrooms are furnished with custom desks in flexible U and L-shaped configurations to encourage communication and collaboration between students and instructors.",
+            "High-speed Wi-Fi access is available throughout the facility, enabling seamless use of digital learning resources."
+        ],
+        "tr": [
+            "Her sınıf, öğrenci etkileşimini, grup tartışmasını ve aktif katılımı teşvik edecek şekilde düşünceli bir şekilde düzenlenmiştir. Sınıflar, öğrenciler ve eğitmenler arasında iletişim ve işbirliğini teşvik etmek için esnek U ve L şeklinde konfigürasyonlarda özel masalarla döşenmiştir.",
+            "Tesis boyunca yüksek hızlı Wi-Fi erişimi mevcuttur ve dijital öğrenme kaynaklarının sorunsuz kullanımını sağlar."
+        ]
+    },
+    "image": "https://picsum.photos/400/700"
+}

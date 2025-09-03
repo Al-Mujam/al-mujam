@@ -1,0 +1,77 @@
+{
+    "title": {
+        "en": "Why Jordan",
+        "tr": "Neden Ürdün"
+    },
+    "subtitle": {
+        "en": "The Ideal Destination to Learn Arabic",
+        "tr": "Arapça Öğrenmek İçin İdeal Destinasyon"
+    },
+    "description": {
+        "en": "Learning Arabic is more than just studying grammar and vocabulary—it's about connecting with a culture, a people, and a way of life. Jordan offers the ideal setting for students seeking an immersive and transformative Arabic language learning experience.",
+        "tr": "Arapça öğrenmek sadece gramer ve kelime çalışmaktan daha fazlasıdır—bir kültürle, bir halkla ve bir yaşam tarzıyla bağlantı kurmaktır. Ürdün, sürükleyici ve dönüştürücü bir Arapça dil öğrenimi deneyimi arayan öğrenciler için ideal ortamı sunar."
+    },
+    "immersion": {
+        "en": {
+            "title": "Jordan Offers the Perfect Environment for Arabic Language Immersion",
+            "content": [
+                "At Almujam Arabic Language Center, students are immersed in an environment where Arabic is not only spoken daily, but lives through traditions, expressions, and everyday interactions. This real-world exposure is essential for building fluency and confidence."
+            ]
+        },
+        "tr": {
+            "title": "Ürdün Arapça Dil Daldırma için Mükemmel Ortamı Sunar",
+            "content": [
+                "Almujam Arapça Dil Merkezi'nde, öğrenciler Arapça'nın sadece günlük konuşulduğu değil, aynı zamanda gelenekler, ifadeler ve günlük etkileşimler aracılığıyla yaşadığı bir ortama dalarlar. Bu gerçek dünya maruziyeti akıcılık ve güven oluşturmak için gereklidir."
+            ]
+        }
+    },
+    "dialect": {
+        "en": {
+            "title": "A Dialect Close to Classical Arabic",
+            "content": [
+                "One of the unique advantages of studying Arabic in Jordan is the nature of the Jordanian dialect. It is widely recognized as one of the closest spoken varieties to Classical Arabic (Fusha). This makes it easier for learners to understand and be understood across different Arab countries and dialects.",
+                "Whether you are learning Arabic for academic research, journalism, diplomacy, or business, Jordan gives you a practical foundation that supports both Modern Standard Arabic and regional understanding."
+            ]
+        },
+        "tr": {
+            "title": "Klasik Arapça'ya Yakın Bir Lehçe",
+            "content": [
+                "Ürdün'de Arapça çalışmanın benzersiz avantajlarından biri Ürdün lehçesinin doğasıdır. Klasik Arapça'ya (Fusha) en yakın konuşulan çeşitlerden biri olarak yaygın bir şekilde tanınır. Bu, öğrencilerin farklı Arap ülkelerinde ve lehçelerinde anlamasını ve anlaşılmasını kolaylaştırır.",
+                "Akademik araştırma, gazetecilik, diplomasi veya iş için Arapça öğreniyor olsanız da, Ürdün size hem Modern Standart Arapça'yı hem de bölgesel anlayışı destekleyen pratik bir temel verir."
+            ]
+        }
+    },
+    "culture": {
+        "en": {
+            "title": "A Bridge Between Past and Present",
+            "content": [
+                "Jordan blends ancient history with modern development. You'll find well-preserved archaeological sites next to thriving tech hubs, and deep-rooted traditions alongside cosmopolitan lifestyles. This dynamic cultural landscape allows students to experience Arabic culture authentically—not just in textbooks, but in real conversations, customs, and communities."
+            ]
+        },
+        "tr": {
+            "title": "Geçmiş ve Günümüz Arasında Bir Köprü",
+            "content": [
+                "Ürdün antik tarihi modern gelişimle harmanlıyor. Gelişen teknoloji merkezlerinin yanında iyi korunmuş arkeolojik alanlar ve kozmopolit yaşam tarzlarının yanında köklü gelenekler bulacaksınız. Bu dinamik kültürel manzara, öğrencilerin Arap kültürünü gerçek bir şekilde deneyimlemelerine olanak tanır—sadece ders kitaplarında değil, gerçek konuşmalarda, geleneklerde ve topluluklarda."
+            ]
+        }
+    },
+    "opportunities": {
+        "en": {
+            "title": "Rich Opportunities for Cultural Immersion",
+            "content": [
+                "Located in the heart of Amman, Almujam offers students access to one of the most culturally vibrant capitals in the Arab world. Jordan's central location also makes it a strategic gateway to travel, commerce, and cultural exchange throughout the Middle East.",
+                "At Almujam, students can take part in a Cultural Immersion Program designed to offer rich, real-world experiences through guided visits to historical and cultural sites, traditional markets, and local neighborhoods across Jordan. These activities allow for direct interaction with local communities in natural, everyday settings—enabling students to apply their Arabic in real-life situations and develop a deeper understanding of Jordanian customs and social life.",
+                "This hands-on engagement strengthens both linguistic proficiency and cultural awareness, making the Arabic learning journey at Almujam not only academic, but truly transformative."
+            ]
+        },
+        "tr": {
+            "title": "Kültürel Daldırma için Zengin Fırsatlar",
+            "content": [
+                "Amman'ın kalbinde yer alan Almujam, öğrencilere Arap dünyasının en kültürel açıdan canlı başkentlerinden birine erişim sunar. Ürdün'ün merkezi konumu ayrıca onu Orta Doğu genelinde seyahat, ticaret ve kültürel değişim için stratejik bir geçit yapar.",
+                "Almujam'da, öğrenciler Ürdün genelinde tarihi ve kültürel alanlara, geleneksel pazarlara ve yerel mahallelere rehberli ziyaretler aracılığıyla zengin, gerçek dünya deneyimleri sunmak üzere tasarlanmış Kültürel Daldırma Programı'na katılabilirler. Bu etkinlikler, doğal, günlük ortamlarda yerel topluluklarla doğrudan etkileşime olanak tanır—öğrencilerin Arapça'larını gerçek yaşam durumlarında uygulamalarını ve Ürdün gelenekleri ve sosyal yaşamına dair daha derin bir anlayış geliştirmelerini sağlar.",
+                "Bu uygulamalı katılım hem dilbilimsel yeterliliği hem de kültürel farkındalığı güçlendirir ve Almujam'daki Arapça öğrenme yolculuğunu sadece akademik değil, gerçekten dönüştürücü yapar."
+            ]
+        }
+    },
+    "image": "https://picsum.photos/400/700"
+}

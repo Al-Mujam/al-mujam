@@ -1,0 +1,79 @@
+{
+    "title": {
+        "en": "Methodology",
+        "tr": "Metodoloji"
+    },
+    "subtitle": {
+        "en": "A Balanced Approach to Mastering Arabic: Grammar, Conversation, and Culture",
+        "tr": "Arapça'da Ustalaşmak için Dengeli Bir Yaklaşım: Gramer, Konuşma ve Kültür"
+    },
+    "description": {
+        "en": "At Almujam, we understand that traditional Arabic study methods often focus excessively on grammar, leaving conversational, listening, and writing skills underdeveloped. Many English-speaking learners end up knowing the intricate details of Arabic grammar but struggle to hold simple conversations or read everyday texts fluently.",
+        "tr": "Almujam'da, geleneksel Arapça çalışma yöntemlerinin genellikle gramer üzerinde aşırı odaklandığını ve konuşma, dinleme ve yazma becerilerini yetersiz bıraktığını anlıyoruz. Birçok İngilizce konuşan öğrenci, Arapça gramerin karmaşık detaylarını bilir ancak basit konuşmalar yapmakta veya günlük metinleri akıcı bir şekilde okumakta zorlanır."
+    },
+    "approach": {
+        "en": {
+            "title": "Our Arabic Teaching Methodology",
+            "content": [
+                "Our Arabic teaching methodology rejects this imbalance by emphasizing a well-rounded language acquisition approach without sacrificing linguistic detail. We combine targeted exercises in reading, listening, writing, and speaking to develop all language skills simultaneously.",
+                "Our experienced instructors, with decades of combined expertise teaching Arabic to non-native speakers, tailor lessons to fill gaps in each student's language ability."
+            ]
+        },
+        "tr": {
+            "title": "Arapça Öğretim Metodolojimiz",
+            "content": [
+                "Arapça öğretim metodolojimiz, dilbilimsel detaydan fedakarlık etmeden kapsamlı dil edinim yaklaşımını vurgulayarak bu dengesizliği reddeder. Tüm dil becerilerini eşzamanlı olarak geliştirmek için okuma, dinleme, yazma ve konuşmada hedefli egzersizleri birleştiririz.",
+                "Ana dili Arapça olmayan kişilere Arapça öğretmede onlarca yıllık birleşik uzmanlığa sahip deneyimli eğitmenlerimiz, her öğrencinin dil yeteneğindeki boşlukları doldurmak için dersleri özelleştirir."
+            ]
+        }
+    },
+    "classes": {
+        "en": {
+            "title": "Intensive and Interactive Classes Designed for Maximum Learning",
+            "description": "Classes at Almujam meet daily, providing immersive instruction:",
+            "sessions": [
+                "Summer sessions: 4 hours per day, 5 days a week, for 6 weeks",
+                "Fall, Winter, and Spring sessions: 3 hours per day, 5 days a week, for 12 weeks"
+            ],
+            "features": [
+                "Our classrooms offer natural lighting, comfortable seating arranged for interactive dialogue, and an optimal teacher-to-student ratio to maximize engagement.",
+                "Participation is actively encouraged at all levels, from beginners to advanced students.",
+                "Additionally, students may join extracurricular activities to practice Arabic in real-life settings."
+            ]
+        },
+        "tr": {
+            "title": "Maksimum Öğrenme için Tasarlanmış Yoğun ve Etkileşimli Sınıflar",
+            "description": "Almujam'daki sınıflar günlük olarak toplanır ve sürükleyici eğitim sağlar:",
+            "sessions": [
+                "Yaz oturumları: Günde 4 saat, haftada 5 gün, 6 hafta boyunca",
+                "Güz, Kış ve Bahar oturumları: Günde 3 saat, haftada 5 gün, 12 hafta boyunca"
+            ],
+            "features": [
+                "Sınıflarımız doğal aydınlatma, etkileşimli diyalog için düzenlenmiş rahat oturma düzeni ve katılımı maksimize etmek için optimal öğretmen-öğrenci oranı sunar.",
+                "Yeni başlayanlardan ileri seviye öğrencilere kadar tüm seviyelerde katılım aktif olarak teşvik edilir.",
+                "Ayrıca, öğrenciler gerçek yaşam ortamlarında Arapça pratik yapmak için ders dışı etkinliklere katılabilirler."
+            ]
+        }
+    },
+    "tracks": {
+        "en": {
+            "title": "Classical and Modern Standard Arabic Tracks",
+            "description": "The academic program is divided into two specialized tracks:",
+            "programs": [
+                "Classical Arabic",
+                "Modern Standard Arabic (MSA)"
+            ],
+            "note": "Students may enroll in either or both tracks, progressing through beginner, intermediate, and advanced levels. This flexible approach ensures that learners meet their academic, professional, or cultural goals effectively."
+        },
+        "tr": {
+            "title": "Klasik ve Modern Standart Arapça Programları",
+            "description": "Akademik program iki özel programa ayrılmıştır:",
+            "programs": [
+                "Klasik Arapça",
+                "Modern Standart Arapça (MSA)"
+            ],
+            "note": "Öğrenciler bu programlardan birine veya her ikisine de kaydolabilir ve başlangıç, orta ve ileri seviyelerde ilerleyebilirler. Bu esnek yaklaşım, öğrencilerin akademik, profesyonel veya kültürel hedeflerini etkili bir şekilde karşılamalarını sağlar."
+        }
+    },
+    "image": "https://picsum.photos/400/700"
+}

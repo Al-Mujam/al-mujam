@@ -98,10 +98,158 @@ export default defineContentConfig({
           en: z.string(),
           tr: z.string(),
         }),
+        subtitle: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }).optional(),
         description: z.object({
           en: z.string(),
           tr: z.string(),
         }),
+        content: z.object({
+          en: z.array(z.string()),
+          tr: z.array(z.string()),
+        }).optional(),
+        approach: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        classes: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            sessions: z.array(z.string()),
+            features: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            sessions: z.array(z.string()),
+            features: z.array(z.string()),
+          }),
+        }).optional(),
+        tracks: z.object({
+          en: z.object({
+            title: z.string(),
+            description: z.string(),
+            programs: z.array(z.string()),
+            note: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            description: z.string(),
+            programs: z.array(z.string()),
+            note: z.string(),
+          }),
+        }).optional(),
+        location: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        facilities: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        community: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        immersion: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        dialect: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        culture: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        opportunities: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        instructors: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        administration: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+          }),
+        }).optional(),
+        commitment: z.object({
+          en: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+            conclusion: z.string(),
+          }),
+          tr: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+            conclusion: z.string(),
+          }),
+        }).optional(),
         image: z.string(),
       })
     }),

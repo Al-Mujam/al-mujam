@@ -1,0 +1,63 @@
+{
+    "title": {
+        "en": "Our Academic Team",
+        "tr": "Akademik Ekibimiz"
+    },
+    "subtitle": {
+        "en": "A Trusted Team of Certified Arabic Instructors",
+        "tr": "Sertifikalı Arapça Eğitmenlerin Güvenilir Ekibi"
+    },
+    "description": {
+        "en": "At Almujam Arabic Language Center, we believe teaching experience isn't just measured in years—it's defined by quality, precision, and the ability to connect across cultures. Our instructors are not only highly skilled linguists, but also compassionate educators who understand the unique challenges faced by non-native Arabic learners.",
+        "tr": "Almujam Arapça Dil Merkezi'nde, öğretmenlik deneyiminin sadece yıllarla ölçülmediğine inanıyoruz—kalite, hassasiyet ve kültürler arası bağlantı kurma yeteneği ile tanımlanır. Eğitmenlerimiz sadece yüksek becerili dilbilimciler değil, aynı zamanda ana dili Arapça olmayan öğrencilerin karşılaştığı benzersiz zorlukları anlayan şefkatli eğitimcilerdir."
+    },
+    "instructors": {
+        "en": {
+            "title": "Certified and Experienced Instructors",
+            "content": [
+                "All of our teachers hold official certifications in Teaching Arabic as a Foreign Language (TAFL) and are accredited by relevant higher education bodies. Full-time instructors undergo a rigorous in-house training program that ensures they are equipped to balance grammatical mastery with a personalized, student-centered approach—especially when helping learners overcome language or cultural hurdles."
+            ]
+        },
+        "tr": {
+            "title": "Sertifikalı ve Deneyimli Eğitmenler",
+            "content": [
+                "Tüm öğretmenlerimiz Yabancı Dil Olarak Arapça Öğretimi (TAFL) alanında resmi sertifikalara sahiptir ve ilgili yükseköğretim kuruluşları tarafından akredite edilmiştir. Tam zamanlı eğitmenler, özellikle öğrencilerin dil veya kültürel engelleri aşmalarına yardımcı olurken, gramer ustalığını kişiselleştirilmiş, öğrenci merkezli yaklaşımla dengelemeye donanımlı olmalarını sağlayan titiz bir kurum içi eğitim programından geçerler."
+            ]
+        }
+    },
+    "administration": {
+        "en": {
+            "title": "A Supportive Administration Committed to Student Success",
+            "content": [
+                "Alongside our teaching staff is a dedicated administrative team composed of both Arab and international professionals. With expertise in educational management, student services, and Western academic systems, the administration plays an active role in shaping each student's learning journey."
+            ]
+        },
+        "tr": {
+            "title": "Öğrenci Başarısına Adanmış Destekleyici İdare",
+            "content": [
+                "Öğretim kadromuzun yanı sıra hem Arap hem de uluslararası profesyonellerden oluşan özel bir idari ekip bulunmaktadır. Eğitim yönetimi, öğrenci hizmetleri ve Batı akademik sistemlerinde uzmanlığa sahip idare, her öğrencinin öğrenme yolculuğunu şekillendirmede aktif rol oynar."
+            ]
+        }
+    },
+    "commitment": {
+        "en": {
+            "title": "Our Commitment to Excellence",
+            "features": [
+                "Skill-based placement evaluations to ensure each student is matched with the right class level.",
+                "Ongoing student check-ins with faculty and administration to monitor progress and provide academic support.",
+                "A three-phase evaluation process that allows students to give detailed feedback on instructors, curriculum, and the overall learning environment. These reviews are thoroughly analyzed to implement improvements that reflect student needs."
+            ],
+            "conclusion": "At Almujam, we uphold a culture of continuous improvement and 360-degree feedback, ensuring that every student's educational experience is refined, responsive, and rewarding."
+        },
+        "tr": {
+            "title": "Mükemmellik Taahhüdümüz",
+            "features": [
+                "Her öğrencinin doğru sınıf seviyesi ile eşleştirilmesini sağlamak için beceri temelli yerleştirme değerlendirmeleri.",
+                "İlerlemeyi izlemek ve akademik destek sağlamak için öğretim görevlileri ve idare ile sürekli öğrenci kontrolları.",
+                "Öğrencilerin eğitmenler, müfredat ve genel öğrenme ortamı hakkında ayrıntılı geri bildirim vermesine olanak tanıyan üç aşamalı değerlendirme süreci. Bu incelemeler, öğrenci ihtiyaçlarını yansıtan iyileştirmeleri uygulamak için kapsamlı bir şekilde analiz edilir."
+            ],
+            "conclusion": "Almujam'da, sürekli iyileştirme ve 360 derece geri bildirim kültürünü destekliyoruz ve her öğrencinin eğitim deneyiminin rafine, duyarlı ve ödüllendirici olmasını sağlıyoruz."
+        }
+    },
+    "image": "https://picsum.photos/400/700"
+}

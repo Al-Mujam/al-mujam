@@ -1,11 +1,27 @@
 {
     "title": {
-        "en": "Learn Arabic at Almujam",
-        "tr": "Al Muajam Hakkında"
+        "en": "Learn Arabic at Almujam – The Leading Arabic Language Center",
+        "tr": "Almujam'da Arapça Öğrenin – Önde Gelen Arapça Dil Merkezi"
+    },
+    "subtitle": {
+        "en": "Master Arabic with Expert Teachers and a Proven Curriculum",
+        "tr": "Uzman Öğretmenler ve Kanıtlanmış Müfredat ile Arapça'da Ustalaşın"
     },
     "description": {
-        "en": "Master Arabic with expert teachers and a proven curriculum. At Almujam, we provide effective Arabic language learning for beginners and advanced learners alike. Our certified instructors use innovative teaching methods with personalized attention to ensure confident progress. Start your journey to fluency today with Almujam – the best place to learn Arabic in the Middle East.",
-        "tr": "Uzman öğretmenler ve kanıtlanmış müfredat ile Arapça'da ustalaşın. Almujam'da, hem yeni başlayanlar hem de ileri seviye öğrenciler için etkili Arapça dil öğrenimi sunuyoruz. Sertifikalı eğitmenlerimiz, güvenli ilerleme sağlamak için kişiselleştirilmiş dikkatle yenilikçi öğretim yöntemleri kullanır. Orta Doğu'da Arapça öğrenmenin en iyi yeri olan Almujam ile akıcılık yolculuğunuza bugün başlayın."
+        "en": "At Almujam, we provide the most effective Arabic language learning experience tailored for beginners and advanced learners alike. Our structured multi-level program takes you from mastering Arabic pronunciation to achieving fluency for academic and professional success.",
+        "tr": "Almujam'da, hem yeni başlayanlar hem de ileri seviye öğrenciler için özel olarak tasarlanmış en etkili Arapça dil öğrenimi deneyimi sunuyoruz. Yapılandırılmış çok seviyeli programımız sizi Arapça telaffuzda ustalaşmaktan akademik ve profesyonel başarı için akıcılık elde etmeye kadar götürür."
+    },
+    "content": {
+        "en": [
+            "Our certified Arabic instructors use innovative teaching methods and personalized attention to ensure every student progresses confidently. Whether you want to excel in Arabic for beginners, improve your conversational skills, or prepare for university-level studies, Almujam is your trusted partner.",
+            "Join thousands of students who have benefited from our comprehensive curriculum, cultural immersion, and advanced modules designed for future Arabic teachers and Middle East Studies scholars.",
+            "Start your journey to fluency today with Almujam – the best place to learn Arabic in the Middle East."
+        ],
+        "tr": [
+            "Sertifikalı Arapça eğitmenlerimiz, her öğrencinin güvenle ilerlemesini sağlamak için yenilikçi öğretim yöntemleri ve kişiselleştirilmiş dikkat kullanır. Yeni başlayanlar için Arapça'da başarılı olmak, konuşma becerilerinizi geliştirmek veya üniversite düzeyinde çalışmalara hazırlanmak istiyorsanız, Almujam güvenilir ortağınızdır.",
+            "Kapsamlı müfredatımız, kültürel daldırma ve gelecekteki Arapça öğretmenleri ve Orta Doğu Çalışmaları uzmanları için tasarlanmış ileri modüllerden yararlanan binlerce öğrenciye katılın.",
+            "Orta Doğu'da Arapça öğrenmenin en iyi yeri olan Almujam ile akıcılık yolculuğunuza bugün başlayın."
+        ]
     },
     "image": "https://picsum.photos/400/700"
 }

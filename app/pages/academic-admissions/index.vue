@@ -143,7 +143,7 @@
                 <div class="bg-white rounded-2xl shadow-lg p-8">
                     <h3 class="text-2xl font-bold text-web-primary mb-6">{{ admissions.tuition.individual_discounts[locale].title }}</h3>
                     <p class="text-gray-600 mb-6">{{ admissions.tuition.individual_discounts[locale].subtitle }}</p>
-                    <div class="overflow-x-auto">
+                    <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200">
                         <table class="w-full">
                             <thead>
                                 <tr class="border-b-2 border-gray-200">
@@ -242,7 +242,7 @@
                 <!-- Refund Policy -->
                 <div class="bg-white rounded-2xl shadow-lg p-8">
                     <h3 class="text-2xl font-bold text-web-primary mb-6">Refund Policy Overview</h3>
-                    <div class="overflow-x-auto">
+                    <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200">
                         <table class="w-full">
                             <thead>
                                 <tr class="border-b-2 border-gray-200">
