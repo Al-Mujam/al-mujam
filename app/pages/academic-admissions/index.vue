@@ -1006,6 +1006,11 @@ definePageMeta({
 const route = useRoute()
 const router = useRouter()
 
+watch(() => route.query, (newQuery) => {
+    if (newQuery.section) {
+        scrollToSection(newQuery.section)
+    }
+})
 const activeTab = ref(route.query.tab || 'academics')
 
 const changeTab = (tab) => {
@@ -1096,9 +1101,7 @@ const scrollToSectionInternal = (sectionId) => {
         }, 2000)
         
         // Update URL without page reload, preserving the tab
-        const url = new URL(window.location)
-        url.searchParams.set('section', sectionId)
-        window.history.replaceState({}, '', url)
+        router.replace({ query: { section: sectionId } })
     } else {
         console.warn(`Section with id "${sectionId}" not found`)
     }

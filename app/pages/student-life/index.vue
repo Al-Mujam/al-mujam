@@ -305,6 +305,7 @@
 <script setup>
 import { IconsSchool } from '#components'
 
+
 const { data: blogs } = await useAsyncData('blogs', () => {
     return queryCollection('blogs').order('blog_id', 'DESC').all()
 })
@@ -333,6 +334,15 @@ definePageMeta({
 
 const {locale} = useI18n()
 const route = useRoute()
+const router = useRouter()
+
+
+watch(() => route.query, (newQuery) => {
+    if (newQuery.section) {
+        scrollToSection(newQuery.section)
+    }
+})
+
 
 const { data: translations } = await useAsyncData('translations', () => {
     return queryCollection('translations').all()
@@ -383,9 +393,7 @@ const scrollToSection = (sectionId) => {
         }, 2000)
         
         // Update URL without page reload
-        const url = new URL(window.location)
-        url.searchParams.set('section', sectionId)
-        window.history.replaceState({}, '', url)
+        router.replace({ query: { section: sectionId } })
     } else {
         console.warn(`Section with id "${sectionId}" not found`)
     }

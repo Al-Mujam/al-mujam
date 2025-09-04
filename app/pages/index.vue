@@ -187,7 +187,7 @@
     <!-- students section -->
     
 
-    <section class="w-full py-20 relative   lg:h-[calc(100svh-70px)] h-max  gap-10  text-text-color justify-center flex items-center overflow-hidden flex-col  ">
+    <section class="w-full py-20 relative   h-max  gap-10  text-text-color justify-center flex items-center overflow-hidden flex-col  ">
         <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full ">
             <div class="text-lg md:text-xl font-bold text-center text-web-primary ">
                 {{ translations.find(t => t.key === 'students_title').value[locale].toUpperCase() }}

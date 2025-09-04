@@ -459,7 +459,13 @@ import { IconsSchool, IconsBooks, IconsRepeat, IconsWifi } from '#components'
 // Import useRoute for handling query parameters
 // This allows us to handle URLs like: /about?section=methodology
 const route = useRoute()
+const router = useRouter()
 
+watch(() => route.query, (newQuery) => {
+    if (newQuery.section) {
+        scrollToSection(newQuery.section)
+    }
+})
 
 definePageMeta({
     name: 'about'
@@ -619,9 +625,7 @@ const scrollToSection = (sectionId) => {
         }, 2000)
         
         // Update URL without page reload
-        const url = new URL(window.location)
-        url.searchParams.set('section', sectionId)
-        window.history.replaceState({}, '', url)
+        router.replace({ query: { section: sectionId } })
     } else {
         console.warn(`Section with id "${sectionId}" not found`)
     }
