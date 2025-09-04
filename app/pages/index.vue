@@ -33,9 +33,16 @@
             </div>
         </section>
     
+        <section id="programs-section"  class="w-full max-w-[1280px] px-4 pt-3 md:px-20 lg:px-10 mx-auto  md:pb-20 pb-10 relative       lg:h-[calc(100svh-50px)] h-max   text-text-color flex items-center flex-col  ">
+             <video  class="w-full  h-full object-cover rounded-4xl ring-4 ring-web-primary ring-offset-5" controls >
+                <source src="/videos/hero.mp4" type="video/mp4">
+             </video>
+
+                
+        </section>
 
 <!-- programs section -->
-        <section id="programs-section" class="w-full max-w-[calc(100vw-40px)] mx-auto border border-web-primary/5 py-10 rounded-4xl bg-web-primary/5  relative overflow-hidden     lg:h-[calc(100svh-70px)] h-max   text-text-color flex items-center flex-col  ">
+        <section  class="w-full max-w-[calc(100vw-40px)] mx-auto border border-web-primary/5 py-10 rounded-4xl bg-web-primary/5  relative overflow-hidden     lg:h-[calc(100svh-70px)] h-max   text-text-color flex items-center flex-col  ">
             <img src="/watermarks/ha2-primary.png" :class="isHover ? 'translate-x-0': '-translate-x-full'" class="absolute opacity-10  filter w-[400px]  -start-0 -top-60 transition-all duration-300 " />
             <img src="/watermarks/dal-primary.png" :class="isHover ? 'translate-x-0': 'translate-x-full'" class="absolute opacity-10  filter w-[400px]  -end-0 -bottom-10 transition-all duration-300 " />
                 <div  class="w-full h-full items-center justify-center container max-w-[1280px] mx-auto px-4 md:px-20 lg:px-10  grid grid-cols-1 lg:grid-cols-3 gap-10 ">
@@ -107,8 +114,11 @@
             <IconsSchool v-if="stat.icon === 'IconsSchool'" class=" text-[4rem] text-background" />
             <IconsStudent v-if="stat.icon === 'IconsStudent'" class=" text-[4rem] text-background" />
             <IconsLesson v-if="stat.icon === 'IconsLesson'" class=" text-[4rem] text-background" />
-            <div class="text-3xl font-bold text-background">
-                {{ stat.number }}
+            <div class="flex  text-3xl font-bold text-background ">
+                +
+            <div class="stat-number text-3xl font-bold text-background" :data-target="parseInt(stat.number)">
+                 0
+            </div>
             </div>
             <div class="text-xl text-center text-background/70">
                 {{ stat.description[locale] }}
@@ -121,7 +131,7 @@
 
 
         <!-- online courses section -->
-<section ref="onlineCoursesSection"  class="w-[99vw] mx-auto h-[calc(100dvh-70px)] flex items-center justify-center ">
+<section ref="onlineCoursesSection"  class="w-[98vw]  mx-auto h-[calc(100dvh-70px)] flex items-center justify-center ">
 
 <div  :class="activeOnlineCourses ? 'text-background bg-web-primary' : 'bg-gray-300 text-gray-600'" class="w-full duration-300 transition-all   rounded-4xl max-w-[calc(100%-40px)] mx-auto h-[calc(100%-30px)]   overflow-hidden relative ">
    
@@ -197,7 +207,7 @@
             </div>
         </div>
           
-            <div class="w-full px-10 py-5  h-full overflow-x-auto  snap-x snap-mandatory gap-10     flex flex-nowrap scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200  ">
+            <div class="w-full px-10 py-5  h-max overflow-x-auto  snap-x snap-mandatory gap-10     flex flex-nowrap scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200  ">
             
                <div v-for="student in students" :key="student" class="w-[90vw] max-w-[600px] overflow-hidden    h-full shrink-0 bg-white shadow-web rounded-4xl  snap-center   flex flex-col ">
                <div class="flex-1 p-5 flex flex-col">
@@ -255,6 +265,7 @@
 
 <script setup>
 import { IconsLesson, IconsSchool, IconsStudent, IconsComma } from '#components';
+
 
 const activeOnlineCourses = ref(false)
 
@@ -321,14 +332,39 @@ onMounted(() => {
     transform: 'translateY(-700px)',
     ease: "power2.inOut"
   })
-  
+
+  // Stats number animation with scroll trigger
+  const statNumbers = document.querySelectorAll('.stat-number')
+  statNumbers.forEach((statElement) => {
+    const targetValue = parseInt(statElement.getAttribute('data-target'))
+    
+    useGSAP().fromTo(statElement, 
+      {
+        textContent: 0
+      },
+      {
+        textContent: targetValue,
+        duration: 2,
+        ease: "power2.out",
+        snap: { textContent: 1 },
+        scrollTrigger: {
+          trigger: statElement,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    )
+  })
 
 
   
 
   onBeforeUnmount(() => {
     tl.kill()
-})  
+    // Clean up ScrollTrigger instances
+    useGSAP().killTweensOf('.stat-number')
+  })  
   
 
     watch(width, (newVal) => {

@@ -37,5 +37,5 @@ export default defineNuxtConfig({
     }
   },
   css: ['~/assets/app.css'],
-  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/content', 'v-gsap-nuxt']
+  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', '@nuxt/content', 'v-gsap-nuxt', 'nuxt-countup']
 })
