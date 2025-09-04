@@ -217,7 +217,14 @@
                 <div class="flex   items-center gap-3">
 
                <div class="rounded-full w-[60px] h-[60px] relative ">
-                <img :src="student.image" class="object-cover rounded-full w-full h-full" alt="">
+                <img v-if="student.image" :src="student.image" class="object-cover rounded-full w-full h-full" alt="">
+                <div v-else class="rounded-full w-[60px] h-[60px] bg-gray-300 flex relative items-center overflow-hidden justify-center">
+                    <div class="bg-gray-500 w-[20px] h-[20px] rounded-full ">
+                    </div>
+                    <div class="bg-gray-500 w-[40px] h-[40px] rounded-t-full absolute left-0 mx-auto right-0 -bottom-6">
+
+                    </div>
+                </div>
                </div>
                <div class="flex flex-col items-start justify-center">
                 <div class="text-lg font-bold text-text-color  ">
