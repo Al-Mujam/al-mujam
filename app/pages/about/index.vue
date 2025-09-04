@@ -2,8 +2,8 @@
     <div class="mt-[70px] w-full">
 
         <!-- hero section -->
-        <div class="h-[50svh] w-full  flex flex-col items-center justify-center overflow-hidden">
-             <div class="bg-web-primary gap-3 h-[calc(100%-30px)] w-[calc(100%-40px)] rounded-4xl relative flex flex-col items-center justify-center">
+        <div class="md:h-[50svh] h-max w-full  flex flex-col items-center justify-center overflow-hidden">
+             <div class="bg-web-primary gap-3 md:h-[calc(100%-30px)] h-max p-10 w-[calc(100%-40px)] rounded-4xl relative flex flex-col items-center justify-center">
                 <img ref="ha2Ref" src="/watermarks/7a2.png" class="absolute filter md:w-[400px] w-[200px] opacity-10 -start-0 -top-20 z-0 " />
                 <img ref="dalRef" src="/watermarks/dal.png" class="absolute filter md:w-[400px] w-[200px] opacity-10 -end-0 -bottom-10 z-0 " />
                 <div ref="globeRef" class="md:text-4xl text-3xl  font-bold text-center text-white w-[80%]">
