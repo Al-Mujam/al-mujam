@@ -70,13 +70,5 @@
       "title": "Uzmanlaşmış Öğrenme Materyalleri",
       "description": "Öğrenciler her seviyeye özel olarak tasarlanmış, Almujam'da etkili ve kapsamlı bir öğrenme yolculuğu sağlayan dikkatle tasarlanmış müfredat ve materyaller alır."
     }
-  },
-  "button_text": {
-    "en": "Click here to start your application",
-    "tr": "Başvurunuzu başlatmak için buraya tıklayın"
-  },
-  "button_link": {
-    "en": "#",
-    "tr": "#"
   }
 }
