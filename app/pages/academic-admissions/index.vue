@@ -243,7 +243,7 @@
             </div>
 
             <!-- Online Programs -->
-            <div id="online-programs" class="mb-16">
+            <div id="online-programs" class="mb-10">
                 <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
                     <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
                         {{ academics.online_programs.title[locale] }}
@@ -276,9 +276,9 @@
                     <div class="mt-8 bg-web-primary rounded-2xl p-8 text-white text-center">
                         <h3 class="text-2xl font-bold mb-4">{{ academics.online_programs.test_arabic[locale].title }}</h3>
                         <p class="text-lg opacity-90 mb-6">{{ academics.online_programs.test_arabic[locale].description }}</p>
-                        <a href="#" class="bg-white text-web-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300">
+                        <NuxtLink external target="_blank" :to="settings.find(setting => setting.key === 'test_now_link').value[locale]" class="bg-white text-text-color px-8 py-3 rounded-full  hover:bg-gray-100 transition-all duration-300">
                             {{ translations.find(t => t.key === 'take_free_test').value[locale] }}
-                        </a>
+                        </NuxtLink>
                     </div>
 
                   
@@ -562,9 +562,9 @@
                     </div>
                     
                     <div class="mt-8 text-center">
-                        <a :href="accommodation.overview.button_link[locale]" target="_blank" class="web-btn">
+                        <NuxtLink external target="_blank" :to="accommodation.overview.button_link[locale]" class="web-btn">
                             {{ accommodation.overview.button_text[locale] }}
-                        </a>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
