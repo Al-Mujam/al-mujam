@@ -46,7 +46,7 @@
             <img src="/watermarks/ha2-primary.png" :class="isHover ? 'translate-x-0': '-translate-x-full'" class="absolute opacity-10  filter w-[400px]  -start-0 -top-60 transition-all duration-300 " />
             <img src="/watermarks/dal-primary.png" :class="isHover ? 'translate-x-0': 'translate-x-full'" class="absolute opacity-10  filter w-[400px]  -end-0 -bottom-10 transition-all duration-300 " />
                 <div  class="w-full h-full items-center justify-center container max-w-[1280px] mx-auto px-4 md:px-20 lg:px-10  grid grid-cols-1 lg:grid-cols-3 gap-10 ">
-                    <NuxtLink external target="_blank" :to="program.link" v-for="program in programs.slice(0, 3)" :key="program" @mouseenter="isHover = true" @mouseleave="isHover = false" class="w-full shadow-lg flex items-center justify-center  lg:h-full h-[500px] rounded-4xl relative overflow-hidden group hover:scale-102 transition-all duration-300 cursor-pointer ">
+                    <NuxtLink :to="program.link" v-for="program in programs.slice(0, 3)" :key="program" @mouseenter="isHover = true" @mouseleave="isHover = false" class="w-full shadow-lg flex items-center justify-center  lg:h-full h-[500px] rounded-4xl relative overflow-hidden group hover:scale-102 transition-all duration-300 cursor-pointer ">
                         <img class="object-cover rounded-4xl absolute inset-0 w-full h-full" :src="program.image" alt="" >
                         <div class="bg-black/20 backdrop-blur-sm w-full flex flex-col gap-2 h-max absolute bottom-0 rounded-b-4xl z-10 p-4 py-6 ">
                         <div class="text-white text-2xl font-bold line-clamp-2 break-words   ">

@@ -181,7 +181,7 @@
     <div class="md:h-[calc(100svh-100px)] h-max w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-5 mb-12">
         <div v-for="(trip, idx) in trips" :key="trip" :class="idx == 0 || idx == 3 ? 'md:col-span-2' : ''" class="flex items-center justify-center w-full md:h-full h-[250px]">
             <div class="w-full h-full rounded-4xl overflow-hidden relative max-w-[300px] md:max-w-none group">
-                <img :src="trip.image" alt="trip image" class="w-full h-full absolute object-cover z-0">
+                <img :src="trip.image" alt="trip image" class="w-full h-full absolute object-cover object-bottom z-0">
                 <div class="w-full h-full bg-web-primary translate-y-full group-hover:translate-y-0 duration-500 transition-all relative rounded-4xl z-10 flex items-center justify-center text-white md:text-4xl text-2xl font-bold line-clamp-1">
                     {{ trip.name[locale] }}
                     <img src="/watermarks/dal.png" alt="" class="absolute top-0 opacity-10 left-0 w-full h-full object-cover">

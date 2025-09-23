@@ -95,11 +95,7 @@
                         <p class="text-gray-600 mt-4 italic">{{ academics.programs_overview.assessment[locale].note }}</p>
                     </div>
 
-                    <div class="mt-8 text-center">
-                        <a :href="academics.programs_overview.button_link[locale]" target="_blank" class="web-btn">
-                            {{ academics.programs_overview.button_text[locale] }}
-                        </a>
-                    </div>
+                 
                 </div>
             </div>
 
@@ -149,11 +145,7 @@
                         <p class="text-gray-600 italic">{{ academics.classical_arabic.advanced_mastery[locale].note }}</p>
                     </div>
 
-                    <div class="mt-8 text-center">
-                        <a :href="academics.classical_arabic.button_link[locale]" target="_blank" class="web-btn">
-                            {{ academics.classical_arabic.button_text[locale] }}
-                        </a>
-                    </div>
+                   
                 </div>
             </div>
 
@@ -203,11 +195,7 @@
                         <p class="text-gray-600 italic">{{ academics.modern_standard_arabic.advanced_proficiency[locale].note }}</p>
                     </div>
 
-                    <div class="mt-8 text-center">
-                        <a :href="academics.modern_standard_arabic.button_link[locale]" target="_blank" class="web-btn">
-                            {{ academics.modern_standard_arabic.button_text[locale] }}
-                        </a>
-                    </div>
+                  
                 </div>
             </div>
 
@@ -250,11 +238,7 @@
                         <p class="text-gray-700">{{ academics.ammiyya.learning_materials[locale].description }}</p>
                     </div>
 
-                    <div class="mt-8 text-center">
-                        <a :href="academics.ammiyya.button_link[locale]" target="_blank" class="web-btn">
-                            {{ academics.ammiyya.button_text[locale] }}
-                        </a>
-                    </div>
+                  
                 </div>
             </div>
 
@@ -297,11 +281,7 @@
                         </a>
                     </div>
 
-                    <div class="mt-8 text-center">
-                        <a :href="academics.online_programs.button_link[locale]" target="_blank" class="web-btn">
-                            {{ academics.online_programs.button_text[locale] }}
-                        </a>
-                    </div>
+                  
                 </div>
             </div>
         </section>
@@ -330,11 +310,7 @@
                         </p>
                     </div>
                     
-                    <div class="mt-8 text-center">
-                        <a :href="admissions.introduction.button_link[locale]" target="_blank" class="web-btn">
-                            {{ admissions.introduction.button_text[locale] }}
-                        </a>
-                    </div>
+                   
                 </div>
             </div>
 
@@ -386,11 +362,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-8 text-center">
-                            <a :href="admissions.program_dates.button_link[locale]" target="_blank" class="web-btn">
-                                {{ admissions.program_dates.button_text[locale] }}
-                            </a>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -560,11 +532,7 @@
                         </div>
                     </div>
 
-                    <div class="text-center">
-                        <a :href="admissions.tuition.button_link[locale]" target="_blank" class="web-btn">
-                            {{ admissions.tuition.button_text[locale] }}
-                        </a>
-                    </div>
+                  
                 </div>
             </div>
         </section>
@@ -624,11 +592,7 @@
                             </p>
                         </div>
                         
-                        <div class="text-center">
-                            <a :href="accommodation.housing_process.button_link[locale]" target="_blank" class="web-btn">
-                                {{ accommodation.housing_process.button_text[locale] }}
-                            </a>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -1015,18 +979,24 @@ const activeTab = ref(route.query.tab || 'academics')
 
 const changeTab = (tab) => {
     activeTab.value = tab
-    // Preserve section query parameter when changing tabs
+    // Check if current section is valid for the new tab
     const currentSection = route.query.section
     const query = { tab: tab }
+
+    // Only preserve section if it belongs to the new tab
     if (currentSection) {
-        query.section = currentSection
+        const validSections = getTabSections(tab).map(s => s.id)
+        if (validSections.includes(currentSection)) {
+            query.section = currentSection
+        }
     }
+
     router.replace({ query })
 }
 
-// Function to get sections based on current active tab
-const getCurrentTabSections = () => {
-    switch (activeTab.value) {
+// Function to get sections based on a specific tab
+const getTabSections = (tab) => {
+    switch (tab) {
         case 'academics':
             return [
                 { id: 'programs-overview', title: { en: 'Programs Overview', tr: 'Program Genel Bakış' } },
@@ -1055,6 +1025,11 @@ const getCurrentTabSections = () => {
         default:
             return []
     }
+}
+
+// Function to get sections based on current active tab
+const getCurrentTabSections = () => {
+    return getTabSections(activeTab.value)
 }
 
 // Function to scroll to a specific section within the current tab
