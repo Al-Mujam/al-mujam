@@ -1,12 +1,12 @@
 {
-    "title": {
-      "en": "Classical Arabic Program",
-      "tr": "Klasik Arapça Programı"
-    },
-    "description": {
-      "en": "At Almujam Arabic Language Center, the Classical Arabic track focuses primarily on the language of the Qur’an, as well as on classical and medieval texts inspired by its style and content. Students gain direct exposure to Islamic legal, theological, philosophical, and mystical works from these periods.",
-      "tr": "Almujam Arapça Dil Merkezi'nde Klasik Arapça programı, öncelikle Kur’an'ın dili ile onun üslup ve içeriğinden esinlenen klasik ve ortaçağ metinlerine odaklanır. Öğrenciler bu dönemlerden İslam hukuk, teoloji, felsefe ve tasavvuf eserlerine doğrudan erişim kazanır."
-    },
-    "image": "/programs/classical.jpeg",
-    "link": "https://www.google.com"
-  }
+  "title": {
+    "en": "Classical Arabic Program",
+    "tr": "Klasik Arapça Programı"
+  },
+  "description": {
+    "en": "At Almujam Arabic Language Center, the Classical Arabic track focuses primarily on the language of the Qur’an, as well as on classical and medieval texts inspired by its style and content. Students gain direct exposure to Islamic legal, theological, philosophical, and mystical works from these periods.",
+    "tr": "Almujam Arapça Dil Merkezi'nde Klasik Arapça programı, öncelikle Kur’an'ın dili ile onun üslup ve içeriğinden esinlenen klasik ve ortaçağ metinlerine odaklanır. Öğrenciler bu dönemlerden İslam hukuk, teoloji, felsefe ve tasavvuf eserlerine doğrudan erişim kazanır."
+  },
+  "image": "/programs/classical.jpeg",
+  "link": "/academic-admissions?section=classical-arabic"
+}
