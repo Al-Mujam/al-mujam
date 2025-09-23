@@ -206,11 +206,27 @@
                 {{ translations.find(t => t.key === 'students_description').value[locale] }}
             </div>
         </div>
-          
-            <div class="w-full px-10 py-5  h-max overflow-x-auto  snap-x snap-mandatory gap-10     flex flex-nowrap scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200  ">
+
+        <!-- Testimonials Navigation -->
+        <div class="relative w-full  mx-auto">
+            <!-- Previous Button -->
+            <button @click="scrollTestimonials('prev')" class="hidden md:flex absolute left-10 top-1/2 cursor-pointer hover:bg-web-primary-dark active:scale-105 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-web-primary hover:bg-web-dark rounded-full items-center justify-center transition-all duration-300 shadow-lg">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <!-- Next Button -->
+            <button @click="scrollTestimonials('next')" class="hidden md:flex absolute right-10 top-1/2 cursor-pointer hover:bg-web-primary-dark active:scale-105 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-web-primary hover:bg-web-dark rounded-full items-center justify-center transition-all duration-300 shadow-lg">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+
+            <div ref="testimonialsRef" class="w-full px-10 py-5  h-max overflow-x-auto  snap-x snap-mandatory gap-10     flex flex-nowrap scrollbar-thin scrollbar-thumb-web-primary scrollbar-track-gray-200  ">
             
-               <div v-for="student in students" :key="student" class="w-[90vw] max-w-[600px] overflow-hidden    h-full shrink-0 bg-white shadow-web rounded-4xl  snap-center   flex flex-col ">
-               <div class="flex-1 p-5 flex flex-col">
+               <div v-for="student in students" :key="student" @click="openStudentModal(student)" class="w-[90vw] max-w-[600px]  overflow-hidden    h-full shrink-0 bg-white shadow-web rounded-4xl  snap-center   flex flex-col cursor-pointer hover:shadow-lg transition-shadow duration-300">
+               <div class="flex-1 p-5 flex flex-col h-full">
                <div class="text-web-primary h-max text-4xl"> 
                 <IconsComma />
                </div>
@@ -250,24 +266,32 @@
         
                </div>
                </div>
-                
-             
+
 
             </div>
+        </div>
     </section>
 
 
 
 
 
+    <!-- Student Modal -->
+    <StudentModal v-if="studentModal && selectedStudent" :student="selectedStudent" @close="closeStudentModal" />
+
     </div>
 </template>
 
 <script setup>
 import { IconsLesson, IconsSchool, IconsStudent, IconsComma } from '#components';
+import StudentModal from '~/components/StudentModal.vue';
 
 
 const activeOnlineCourses = ref(false)
+
+// Student modal state
+const studentModal = ref(false)
+const selectedStudent = ref(null)
 
 const {width, height} = useWindowSize()
 const { locale, locales, setLocale, t } = useI18n()
@@ -282,6 +306,7 @@ const ha2Ref = ref(null)
 const dalRef = ref(null)
 const globeRef2 = ref(null)
 const globeRef3 = ref(null)
+const testimonialsRef = ref(null)
 
 
 
@@ -406,7 +431,38 @@ const scrollToPrograms = () => {
 const y = programsSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
 window.scrollTo({ top: y, behavior: 'smooth' });
- 
+
+}
+
+// Student modal functions
+const openStudentModal = (student) => {
+    selectedStudent.value = student
+    studentModal.value = true
+}
+
+const closeStudentModal = () => {
+    studentModal.value = false
+    selectedStudent.value = null
+}
+
+// Testimonial navigation functions
+const scrollTestimonials = (direction) => {
+    if (testimonialsRef.value) {
+        const scrollAmount = 650 // Approximate width of one testimonial card + gap
+        const currentScroll = testimonialsRef.value.scrollLeft
+
+        if (direction === 'next') {
+            testimonialsRef.value.scrollTo({
+                left: currentScroll + scrollAmount,
+                behavior: 'smooth'
+            })
+        } else {
+            testimonialsRef.value.scrollTo({
+                left: currentScroll - scrollAmount,
+                behavior: 'smooth'
+            })
+        }
+    }
 }
 
 const onlineCoursesSection = ref(null)

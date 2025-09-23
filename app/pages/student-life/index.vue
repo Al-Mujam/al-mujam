@@ -53,7 +53,8 @@
               {{ translations.find(t => t.key === 'travel_arrival').value[locale] }}
             </div>
         </div>
-                 <div class="grid grid-cols-1 max-w-[1000px] mx-auto gap-3 mt-5">
+                 <!-- FAQ Section - Always expanded -->
+                 <div class="relative grid grid-cols-1 max-w-[1000px] mx-auto gap-3 mt-5">
          <div v-for="(q,idx) in faq" :key="idx" class="collapse collapse-arrow bg-base-100 border h-max border-base-300">
    <input type="radio" name="my-accordion-2" :checked="idx === 0" />
    <div class="collapse-title font-semibold">{{ q.question[locale] }}</div>
@@ -64,7 +65,7 @@
    </div>
  </div>
          </div>
-            
+
 </section>
 
 <!-- Local Food Section -->
@@ -82,30 +83,39 @@
         <div class="w-20 h-1 bg-web-primary rounded-full"></div>
     </div>
 
-    <!-- Food Images Grid -->
-    <div class="h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-5 mb-12">
-        <div v-for="food in foods" :key="food" class="flex items-center justify-center">
-            <div class="w-full h-[250px] rounded-4xl overflow-hidden relative max-w-[300px] md:max-w-none group">
-                <img :src="food.image" alt="food image" class="w-full h-full absolute object-cover z-0">
-                <div class="w-full h-full bg-web-primary translate-y-full group-hover:translate-y-0 duration-500 transition-all relative rounded-4xl z-10 flex items-center justify-center text-white md:text-4xl text-2xl font-bold line-clamp-1">
-                    {{ food.name[locale] }}
-                    <img src="/watermarks/dal.png" alt="" class="absolute top-0 opacity-10 left-0 w-full h-full object-cover">
+    <!-- Preview Section -->
+    <div class="relative transition-all duration-500">
+        <!-- Food Images Grid Preview -->
+        <div class="h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-5 mb-12" :class="!expandedSections['local-food'] ? ' overflow-hidden' : ''">
+            <div v-for="food in expandedSections['local-food'] ? foods : foods" :key="food" class="flex items-center justify-center">
+                <div class="w-full h-[250px] rounded-4xl overflow-hidden relative max-w-[300px] md:max-w-none group">
+                    <img :src="food.image" alt="food image" class="w-full h-full absolute object-cover z-0">
+                    <div class="w-full h-full bg-web-primary translate-y-full group-hover:translate-y-0 duration-500 transition-all relative rounded-4xl z-10 flex items-center justify-center text-white md:text-4xl text-2xl font-bold line-clamp-1">
+                        {{ food.name[locale] }}
+                        <img src="/watermarks/dal.png" alt="" class="absolute top-0 opacity-10 left-0 w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="max-w-4xl mx-auto">
-        <div class="space-y-6 text-gray-700 leading-relaxed">
-            <p v-for="(paragraph, index) in studentLife.local_food.content[locale]" :key="index" class="text-lg">
-                {{ paragraph }}
-            </p>
+        <!-- Content Preview -->
+        <div class="max-w-4xl mx-auto relative" :class="!expandedSections['local-food'] ? 'max-h-[30svh] overflow-hidden' : ''">
+            <div class="space-y-6 text-gray-700 leading-relaxed">
+                <p v-for="(paragraph, index) in expandedSections['local-food'] ? studentLife.local_food.content[locale] : studentLife.local_food.content[locale].slice(0, 2)" :key="index" class="text-lg">
+                    {{ paragraph }}
+                </p>
+            </div>
+            <!-- White gradient overlay for collapsed state -->
+            <div v-if="!expandedSections['local-food']" class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
         </div>
-        
-        <div class="mt-8 text-center">
-            <a :href="studentLife.local_food.button_link[locale]" class="web-btn">
-                {{ studentLife.local_food.button_text[locale] }}
-            </a>
+
+        <!-- Expand/Collapse Arrow Button -->
+        <div class="text-center mt-8 relative z-20">
+            <button @click="toggleSection('local-food')" class="p-3 rounded-full bg-web-primary hover:bg-web-primary-dark active:scale-105 transition-all duration-300 text-white">
+                <svg class="w-6 h-6 transform transition-transform duration-300" :class="expandedSections['local-food'] ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
         </div>
     </div>
 </section>
@@ -126,37 +136,48 @@
             <div class="w-20 h-1 bg-web-primary rounded-full"></div>
         </div>
 
-        <!-- Stats Section -->
-        <div class="w-full bg-web-primary rounded-4xl max-w-[calc(100vw-40px)] mx-auto my-8 h-max overflow-hidden relative">
-            <img src="/watermarks/ha2.png" class="absolute filter md:w-[400px] w-[200px] opacity-10 -start-0 -top-60" />
-            <img src="/watermarks/kaf.png" class="absolute filter md:w-[400px] w-[200px] opacity-10 -end-0 -bottom-10" />
-            <div class="container max-w-[1280px] py-10 mx-auto px-4 md:px-20 lg:px-10 h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                <div v-for="stat in stats" :key="stat" class="p-5 flex flex-col gap-3 items-center justify-center h-full">
-                    <IconsHeart v-if="stat.icon === 'IconsHeart'" class="text-[4rem] text-background" />
-                    <IconsPill v-if="stat.icon === 'IconsPill'" class="text-[4rem] text-background" />
-                    <IconsWifi v-if="stat.icon === 'IconsWifi'" class="text-[4rem] text-background" />
-                    <IconsSheild v-if="stat.icon === 'IconsShield'" class="text-[4rem] text-background" />
-                    <div class="text-3xl font-bold text-background">
-                        {{ stat.number }}
-                    </div>
-                    <div class="text-xl text-center text-background/70">
-                        {{ stat.description[locale] }}
+        <!-- Preview Section -->
+        <div class="relative transition-all duration-500">
+            <!-- Stats Section Preview -->
+            <div class="w-full bg-web-primary rounded-4xl max-w-[calc(100vw-40px)] mx-auto my-8 h-max overflow-hidden relative" :class="!expandedSections['safety-health'] ? 'max-h-[40svh] overflow-hidden' : ''">
+                <img src="/watermarks/ha2.png" class="absolute filter md:w-[400px] w-[200px] opacity-10 -start-0 -top-60" />
+                <img src="/watermarks/kaf.png" class="absolute filter md:w-[400px] w-[200px] opacity-10 -end-0 -bottom-10" />
+                <div class="container max-w-[1280px] py-10 mx-auto px-4 md:px-20 lg:px-10 h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div v-for="stat in expandedSections['safety-health'] ? stats : stats.slice(0, 4)" :key="stat" class="p-5 flex flex-col gap-3 items-center justify-center h-full">
+                        <IconsHeart v-if="stat.icon === 'IconsHeart'" class="text-[4rem] text-background" />
+                        <IconsPill v-if="stat.icon === 'IconsPill'" class="text-[4rem] text-background" />
+                        <IconsWifi v-if="stat.icon === 'IconsWifi'" class="text-[4rem] text-background" />
+                        <IconsSheild v-if="stat.icon === 'IconsShield'" class="text-[4rem] text-background" />
+                        <div class="text-3xl font-bold text-background">
+                            {{ stat.number }}
+                        </div>
+                        <div class="text-xl text-center text-background/70">
+                            {{ stat.description[locale] }}
+                        </div>
                     </div>
                 </div>
+                <!-- White gradient overlay for collapsed state -->
+              
             </div>
-        </div>
 
-        <div class="max-w-4xl mx-auto">
-            <div class="space-y-6 text-gray-700 leading-relaxed">
-                <p v-for="(paragraph, index) in studentLife.safety_health.content[locale]" :key="index" class="text-lg">
-                    {{ paragraph }}
-                </p>
+            <!-- Content Preview -->
+            <div class="max-w-4xl mx-auto relative" :class="!expandedSections['safety-health'] ? 'max-h-[30svh] overflow-hidden' : ''">
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p v-for="(paragraph, index) in expandedSections['safety-health'] ? studentLife.safety_health.content[locale] : studentLife.safety_health.content[locale].slice(0, 2)" :key="index" class="text-lg">
+                        {{ paragraph }}
+                    </p>
+                </div>
+                <!-- White gradient overlay for collapsed state -->
+                <div v-if="!expandedSections['safety-health']" class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 via-gray-50/80 to-transparent pointer-events-none"></div>
             </div>
-            
-            <div class="mt-8 text-center">
-                <a :href="studentLife.safety_health.button_link[locale]" class="web-btn">
-                    {{ studentLife.safety_health.button_text[locale] }}
-                </a>
+
+            <!-- Expand/Collapse Arrow Button -->
+            <div class="text-center mt-8 relative z-20">
+                <button @click="toggleSection('safety-health')" class="p-3 rounded-full bg-web-primary hover:bg-web-primary-dark active:scale-105 transition-all duration-300 text-white">
+                    <svg class="w-6 h-6 transform transition-transform duration-300" :class="expandedSections['safety-health'] ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -177,30 +198,41 @@
         <div class="w-20 h-1 bg-web-primary rounded-full"></div>
     </div>
 
-    <!-- Trips Images Grid -->
-    <div class="md:h-[calc(100svh-100px)] h-max w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-5 mb-12">
-        <div v-for="(trip, idx) in trips" :key="trip" :class="idx == 0 || idx == 3 ? 'md:col-span-2' : ''" class="flex items-center justify-center w-full md:h-full h-[250px]">
-            <div class="w-full h-full rounded-4xl overflow-hidden relative max-w-[300px] md:max-w-none group">
-                <img :src="trip.image" alt="trip image" class="w-full h-full absolute object-cover object-bottom z-0">
-                <div class="w-full h-full bg-web-primary translate-y-full group-hover:translate-y-0 duration-500 transition-all relative rounded-4xl z-10 flex items-center justify-center text-white md:text-4xl text-2xl font-bold line-clamp-1">
-                    {{ trip.name[locale] }}
-                    <img src="/watermarks/dal.png" alt="" class="absolute top-0 opacity-10 left-0 w-full h-full object-cover">
+    <!-- Preview Section -->
+    <div class="relative transition-all duration-500">
+        <!-- Trips Images Grid Preview -->
+        <div class="md:h-[calc(100svh-100px)] h-max w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-5 mb-12" :class="!expandedSections['immersion-tours'] ? 'max-h-[50svh] overflow-hidden' : ''">
+            <div v-for="(trip, idx) in expandedSections['immersion-tours'] ? trips : trips" :key="trip" :class="idx == 0 || idx == 3 ? 'md:col-span-2' : ''" class="flex items-center justify-center w-full md:h-full h-[250px]">
+                <div class="w-full h-full rounded-4xl overflow-hidden relative max-w-[300px] md:max-w-none group">
+                    <img :src="trip.image" alt="trip image" class="w-full h-full absolute object-cover object-bottom z-0">
+                    <div class="w-full h-full bg-web-primary translate-y-full group-hover:translate-y-0 duration-500 transition-all relative rounded-4xl z-10 flex items-center justify-center text-white md:text-4xl text-2xl font-bold line-clamp-1">
+                        {{ trip.name[locale] }}
+                        <img src="/watermarks/dal.png" alt="" class="absolute top-0 opacity-10 left-0 w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
+            <!-- White gradient overlay for collapsed state -->
+            <div v-if="!expandedSections['immersion-tours']" class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
         </div>
-    </div>
 
-    <div class="max-w-4xl mx-auto">
-        <div class="space-y-6 text-gray-700 leading-relaxed">
-            <p v-for="(paragraph, index) in studentLife.immersion_tours.content[locale]" :key="index" class="text-lg">
-                {{ paragraph }}
-            </p>
+        <!-- Content Preview -->
+        <div class="max-w-4xl mx-auto relative" :class="!expandedSections['immersion-tours'] ? 'max-h-[30svh] overflow-hidden' : ''">
+            <div class="space-y-6 text-gray-700 leading-relaxed">
+                <p v-for="(paragraph, index) in expandedSections['immersion-tours'] ? studentLife.immersion_tours.content[locale] : studentLife.immersion_tours.content[locale].slice(0, 2)" :key="index" class="text-lg">
+                    {{ paragraph }}
+                </p>
+            </div>
+            <!-- White gradient overlay for collapsed state -->
+            <div v-if="!expandedSections['immersion-tours']" class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
         </div>
-        
-        <div class="mt-8 text-center">
-            <a :href="studentLife.immersion_tours.button_link[locale]" class="web-btn">
-                {{ studentLife.immersion_tours.button_text[locale] }}
-            </a>
+
+        <!-- Expand/Collapse Arrow Button -->
+        <div class="text-center mt-8 relative z-20">
+            <button @click="toggleSection('immersion-tours')" class="p-3 rounded-full bg-web-primary hover:bg-web-primary-dark active:scale-105 transition-all duration-300 text-white">
+                <svg class="w-6 h-6 transform transition-transform duration-300" :class="expandedSections['immersion-tours'] ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
         </div>
     </div>
 </section>
@@ -221,17 +253,26 @@
             <div class="w-20 h-1 bg-web-primary rounded-full"></div>
         </div>
 
-        <div class="max-w-4xl mx-auto">
-            <div class="space-y-6 text-gray-700 leading-relaxed">
-                <p v-for="(paragraph, index) in studentLife.travel_visas.content[locale]" :key="index" class="text-lg">
-                    {{ paragraph }}
-                </p>
+        <!-- Preview Section -->
+        <div class="relative transition-all duration-500">
+            <!-- Content Preview -->
+            <div class="max-w-4xl mx-auto relative" :class="!expandedSections['travel-visas'] ? 'max-h-[60svh] overflow-hidden' : ''">
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p v-for="(paragraph, index) in expandedSections['travel-visas'] ? studentLife.travel_visas.content[locale] : studentLife.travel_visas.content[locale].slice(0, 3)" :key="index" class="text-lg">
+                        {{ paragraph }}
+                    </p>
+                </div>
+                <!-- White gradient overlay for collapsed state -->
+                <div v-if="!expandedSections['travel-visas']" class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 via-gray-50/80 to-transparent pointer-events-none"></div>
             </div>
-            
-            <div class="mt-8 text-center">
-                <a :href="studentLife.travel_visas.button_link[locale]" class="web-btn">
-                    {{ studentLife.travel_visas.button_text[locale] }}
-                </a>
+
+            <!-- Expand/Collapse Arrow Button -->
+            <div class="text-center mt-8 relative z-20">
+                <button @click="toggleSection('travel-visas')" class="p-3 rounded-full bg-web-primary hover:bg-web-primary-dark active:scale-105 transition-all duration-300 text-white">
+                    <svg class="w-6 h-6 transform transition-transform duration-300" :class="expandedSections['travel-visas'] ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -253,17 +294,26 @@
             <div class="w-20 h-1 bg-web-primary rounded-full"></div>
         </div>
 
-        <div class="max-w-4xl mx-auto">
-            <div class="space-y-6 text-gray-700 leading-relaxed">
-                <p v-for="(paragraph, index) in studentLife.arrival_departure.content[locale]" :key="index" class="text-lg">
-                    {{ paragraph }}
-                </p>
+        <!-- Preview Section -->
+        <div class="relative transition-all duration-500">
+            <!-- Content Preview -->
+            <div class="max-w-4xl mx-auto relative" :class="!expandedSections['arrival-departure'] ? 'max-h-[60svh] overflow-hidden' : ''">
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p v-for="(paragraph, index) in expandedSections['arrival-departure'] ? studentLife.arrival_departure.content[locale] : studentLife.arrival_departure.content[locale].slice(0, 3)" :key="index" class="text-lg">
+                        {{ paragraph }}
+                    </p>
+                </div>
+                <!-- White gradient overlay for collapsed state -->
+                <div v-if="!expandedSections['arrival-departure']" class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 via-gray-50/80 to-transparent pointer-events-none"></div>
             </div>
-            
-            <div class="mt-8 text-center">
-                <a :href="studentLife.arrival_departure.button_link[locale]" class="web-btn">
-                    {{ studentLife.arrival_departure.button_text[locale] }}
-                </a>
+
+            <!-- Expand/Collapse Arrow Button -->
+            <div class="text-center mt-8 relative z-20">
+                <button @click="toggleSection('arrival-departure')" class="p-3 rounded-full bg-web-primary hover:bg-web-primary-dark active:scale-105 transition-all duration-300 text-white">
+                    <svg class="w-6 h-6 transform transition-transform duration-300" :class="expandedSections['arrival-departure'] ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -284,17 +334,26 @@
         <div class="w-20 h-1 bg-web-primary rounded-full"></div>
     </div>
 
-    <div class="max-w-4xl mx-auto">
-        <div class="space-y-6 text-gray-700 leading-relaxed">
-            <p v-for="(paragraph, index) in studentLife.internships.content[locale]" :key="index" class="text-lg">
-                {{ paragraph }}
-            </p>
+    <!-- Preview Section -->
+    <div class="relative transition-all duration-500">
+        <!-- Content Preview -->
+        <div class="max-w-4xl mx-auto relative" :class="!expandedSections['internships'] ? 'max-h-[60svh] overflow-hidden' : ''">
+            <div class="space-y-6 text-gray-700 leading-relaxed">
+                <p v-for="(paragraph, index) in expandedSections['internships'] ? studentLife.internships.content[locale] : studentLife.internships.content[locale].slice(0, 3)" :key="index" class="text-lg">
+                    {{ paragraph }}
+                </p>
+            </div>
+            <!-- White gradient overlay for collapsed state -->
+            <div v-if="!expandedSections['internships']" class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
         </div>
-        
-        <div class="mt-8 text-center">
-            <a :href="studentLife.internships.button_link[locale]" class="web-btn">
-                {{ studentLife.internships.button_text[locale] }}
-            </a>
+
+        <!-- Expand/Collapse Arrow Button -->
+        <div class="text-center mt-8 relative z-20">
+            <button @click="toggleSection('internships')" class="p-3 rounded-full bg-web-primary hover:bg-web-primary-dark active:scale-105 transition-all duration-300 text-white">
+                <svg class="w-6 h-6 transform transition-transform duration-300" :class="expandedSections['internships'] ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
         </div>
     </div>
 </section>
@@ -368,6 +427,21 @@ const studentLife = computed(() => {
         internships: data.find(item => item.title?.en === 'INTERNSHIPS AND VOLUNTEERING') || {}
     }
 })
+
+// Section expansion state - all sections with expand/collapse functionality
+const expandedSections = reactive({
+    'local-food': false,
+    'safety-health': false,
+    'immersion-tours': false,
+    'travel-visas': false,
+    'arrival-departure': false,
+    'internships': false
+})
+
+// Toggle section visibility
+const toggleSection = (sectionId) => {
+    expandedSections[sectionId] = !expandedSections[sectionId]
+}
 
 // Navigation sections for the page
 const navigationSections = [

@@ -21,11 +21,11 @@
 
                         <!-- About Page Dropdown -->
                         <div class="relative group">
-                            <div class="opacity-60 hover:opacity-100 transition-all duration-300 cursor-pointer flex items-center gap-1">
-                                <NuxtLink :to="{name: 'about'}" class=" transition-all duration-300" active-class="opacity-100">
+                            <div class="transition-all  duration-300 cursor-pointer flex items-center gap-1">
+                                <NuxtLink :to="{name: 'about'}" class=" transition-all duration-300 hover:opacity-100 opacity-60" active-class="opacity-100">
                                     {{ translations.find(t => t.key === 'why_almuajam').value[locale] }}
                                 </NuxtLink>
-                                <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg   :class="$route.name === 'about' ? 'opacity-100' : 'opacity-60'" class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </div>
@@ -44,11 +44,11 @@
                         
                         <!-- Academic Admissions Page Dropdown -->
                         <div class="relative group">
-                            <div class="transition-all opacity-60 hover:opacity-100 duration-300 cursor-pointer flex items-center gap-1">
-                                <NuxtLink :to="{name: 'academic-admissions'}" class=" transition-all duration-300" active-class="opacity-100">
+                            <div class="transition-all  duration-300 cursor-pointer flex items-center gap-1">
+                                <NuxtLink :to="{name: 'academic-admissions'}" class=" transition-all duration-300 hover:opacity-100 opacity-60" active-class="opacity-100">
                                     {{ translations.find(t => t.key === 'academics_admissions').value[locale] }}
                                 </NuxtLink>
-                                <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg   :class="$route.name === 'academic-admissions' ? 'opacity-100' : 'opacity-60'" class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </div>
@@ -100,11 +100,11 @@
 
                         <!-- Student Life Page Dropdown -->
                         <div class="relative group">
-                            <div class="transition-all opacity-60 hover:opacity-100 duration-300 cursor-pointer flex items-center gap-1">
-                                <NuxtLink     :to="{name: 'student-life'}" class=" text-text-color  transition-all duration-300" active-class="opacity-100">
+                            <div class="transition-all  duration-300 cursor-pointer flex items-center gap-1">
+                                <NuxtLink     :to="{name: 'student-life'}" class=" transition-all duration-300 hover:opacity-100 opacity-60" active-class="opacity-100">
                                     {{ translations.find(t => t.key === 'student_life').value[locale] }}
                                 </NuxtLink>
-                                <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg   :class="$route.name === 'student-life' ? 'opacity-100' : 'opacity-60'" class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </div>
