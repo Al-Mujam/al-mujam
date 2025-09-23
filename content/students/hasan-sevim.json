@@ -1,9 +1,15 @@
 {
-  "name": { "en": "Hasan Sevim – Turkey", "tr": "Hasan Sevim – Türkiye" },
-  "role": { "en": "Student", "tr": "Öğrenci" },
+  "name": {
+    "en": "Hasan Sevim – Turkey",
+    "tr": "Hasan Sevim – Türkiye"
+  },
+  "role": {
+    "en": "Student",
+    "tr": "Öğrenci"
+  },
   "testimony": {
     "en": "The instructors at Almujam are experts in their fields, and the materials are carefully chosen to fit the needs of the students. They pay attention to every detail to ensure a high-quality learning experience. Additionally, we took part in the conversational field trips and tours program, which was extremely beneficial. The value they provide far exceeds the fees we pay. I highly recommend their programs to everyone.",
     "tr": "Almujam'daki eğitmenler kendi alanlarında uzman ve materyaller öğrencilerin ihtiyaçlarına uygun şekilde özenle seçilmiş. Yüksek kaliteli bir öğrenim deneyimi sağlamak için her ayrıntıya dikkat ediyorlar. Ayrıca, konuşma odaklı saha gezileri ve turlar programına katıldık, bu da son derece faydalıydı. Sundukları değer ödediğimiz ücretleri fazlasıyla aşıyor. Programlarını herkese şiddetle tavsiye ederim."
   },
-  "image": null
+  "image": "/students/hasan.jpg"
 }

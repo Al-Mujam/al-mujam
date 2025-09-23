@@ -1,9 +1,15 @@
 {
-  "name": { "en": "Salih Uysal – Turkey", "tr": "Salih Uysal – Türkiye" },
-  "role": { "en": "Student", "tr": "Öğrenci" },
+  "name": {
+    "en": "Salih Uysal – Turkey",
+    "tr": "Salih Uysal – Türkiye"
+  },
+  "role": {
+    "en": "Student",
+    "tr": "Öğrenci"
+  },
   "testimony": {
     "en": "I cannot praise the teaching staff and the educational environment at Almujam enough. Their unique training methods, combined with the opportunity to immerse myself in the local culture and participate in diverse extracurricular activities, greatly enriched my learning experience. Moreover, the program is not only affordable but also highly effective in developing practical language skills.",
     "tr": "Almujam'daki öğretim kadrosunu ve eğitim ortamını övmeye kelimeler yetmez. Benzersiz eğitim yöntemleri, yerel kültüre dalma fırsatı ve çeşitli ders dışı etkinliklere katılmam öğrenim deneyimimi büyük ölçüde zenginleştirdi. Ayrıca program yalnızca uygun fiyatlı değil, aynı zamanda pratik dil becerilerini geliştirmede son derece etkili."
   },
-  "image": null
+  "image": "/students/salih.jpg"
 }
