@@ -1,0 +1,66 @@
+{
+  "title": {
+    "en": "Student Success Stories",
+    "tr": "Öğrenci Başarı Hikayeleri"
+  },
+  "subtitle": {
+    "en": "Real Stories from Our Quran Students",
+    "tr": "Kuran Öğrencilerimizden Gerçek Hikayeler"
+  },
+  "description": {
+    "en": "Hear from students who have transformed their spiritual journey through our Quran and Tajweed programs.",
+    "tr": "Kuran ve Tecvit programlarımız aracılığıyla ruhani yolculuklarını dönüştüren öğrencilerden duyun."
+  },
+  "content": {
+    "en": [
+      "Our students come from diverse backgrounds and all share the common goal of developing a deeper connection with the Holy Quran. Here are some of their inspiring stories."
+    ],
+    "tr": [
+      "Öğrencilerimiz farklı geçmişlere sahip ve hepsi Kutsal Kur'an ile daha derin bir bağ geliştirmek ortak hedefini paylaşıyor. İşte onların bazı ilham verici hikayeleri."
+    ]
+  },
+  "success_stories": {
+    "en": [
+      {
+        "testimony": "Studying Tajweed at Almujam was truly a life-changing experience. My teacher, Ustadh Ahmad, was incredibly patient and knowledgeable. He helped me understand not just the rules, but the spiritual significance behind each aspect of Tajweed. I can now recite the Quran with confidence and feel a deeper connection during my prayers.",
+        "author": "Fatima Al-Zahra",
+        "country": "United Kingdom"
+      },
+      {
+        "testimony": "As a non-Arabic speaker, I was initially nervous about learning Quranic recitation. The instructors at Almujam made the journey accessible and deeply meaningful. Their online classes are excellently structured, and the personal attention I received helped me progress faster than I ever imagined possible.",
+        "author": "Ahmed Hassan",
+        "country": "United States"
+      },
+      {
+        "testimony": "The combination of traditional Islamic teaching methods with modern educational approaches at Almujam is remarkable. My children and I studied together, and we all benefited immensely. The teachers' dedication to preserving the authentic tradition while making it accessible to contemporary learners is truly commendable.",
+        "author": "Maryam Ibrahim",
+        "country": "Canada"
+      }
+    ],
+    "tr": [
+      {
+        "testimony": "Almujam'da Tecvit çalışmak gerçekten hayat değiştirici bir deneyim oldu. Öğretmenim Üstad Ahmed son derece sabırlı ve bilgiliydi. Sadece kuralları değil, Tecvit'in her yönünün ardındaki ruhani anlamı anlamama yardım etti. Şimdi Kur'an'ı güvenle okuyabiliyorum ve dualarım sırasında daha derin bir bağ hissediyorum.",
+        "author": "Fatima Al-Zahra",
+        "country": "Birleşik Krallık"
+      },
+      {
+        "testimony": "Arapça konuşmayan biri olarak, başlangıçta Kur'anî tilavet öğrenmek konusunda endişeliydim. Almujam'daki eğitmenler yolculuğu erişilebilir ve derin anlamlı hale getirdi. Çevrimiçi dersleri mükemmel şekilde yapılandırılmış ve aldığım kişisel ilgi, hayal edebileceğimden daha hızlı ilerlememi sağladı.",
+        "author": "Ahmed Hassan",
+        "country": "Amerika Birleşik Devletleri"
+      },
+      {
+        "testimony": "Almujam'da geleneksel İslamî öğretim yöntemlerinin modern eğitim yaklaşımlarıyla birleşimi dikkat çekici. Çocuklarım ve ben birlikte çalıştık ve hepimiz büyük fayda gördük. Öğretmenlerin, çağdaş öğrencilere erişilebilir kılarken özgün geleneği koruma konusundaki özverisi gerçekten takdire şayan.",
+        "author": "Maryam Ibrahim",
+        "country": "Kanada"
+      }
+    ]
+  },
+  "button_text": {
+    "en": "Read More Stories",
+    "tr": "Daha Fazla Hikaye Oku"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

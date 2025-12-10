@@ -1,0 +1,78 @@
+{
+  "title": {
+    "en": "Why Choose Almujam for Your Quran Studies?",
+    "tr": "Neden Kur'an Çalışmalarınız İçin Almujam'ı Seçmelisiniz?"
+  },
+  "subtitle": {
+    "en": "Certified Tajweed Instructors",
+    "tr": "Sertifikalı Tecvit Eğitmenleri"
+  },
+  "description": {
+    "en": "Learn from experienced, certified teachers who specialize in teaching Quran recitation to non-native Arabic speakers. Our instructors hold Ijazah (traditional Islamic teaching licenses) and have years of experience working with international students.",
+    "tr": "Kuran tilavetini Arapça ana dili olmayanlara öğretmede uzmanlaşmış deneyimli, sertifikalı öğretmenlerden öğrenin. Eğitmenlerimiz İcazet'e (geleneksel İslamî öğretim lisansları) sahiptir ve uluslararası öğrencilerle çalışma konusunda yılların deneyimine sahiptir."
+  },
+  "content": {
+    "en": [
+      "Our certified instructors provide patient, respectful guidance in a supportive learning environment that respects your individual needs and spiritual goals."
+    ],
+    "tr": [
+      "Sertifikalı eğitmenlerimiz, bireysel ihtiyaçlarınızı ve ruhani hedeflerinizi gözeten destekleyici bir öğrenme ortamında sabırlı, saygılı rehberlik sağlar."
+    ]
+  },
+  "why_choose": {
+    "en": {
+      "title": "Why Choose Almujam for Your Quran Studies?",
+      "instructors": {
+        "title": "Certified Tajweed Instructors",
+        "content": "Learn from experienced, certified teachers who specialize in teaching Quran recitation to non-native Arabic speakers. Our instructors hold Ijazah (traditional Islamic teaching licenses) and have years of experience working with international students."
+      },
+      "personalized_learning": {
+        "title": "Personalized Learning Paths",
+        "content": "We understand that every student's journey is unique. Our curriculum is tailored to your current level, learning pace, and spiritual goals, ensuring a meaningful and effective learning experience that respects your individual needs."
+      },
+      "flexible_options": {
+        "title": "Flexible Study Options",
+        "content": "Choose between private one-on-one classes for intensive personal attention or small group sessions for community learning. All classes are available both online via our interactive platform and in-person at our beautiful center in Jordan."
+      },
+      "correct_pronunciation": {
+        "title": "Focus on Correct Pronunciation",
+        "content": "Master the precise pronunciation (Makharij) of Arabic letters and sounds, which is essential for accurate and beautiful Quranic recitation. Our systematic approach ensures you develop proper habits from the beginning."
+      },
+      "supportive_community": {
+        "title": "Supportive Learning Community",
+        "content": "Join a diverse community of learners from around the world, all united in their dedication to spiritual growth and understanding the Holy Quran. Our students often form lasting friendships and continue supporting each other's learning journey."
+      }
+    },
+    "tr": {
+      "title": "Neden Kur'an Çalışmalarınız İçin Almujam'ı Seçmelisiniz?",
+      "instructors": {
+        "title": "Sertifikalı Tecvit Eğitmenleri",
+        "content": "Kuran tilavetini Arapça ana dili olmayanlara öğretmede uzmanlaşmış deneyimli, sertifikalı öğretmenlerden öğrenin. Eğitmenlerimiz İcazet'e (geleneksel İslamî öğretim lisansları) sahiptir ve uluslararası öğrencilerle çalışma konusunda yılların deneyimine sahiptir."
+      },
+      "personalized_learning": {
+        "title": "Kişiselleştirilmiş Öğrenme Yolları",
+        "content": "Her öğrencinin yolculuğunun benzersiz olduğunu anlıyoruz. Müfredatımız mevcut seviyenize, öğrenme hızınıza ve ruhani hedeflerinize göre uyarlanarak, bireysel ihtiyaçlarınızı gözeten anlamlı ve etkili bir öğrenme deneyimi sağlar."
+      },
+      "flexible_options": {
+        "title": "Esnek Çalışma Seçenekleri",
+        "content": "Yoğun kişisel ilgi için bire bir özel dersler veya topluluk öğrenimi için küçük grup oturumları arasından seçim yapın. Tüm dersler etkileşimli platformumuz aracılığıyla çevrimiçi ve Ürdün'deki güzel merkezimizde yüz yüze olarak mevcuttur."
+      },
+      "correct_pronunciation": {
+        "title": "Doğru Telaffuza Odaklanma",
+        "content": "Arap harflerinin ve seslerinin kesin telaffuzunu (Mahreç) öğrenin; bu, doğru ve güzel Kur'anî tilavet için gereklidir. Sistematik yaklaşımımız, başlangıçtan itibaren doğru alışkanlıklar geliştirmenizi sağlar."
+      },
+      "supportive_community": {
+        "title": "Destekleyici Öğrenme Topluluğu",
+        "content": "Ruhani büyüme ve Kutsal Kur'an'ı anlama konusundaki bağlılıklarında birleşen dünya çapından çeşitli bir öğrenci topluluğuna katılın. Öğrencilerimiz genellikle kalıcı dostluklar kurar ve birbirlerinin öğrenme yolculuğunu desteklemeye devam eder."
+      }
+    }
+  },
+  "button_text": {
+    "en": "Start Your Journey Today",
+    "tr": "Yolculuğunuza Bugün Başlayın"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

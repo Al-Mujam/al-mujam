@@ -1,0 +1,32 @@
+{
+  "title": {
+    "en": "Quran Recitation & Tajweed Classes",
+    "tr": "Kuran Tilaveti ve Tecvit Dersleri"
+  },
+  "subtitle": {
+    "en": "Learn to Recite the Quran with Proper Tajweed",
+    "tr": "Kuran'ı Doğru Tecvit ile Okumayı Öğrenin"
+  },
+  "description": {
+    "en": "Embark on a spiritual journey to connect with the Holy Quran at Almujam Center. Our specialized Quran Recitation and Tajweed classes are designed specifically for non-Arabic speakers who seek to develop a meaningful relationship with the sacred text.",
+    "tr": "Almujam Merkezi'nde Kutsal Kur'an ile bağlantı kurmak için ruhani bir yolculuğa çıkın. Özel Kur'an Tilaveti ve Tecvit derslerimiz, kutsal metinle anlamlı bir ilişki geliştirmek isteyen Arapça konuşmayanlar için özel olarak tasarlanmıştır."
+  },
+  "content": {
+    "en": [
+      "Our structured learning path begins with our Noorani Qaida Course for complete beginners, then progresses to comprehensive Tajweed instruction. Whether you are seeking to perfect your existing recitation skills or ready to advance after completing foundational studies, our certified instructors provide patient, respectful guidance in a supportive learning environment.",
+      "Our comprehensive program combines traditional Islamic scholarship with modern teaching methodologies, ensuring that students not only learn the technical aspects of Tajweed but also develop a deep spiritual connection with the Quran. Join our community of learners from around the world who have chosen Almujam as their trusted partner in this sacred journey."
+    ],
+    "tr": [
+      "Yapılandırılmış öğrenme yolumuz, tam acemiler için Noorani Kaide Kursumuzla başlar, ardından kapsamlı Tecvit talimatına ilerler. Mevcut tilavet becerilerinizi mükemmelleştirmeye çalışıyor olun ya da temel çalışmaları tamamladıktan sonra ilerlemeye hazır olun, sertifikalı eğitmenlerimiz destekleyici bir öğrenme ortamında sabırlı, saygılı rehberlik sağlar.",
+      "Kapsamlı programımız geleneksel İslamî ilmi modern öğretim metodolojileriyle birleştirerek öğrencilerin sadece Tecvit'in teknik yönlerini öğrenmelerini değil, aynı zamanda Kur'an ile derin bir ruhani bağlantı geliştirmelerini sağlar. Bu kutsal yolculukta güvenilir ortakları olarak Almujam'ı seçen dünya çapındaki öğrenci topluluğumuza katılın."
+    ]
+  },
+  "button_text": {
+    "en": "Book Your Free Consultation",
+    "tr": "Ücretsiz Danışmanlığınızı Rezerve Edin"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

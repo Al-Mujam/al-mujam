@@ -774,6 +774,206 @@ export default defineContentConfig({
         }).optional(),
       })
     }),
+    quran: defineCollection({
+      type: 'data',
+      source: 'quran/**.json',
+      schema: z.object({
+        title: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        subtitle: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        description: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        content: z.object({
+          en: z.array(z.string()),
+          tr: z.array(z.string()),
+        }),
+        button_text: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        button_link: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        // Why Choose Almujam section
+        why_choose: z.object({
+          en: z.object({
+            title: z.string(),
+            instructors: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            personalized_learning: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            flexible_options: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            correct_pronunciation: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            supportive_community: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+          tr: z.object({
+            title: z.string(),
+            instructors: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            personalized_learning: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            flexible_options: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            correct_pronunciation: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            supportive_community: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+        }).optional(),
+        // Programs section
+        programs: z.object({
+          en: z.object({
+            title: z.string(),
+            levels: z.array(z.object({
+              level: z.string(),
+              title: z.string(),
+              prerequisites: z.string(),
+              focus_areas: z.array(z.string()),
+              perfect_for: z.string(),
+              learning_outcomes: z.array(z.string()),
+              duration: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            levels: z.array(z.object({
+              level: z.string(),
+              title: z.string(),
+              prerequisites: z.string(),
+              focus_areas: z.array(z.string()),
+              perfect_for: z.string(),
+              learning_outcomes: z.array(z.string()),
+              duration: z.string(),
+            })),
+          }),
+        }).optional(),
+        // Class Format Comparison
+        class_format_comparison: z.object({
+          en: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+            private_classes: z.object({
+              title: z.string(),
+              schedule_flexibility: z.string(),
+              learning_pace: z.string(),
+              curriculum_focus: z.string(),
+              teacher_interaction: z.string(),
+              peer_learning: z.string(),
+              cost_effectiveness: z.string(),
+              best_suited_for: z.string(),
+            }),
+            group_classes: z.object({
+              title: z.string(),
+              schedule_flexibility: z.string(),
+              learning_pace: z.string(),
+              curriculum_focus: z.string(),
+              teacher_interaction: z.string(),
+              peer_learning: z.string(),
+              cost_effectiveness: z.string(),
+              best_suited_for: z.string(),
+            }),
+          }),
+          tr: z.object({
+            title: z.string(),
+            features: z.array(z.string()),
+            private_classes: z.object({
+              title: z.string(),
+              schedule_flexibility: z.string(),
+              learning_pace: z.string(),
+              curriculum_focus: z.string(),
+              teacher_interaction: z.string(),
+              peer_learning: z.string(),
+              cost_effectiveness: z.string(),
+              best_suited_for: z.string(),
+            }),
+            group_classes: z.object({
+              title: z.string(),
+              schedule_flexibility: z.string(),
+              learning_pace: z.string(),
+              curriculum_focus: z.string(),
+              teacher_interaction: z.string(),
+              peer_learning: z.string(),
+              cost_effectiveness: z.string(),
+              best_suited_for: z.string(),
+            }),
+          }),
+        }).optional(),
+        // Student Success Stories
+        success_stories: z.object({
+          en: z.array(z.object({
+            testimony: z.string(),
+            author: z.string(),
+            country: z.string(),
+          })),
+          tr: z.array(z.object({
+            testimony: z.string(),
+            author: z.string(),
+            country: z.string(),
+          })),
+        }).optional(),
+        // Ready to Begin section
+        ready_to_begin: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+            buttons: z.array(z.object({
+              text: z.string(),
+              link: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+            buttons: z.array(z.object({
+              text: z.string(),
+              link: z.string(),
+            })),
+          }),
+        }).optional(),
+        // FAQ section
+        faq: z.object({
+          en: z.array(z.object({
+            question: z.string(),
+            answer: z.array(z.string()),
+          })),
+          tr: z.array(z.object({
+            question: z.string(),
+            answer: z.array(z.string()),
+          })),
+        }).optional(),
+      })
+    }),
     accommodation: defineCollection({
       type: 'data',
       source: 'accommodation/**.json',

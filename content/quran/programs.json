@@ -1,0 +1,146 @@
+{
+  "title": {
+    "en": "Our Quran & Tajweed Programs",
+    "tr": "Kuran ve Tecvit Programlarımız"
+  },
+  "subtitle": {
+    "en": "Structured Learning Path for All Levels",
+    "tr": "Tüm Seviyeler İçin Yapılandırılmış Öğrenme Yolu"
+  },
+  "description": {
+    "en": "Our comprehensive Quran and Tajweed programs are designed to take you from beginner to advanced levels with structured, progressive learning.",
+    "tr": "Kapsamlı Kur'an ve Tecvit programlarımız, sizi yapılandırılmış, aşamalı öğrenmeyle başlangıç seviyesinden ileri seviyeye taşımak için tasarlanmıştır."
+  },
+  "content": {
+    "en": [
+      "Whether you're a complete beginner or seeking to perfect your recitation, our programs provide the guidance and structure you need to develop a meaningful relationship with the Holy Quran."
+    ],
+    "tr": [
+      "Tam bir acemi olun ya da tilavetinizi mükemmelleştirmeye çalışın, programlarımız Kutsal Kur'an ile anlamlı bir ilişki geliştirmek için ihtiyaç duyduğunuz rehberliği ve yapıyı sağlar."
+    ]
+  },
+  "programs": {
+    "en": {
+      "title": "Our Quran & Tajweed Programs",
+      "levels": [
+        {
+          "level": "Level 1",
+          "title": "Foundations of Quranic Recitation",
+          "prerequisites": "Successful completion of our Noorani Qaida Course or equivalent foundational Arabic reading skills. This ensures all students have the necessary foundation to benefit fully from Tajweed instruction.",
+          "focus_areas": [
+            "Introduction to Arabic letters in Quranic context",
+            "Basic Tajweed rules",
+            "Recitation of short Surahs (Al-Fatiha, Al-Ikhlas, Al-Falaq, An-Nas)"
+          ],
+          "perfect_for": "Students who have completed Noorani Qaida and are ready to begin formal Tajweed study and Quranic recitation.",
+          "learning_outcomes": [
+            "Students will be able to read and recite short verses of the Quran with basic Tajweed rules",
+            "Understand the importance of proper pronunciation",
+            "Feel confident in their initial connection with the sacred text"
+          ],
+          "duration": "8-12 weeks with 2 classes per week"
+        },
+        {
+          "level": "Level 2",
+          "title": "Intermediate Tajweed Rules",
+          "prerequisites": "Completion of Level 1 or equivalent knowledge",
+          "focus_areas": [
+            "Advanced Tajweed rules including Noon Sakinah and Tanween",
+            "Meem Sakinah",
+            "Various types of Madd (elongation)",
+            "Developing fluency in longer passages"
+          ],
+          "perfect_for": "Students who can read Arabic letters but want to improve their Tajweed and develop more beautiful, accurate recitation.",
+          "learning_outcomes": [
+            "Confident recitation of longer Surahs with correct application of intermediate Tajweed rules",
+            "Improved flow and rhythm in recitation",
+            "Deeper appreciation for the beauty of Quranic Arabic"
+          ],
+          "duration": "12-16 weeks with 2 classes per week"
+        },
+        {
+          "level": "Level 3",
+          "title": "Advanced Recitation & Ijazah Preparation",
+          "prerequisites": "Completion of Level 2 or equivalent proficiency",
+          "focus_areas": [
+            "Perfecting recitation through detailed study of advanced Tajweed topics",
+            "Introduction to different Qira'at (recitation styles)",
+            "Preparation for obtaining an Ijazah"
+          ],
+          "perfect_for": "Advanced students seeking mastery of Tajweed and those interested in eventually teaching Quranic recitation to others.",
+          "learning_outcomes": [
+            "Mastery of Tajweed with the ability to recite the entire Quran with the highest level of proficiency",
+            "Qualification to pursue Ijazah certification",
+            "Preparation to become a teacher of Quranic recitation"
+          ],
+          "duration": "20-24 weeks with 2-3 classes per week"
+        }
+      ]
+    },
+    "tr": {
+      "title": "Kuran ve Tecvit Programlarımız",
+      "levels": [
+        {
+          "level": "Seviye 1",
+          "title": "Kur'anî Tilavetin Temelleri",
+          "prerequisites": "Noorani Kaide Kursumuzun başarılı tamamlanması veya eşdeğer temel Arapça okuma becerileri. Bu, tüm öğrencilerin Tecvit talimatından tam olarak yararlanmak için gerekli temele sahip olmasını sağlar.",
+          "focus_areas": [
+            "Kur'anî bağlamda Arap harflerine giriş",
+            "Temel Tecvit kuralları",
+            "Kısa Surelerin tilaveti (Al-Fatiha, Al-Ikhlas, Al-Falaq, An-Nas)"
+          ],
+          "perfect_for": "Noorani Kaide'yi tamamlayan ve resmi Tecvit çalışmasına ve Kur'anî tilavete başlamaya hazır öğrenciler.",
+          "learning_outcomes": [
+            "Öğrenciler temel Tecvit kurallarıyla Kur'an'ın kısa ayetlerini okuyabilecek ve tilavet edebilecek",
+            "Doğru telaffuzun önemini anlayacak",
+            "Kutsal metinle ilk bağlantılarında güven kazanacak"
+          ],
+          "duration": "Haftada 2 ders ile 8-12 hafta"
+        },
+        {
+          "level": "Seviye 2",
+          "title": "Orta Düzey Tecvit Kuralları",
+          "prerequisites": "Seviye 1'in tamamlanması veya eşdeğer bilgi",
+          "focus_areas": [
+            "Noon Sakinah ve Tanween dahil gelişmiş Tecvit kuralları",
+            "Meem Sakinah",
+            "Çeşitli Madd türleri (uzatma)",
+            "Daha uzun pasajlarda akıcılık geliştirme"
+          ],
+          "perfect_for": "Arap harflerini okuyabilen ancak Tecvit'lerini iyileştirmek ve daha güzel, doğru tilavet geliştirmek isteyen öğrenciler.",
+          "learning_outcomes": [
+            "Orta düzey Tecvit kurallarının doğru uygulanmasıyla daha uzun Surelerin güvenle tilaveti",
+            "Tilavette akış ve ritmin iyileşmesi",
+            "Kur'anî Arapçanın güzelliği için daha derin takdir"
+          ],
+          "duration": "Haftada 2 ders ile 12-16 hafta"
+        },
+        {
+          "level": "Seviye 3",
+          "title": "İleri Düzey Tilavet ve İcazet Hazırlığı",
+          "prerequisites": "Seviye 2'nin tamamlanması veya eşdeğer yeterlilik",
+          "focus_areas": [
+            "Gelişmiş Tecvit konularının detaylı çalışmasıyla tilavetin mükemmelleştirilmesi",
+            "Farklı Kıraat'a (tilavet tarzları) giriş",
+            "İcazet elde etmeye hazırlık"
+          ],
+          "perfect_for": "Tecvit ustalığını arayan ileri düzey öğrenciler ve sonunda başkalarına Kur'anî tilavet öğretmekle ilgilenenler.",
+          "learning_outcomes": [
+            "Tüm Kur'an'ı en yüksek yeterlilik düzeyinde tilavet edebilme yeteneğiyle Tecvit ustalığı",
+            "İcazet sertifikası almaya hak kazanma",
+            "Kur'anî tilavet öğretmeni olma hazırlığı"
+          ],
+          "duration": "Haftada 2-3 ders ile 20-24 hafta"
+        }
+      ]
+    }
+  },
+  "button_text": {
+    "en": "View Program Details",
+    "tr": "Program Detaylarını Görüntüle"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

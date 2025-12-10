@@ -34,7 +34,7 @@
 
         <!-- Tabs -->
         <div class="w-full flex items-center justify-center">
-            <div class="grid grid-cols-3 gap-0 border-b border-gray-200 container max-w-[1000px] mx-4 md:mx-20 lg:mx-10 w-full h-max mb-5">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-b border-gray-200 container max-w-[1200px] mx-4 md:mx-20 lg:mx-10 w-full h-max mb-5">
                 <div @click="changeTab('academics')" :class="activeTab === 'academics' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
                     {{ translations.find(t => t.key === 'academics').value[locale] }}
                 </div>
@@ -43,6 +43,9 @@
                 </div>
                 <div @click="changeTab('accommodation')" :class="activeTab === 'accommodation' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
                     {{ translations.find(t => t.key === 'accommodation').value[locale] }}
+                </div>
+                <div @click="changeTab('quran')" :class="activeTab === 'quran' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
+                    Quran & Tajweed
                 </div>
             </div>
         </div>
@@ -955,6 +958,307 @@
             </div>
         </section>
 
+        <!-- Quran Tab -->
+        <section id="quran" v-if="activeTab === 'quran'" class="container mx-auto px-4 md:px-20 pb-5 lg:px-10 max-w-[1280px]">
+            <!-- Overview Section -->
+            <div id="quran-overview" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ quran.overview.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ quran.overview.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ quran.overview.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in quran.overview.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <NuxtLink external target="_blank" :to="quran.overview.button_link[locale]" class="web-btn">
+                            {{ quran.overview.button_text[locale] }}
+                        </NuxtLink>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Section -->
+            <div id="why-choose" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ quran.why_choose.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ quran.why_choose.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ quran.why_choose.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Certified Instructors -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ quran.why_choose.why_choose[locale].instructors.title }}</h3>
+                            <p class="text-gray-700">{{ quran.why_choose.why_choose[locale].instructors.content }}</p>
+                        </div>
+
+                        <!-- Personalized Learning -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ quran.why_choose.why_choose[locale].personalized_learning.title }}</h3>
+                            <p class="text-gray-700">{{ quran.why_choose.why_choose[locale].personalized_learning.content }}</p>
+                        </div>
+
+                        <!-- Flexible Options -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ quran.why_choose.why_choose[locale].flexible_options.title }}</h3>
+                            <p class="text-gray-700">{{ quran.why_choose.why_choose[locale].flexible_options.content }}</p>
+                        </div>
+
+                        <!-- Correct Pronunciation -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ quran.why_choose.why_choose[locale].correct_pronunciation.title }}</h3>
+                            <p class="text-gray-700">{{ quran.why_choose.why_choose[locale].correct_pronunciation.content }}</p>
+                        </div>
+
+                        <!-- Supportive Community -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ quran.why_choose.why_choose[locale].supportive_community.title }}</h3>
+                            <p class="text-gray-700">{{ quran.why_choose.why_choose[locale].supportive_community.content }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programs Section -->
+            <div id="quran-programs" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ quran.programs.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        Our Quran & Tajweed Programs
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ quran.programs.subtitle[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="space-y-8">
+                        <div v-for="(level, index) in quran.programs.programs[locale].levels" :key="index" class="bg-white rounded-2xl shadow-lg p-8">
+                            <div class="flex flex-col lg:flex-row gap-6">
+                                <div class="lg:w-1/3">
+                                    <h3 class="text-2xl font-bold text-web-primary mb-2">{{ level.level }}: {{ level.title }}</h3>
+                                    <p class="text-gray-600 italic">{{ level.prerequisites }}</p>
+                                </div>
+                                <div class="lg:w-2/3">
+                                    <div class="mb-4">
+                                        <h4 class="font-semibold text-lg mb-2">Focus Areas:</h4>
+                                        <div class="space-y-2">
+                                            <div v-for="(area, areaIndex) in level.focus_areas" :key="areaIndex" class="flex items-start">
+                                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-gray-700">{{ area }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-semibold text-lg mb-2">Perfect for:</h4>
+                                        <p class="text-gray-700">{{ level.perfect_for }}</p>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-semibold text-lg mb-2">Learning Outcomes:</h4>
+                                        <div class="space-y-2">
+                                            <div v-for="(outcome, outcomeIndex) in level.learning_outcomes" :key="outcomeIndex" class="flex items-start">
+                                                <div class="w-2 h-2 bg-web-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                                <span class="text-gray-700">{{ outcome }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <span class="font-semibold text-web-primary">Duration: </span>
+                                        <span class="text-gray-700">{{ level.duration }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Class Format Comparison -->
+            <div id="class-formats" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ quran.class_format_comparison.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            Class Format Comparison
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            Choose the Right Learning Environment for You
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Private Classes -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-6">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.title }}</h3>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Schedule Flexibility</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.schedule_flexibility }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Learning Pace</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.learning_pace }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Curriculum Focus</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.curriculum_focus }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Teacher Interaction</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.teacher_interaction }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Peer Learning</span>
+                                        <span class="text-gray-500">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.peer_learning }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Cost Effectiveness</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.cost_effectiveness }}</span>
+                                    </div>
+                                    <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                                        <span class="font-semibold text-blue-800">Best Suited For:</span>
+                                        <span class="text-blue-700 ml-2">{{ quran.class_format_comparison.class_format_comparison[locale].private_classes.best_suited_for }}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Group Classes -->
+                            <div class="bg-white rounded-2xl shadow-lg p-8">
+                                <h3 class="text-2xl font-bold text-web-primary mb-6">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.title }}</h3>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Schedule Flexibility</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.schedule_flexibility }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Learning Pace</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.learning_pace }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Curriculum Focus</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.curriculum_focus }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Teacher Interaction</span>
+                                        <span class="text-web-primary">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.teacher_interaction }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Peer Learning</span>
+                                        <span class="text-green-600">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.peer_learning }}</span>
+                                    </div>
+                                    <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                        <span class="font-medium">Cost Effectiveness</span>
+                                        <span class="text-green-600">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.cost_effectiveness }}</span>
+                                    </div>
+                                    <div class="mt-4 p-3 bg-green-50 rounded-lg">
+                                        <span class="font-semibold text-green-800">Best Suited For:</span>
+                                        <span class="text-green-700 ml-2">{{ quran.class_format_comparison.class_format_comparison[locale].group_classes.best_suited_for }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div id="success-stories" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ quran.success_stories.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        Student Success Stories
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ quran.success_stories.subtitle[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div v-for="(story, index) in quran.success_stories.success_stories[locale]" :key="index" class="bg-white rounded-2xl shadow-lg p-6">
+                            <div class="mb-4">
+                                <div class="text-4xl text-web-primary mb-2">"</div>
+                                <p class="text-gray-700 italic leading-relaxed">{{ story.testimony }}</p>
+                                <div class="text-4xl text-web-primary rotate-180 mt-2"></div>
+                            </div>
+                            <div class="border-t pt-4">
+                                <div class="font-semibold text-web-primary">{{ story.author }}</div>
+                                <div class="text-sm text-gray-600">{{ story.country }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div id="faq" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ quran.faq.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            Frequently Asked Questions
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ quran.faq.subtitle[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto">
+                        <div class="space-y-6">
+                            <div v-for="(item, index) in quran.faq.faq[locale]" :key="index" class="bg-white rounded-2xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-web-primary mb-4">{{ item.question }}</h3>
+                                <div class="space-y-2">
+                                    <p v-for="(answer, answerIndex) in item.answer" :key="answerIndex" class="text-gray-700">
+                                        {{ answer }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 text-center">
+                            <NuxtLink external target="_blank" :to="quran.faq.button_link[locale]" class="web-btn">
+                                {{ quran.faq.button_text[locale] }}
+                            </NuxtLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 </template>
 
@@ -1022,6 +1326,15 @@ const getTabSections = (tab) => {
                 { id: 'pricing', title: { en: 'Pricing', tr: 'Fiyatlandırma' } },
                 { id: 'policies', title: { en: 'Policies', tr: 'Politikalar' } }
             ]
+        case 'quran':
+            return [
+                { id: 'quran-overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
+                { id: 'why-choose', title: { en: 'Why Choose Almujam', tr: 'Neden Almujam' } },
+                { id: 'quran-programs', title: { en: 'Programs', tr: 'Programlar' } },
+                { id: 'class-formats', title: { en: 'Class Formats', tr: 'Ders Formatları' } },
+                { id: 'success-stories', title: { en: 'Success Stories', tr: 'Başarı Hikayeleri' } },
+                { id: 'faq', title: { en: 'FAQ', tr: 'SSS' } }
+            ]
         default:
             return []
     }
@@ -1056,10 +1369,12 @@ const getSectionTab = (sectionId) => {
     const academicsSections = ['programs-overview', 'classical-arabic', 'modern-standard-arabic', 'ammiyya', 'online-programs']
     const admissionsSections = ['introduction', 'program-dates', 'tuition']
     const accommodationSections = ['overview', 'housing-process', 'housing-philosophy', 'housing-options', 'recommendations', 'room-types', 'pricing', 'policies']
-    
+    const quranSections = ['quran-overview', 'why-choose', 'quran-programs', 'class-formats', 'success-stories', 'faq']
+
     if (academicsSections.includes(sectionId)) return 'academics'
     if (admissionsSections.includes(sectionId)) return 'admissions'
     if (accommodationSections.includes(sectionId)) return 'accommodation'
+    if (quranSections.includes(sectionId)) return 'quran'
     return null
 }
 
@@ -1107,6 +1422,11 @@ const { data: accommodationData } = await useAsyncData('accommodation', () => {
     return queryCollection('accommodation').all()
 })
 
+// Fetch quran data
+const { data: quranData } = await useAsyncData('quran', () => {
+    return queryCollection('quran').all()
+})
+
 // Organize academics data by type
 const academics = computed(() => {
     const data = academicsData.value || []
@@ -1141,6 +1461,19 @@ const accommodation = computed(() => {
         room_types: data.find(item => item.title?.en === 'Room Types & Descriptions') || {},
         pricing: data.find(item => item.title?.en === 'Housing Costs and Payments') || {},
         policies: data.find(item => item.title?.en === 'Housing Policies and Guidelines') || {}
+    }
+})
+
+// Organize quran data by type
+const quran = computed(() => {
+    const data = quranData.value || []
+    return {
+        overview: data.find(item => item.title?.en === 'Quran Recitation & Tajweed Classes') || {},
+        why_choose: data.find(item => item.title?.en === 'Why Choose Almujam for Your Quran Studies?') || {},
+        programs: data.find(item => item.title?.en === 'Our Quran & Tajweed Programs') || {},
+        class_format_comparison: data.find(item => item.title?.en === 'Class Format Comparison') || {},
+        success_stories: data.find(item => item.title?.en === 'Student Success Stories') || {},
+        faq: data.find(item => item.title?.en === 'Frequently Asked Questions') || {}
     }
 })
 

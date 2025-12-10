@@ -1,0 +1,96 @@
+{
+  "title": {
+    "en": "Frequently Asked Questions",
+    "tr": "Sıkça Sorulan Sorular"
+  },
+  "subtitle": {
+    "en": "Answers to Common Questions About Our Quran Programs",
+    "tr": "Kuran Programlarımız Hakkında Yaygın Sorulara Cevaplar"
+  },
+  "description": {
+    "en": "Find answers to the most common questions about our Quran Recitation and Tajweed classes.",
+    "tr": "Kuran Tilaveti ve Tecvit derslerimiz hakkında en yaygın soruları yanıtlarını bulun."
+  },
+  "content": {
+    "en": [
+      "If you have additional questions not covered here, please don't hesitate to contact us for personalized assistance."
+    ],
+    "tr": [
+      "Burada ele alınmayan ek sorularınız varsa, kişiselleştirilmiş yardım için lütfen bizimle iletişime geçmekten çekinmeyin."
+    ]
+  },
+  "faq": {
+    "en": [
+      {
+        "question": "Do I need any prior Arabic knowledge to begin?",
+        "answer": [
+          "For our Level 1 Tajweed classes, students must first complete our Noorani Qaida Course or demonstrate equivalent Arabic reading skills. This prerequisite ensures you have the foundational knowledge needed to succeed in Tajweed study. If you are a complete beginner, we recommend starting with our Noorani Qaida Course first."
+        ]
+      },
+      {
+        "question": "Are classes taught by male or female instructors?",
+        "answer": [
+          "We have both male and female certified instructors available. You may request your preference when enrolling, and we will do our best to accommodate your needs."
+        ]
+      },
+      {
+        "question": "Can I eventually obtain an Ijazah through your program?",
+        "answer": [
+          "Yes, we offer Ijazah preparation for advanced students who demonstrate mastery of Tajweed rules and complete recitation of the Quran. This traditional certification allows you to teach Quranic recitation to others."
+        ]
+      },
+      {
+        "question": "What teaching materials and resources do you provide?",
+        "answer": [
+          "We use a carefully curated combination of traditional Islamic texts and modern educational resources. All materials are provided, including digital copies for online students and physical books for in-person learners."
+        ]
+      },
+      {
+        "question": "How do online classes work technically?",
+        "answer": [
+          "Our online classes use professional video conferencing platforms with screen sharing capabilities. Students receive all necessary materials in advance, and classes are interactive with real-time feedback from instructors."
+        ]
+      }
+    ],
+    "tr": [
+      {
+        "question": "Başlamak için herhangi bir ön Arapça bilgisine ihtiyacım var mı?",
+        "answer": [
+          "Seviye 1 Tecvit derslerimiz için, öğrenciler önce Noorani Kaide Kursumuzu tamamlamalı veya eşdeğer Arapça okuma becerilerini göstermelidir. Bu ön koşul, Tecvit çalışmasında başarılı olmak için gereken temel bilgiye sahip olmanızı sağlar. Tam bir acemiyseniz, önce Noorani Kaide Kursumuzla başlamanızı öneririz."
+        ]
+      },
+      {
+        "question": "Dersler erkek veya kadın eğitmenler tarafından mı veriliyor?",
+        "answer": [
+          "Hem erkek hem de kadın sertifikalı eğitmenlerimiz mevcuttur. Kayıt olurken tercihlerinizi belirtebilirsiniz ve ihtiyaçlarınızı karşılamak için elimizden geleni yapacağız."
+        ]
+      },
+      {
+        "question": "Sonunda programınız aracılığıyla bir İcazet elde edebilir miyim?",
+        "answer": [
+          "Evet, Tecvit kurallarında ustalık gösteren ve Kur'an tilavetini tamamlayan ileri düzey öğrenciler için İcazet hazırlığı sunuyoruz. Bu geleneksel sertifika, başkalarına Kur'anî tilavet öğretmenizi sağlar."
+        ]
+      },
+      {
+        "question": "Hangi öğretim materyalleri ve kaynakları sağlıyorsunuz?",
+        "answer": [
+          "Geleneksel İslamî metinlerin ve modern eğitim kaynaklarının dikkatle seçilmiş bir kombinasyonunu kullanıyoruz. Çevrimiçi öğrenciler için dijital kopyalar ve yüz yüze öğrenciler için fiziksel kitaplar dahil olmak üzere tüm materyaller sağlanır."
+        ]
+      },
+      {
+        "question": "Çevrimiçi dersler teknik olarak nasıl çalışıyor?",
+        "answer": [
+          "Çevrimiçi derslerimiz ekran paylaşımı özelliklerine sahip profesyonel video konferans platformlarını kullanır. Öğrenciler tüm gerekli materyalleri önceden alır ve dersler eğitmenlerden gerçek zamanlı geri bildirimle etkileşimlidir."
+        ]
+      }
+    ]
+  },
+  "button_text": {
+    "en": "Contact Us",
+    "tr": "Bize Ulaşın"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

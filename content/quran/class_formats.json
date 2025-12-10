@@ -1,0 +1,96 @@
+{
+  "title": {
+    "en": "Class Format Comparison",
+    "tr": "Sınıf Formatı Karşılaştırması"
+  },
+  "subtitle": {
+    "en": "Choose the Right Learning Environment for You",
+    "tr": "Sizin İçin Doğru Öğrenme Ortamını Seçin"
+  },
+  "description": {
+    "en": "We offer both private and group class formats to accommodate different learning preferences and goals.",
+    "tr": "Farklı öğrenme tercihlerini ve hedeflerini karşılamak için hem özel hem de grup sınıf formatları sunuyoruz."
+  },
+  "content": {
+    "en": [
+      "Each format has its own advantages and is designed to provide the best possible learning experience for different types of students."
+    ],
+    "tr": [
+      "Her format kendi avantajlarına sahiptir ve farklı öğrenci türleri için mümkün olan en iyi öğrenme deneyimini sağlamak üzere tasarlanmıştır."
+    ]
+  },
+  "class_format_comparison": {
+    "en": {
+      "title": "Class Format Comparison",
+      "features": [
+        "Schedule Flexibility",
+        "Learning Pace",
+        "Curriculum Focus",
+        "Teacher Interaction",
+        "Peer Learning",
+        "Cost Effectiveness",
+        "Best Suited For"
+      ],
+      "private_classes": {
+        "title": "Private Classes",
+        "schedule_flexibility": "Fully customizable to your availability",
+        "learning_pace": "Completely personalized to your progress",
+        "curriculum_focus": "Tailored to your specific goals and challenges",
+        "teacher_interaction": "100% one-on-one attention throughout",
+        "peer_learning": "None",
+        "cost_effectiveness": "Premium pricing for personalized service",
+        "best_suited_for": "Rapid progress, specific needs, shy learners"
+      },
+      "group_classes": {
+        "title": "Group Classes (3-5 students)",
+        "schedule_flexibility": "Fixed schedule with some flexibility",
+        "learning_pace": "Adapted to group average with individual attention",
+        "curriculum_focus": "Comprehensive curriculum covering all essential topics",
+        "teacher_interaction": "Balanced individual attention within group dynamic",
+        "peer_learning": "Valuable interaction and motivation from classmates",
+        "cost_effectiveness": "More economical option without compromising quality",
+        "best_suited_for": "Community learning, motivation through peers, budget-conscious students"
+      }
+    },
+    "tr": {
+      "title": "Sınıf Formatı Karşılaştırması",
+      "features": [
+        "Program Esnekliği",
+        "Öğrenme Hızı",
+        "Müfredat Odak",
+        "Öğretmen Etkileşimi",
+        "Akran Öğrenimi",
+        "Maliyet Etkinliği",
+        "En Uygun Olduğu"
+      ],
+      "private_classes": {
+        "title": "Özel Dersler",
+        "schedule_flexibility": "Müsaitliğinize tamamen özelleştirilebilir",
+        "learning_pace": "İlerlemenize tamamen kişiselleştirilmiş",
+        "curriculum_focus": "Belirli hedeflerinize ve zorluklarınıza uyarlanmış",
+        "teacher_interaction": "Baştan sona %100 bire bir ilgi",
+        "peer_learning": "Yok",
+        "cost_effectiveness": "Kişiselleştirilmiş hizmet için premium fiyatlandırma",
+        "best_suited_for": "Hızlı ilerleme, belirli ihtiyaçlar, utangaç öğrenciler"
+      },
+      "group_classes": {
+        "title": "Grup Dersleri (3-5 öğrenci)",
+        "schedule_flexibility": "Bazı esneklikle sabit program",
+        "learning_pace": "Bireysel ilgiyle grup ortalamasına uyarlanmış",
+        "curriculum_focus": "Tüm temel konuları kapsayan kapsamlı müfredat",
+        "teacher_interaction": "Grup dinamiği içinde dengeli bireysel ilgi",
+        "peer_learning": "Sınıf arkadaşlarından değerli etkileşim ve motivasyon",
+        "cost_effectiveness": "Kaliteyi tehlikeye atmadan daha ekonomik seçenek",
+        "best_suited_for": "Topluluk öğrenimi, akranlar aracılığıyla motivasyon, bütçe bilincine sahip öğrenciler"
+      }
+    }
+  },
+  "button_text": {
+    "en": "Compare Options",
+    "tr": "Seçenekleri Karşılaştır"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}
