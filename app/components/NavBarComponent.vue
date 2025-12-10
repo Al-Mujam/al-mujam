@@ -58,40 +58,62 @@
                                 <div class="py-2 flex">
                                     <!-- Academics Tab Sections -->
                                     <div>
+                                        <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
+                                            {{ translations.find(t => t.key === 'academics').value[locale] }}
+                                        </div>
+                                        <NuxtLink v-for="section in academicsSections" :key="section.id"
+                                            :to="{name: 'academic-admissions', query: {tab: 'academics', section: section.id}}"
+                                            class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
+                                            {{ section.title[locale] }}
+                                        </NuxtLink>
+                                    </div>
 
-                                    <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
-                                        {{ translations.find(t => t.key === 'academics').value[locale] }}
-                                    </div>
-                                    <NuxtLink v-for="section in academicsSections" :key="section.id" 
-                                        :to="{name: 'academic-admissions', query: {tab: 'academics', section: section.id}}"
-                                        class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
-                                        {{ section.title[locale] }}
-                                    </NuxtLink>
-                                    </div>
-                                    
+                                    <!-- Admissions Tab Sections -->
                                     <div>
+                                        <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
+                                            {{ translations.find(t => t.key === 'admissions').value[locale] }}
+                                        </div>
+                                        <NuxtLink v-for="section in admissionsSections" :key="section.id"
+                                            :to="{name: 'academic-admissions', query: {tab: 'admissions', section: section.id}}"
+                                            class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
+                                            {{ section.title[locale] }}
+                                        </NuxtLink>
+                                    </div>
 
-                                    <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100 ">
-                                        {{ translations.find(t => t.key === 'admissions').value[locale] }}
-                                    </div>
-                                    <NuxtLink v-for="section in admissionsSections" :key="section.id" 
-                                        :to="{name: 'academic-admissions', query: {tab: 'admissions', section: section.id}}"
-                                        class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
-                                        {{ section.title[locale] }}
-                                    </NuxtLink>
-                                    </div>
-                               
                                     <!-- Accommodation Tab Sections -->
                                     <div>
-
-                                    <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100 ">
-                                        {{ translations.find(t => t.key === 'accommodation').value[locale] }}
+                                        <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
+                                            {{ translations.find(t => t.key === 'accommodation').value[locale] }}
+                                        </div>
+                                        <NuxtLink v-for="section in accommodationSections" :key="section.id"
+                                            :to="{name: 'academic-admissions', query: {tab: 'accommodation', section: section.id}}"
+                                            class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
+                                            {{ section.title[locale] }}
+                                        </NuxtLink>
                                     </div>
-                                    <NuxtLink v-for="section in accommodationSections" :key="section.id" 
-                                        :to="{name: 'academic-admissions', query: {tab: 'accommodation', section: section.id}}"
-                                        class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
-                                        {{ section.title[locale] }}
-                                    </NuxtLink>
+
+                                    <!-- Quran Tab Sections -->
+                                    <div>
+                                        <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
+                                            Quran & Tajweed
+                                        </div>
+                                        <NuxtLink v-for="section in quranSections" :key="section.id"
+                                            :to="{name: 'academic-admissions', query: {tab: 'quran', section: section.id}}"
+                                            class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
+                                            {{ section.title[locale] }}
+                                        </NuxtLink>
+                                    </div>
+
+                                    <!-- Noorani Qaida Tab Sections -->
+                                    <div>
+                                        <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
+                                            Noorani Qaida
+                                        </div>
+                                        <NuxtLink v-for="section in nooraniSections" :key="section.id"
+                                            :to="{name: 'academic-admissions', query: {tab: 'noorani', section: section.id}}"
+                                            class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
+                                            {{ section.title[locale] }}
+                                        </NuxtLink>
                                     </div>
                                 </div>
                             </div>
@@ -206,6 +228,25 @@ const accommodationSections = [
     { id: 'room-types', title: { en: 'Room Types', tr: 'Oda Türleri' } },
     { id: 'pricing', title: { en: 'Pricing', tr: 'Fiyatlandırma' } },
     { id: 'policies', title: { en: 'Policies', tr: 'Politikalar' } }
+]
+
+const quranSections = [
+    { id: 'quran-overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
+    { id: 'why-choose', title: { en: 'Why Choose Almujam', tr: 'Neden Almujam' } },
+    { id: 'quran-programs', title: { en: 'Programs', tr: 'Programlar' } },
+    { id: 'class-formats', title: { en: 'Class Formats', tr: 'Ders Formatları' } },
+    { id: 'success-stories', title: { en: 'Success Stories', tr: 'Başarı Hikayeleri' } },
+    { id: 'faq', title: { en: 'FAQ', tr: 'SSS' } }
+]
+
+const nooraniSections = [
+    { id: 'noorani-overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
+    { id: 'understanding-noorani', title: { en: 'Understanding Noorani Qaida', tr: 'Noorani Kaide\'yi Anlamak' } },
+    { id: 'who-benefits', title: { en: 'Who Benefits', tr: 'Kimler Faydalanır' } },
+    { id: 'noorani-curriculum', title: { en: 'Curriculum', tr: 'Müfredat' } },
+    { id: 'learning-outcomes', title: { en: 'Learning Outcomes', tr: 'Öğrenme Çıktıları' } },
+    { id: 'noorani-success-stories', title: { en: 'Success Stories', tr: 'Başarı Hikayeleri' } },
+    { id: 'course-information', title: { en: 'Course Information', tr: 'Kurs Bilgileri' } }
 ]
 
 // Student life page sections
