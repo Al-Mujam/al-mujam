@@ -1,0 +1,76 @@
+{
+  "title": {
+    "en": "Course Information and Support",
+    "tr": "Kurs Bilgileri ve Destek"
+  },
+  "subtitle": {
+    "en": "Everything You Need to Know",
+    "tr": "Bilmeniz Gereken Her Şey"
+  },
+  "description": {
+    "en": "Practical information about our Noorani Qaida course to help you make an informed decision.",
+    "tr": "Bilinçli bir karar vermenizde size yardımcı olacak Noorani Kaide kursumuz hakkında pratik bilgiler."
+  },
+  "content": {
+    "en": [
+      "Our comprehensive support system ensures every student receives the guidance they need throughout their learning journey."
+    ],
+    "tr": [
+      "Kapsamlı destek sistemimiz, her öğrencinin öğrenme yolculuğu boyunca ihtiyaç duyduğu rehberliği almasını sağlar."
+    ]
+  },
+  "course_info": {
+    "en": [
+      {
+        "title": "Typical Course Duration",
+        "content": "Most students complete the Noorani Qaida program in 2-4 months with regular attendance (2-3 classes per week). However, we adapt the pace to each student's needs and learning style."
+      },
+      {
+        "title": "Age Appropriateness",
+        "content": "While designed to be effective for all ages, we offer specialized approaches for different age groups. Children's classes incorporate games and interactive activities, while adult classes focus on systematic understanding and practical application."
+      },
+      {
+        "title": "Progression Pathway",
+        "content": "Upon completing Noorani Qaida, students are well-prepared to advance to our Quran Recitation & Tajweed Classes, where they can develop more sophisticated recitation skills and deeper understanding of Quranic Arabic."
+      },
+      {
+        "title": "Class Format Options",
+        "content": "We offer both online and in-person classes to accommodate different preferences and circumstances. Online classes use interactive platforms that allow for real-time instruction and feedback, while in-person classes provide the traditional classroom experience."
+      },
+      {
+        "title": "Family Learning Opportunities",
+        "content": "Many families choose to learn together, creating shared goals and mutual support. We offer family packages and can accommodate multiple family members in the same class when appropriate."
+      }
+    ],
+    "tr": [
+      {
+        "title": "Tipik Kurs Süresi",
+        "content": "Çoğu öğrenci, düzenli katılım (haftada 2-3 ders) ile Noorani Kaide programını 2-4 ayda tamamlar. Ancak, hızı her öğrencinin ihtiyaçlarına ve öğrenme tarzına uyarlarız."
+      },
+      {
+        "title": "Yaş Uygunluğu",
+        "content": "Tüm yaşlar için etkili olacak şekilde tasarlanırken, farklı yaş grupları için özel yaklaşımlar sunuyoruz. Çocuk dersleri oyunları ve etkileşimli aktiviteleri içerirken, yetişkin dersleri sistematik anlayış ve pratik uygulamaya odaklanır."
+      },
+      {
+        "title": "İlerleme Yolu",
+        "content": "Noorani Kaide'yi tamamladıktan sonra, öğrenciler daha sofistike tilavet becerileri ve Kur'anî Arapça'nın daha derin anlayışı geliştirebilecekleri Kur'an Tilaveti ve Tecvit Sınıflarımıza ilerlemeye iyi hazırlanmışlardır."
+      },
+      {
+        "title": "Ders Formatı Seçenekleri",
+        "content": "Farklı tercihleri ve koşulları karşılamak için hem çevrimiçi hem de yüz yüze dersler sunuyoruz. Çevrimiçi dersler gerçek zamanlı talimat ve geri bildirim sağlayan etkileşimli platformları kullanırken, yüz yüze dersler geleneksel sınıf deneyimini sağlar."
+      },
+      {
+        "title": "Aile Öğrenme Fırsatları",
+        "content": "Birçok aile birlikte öğrenmeyi tercih eder, paylaşılan hedefler ve karşılıklı destek yaratır. Aile paketleri sunuyoruz ve uygun olduğunda aynı sınıfta birden fazla aile üyesine yer verebiliriz."
+      }
+    ]
+  },
+  "button_text": {
+    "en": "Get Course Details",
+    "tr": "Kurs Detaylarını Al"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

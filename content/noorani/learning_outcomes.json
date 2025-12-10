@@ -1,0 +1,68 @@
+{
+  "title": {
+    "en": "Learning Outcomes and Progression Path",
+    "tr": "Öğrenme Çıktıları ve İlerleme Yolu"
+  },
+  "subtitle": {
+    "en": "What Students Achieve",
+    "tr": "Öğrencilerin Başardıkları"
+  },
+  "description": {
+    "en": "Upon successful completion of our Noorani Qaida course, students will have achieved several important milestones that prepare them for continued Quranic study and spiritual growth.",
+    "tr": "Noorani Kaide kursumuzun başarılı bir şekilde tamamlanmasının ardından, öğrenciler devam eden Kur'anî çalışma ve ruhani büyüme için hazırlayan birkaç önemli dönüm noktasına ulaşacaklardır."
+  },
+  "content": {
+    "en": [
+      "Each outcome builds upon the previous, creating a solid foundation for lifelong Quranic learning."
+    ],
+    "tr": [
+      "Her sonuç öncekine dayanarak, ömür boyu Kur'anî öğrenme için sağlam bir temel oluşturur."
+    ]
+  },
+  "learning_outcomes": {
+    "en": {
+      "title": "Learning Outcomes and Progression Path",
+      "introduction": [
+        "Upon successful completion of our Noorani Qaida course, students will have achieved several important milestones that prepare them for continued Quranic study and spiritual growth."
+      ],
+      "immediate_skills": {
+        "title": "Immediate Skills Acquired",
+        "content": "Students will be able to read any Arabic text with basic vowel markings, recognize all Arabic letters in their various forms, and pronounce words correctly according to fundamental rules. They will also have developed familiarity with common Quranic vocabulary and phrases."
+      },
+      "confidence_independence": {
+        "title": "Confidence and Independence",
+        "content": "Perhaps most importantly, students will have gained the confidence to approach Arabic text independently, no longer feeling intimidated by the script or uncertain about pronunciation. This psychological breakthrough is often as valuable as the technical skills acquired."
+      },
+      "preparation_advanced": {
+        "title": "Preparation for Advanced Study",
+        "content": "Graduates of our Noorani Qaida program are excellently prepared to advance to our Quran Recitation & Tajweed Classes, where they can develop more sophisticated recitation skills and deeper understanding of Quranic Arabic."
+      }
+    },
+    "tr": {
+      "title": "Öğrenme Çıktıları ve İlerleme Yolu",
+      "introduction": [
+        "Noorani Kaide kursumuzun başarılı bir şekilde tamamlanmasının ardından, öğrenciler devam eden Kur'anî çalışma ve ruhani büyüme için hazırlayan birkaç önemli dönüm noktasına ulaşacaklardır."
+      ],
+      "immediate_skills": {
+        "title": "Hemen Kazanılan Beceriler",
+        "content": "Öğrenciler, temel ünlü işaretleriyle herhangi bir Arapça metni okuyabilecek, çeşitli formlarında tüm Arap harflerini tanıyabilecek ve temel kurallara göre kelimeleri doğru telaffuz edebileceklerdir. Ayrıca yaygın Kur'anî kelime dağarcığı ve ifadelerle aşinalık geliştireceklerdir."
+      },
+      "confidence_independence": {
+        "title": "Güven ve Bağımsızlık",
+        "content": "Belki de en önemlisi, öğrenciler Arapça metne bağımsız olarak yaklaşma güvenini kazanacaklardır, artık yazıdan korkmayacak veya telaffuz konusunda belirsizlik hissetmeyeceklerdir. Bu psikolojik ilerleme genellikle kazanılan teknik beceriler kadar değerlidir."
+      },
+      "preparation_advanced": {
+        "title": "İleri Çalışma İçin Hazırlık",
+        "content": "Noorani Kaide programımızın mezunları, daha sofistike tilavet becerileri ve Kur'anî Arapça'nın daha derin anlayışı geliştirebilecekleri Kur'an Tilaveti ve Tecvit Sınıflarımıza ilerlemeye mükemmel şekilde hazırlanmışlardır."
+      }
+    }
+  },
+  "button_text": {
+    "en": "See Student Progress",
+    "tr": "Öğrenci İlerlemesini Gör"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

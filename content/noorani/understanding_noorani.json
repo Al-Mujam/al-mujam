@@ -1,0 +1,84 @@
+{
+  "title": {
+    "en": "Understanding Noorani Qaida",
+    "tr": "Noorani Kaide'yi Anlamak"
+  },
+  "subtitle": {
+    "en": "Your Gateway to Quranic Reading",
+    "tr": "Kur'an Okumaya Geçidiniz"
+  },
+  "description": {
+    "en": "Noorani Qaida is much more than a simple reading primer; it is a comprehensive foundational system that introduces students to the beautiful world of Arabic script and Quranic recitation.",
+    "tr": "Noorani Kaide, basit bir okuma kılavuzundan çok daha fazlasıdır; öğrencilere Arap yazısının ve Kur'anî tilavetin güzel dünyasını tanıtan kapsamlı bir temel sistemdir."
+  },
+  "content": {
+    "en": [
+      "This methodical approach ensures that students develop proper reading habits from the very beginning, preventing common mistakes that can be difficult to correct later."
+    ],
+    "tr": [
+      "Bu metodik yaklaşım, öğrencilerin en başından itibaren doğru okuma alışkanlıkları geliştirmelerini sağlar ve daha sonra düzeltilmesi zor olabilecek yaygın hataları önler."
+    ]
+  },
+  "understanding_noorani": {
+    "en": {
+      "title": "Understanding Noorani Qaida: Your Gateway to Quranic Reading",
+      "introduction": [
+        "Noorani Qaida is much more than a simple reading primer; it is a comprehensive foundational system that introduces students to the beautiful world of Arabic script and Quranic recitation. This methodical approach ensures that students develop proper reading habits from the very beginning, preventing common mistakes that can be difficult to correct later."
+      ],
+      "alphabet_mastery": {
+        "title": "The Arabic Alphabet Mastery",
+        "content": "Students learn the correct pronunciation (Makharij) of all 28 Arabic letters, understanding how each letter is formed in the mouth and throat. This precise attention to pronunciation is crucial for accurate Quranic recitation."
+      },
+      "vowel_systems": {
+        "title": "Vowel Systems and Diacritical Marks",
+        "content": "Comprehensive understanding of Harakat (Fatha, Damma, Kasra), Tanween, Sukoon, and other essential marks that guide proper pronunciation and meaning in Arabic text."
+      },
+      "letter_connection": {
+        "title": "Letter Connection Principles",
+        "content": "Systematic instruction in how Arabic letters connect to form words, including the various forms letters take at the beginning, middle, and end of words."
+      },
+      "foundation_tajweed": {
+        "title": "Foundation Tajweed Concepts",
+        "content": "Introduction to the most essential rules of Quranic recitation, preparing students for more advanced Tajweed study in the future."
+      },
+      "progressive_practice": {
+        "title": "Progressive Reading Practice",
+        "content": "Carefully structured exercises that gradually build from individual letters to complete words and short Quranic verses, ensuring steady progress and confidence building."
+      }
+    },
+    "tr": {
+      "title": "Noorani Kaide'yi Anlamak: Kur'an Okumaya Geçidiniz",
+      "introduction": [
+        "Noorani Kaide, basit bir okuma kılavuzundan çok daha fazlasıdır; öğrencilere Arap yazısının ve Kur'anî tilavetin güzel dünyasını tanıtan kapsamlı bir temel sistemdir. Bu metodik yaklaşım, öğrencilerin en başından itibaren doğru okuma alışkanlıkları geliştirmelerini sağlar ve daha sonra düzeltilmesi zor olabilecek yaygın hataları önler."
+      ],
+      "alphabet_mastery": {
+        "title": "Arap Alfabesi Ustalığı",
+        "content": "Öğrenciler, tüm 28 Arap harfinin doğru telaffuzunu (Mahreç) öğrenir, her harfin ağızda ve boğazda nasıl şekillendiğini anlar. Telaffuza bu hassas dikkat, doğru Kur'anî tilavet için çok önemlidir."
+      },
+      "vowel_systems": {
+        "title": "Ünlü Sistemleri ve Noktalama İşaretleri",
+        "content": "Arap metnindeki doğru telaffuzu ve anlamı yönlendiren Harakat (Fetha, Damma, Kesra), Tanvin, Sukun ve diğer temel işaretlerin kapsamlı anlayışı."
+      },
+      "letter_connection": {
+        "title": "Harf Bağlantı İlkeleri",
+        "content": "Arap harflerinin kelime oluşturmak için nasıl bağlandığı konusunda sistematik talimat, kelimelerin başında, ortasında ve sonunda harflerin aldığı çeşitli formlar dahil."
+      },
+      "foundation_tajweed": {
+        "title": "Temel Tecvit Kavramları",
+        "content": "Kur'anî tilavetin en temel kurallarına giriş, gelecekte daha gelişmiş Tecvit çalışması için hazırlık."
+      },
+      "progressive_practice": {
+        "title": "Aşamalı Okuma Pratiği",
+        "content": "Bireysel harflerden tam kelimelere ve kısa Kur'anî ayetlere kadar kademeli olarak yapılandırılan alıştırmalar, istikrarlı ilerleme ve güven inşası sağlar."
+      }
+    }
+  },
+  "button_text": {
+    "en": "Learn More",
+    "tr": "Daha Fazla Bilgi"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

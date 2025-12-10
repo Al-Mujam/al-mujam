@@ -1,0 +1,66 @@
+{
+  "title": {
+    "en": "Inspiring Student Transformations",
+    "tr": "İlham Verici Öğrenci Dönüşümleri"
+  },
+  "subtitle": {
+    "en": "Real Stories from Our Noorani Qaida Students",
+    "tr": "Noorani Kaide Öğrencilerimizden Gerçek Hikayeler"
+  },
+  "description": {
+    "en": "Students from diverse backgrounds share their transformative experiences with our Noorani Qaida course.",
+    "tr": "Farklı geçmişlere sahip öğrenciler, Noorani Kaide kursumuzla ilgili dönüştürücü deneyimlerini paylaşıyor."
+  },
+  "content": {
+    "en": [
+      "These stories demonstrate how the Noorani Qaida course serves as a gateway to a lifetime of Quranic learning and spiritual growth."
+    ],
+    "tr": [
+      "Bu hikayeler, Noorani Kaide kursunun ömür boyu Kur'anî öğrenme ve ruhani büyüme için bir geçit görevi gördüğünü gösteriyor."
+    ]
+  },
+  "success_stories": {
+    "en": [
+      {
+        "testimony": "I never imagined I could learn to read Arabic, but the Noorani Qaida course at Almujam made it not only possible but enjoyable. The teacher was incredibly patient with my children and me. Now my 8-year-old daughter can read short Surahs independently, and we practice together every evening. It has brought our family closer to our faith.",
+        "author": "Aisha Mohammad",
+        "country": "Canada"
+      },
+      {
+        "testimony": "This course provided the perfect foundation for my Quranic studies. After completing Noorani Qaida, I transitioned seamlessly to the Tajweed classes and felt completely prepared. The systematic approach at Almujam builds real confidence and genuine skills. I cannot recommend it highly enough.",
+        "author": "Omar Abdullah",
+        "country": "Germany"
+      },
+      {
+        "testimony": "As a new Muslim, I was overwhelmed by the thought of learning to read the Quran. The Noorani Qaida course broke everything down into manageable steps. My teacher celebrated every small victory with me, and within three months, I was reading verses on my own. It was truly a transformative experience.",
+        "author": "Sarah Johnson",
+        "country": "Australia"
+      }
+    ],
+    "tr": [
+      {
+        "testimony": "Arapça okumayı öğrenebileceğimi hiç hayal etmemiştim, ama Almujam'daki Noorani Kaide kursu bunu sadece mümkün değil, aynı zamanda keyifli hale getirdi. Öğretmen, çocuklarımla bana inanılmaz derecede sabırlıydı. Şimdi 8 yaşındaki kızım kısa Sureleri bağımsız olarak okuyabiliyor ve her akşam birlikte pratik yapıyoruz. Bu, ailemizi imanımıza daha da yaklaştırdı.",
+        "author": "Aisha Mohammad",
+        "country": "Kanada"
+      },
+      {
+        "testimony": "Bu kurs, Kur'anî çalışmalarım için mükemmel bir temel sağladı. Noorani Kaide'yi tamamladıktan sonra, Tecvit sınıflarına sorunsuz bir şekilde geçtim ve tamamen hazır hissettim. Almujam'daki sistematik yaklaşım gerçek güven ve gerçek beceriler inşa ediyor. Bunu yeterince tavsiye edemem.",
+        "author": "Omar Abdullah",
+        "country": "Almanya"
+      },
+      {
+        "testimony": "Yeni bir Müslüman olarak, Kur'an'ı okumayı öğrenmek düşüncesiyle ezilmiş hissediyordum. Noorani Kaide kursu her şeyi yönetilebilir adımlara böldü. Öğretmenim benimle her küçük zaferi kutladı ve üç ay içinde kendi başıma ayetler okuyordum. Bu gerçekten dönüştürücü bir deneyimdi.",
+        "author": "Sarah Johnson",
+        "country": "Avustralya"
+      }
+    ]
+  },
+  "button_text": {
+    "en": "Read More Stories",
+    "tr": "Daha Fazla Hikaye Oku"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

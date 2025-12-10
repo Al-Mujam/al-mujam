@@ -974,6 +974,243 @@ export default defineContentConfig({
         }).optional(),
       })
     }),
+    noorani: defineCollection({
+      type: 'data',
+      source: 'noorani/**.json',
+      schema: z.object({
+        title: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        subtitle: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        description: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        content: z.object({
+          en: z.array(z.string()),
+          tr: z.array(z.string()),
+        }),
+        button_text: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        button_link: z.object({
+          en: z.string(),
+          tr: z.string(),
+        }),
+        // Understanding Noorani Qaida section
+        understanding_noorani: z.object({
+          en: z.object({
+            title: z.string(),
+            introduction: z.array(z.string()),
+            alphabet_mastery: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            vowel_systems: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            letter_connection: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            foundation_tajweed: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            progressive_practice: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+          tr: z.object({
+            title: z.string(),
+            introduction: z.array(z.string()),
+            alphabet_mastery: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            vowel_systems: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            letter_connection: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            foundation_tajweed: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            progressive_practice: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+        }).optional(),
+        // Who Benefits section
+        who_benefits: z.object({
+          en: z.object({
+            title: z.string(),
+            complete_beginners: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            children_learners: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            adult_new_muslims: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            non_arabic_muslims: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            pronunciation_improvement: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            parents_with_children: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+          tr: z.object({
+            title: z.string(),
+            complete_beginners: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            children_learners: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            adult_new_muslims: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            non_arabic_muslims: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            pronunciation_improvement: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            parents_with_children: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+        }).optional(),
+        // Curriculum section
+        curriculum: z.object({
+          en: z.object({
+            title: z.string(),
+            introduction: z.array(z.string()),
+            stages: z.array(z.object({
+              stage: z.string(),
+              focus_areas: z.string(),
+              skills_developed: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            introduction: z.array(z.string()),
+            stages: z.array(z.object({
+              stage: z.string(),
+              focus_areas: z.string(),
+              skills_developed: z.string(),
+            })),
+          }),
+        }).optional(),
+        // Learning Outcomes section
+        learning_outcomes: z.object({
+          en: z.object({
+            title: z.string(),
+            introduction: z.array(z.string()),
+            immediate_skills: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            confidence_independence: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            preparation_advanced: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+          tr: z.object({
+            title: z.string(),
+            introduction: z.array(z.string()),
+            immediate_skills: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            confidence_independence: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+            preparation_advanced: z.object({
+              title: z.string(),
+              content: z.string(),
+            }),
+          }),
+        }).optional(),
+        // Success Stories
+        success_stories: z.object({
+          en: z.array(z.object({
+            testimony: z.string(),
+            author: z.string(),
+            country: z.string(),
+          })),
+          tr: z.array(z.object({
+            testimony: z.string(),
+            author: z.string(),
+            country: z.string(),
+          })),
+        }).optional(),
+        // Call to Action
+        call_to_action: z.object({
+          en: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+            buttons: z.array(z.object({
+              text: z.string(),
+              link: z.string(),
+            })),
+          }),
+          tr: z.object({
+            title: z.string(),
+            content: z.array(z.string()),
+            buttons: z.array(z.object({
+              text: z.string(),
+              link: z.string(),
+            })),
+          }),
+        }).optional(),
+        // Course Information
+        course_info: z.object({
+          en: z.array(z.object({
+            title: z.string(),
+            content: z.string(),
+          })),
+          tr: z.array(z.object({
+            title: z.string(),
+            content: z.string(),
+          })),
+        }).optional(),
+      })
+    }),
     accommodation: defineCollection({
       type: 'data',
       source: 'accommodation/**.json',

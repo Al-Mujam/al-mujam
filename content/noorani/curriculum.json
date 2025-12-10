@@ -1,0 +1,108 @@
+{
+  "title": {
+    "en": "Our Comprehensive Step-by-Step Curriculum",
+    "tr": "Kapsamlı Adım Adım Müfredatımız"
+  },
+  "subtitle": {
+    "en": "Systematic Learning Progression",
+    "tr": "Sistematik Öğrenme İlerlemesi"
+  },
+  "description": {
+    "en": "Our Noorani Qaida program follows a carefully designed progression that ensures mastery at each level before advancing to the next.",
+    "tr": "Noorani Kaide programımız, bir sonraki seviyeye geçmeden önce her seviyede ustalık sağlamayı garanti eden dikkatle tasarlanmış bir ilerlemeye uyar."
+  },
+  "content": {
+    "en": [
+      "This systematic approach prevents gaps in understanding and builds genuine confidence."
+    ],
+    "tr": [
+      "Bu sistematik yaklaşım anlayış boşluklarını önler ve gerçek güven inşa eder."
+    ]
+  },
+  "curriculum": {
+    "en": {
+      "title": "Our Comprehensive Step-by-Step Curriculum",
+      "introduction": [
+        "Our Noorani Qaida program follows a carefully designed progression that ensures mastery at each level before advancing to the next. This systematic approach prevents gaps in understanding and builds genuine confidence."
+      ],
+      "stages": [
+        {
+          "stage": "Stage 1: Individual Letters",
+          "focus_areas": "Recognition and pronunciation of isolated Arabic letters",
+          "skills_developed": "Letter identification, basic pronunciation, writing familiarity"
+        },
+        {
+          "stage": "Stage 2: Letter Combinations",
+          "focus_areas": "Joining letters to form simple combinations",
+          "skills_developed": "Understanding letter connections, compound letter sounds"
+        },
+        {
+          "stage": "Stage 3: Vowel Integration",
+          "focus_areas": "Adding Harakat (vowel marks) to letters and combinations",
+          "skills_developed": "Proper vowel pronunciation, reading with diacritical marks"
+        },
+        {
+          "stage": "Stage 4: Advanced Markings",
+          "focus_areas": "Tanween, Sukoon, and other essential marks",
+          "skills_developed": "Complex pronunciation rules, reading fluency development"
+        },
+        {
+          "stage": "Stage 5: Word Formation",
+          "focus_areas": "Complete words with various letter and vowel combinations",
+          "skills_developed": "Word recognition, reading confidence, meaning association"
+        },
+        {
+          "stage": "Stage 6: Quranic Application",
+          "focus_areas": "Reading actual verses from the Holy Quran",
+          "skills_developed": "Practical application, spiritual connection, preparation for advanced study"
+        }
+      ]
+    },
+    "tr": {
+      "title": "Kapsamlı Adım Adım Müfredatımız",
+      "introduction": [
+        "Noorani Kaide programımız, bir sonraki seviyeye geçmeden önce her seviyede ustalık sağlamayı garanti eden dikkatle tasarlanmış bir ilerlemeye uyar. Bu sistematik yaklaşım anlayış boşluklarını önler ve gerçek güven inşa eder."
+      ],
+      "stages": [
+        {
+          "stage": "Aşama 1: Bireysel Harfler",
+          "focus_areas": "İzole edilmiş Arap harflerinin tanınması ve telaffuzu",
+          "skills_developed": "Harf tanımlama, temel telaffuz, yazma aşinalığı"
+        },
+        {
+          "stage": "Aşama 2: Harf Kombinasyonları",
+          "focus_areas": "Basit kombinasyonlar oluşturmak için harfleri birleştirme",
+          "skills_developed": "Harf bağlantılarını anlama, bileşik harf sesleri"
+        },
+        {
+          "stage": "Aşama 3: Ünlü Entegrasyonu",
+          "focus_areas": "Harflere ve kombinasyonlara Harakat (ünlü işaretleri) ekleme",
+          "skills_developed": "Doğru ünlü telaffuzu, noktalama işaretleriyle okuma"
+        },
+        {
+          "stage": "Aşama 4: Gelişmiş İşaretler",
+          "focus_areas": "Tanvin, Sukun ve diğer temel işaretler",
+          "skills_developed": "Karmaşık telaffuz kuralları, okuma akıcılığı gelişimi"
+        },
+        {
+          "stage": "Aşama 5: Kelime Oluşumu",
+          "focus_areas": "Çeşitli harf ve ünlü kombinasyonlarıyla tam kelimeler",
+          "skills_developed": "Kelime tanıma, okuma güveni, anlam ilişkilendirmesi"
+        },
+        {
+          "stage": "Aşama 6: Kur'anî Uygulama",
+          "focus_areas": "Kutsal Kur'an'dan gerçek ayetleri okuma",
+          "skills_developed": "Pratik uygulama, ruhani bağlantı, ileri çalışma için hazırlık"
+        }
+      ]
+    }
+  },
+  "button_text": {
+    "en": "View Detailed Curriculum",
+    "tr": "Ayrıntılı Müfredatı Görüntüle"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "title": {
+    "en": "Who Benefits Most from This Course?",
+    "tr": "Bu Kurs Kimlere En Çok Fayda Sağlar?"
+  },
+  "subtitle": {
+    "en": "Designed for Learners of All Backgrounds",
+    "tr": "Tüm Geçmişlere Sahip Öğrenciler İçin Tasarlandı"
+  },
+  "description": {
+    "en": "Our Noorani Qaida course is designed to meet the needs of diverse learners, from complete beginners to those seeking to improve their foundational skills.",
+    "tr": "Noorani Kaide kursumuz, tam acemilerden temel becerilerini geliştirmek isteyenlere kadar çeşitli öğrencilerin ihtiyaçlarını karşılamak için tasarlanmıştır."
+  },
+  "content": {
+    "en": [
+      "Each learner type brings unique perspectives and goals to their Quranic study journey."
+    ],
+    "tr": [
+      "Her öğrenci türü, Kur'anî çalışma yolculuğuna benzersiz bakış açıları ve hedefler getirir."
+    ]
+  },
+  "who_benefits": {
+    "en": {
+      "title": "Who Benefits Most from This Course?",
+      "complete_beginners": {
+        "title": "Complete Beginners in Arabic",
+        "content": "Individuals with no prior experience reading Arabic script will find this course provides the perfect starting point. Our systematic approach ensures no foundational element is overlooked."
+      },
+      "children_learners": {
+        "title": "Children and Young Learners",
+        "content": "The Noorani Qaida method is particularly effective for children, using engaging techniques that make learning enjoyable while building strong foundational skills that will serve them throughout their lives."
+      },
+      "adult_new_muslims": {
+        "title": "Adult New Muslims and Reverts",
+        "content": "For those who have recently embraced Islam, this course provides an essential connection to the Holy Quran, enabling independent reading and deeper spiritual engagement with the sacred text."
+      },
+      "non_arabic_muslims": {
+        "title": "Non-Arabic Speaking Muslims",
+        "content": "Muslims from non-Arabic speaking backgrounds who want to develop direct access to the Quran in its original language will find this course invaluable for building authentic reading skills."
+      },
+      "pronunciation_improvement": {
+        "title": "Students Seeking Pronunciation Improvement",
+        "content": "Even those who can read Arabic but struggle with correct pronunciation will benefit from the systematic approach to proper letter formation and sound production."
+      },
+      "parents_with_children": {
+        "title": "Parents Wanting to Learn with Children",
+        "content": "Many families choose to learn together, creating a beautiful shared experience that strengthens both individual skills and family bonds around Quranic study."
+      }
+    },
+    "tr": {
+      "title": "Bu Kurs Kimlere En Çok Fayda Sağlar?",
+      "complete_beginners": {
+        "title": "Arapçada Tam Acemiler",
+        "content": "Arap yazısını okumada önceden hiçbir deneyimi olmayan kişiler, bu kursun mükemmel bir başlangıç noktası sağladığını göreceklerdir. Sistematik yaklaşımımız hiçbir temel unsurun gözden kaçırılmamasını sağlar."
+      },
+      "children_learners": {
+        "title": "Çocuklar ve Genç Öğrenciler",
+        "content": "Noorani Kaide yöntemi özellikle çocuklar için etkilidir, öğrenmeyi keyifli hale getiren teknikler kullanarak yaşamları boyunca onlara hizmet edecek güçlü temel beceriler geliştirir."
+      },
+      "adult_new_muslims": {
+        "title": "Yetişkin Yeni Müslümanlar ve Dönenler",
+        "content": "İslam'ı yeni kabul edenler için, bu kurs Kutsal Kur'an'a gerekli bir bağlantı sağlar, bağımsız okuma ve kutsal metinle daha derin ruhani katılımı mümkün kılar."
+      },
+      "non_arabic_muslims": {
+        "title": "Arapça Konuşmayan Müslümanlar",
+        "content": "Orijinal dilinde Kur'an'a doğrudan erişim geliştirmek isteyen Arapça konuşmayan geçmişlerden Müslümanlar, bu kursu özgün okuma becerileri geliştirmek için çok değerli bulacaklardır."
+      },
+      "pronunciation_improvement": {
+        "title": "Telaffuz İyileştirmesi Arayan Öğrenciler",
+        "content": "Arapça okuyabilen ancak doğru telaffuzla mücadele edenler bile, uygun harf oluşumu ve ses üretimine yönelik sistematik yaklaşımdan faydalanacaklardır."
+      },
+      "parents_with_children": {
+        "title": "Çocuklarıyla Birlikte Öğrenmek İsteyen Ebeveynler",
+        "content": "Birçok aile birlikte öğrenmeyi tercih eder, hem bireysel becerileri hem de Kur'anî çalışma etrafındaki aile bağlarını güçlendiren güzel bir paylaşılan deneyim yaratır."
+      }
+    }
+  },
+  "button_text": {
+    "en": "Find Your Path",
+    "tr": "Yolunu Bul"
+  },
+  "button_link": {
+    "en": "#",
+    "tr": "#"
+  }
+}

@@ -24,6 +24,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "nuxt-countup": "^0.1.2",
     "tailwind-scrollbar": "^4.0.2"
   }

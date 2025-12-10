@@ -34,7 +34,7 @@
 
         <!-- Tabs -->
         <div class="w-full flex items-center justify-center">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-0 border-b border-gray-200 container max-w-[1200px] mx-4 md:mx-20 lg:mx-10 w-full h-max mb-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0 border-b border-gray-200 container max-w-[1400px] mx-4 md:mx-20 lg:mx-10 w-full h-max mb-5">
                 <div @click="changeTab('academics')" :class="activeTab === 'academics' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
                     {{ translations.find(t => t.key === 'academics').value[locale] }}
                 </div>
@@ -46,6 +46,9 @@
                 </div>
                 <div @click="changeTab('quran')" :class="activeTab === 'quran' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
                     Quran & Tajweed
+                </div>
+                <div @click="changeTab('noorani')" :class="activeTab === 'noorani' ? 'text-web-primary border-b-4 border-web-primary font-medium ' : 'text-text-color/50 border-b-4 border-transparent '" class="text-text-color cursor-pointer hover:text-web-primary py-4 flex items-center justify-center">
+                    Noorani Qaida
                 </div>
             </div>
         </div>
@@ -1259,6 +1262,329 @@
             </div>
         </section>
 
+        <!-- Noorani Tab -->
+        <section id="noorani" v-if="activeTab === 'noorani'" class="container mx-auto px-4 md:px-20 pb-5 lg:px-10 max-w-[1280px]">
+            <!-- Overview Section -->
+            <div id="noorani-overview" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ noorani.overview.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        {{ noorani.overview.subtitle[locale] }}
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ noorani.overview.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p v-for="(paragraph, index) in noorani.overview.content[locale]" :key="index" class="text-lg">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <NuxtLink external target="_blank" :to="noorani.overview.button_link[locale]" class="web-btn">
+                            {{ noorani.overview.button_text[locale] }}
+                        </NuxtLink>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Understanding Noorani Section -->
+            <div id="understanding-noorani" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ noorani.understanding_noorani.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            Your Gateway to Quranic Reading
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ noorani.understanding_noorani.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <div class="mb-8">
+                            <p v-for="(paragraph, index) in noorani.understanding_noorani.understanding_noorani[locale].introduction" :key="index" class="text-gray-700 text-lg leading-relaxed">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Arabic Alphabet Mastery -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.understanding_noorani.understanding_noorani[locale].alphabet_mastery.title }}</h3>
+                                <p class="text-gray-700">{{ noorani.understanding_noorani.understanding_noorani[locale].alphabet_mastery.content }}</p>
+                            </div>
+
+                            <!-- Vowel Systems -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.understanding_noorani.understanding_noorani[locale].vowel_systems.title }}</h3>
+                                <p class="text-gray-700">{{ noorani.understanding_noorani.understanding_noorani[locale].vowel_systems.content }}</p>
+                            </div>
+
+                            <!-- Letter Connection -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.understanding_noorani.understanding_noorani[locale].letter_connection.title }}</h3>
+                                <p class="text-gray-700">{{ noorani.understanding_noorani.understanding_noorani[locale].letter_connection.content }}</p>
+                            </div>
+
+                            <!-- Foundation Tajweed -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.understanding_noorani.understanding_noorani[locale].foundation_tajweed.title }}</h3>
+                                <p class="text-gray-700">{{ noorani.understanding_noorani.understanding_noorani[locale].foundation_tajweed.content }}</p>
+                            </div>
+
+                            <!-- Progressive Practice -->
+                            <div class="bg-white rounded-2xl shadow-lg p-6">
+                                <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.understanding_noorani.understanding_noorani[locale].progressive_practice.title }}</h3>
+                                <p class="text-gray-700">{{ noorani.understanding_noorani.understanding_noorani[locale].progressive_practice.content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Who Benefits Section -->
+            <div id="who-benefits" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ noorani.who_benefits.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        Designed for Learners of All Backgrounds
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ noorani.who_benefits.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Complete Beginners -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.who_benefits.who_benefits[locale].complete_beginners.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.who_benefits.who_benefits[locale].complete_beginners.content }}</p>
+                        </div>
+
+                        <!-- Children Learners -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.who_benefits.who_benefits[locale].children_learners.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.who_benefits.who_benefits[locale].children_learners.content }}</p>
+                        </div>
+
+                        <!-- Adult New Muslims -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.who_benefits.who_benefits[locale].adult_new_muslims.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.who_benefits.who_benefits[locale].adult_new_muslims.content }}</p>
+                        </div>
+
+                        <!-- Non-Arabic Muslims -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.who_benefits.who_benefits[locale].non_arabic_muslims.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.who_benefits.who_benefits[locale].non_arabic_muslims.content }}</p>
+                        </div>
+
+                        <!-- Pronunciation Improvement -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.who_benefits.who_benefits[locale].pronunciation_improvement.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.who_benefits.who_benefits[locale].pronunciation_improvement.content }}</p>
+                        </div>
+
+                        <!-- Parents with Children -->
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                            <h3 class="text-xl font-bold text-web-primary mb-4">{{ noorani.who_benefits.who_benefits[locale].parents_with_children.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.who_benefits.who_benefits[locale].parents_with_children.content }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curriculum Section -->
+            <div id="noorani-curriculum" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ noorani.curriculum.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            Systematic Learning Progression
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ noorani.curriculum.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <div class="mb-8">
+                            <p v-for="(paragraph, index) in noorani.curriculum.curriculum[locale].introduction" :key="index" class="text-gray-700 text-lg leading-relaxed">
+                                {{ paragraph }}
+                            </p>
+                        </div>
+
+                        <!-- Curriculum Table -->
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                            <div class="overflow-x-auto">
+                                <table class="w-full">
+                                    <thead>
+                                        <tr class="bg-web-primary text-white">
+                                            <th class="text-left py-4 px-6 font-semibold">Learning Stage</th>
+                                            <th class="text-left py-4 px-6 font-semibold">Focus Areas</th>
+                                            <th class="text-left py-4 px-6 font-semibold">Skills Developed</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="(stage, index) in noorani.curriculum.curriculum[locale].stages" :key="index" :class="index % 2 === 0 ? 'bg-gray-50' : 'bg-white'">
+                                            <td class="py-4 px-6 font-semibold text-web-primary">{{ stage.stage }}</td>
+                                            <td class="py-4 px-6 text-gray-700">{{ stage.focus_areas }}</td>
+                                            <td class="py-4 px-6 text-gray-700">{{ stage.skills_developed }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Outcomes Section -->
+            <div id="learning-outcomes" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ noorani.learning_outcomes.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        What Students Achieve
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ noorani.learning_outcomes.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="mb-8">
+                        <p v-for="(paragraph, index) in noorani.learning_outcomes.learning_outcomes[locale].introduction" :key="index" class="text-gray-700 text-lg leading-relaxed">
+                            {{ paragraph }}
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Immediate Skills -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ noorani.learning_outcomes.learning_outcomes[locale].immediate_skills.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.learning_outcomes.learning_outcomes[locale].immediate_skills.content }}</p>
+                        </div>
+
+                        <!-- Confidence and Independence -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ noorani.learning_outcomes.learning_outcomes[locale].confidence_independence.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.learning_outcomes.learning_outcomes[locale].confidence_independence.content }}</p>
+                        </div>
+
+                        <!-- Preparation for Advanced Study -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-6">{{ noorani.learning_outcomes.learning_outcomes[locale].preparation_advanced.title }}</h3>
+                            <p class="text-gray-700">{{ noorani.learning_outcomes.learning_outcomes[locale].preparation_advanced.content }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Stories -->
+            <div id="noorani-success-stories" class="mb-16 w-full bg-gray-50 py-12 rounded-2xl">
+                <div class="container mx-auto px-4 md:px-20 lg:px-10 max-w-[1280px]">
+                    <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                        <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                            {{ noorani.success_stories.title[locale] }}
+                        </div>
+                        <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                            Real Stories from Our Noorani Qaida Students
+                        </div>
+                        <div class="text-xl text-center text-gray-600 max-w-3xl">
+                            {{ noorani.success_stories.description[locale] }}
+                        </div>
+                        <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div v-for="(story, index) in noorani.success_stories.success_stories[locale]" :key="index" class="bg-white rounded-2xl shadow-lg p-6">
+                                <div class="mb-4">
+                                    <div class="text-4xl text-web-primary mb-2">"</div>
+                                    <p class="text-gray-700 italic leading-relaxed">{{ story.testimony }}</p>
+                                    <div class="text-4xl text-web-primary rotate-180 mt-2"></div>
+                                </div>
+                                <div class="border-t pt-4">
+                                    <div class="font-semibold text-web-primary">{{ story.author }}</div>
+                                    <div class="text-sm text-gray-600">{{ story.country }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div id="begin-journey" class="mb-16 bg-web-primary rounded-2xl p-8 text-white text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Begin Your Quranic Reading Journey Today</h2>
+                <p class="text-lg opacity-90 mb-8 max-w-4xl mx-auto">
+                    Learning to read the Holy Quran is one of the most rewarding educational journeys you can undertake. It opens doors not only to understanding the sacred text but also to participating more fully in Islamic worship and connecting with the global Muslim community.
+                </p>
+                <p class="text-lg opacity-90 mb-8 max-w-4xl mx-auto">
+                    Our Noorani Qaida course provides the perfect starting point for this lifelong journey. Whether you are learning for yourself, your children, or your family together, we are committed to providing the patient, expert guidance you need to succeed.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <NuxtLink external target="_blank" to="#" class="bg-white text-web-primary px-8 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 font-semibold">
+                        Enroll in Noorani Qaida
+                    </NuxtLink>
+                    <NuxtLink external target="_blank" to="#" class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-web-primary transition-all duration-300 font-semibold">
+                        Schedule a Trial Class
+                    </NuxtLink>
+                </div>
+            </div>
+
+            <!-- Course Information -->
+            <div id="course-information" class="mb-16">
+                <div class="flex flex-col gap-3 items-center justify-center w-[90%] md:w-full mx-auto mb-12">
+                    <div class="text-lg md:text-xl font-bold text-center text-web-primary uppercase tracking-wider">
+                        {{ noorani.course_info.title[locale] }}
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-center text-text-color">
+                        Everything You Need to Know
+                    </div>
+                    <div class="text-xl text-center text-gray-600 max-w-3xl">
+                        {{ noorani.course_info.description[locale] }}
+                    </div>
+                    <div class="w-20 h-1 bg-web-primary rounded-full"></div>
+                </div>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div v-for="(info, index) in noorani.course_info.course_info[locale]" :key="index" class="bg-white rounded-2xl shadow-lg p-8">
+                            <h3 class="text-2xl font-bold text-web-primary mb-4">{{ info.title }}</h3>
+                            <p class="text-gray-700 leading-relaxed">{{ info.content }}</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <NuxtLink external target="_blank" :to="noorani.course_info.button_link[locale]" class="web-btn">
+                            {{ noorani.course_info.button_text[locale] }}
+                        </NuxtLink>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 </template>
 
@@ -1335,6 +1661,17 @@ const getTabSections = (tab) => {
                 { id: 'success-stories', title: { en: 'Success Stories', tr: 'Başarı Hikayeleri' } },
                 { id: 'faq', title: { en: 'FAQ', tr: 'SSS' } }
             ]
+        case 'noorani':
+            return [
+                { id: 'noorani-overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
+                { id: 'understanding-noorani', title: { en: 'Understanding Noorani Qaida', tr: 'Noorani Kaide\'yi Anlamak' } },
+                { id: 'who-benefits', title: { en: 'Who Benefits', tr: 'Kimler Faydalanır' } },
+                { id: 'noorani-curriculum', title: { en: 'Curriculum', tr: 'Müfredat' } },
+                { id: 'learning-outcomes', title: { en: 'Learning Outcomes', tr: 'Öğrenme Çıktıları' } },
+                { id: 'noorani-success-stories', title: { en: 'Success Stories', tr: 'Başarı Hikayeleri' } },
+                { id: 'begin-journey', title: { en: 'Begin Your Journey', tr: 'Yolculuğunuza Başlayın' } },
+                { id: 'course-information', title: { en: 'Course Information', tr: 'Kurs Bilgileri' } }
+            ]
         default:
             return []
     }
@@ -1370,11 +1707,13 @@ const getSectionTab = (sectionId) => {
     const admissionsSections = ['introduction', 'program-dates', 'tuition']
     const accommodationSections = ['overview', 'housing-process', 'housing-philosophy', 'housing-options', 'recommendations', 'room-types', 'pricing', 'policies']
     const quranSections = ['quran-overview', 'why-choose', 'quran-programs', 'class-formats', 'success-stories', 'faq']
+    const nooraniSections = ['noorani-overview', 'understanding-noorani', 'who-benefits', 'noorani-curriculum', 'learning-outcomes', 'noorani-success-stories', 'begin-journey', 'course-information']
 
     if (academicsSections.includes(sectionId)) return 'academics'
     if (admissionsSections.includes(sectionId)) return 'admissions'
     if (accommodationSections.includes(sectionId)) return 'accommodation'
     if (quranSections.includes(sectionId)) return 'quran'
+    if (nooraniSections.includes(sectionId)) return 'noorani'
     return null
 }
 
@@ -1427,6 +1766,11 @@ const { data: quranData } = await useAsyncData('quran', () => {
     return queryCollection('quran').all()
 })
 
+// Fetch noorani data
+const { data: nooraniData } = await useAsyncData('noorani', () => {
+    return queryCollection('noorani').all()
+})
+
 // Organize academics data by type
 const academics = computed(() => {
     const data = academicsData.value || []
@@ -1474,6 +1818,20 @@ const quran = computed(() => {
         class_format_comparison: data.find(item => item.title?.en === 'Class Format Comparison') || {},
         success_stories: data.find(item => item.title?.en === 'Student Success Stories') || {},
         faq: data.find(item => item.title?.en === 'Frequently Asked Questions') || {}
+    }
+})
+
+// Organize noorani data by type
+const noorani = computed(() => {
+    const data = nooraniData.value || []
+    return {
+        overview: data.find(item => item.title?.en === 'Noorani Qaida Course for Beginners') || {},
+        understanding_noorani: data.find(item => item.title?.en === 'Understanding Noorani Qaida') || {},
+        who_benefits: data.find(item => item.title?.en === 'Who Benefits Most from This Course?') || {},
+        curriculum: data.find(item => item.title?.en === 'Our Comprehensive Step-by-Step Curriculum') || {},
+        learning_outcomes: data.find(item => item.title?.en === 'Learning Outcomes and Progression Path') || {},
+        success_stories: data.find(item => item.title?.en === 'Inspiring Student Transformations') || {},
+        course_info: data.find(item => item.title?.en === 'Course Information and Support') || {}
     }
 })
 
