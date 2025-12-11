@@ -92,29 +92,6 @@
                                         </NuxtLink>
                                     </div>
 
-                                    <!-- Quran Tab Sections -->
-                                    <div>
-                                        <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
-                                            Quran & Tajweed
-                                        </div>
-                                        <NuxtLink v-for="section in quranSections" :key="section.id"
-                                            :to="{name: 'academic-admissions', query: {tab: 'quran', section: section.id}}"
-                                            class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
-                                            {{ section.title[locale] }}
-                                        </NuxtLink>
-                                    </div>
-
-                                    <!-- Noorani Qaida Tab Sections -->
-                                    <div>
-                                        <div class="px-4 py-2 text-xs font-semibold text-text-color/60 uppercase tracking-wider border-b border-gray-100">
-                                            Noorani Qaida
-                                        </div>
-                                        <NuxtLink v-for="section in nooraniSections" :key="section.id"
-                                            :to="{name: 'academic-admissions', query: {tab: 'noorani', section: section.id}}"
-                                            class="block px-4 py-2 text-sm text-text-color/80 hover:bg-gray-100 hover:text-web-primary transition-colors duration-200">
-                                            {{ section.title[locale] }}
-                                        </NuxtLink>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +187,9 @@ const academicsSections = [
     { id: 'classical-arabic', title: { en: 'Classical Arabic', tr: 'Klasik Arapça' } },
     { id: 'modern-standard-arabic', title: { en: 'Modern Standard Arabic', tr: 'Modern Standart Arapça' } },
     { id: 'ammiyya', title: { en: 'Jordanian Ammiyya', tr: 'Ürdün Ammiyya' } },
-    { id: 'online-programs', title: { en: 'Online Programs', tr: 'Çevrimiçi Programlar' } }
+    { id: 'online-programs', title: { en: 'Online Programs', tr: 'Çevrimiçi Programlar' } },
+    { id: 'quran-overview', title: { en: 'Quran & Tajweed', tr: 'Kuran & Tecvid' } },
+    { id: 'noorani-overview', title: { en: 'Noorani Qaida', tr: 'Noorani Kaide' } }
 ]
 
 const admissionsSections = [
@@ -230,24 +209,6 @@ const accommodationSections = [
     { id: 'policies', title: { en: 'Policies', tr: 'Politikalar' } }
 ]
 
-const quranSections = [
-    { id: 'quran-overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
-    { id: 'why-choose', title: { en: 'Why Choose Almujam', tr: 'Neden Almujam' } },
-    { id: 'quran-programs', title: { en: 'Programs', tr: 'Programlar' } },
-    { id: 'class-formats', title: { en: 'Class Formats', tr: 'Ders Formatları' } },
-    { id: 'success-stories', title: { en: 'Success Stories', tr: 'Başarı Hikayeleri' } },
-    { id: 'faq', title: { en: 'FAQ', tr: 'SSS' } }
-]
-
-const nooraniSections = [
-    { id: 'noorani-overview', title: { en: 'Overview', tr: 'Genel Bakış' } },
-    { id: 'understanding-noorani', title: { en: 'Understanding Noorani Qaida', tr: 'Noorani Kaide\'yi Anlamak' } },
-    { id: 'who-benefits', title: { en: 'Who Benefits', tr: 'Kimler Faydalanır' } },
-    { id: 'noorani-curriculum', title: { en: 'Curriculum', tr: 'Müfredat' } },
-    { id: 'learning-outcomes', title: { en: 'Learning Outcomes', tr: 'Öğrenme Çıktıları' } },
-    { id: 'noorani-success-stories', title: { en: 'Success Stories', tr: 'Başarı Hikayeleri' } },
-    { id: 'course-information', title: { en: 'Course Information', tr: 'Kurs Bilgileri' } }
-]
 
 // Student life page sections
 const studentLifeSections = [
